@@ -7,7 +7,7 @@ import { FaSpinner } from "react-icons/fa";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton";
 import "./../../Budget.css";
 
-const BudIntroduction = () => {
+const BudgetProcess = () => {
   const ctx = useContext(MyContext);
   console.log("ctx", ctx);
 
@@ -17,15 +17,15 @@ const BudIntroduction = () => {
         <Navbar />
         <div className="contentwrapper" id="home">
           <FloatingActionButtons back="/budget" forward="budget-process" />
-          <Title>{ctx.chapterThree.Para1}</Title>
-          <Title>{ctx.chapterThree.Introduction.Title}</Title>
-          {ctx.isStatus.status1 ? (
-            <div>
-              <Para>{ctx.chapterThree.Introduction.Para1}</Para>
-            </div>
-          ) : (
-            ""
+
+          <Title>{ctx.chapterThree.Profile.Para1}</Title>
+          {["Para2", "Para3", "Para4", "Para5", "Para6", "Para7"].map(
+            (item, ind) => (
+              <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
+            )
           )}
+             {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
+
         </div>
       </div>
     ) : (
@@ -57,4 +57,4 @@ const BudIntroduction = () => {
   );
 };
 
-export default BudIntroduction;
+export default BudgetProcess;

@@ -29,7 +29,7 @@ import FinIntroduction from '../components/Pages/Finances/Chapters/Introduction/
 import { SideBarProvider } from '../components/Sidebar/SideBarContext/SideBarCtxProvider';
 import Budget from '../components/Pages/Budget/Budget';
 import BudIntroduction from '../components/Pages/Budget/Chapters/Introduction/Introduction';
-// import BudgetProcessChap3 from '../components/Pages/Budget/Chapters/BudgetProcess/BudgetProcess';
+import BudgetProcess from '../components/Pages/Budget/Chapters/BudgetProcess/BudgetProcess';
 // import GenderBudget from '../components/Pages/Budget/Chapters/GenderBudget/GenderBudget';
 // import MajorPolicy from '../components/Pages/Budget/Chapters/MajorPolicy/MajorPolicy';
 // import AppropAccounts from '../components/Pages/Budget/Chapters/AppropAccounts/AppropAccounts';
@@ -103,7 +103,8 @@ const Routes = () => {
                         <Route path='/finances/conclusion' exact component={Conclusion} /> */}
                         <Route path='/Budget' exact component={Budget} />
                         <Route path='/Budget/introduction' exact component={BudIntroduction} />
-                        {/* <Route path='/Budget/budget-process' exact component={BudgetProcessChap3} />
+                        <Route path='/Budget/budget-process' exact component={BudgetProcess} />
+                        {/* <Route path='/Budget/budget-process' exact component={BudgetProcess} />
                         <Route path='/Budget/gender-budget' exact component={GenderBudget} />
                         <Route path='/Budget/policy' exact component={MajorPolicy} />
                         <Route path='/Budget/appropaccounts' exact component={AppropAccounts} />
