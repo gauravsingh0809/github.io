@@ -21,6 +21,7 @@ export const MyProvider = (props) => {
     fetchData()
   }, [])
 
+  console.log("report.Chap1", report.Chap1)
   // if (!reportDoc.length) {
   //   console.log(getFirebase()
   //     .firestore()
@@ -59,6 +60,8 @@ export const MyProvider = (props) => {
         }
       );
   }
+
+  console.log(reportch)
 
 
   const paraClickHandler = (id) => {
@@ -102,7 +105,7 @@ export const MyProvider = (props) => {
       arrayTableData: reportch.Chap3Tables,
       preface: report.Preface,
       prefacekan: report.PrefaceKan,
-      chapterOne: report.Chapter1,
+      chapterOne: report.Chap1,
       chapter1kannada: report.Chapter1Kannada,
       chapterTwo: report.Chapter2,
       chapter2kannada: report.Chapter2Kannada,

@@ -13,6 +13,7 @@ import { FaSpinner } from 'react-icons/fa'
 const Introduction = () => {
 
     const ctx = useContext(MyContext)
+    console.log("intro-context", ctx)
 
     return (
         ctx.langPref
@@ -21,12 +22,20 @@ const Introduction = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/overview" forward="/overview/profile" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapterOne.Overview.Introduction.title}</Title>
+                        <Title status={ctx.isStatus.status1} id={1}>
+                            {ctx.chapterOne.Introduction.title}
+                        </Title>
                         <div>
                             <Para>
-                                {ctx.chapterOne.Overview.Introduction.content}
+                                {ctx.chapterOne.Introduction.para1}
                             </Para>
                         </div>
+                        <Title>
+                            {ctx.chapterOne.Profile.para1}
+                        </Title>
+                        <Para>
+                            {ctx.chapterOne.Profile.para2}
+                        </Para>
                     </div>
                 </div>
                 : <div>
@@ -36,13 +45,13 @@ const Introduction = () => {
             : (ctx.chapter1kannada
                 ? <div >
                     <Navbar />
-                    <div className="contentwrapper" id="home">
+                    {/* <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/overview" forward="/overview/profile" />
                         <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter1kannada.Overview.Introduction.title}</Title>
                         <Para>
                             {ctx.chapter1kannada.Overview.Introduction.content}
                         </Para>
-                    </div>
+                    </div> */}
                 </div>
                 : <div>
                     <Navbar />

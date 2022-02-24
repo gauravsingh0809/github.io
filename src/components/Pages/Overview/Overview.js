@@ -12,6 +12,8 @@ const Overview = () => {
 
     const ctx = useContext(MyContext)
 
+    console.log("ctx", ctx)
+
     return (
         ctx.langPref
             ? (ctx.execoverview
