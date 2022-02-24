@@ -10,7 +10,6 @@ import '../App.css';
 import Profile from '../components/Pages/Overview/Chapters/Profile/Profile';
 import Basis from '../components/Pages/Overview/Chapters/Basis/Basis';
 import Structure from '../components/Pages/Overview/Chapters/Structure/Structure';
-import BudgetProcess from '../components/Pages/Overview/Chapters/BudgetProcess/BudgetProcess';
 import FinanceSnapshot from '../components/Pages/Overview/Chapters/FinanceSnapshot/FinanceSnapshot';
 // import Structure from '../components/Pages/Overview/Chapters/Structure/Structure';
 // import BudgetProcess from '../components/Pages/Overview/Chapters/BudgetProcess/BudgetProcess';
