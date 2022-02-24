@@ -21,7 +21,6 @@ export const MyProvider = (props) => {
     fetchData()
   }, [])
 
-  console.log("report.Chap1", report.Chap1)
   // if (!reportDoc.length) {
   //   console.log(getFirebase()
   //     .firestore()

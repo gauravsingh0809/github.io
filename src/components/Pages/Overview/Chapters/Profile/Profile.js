@@ -10,7 +10,7 @@ import { FaSpinner } from 'react-icons/fa'
 
 
 
-const Introduction = () => {
+const Profile = () => {
 
     const ctx = useContext(MyContext)
 
@@ -22,15 +22,49 @@ const Introduction = () => {
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/overview" forward="/overview/profile" />
                         <Title>
-                            {ctx.chapterOne.Introduction.title}
+                            1.2 Profile of the state
                         </Title>
                         <div>
-                            <Para>
-                                {ctx.chapterOne.Introduction.para1}
-                            </Para>
+
                         </div>
-                       
-                        
+                        <Title>
+                            {ctx.chapterOne.Profile.para1}
+                        </Title>
+                        <Para>
+                            {ctx.chapterOne.Profile.para2}
+                        </Para>
+                        <Title>
+                            {ctx.chapterOne.Profile.para3}
+                        </Title>
+
+                        {["para4", "para5"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterOne.Profile[item]}
+                            </Para>
+                        )}
+                        <Title>
+                            {ctx.chapterOne.Profile.para6}
+                        </Title>
+                        {["para7", "para8"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterOne.Profile[item]}
+                            </Para>
+                        )}
+                        {["Para9", "Para10",""].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterOne.Profile[item]}
+                            </Para>
+                        )}
+                        <Para>
+                            {ctx.chapterOne.Profile.Para11}
+                        </Para>
+                        {["Para12", "Para13","Para14"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterOne.Profile[item]}
+                            </Para>
+                        )}
+
+
                     </div>
                 </div>
                 : <div>
@@ -55,4 +89,4 @@ const Introduction = () => {
     )
 }
 
-export default Introduction
+export default Profile

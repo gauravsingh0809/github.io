@@ -7,8 +7,11 @@ import Overview from '../components/Pages/Overview/Overview';
 import HomePage from '../components/Pages/HomePage/HomePage';
 import Introduction from '../components/Pages/Overview/Chapters/Introduction/Introduction';
 import '../App.css';
-// import Profile from '../components/Pages/Overview/Chapters/Profile/Profile';
-// import Basis from '../components/Pages/Overview/Chapters/Basis/Basis';
+import Profile from '../components/Pages/Overview/Chapters/Profile/Profile';
+import Basis from '../components/Pages/Overview/Chapters/Basis/Basis';
+import Structure from '../components/Pages/Overview/Chapters/Structure/Structure';
+import BudgetProcess from '../components/Pages/Overview/Chapters/BudgetProcess/BudgetProcess';
+import FinanceSnapshot from '../components/Pages/Overview/Chapters/FinanceSnapshot/FinanceSnapshot';
 // import Structure from '../components/Pages/Overview/Chapters/Structure/Structure';
 // import BudgetProcess from '../components/Pages/Overview/Chapters/BudgetProcess/BudgetProcess';
 // import FinanceSnapshot from '../components/Pages/Overview/Chapters/FinanceSnapshot/FinanceSnapshot';
@@ -78,10 +81,15 @@ const Routes = () => {
                  style={{ height: "100%", overflow: "auto" }}
                  >
                     <Switch>
-                        {/* <Route exact path={['/']}  component={HomePage} /> */}
+                        <Route exact path={['/']}  component={HomePage} />
                         {/* <Route exact path={['/preface']}  component={Preface} /> */}
                         <Route path='/overview' exact component={Overview} />
                         <Route path='/overview/introduction' exact component={Introduction} />
+                        <Route path='/overview/profile' exact component={Profile} />
+                        <Route path='/overview/basis' exact component={Basis} />
+                        <Route path='/overview/structure' exact component={Structure} />
+                        <Route path='/overview/budgetprocess' exact component={BudgetProcess} />
+                        <Route path='/overview/snapshot-finances' exact component={FinanceSnapshot} />
                         {/* <Route path='/overview/profile' exact component={Profile} />
                         <Route path='/overview/basis' exact component={Basis} />
                         <Route path='/overview/structure' exact component={Structure} />
