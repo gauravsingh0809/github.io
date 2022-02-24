@@ -2,17 +2,18 @@ import React, { useContext } from 'react'
 import { Link } from "@material-ui/core"
 import { MyContext } from '../../../../../Context/MyProvider'
 import Para from '../../../../Para/Para'
-import Title from "./../../../../Title/Title"
-import Navbar from "./../../../../Navbar/Navbar"
-import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
+import Title from "../../../../Title/Title"
+import Navbar from "../../../../Navbar/Navbar"
+import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 
 
 
-const Introduction = () => {
+const Structure = () => {
 
     const ctx = useContext(MyContext)
+    
 
     return (
         ctx.langPref
@@ -20,17 +21,29 @@ const Introduction = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
+                        <FloatingActionButtons back="/overview/profile" forward="/overview/structure" />
                         <Title>
-                            {ctx.chapterOne.Introduction.title}
+                        {ctx.chapterOne.Profile.Para26}
                         </Title>
                         <div>
-                            <Para>
-                                {ctx.chapterOne.Introduction.para1}
-                            </Para>
+
                         </div>
-                       
+                        <Para>
+                            {ctx.chapterOne.Profile.Para27}
+                        </Para>
+                        <Para>
+                            {ctx.chapterOne.Profile.Para28}
+                        </Para>
                         
+
+                        
+                     {["Para29", "Para30","Para31","Para32","Para33","Para34","Para35",].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterOne.Profile[item]}
+                            </Para>
+                        )}
+
+
                     </div>
                 </div>
                 : <div>
@@ -55,4 +68,4 @@ const Introduction = () => {
     )
 }
 
-export default Introduction
+export default Structure

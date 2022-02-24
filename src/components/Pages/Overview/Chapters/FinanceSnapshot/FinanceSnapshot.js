@@ -2,17 +2,18 @@ import React, { useContext } from 'react'
 import { Link } from "@material-ui/core"
 import { MyContext } from '../../../../../Context/MyProvider'
 import Para from '../../../../Para/Para'
-import Title from "./../../../../Title/Title"
-import Navbar from "./../../../../Navbar/Navbar"
-import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
+import Title from "../../../../Title/Title"
+import Navbar from "../../../../Navbar/Navbar"
+import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 
 
 
-const Introduction = () => {
+const FinanceSnapshot = () => {
 
     const ctx = useContext(MyContext)
+    
 
     return (
         ctx.langPref
@@ -20,17 +21,24 @@ const Introduction = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
+                        <FloatingActionButtons back="/overview/profile" forward="/overview/structure" />
                         <Title>
-                            {ctx.chapterOne.Introduction.title}
+                        {ctx.chapterOne.Profile.Para39}
                         </Title>
                         <div>
-                            <Para>
-                                {ctx.chapterOne.Introduction.para1}
-                            </Para>
+
                         </div>
-                       
                         
+                        
+
+                        
+                     {["Para40", "Para41","Para42"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterOne.Profile[item]}
+                            </Para>
+                        )}
+
+
                     </div>
                 </div>
                 : <div>
@@ -55,4 +63,4 @@ const Introduction = () => {
     )
 }
 
-export default Introduction
+export default FinanceSnapshot

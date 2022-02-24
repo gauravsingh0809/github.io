@@ -10,9 +10,10 @@ import { FaSpinner } from 'react-icons/fa'
 
 
 
-const Introduction = () => {
+const Basis = () => {
 
     const ctx = useContext(MyContext)
+    console.log("basis-context-viewer", ctx)
 
     return (
         ctx.langPref
@@ -20,17 +21,29 @@ const Introduction = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
+                        <FloatingActionButtons back="/overview/profile" forward="/overview/structure" />
                         <Title>
-                            {ctx.chapterOne.Introduction.title}
+                        {ctx.chapterOne.Profile.Para15}
                         </Title>
                         <div>
-                            <Para>
-                                {ctx.chapterOne.Introduction.para1}
-                            </Para>
+
                         </div>
-                       
+                        <Para>
+                            {ctx.chapterOne.Profile.Para16}
+                        </Para>
+                        <Para>
+                            {ctx.chapterOne.Profile.Para17}
+                        </Para>
                         
+
+                        
+                     {["Para18", "Para19","Para20","Para21","Para22","Para23","Para24","Para25"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterOne.Profile[item]}
+                            </Para>
+                        )}
+
+
                     </div>
                 </div>
                 : <div>
@@ -55,4 +68,4 @@ const Introduction = () => {
     )
 }
 
-export default Introduction
+export default Basis
