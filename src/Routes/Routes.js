@@ -81,7 +81,7 @@ const Routes = () => {
                  >
                     <Switch>
                         <Route exact path={['/']}  component={HomePage} />
-                        {/* <Route exact path={['/preface']}  component={Preface} /> */}
+                        <Route exact path={['/preface']}  component={Preface} />
                         <Route path='/overview' exact component={Overview} />
                         <Route path='/overview/introduction' exact component={Introduction} />
                         <Route path='/overview/profile' exact component={Profile} />

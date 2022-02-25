@@ -21,7 +21,7 @@ export const MyProvider = (props) => {
     fetchData()
   }, [])
 
-  console.log("report", report.Chap3)
+  console.log("reportSatte", report.Chap1.Tables)
   // if (!reportDoc.length) {
   //   console.log(getFirebase()
   //     .firestore()
@@ -107,11 +107,11 @@ export const MyProvider = (props) => {
       prefacekan: report.PrefaceKan,
       chapterOne: report.Chap1,
       chapter1kannada: report.Chapter1Kannada,
-      chapterTwo: report.Chapter2,
+      chapterTwo: report.Chap1,
       chapter2kannada: report.Chapter2Kannada,
       chapterThree: report.Chap3,
       chapter3kannada: report.Chapter3Kannada,
-      chapterFour: report.Chapter4,
+      chapterFour: report.Chap4,
       chapter4kannada: report.Chapter4Kannada,
       charts: reportch.Charts,
       charts2: reportch.Chap2Charts,
