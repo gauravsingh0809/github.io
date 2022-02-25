@@ -1,6 +1,6 @@
 // import { BrowserRouter as Router } from 'react-router-dom';
 import { HashRouter as Router } from 'react-router-dom';
-import {  MyProvider } from './Context/MyProvider';
+import { MyProvider } from './Context/MyProvider';
 import './App.css';
 import Routes from './Routes/Routes';
 import { useEffect } from 'react';
@@ -17,7 +17,7 @@ const App = () => {
       {/* <Scrollbars style={{background:"#fff"}}> */}
       <div className="App" id="outer-container">
         <MyProvider>
-          <Routes />              { /* Check if div goes after My provider in case of layout problems */}
+          <Routes />        { /* Check if div goes after My provider in case of layout problems */}
         </MyProvider>
       </div>
       {/* </Scrollbars> */}
