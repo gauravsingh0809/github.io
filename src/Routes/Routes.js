@@ -89,8 +89,6 @@ const Routes = () => {
                     style={{ height: "100%", overflow: "auto" }}
                 >
                     <Switch>
-                        <Route exact path={['/']} component={HomePage} />
-                        {/* <Route exact path={['/preface']}  component={Preface} /> */}
                         <Route exact path={['/']}  component={HomePage} />
                         <Route exact path={['/preface']}  component={Preface} />
                         <Route path='/overview' exact component={Overview} />
