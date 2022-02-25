@@ -13,30 +13,33 @@ const Preface = () => {
     const ctx = useContext(MyContext)
 
     return (
-        ctx.langPref ? (ctx.preface ?
-            <div >
-                <Navbar />
-                <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/" forward="/overview/" />
-                    <Title>{ctx.preface.title}</Title>
-                    <ol>
-                        {['para1', 'para2', 'para3', 'para4', 'para5', 'para6'].map((item, ind) =>
-                            <li key={ind / 10} className="list">
-                                <Para>
-                                    {ctx.preface[item]}
-                                </Para>
-                            </li>
-                        )}
-                    </ol>
-                    <Title>{ctx.preface.para7}</Title>
-                    <Para>
-                        {ctx.preface['para8']}
-                    </Para>
-                </div>
-            </div> : <div>
-                <Navbar />
-                <FaSpinner icon="spinner" className="spinner" />
-            </div>)
+        ctx.langPref ? (
+            ctx.preface ?
+                <div >
+                    <Navbar />
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/" forward="/overview/" />
+                        <Title>
+                            {ctx.preface.title}
+                        </Title>
+                        <ol>
+                            {['para1', 'para2', 'para3', 'para4', 'para5', 'para6'].map((item, ind) =>
+                                <li key={ind / 10} className="list">
+                                    <Para>
+                                        {ctx.preface[item]}
+                                    </Para>
+                                </li>
+                            )}
+                        </ol>
+                        <Title>{ctx.preface.para7}</Title>
+                        <Para>
+                            {ctx.preface['para8']}
+                        </Para>
+                    </div>
+                </div> : <div>
+                    <Navbar />
+                    <FaSpinner icon="spinner" className="spinner" />
+                </div>)
             : (ctx.prefacekan ?
                 <div >
                     <Navbar />
@@ -57,7 +60,7 @@ const Preface = () => {
                             )}
                         </ol>
                     </div>
-                </div> 
+                </div>
                 : <div>
                     <Navbar />
                     <FaSpinner icon="spinner" className="spinner" />

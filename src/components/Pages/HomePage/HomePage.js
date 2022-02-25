@@ -1,5 +1,6 @@
 import ImageComponent from 'material-ui-image';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { getFirebase } from '../../../firebase/firebase';
 import "./HomePage.css";
 
@@ -35,16 +36,6 @@ const HomePage = () => {
 
   return (
     <div>
-      {/* <h3>📖</h3> */}
-      <div className="wrapper">
-        {/* <div className="one">
-          <h2>Digital Finance Audit Report</h2>
-          State Finance Report for the state of Karnataka, 2019-20
-        </div>
-        <div className="three emblem">
-          <ImageComponent src={emblem} aspectRatio="1/1" color="#ffffff00" />
-        </div> */}
-      </div>
       <div className="wrapper">
         <div className="one logo">
           <ImageComponent src={emblem} color="#ffffff00" />
@@ -57,16 +48,26 @@ const HomePage = () => {
         </div>
       </div>
       <div className="heading">
-          <span style={{fontWeight:"bolder", fontSize:"40px"}}>Digital State Finance Audit Report of the </span>
-          <br></br><span style={{fontWeight:"bolder", fontSize:"40px"}}>Comptroller and Auditor General of India </span><br></br>
-          <span style={{fontWeight:"bolder", fontSize:"35px"}}>for the year ended March 2020</span> 
-          <br></br>
-          <br></br>
-          <span style={{fontWeight:"bolder", fontSize:"35px"}}>Government of Karnataka</span>
-          <br>
-          </br>
-          <span style={{fontWeight:"bolder", fontSize:"35px"}}>Report No. 1 of the year 2021</span>
+        <div>
+          Digital State Finance Audit Report of the
+          Comptroller and Auditor General of India
+          for the year ended March 2020
         </div>
+        <div className='gradient__text'>
+          Government of Karnataka
+        </div>
+        <div className='gradient__text'>
+          Report No. 1 of the year 2021
+        </div>
+        <div>
+          <button class="button-51" role="button">
+            <Link to='/preface' style={{textDecoration:'none', color:'inherit'}}>
+            Navigate to Preface
+            </Link>
+          </button>
+        </div>
+
+      </div>
     </div>
 
   )

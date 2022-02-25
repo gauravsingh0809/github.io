@@ -107,7 +107,7 @@ export const MyProvider = (props) => {
       prefacekan: report.PrefaceKan,
       chapterOne: report.Chap1,
       chapter1kannada: report.Chapter1Kannada,
-      chapterTwo: report.Chap2,
+      chapterTwo: report.Chap1,
       chapter2kannada: report.Chapter2Kannada,
       chapterThree: report.Chap3,
       chapter3kannada: report.Chapter3Kannada,
