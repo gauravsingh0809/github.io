@@ -7,12 +7,15 @@ import Navbar from "./../../../../Navbar/Navbar"
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
+import Table1 from '../../../Tables/Chapter1/Table1'
+import Chart1 from '../../../Charts/Charts'
 
 
 
 const Profile = () => {
 
     const ctx = useContext(MyContext)
+    console.log(ctx.tables1)
 
     return (
         ctx.langPref
@@ -24,9 +27,6 @@ const Profile = () => {
                         <Title>
                             1.2 Profile of the state
                         </Title>
-                        <div>
-
-                        </div>
                         <Title>
                             {ctx.chapterOne.Profile.para1}
                         </Title>
@@ -42,6 +42,13 @@ const Profile = () => {
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
+                        {/* Table 1 goes here */}
+                        <Table1 id="table1"/>
+                        <h6>
+                            {ctx.tables1.T1F1} <br></br>
+                            {ctx.tables1.T1F2}
+                        </h6>
+                        <Chart1 />
                         <Title>
                             {ctx.chapterOne.Profile.para6}
                         </Title>
@@ -50,7 +57,7 @@ const Profile = () => {
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
-                        {["Para9", "Para10",""].map((item, ind) =>
+                        {["Para9", "Para10", ""].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
@@ -58,7 +65,7 @@ const Profile = () => {
                         <Para>
                             {ctx.chapterOne.Profile.Para11}
                         </Para>
-                        {["Para12", "Para13","Para14"].map((item, ind) =>
+                        {["Para12", "Para13", "Para14"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>

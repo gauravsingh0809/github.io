@@ -1,9 +1,5 @@
-* {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 .baloo {
-  font-family: 'Baloo Tammudu 2', cursive;
+  font-family: var(--font-family-poppins);
 }
 
 /* Position and sizing of burger button */
