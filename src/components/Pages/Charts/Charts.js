@@ -28,7 +28,8 @@ const colorScheme = ["ef476f", "ffd166", "06d6a0", "118ab2", "073b4c"]
 const Chart1 = () => {
   const char = useContext(MyContext)
   const classes = useStyles();
-  const chart = char.charts
+  const chart = char.charts1
+  console.log("chart",chart)
 
   let chartmap = chart
     ? chart.Chart1.filter((item, index) => index < (Object.keys(item).length - 1))
