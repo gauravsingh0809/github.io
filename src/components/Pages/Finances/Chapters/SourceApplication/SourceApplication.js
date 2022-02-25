@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
 import { MyContext } from '../../../../../Context/MyProvider'
 import Para from '../../../../Para/Para'
-import Title from "./../../../../Title/Title"
-import Navbar from "./../../../../Navbar/Navbar"
+import Title from "../../../../Title/Title"
+import Navbar from "../../../../Navbar/Navbar"
 import { FaSpinner } from 'react-icons/fa'
-import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
+import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
 
-const FinIntroduction = () => {
+const  SourcesApplication = () => {
 
     const ctx = useContext(MyContext)
     console.log(ctx.Chap2)
@@ -19,10 +19,12 @@ const FinIntroduction = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
-                        <Title>{ctx.chapterTwo.Introduction.title}</Title>
+                        <Title>{ctx.chapterTwo.Profile.Para4}</Title>
                         <Para>
-                            {ctx.chapterTwo.Introduction.para1}
+                            {ctx.chapterTwo.Profile.Para5}
                         </Para>
+                        
+                         
 
                     </div>
                 </div>
@@ -52,4 +54,4 @@ const FinIntroduction = () => {
     )
 }
 
-export default FinIntroduction
+export default SourcesApplication

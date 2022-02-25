@@ -11,7 +11,13 @@ import Profile from '../components/Pages/Overview/Chapters/Profile/Profile';
 import Basis from '../components/Pages/Overview/Chapters/Basis/Basis';
 import Structure from '../components/Pages/Overview/Chapters/Structure/Structure';
 import FinanceSnapshot from '../components/Pages/Overview/Chapters/FinanceSnapshot/FinanceSnapshot';
+import AssetsSnapshot from '../components/Pages/Overview/Chapters/AssetsSnapshot/AssetsSnapshot';
+import FiscalParams from '../components/Pages/Overview/Chapters/FiscalParams/FiscalParams';
+import FiscalSituation from '../components/Pages/Overview/Chapters/FiscalSituation/FiscalSituation';
+import Impact from '../components/Pages/Overview/Chapters/Impact/Impact';
+// import Impact from '../components/Pages/Overview/Chapters/Impact/Impact';
 // import Structure from '../components/Pages/Overview/Chapters/Structure/Structure';
+// import Impact from '../components/Pages/Overview/Chapters/Impact/Impact';
 // import BudgetProcess from '../components/Pages/Overview/Chapters/BudgetProcess/BudgetProcess';
 // import FinanceSnapshot from '../components/Pages/Overview/Chapters/FinanceSnapshot/FinanceSnapshot';
 // import AssetsSnapshot from '../components/Pages/Overview/Chapters/AssetsSnapshot/AssetsSnapshot';
@@ -20,7 +26,10 @@ import FinanceSnapshot from '../components/Pages/Overview/Chapters/FinanceSnapsh
 // import Impact from '../components/Pages/Overview/Chapters/Impact/Impact';
 import Finances from '../components/Pages/Finances/Finances';
 import FinIntroduction from '../components/Pages/Finances/Chapters/Introduction/Introduction';
-// import MajorChanges from '../components/Pages/Finances/Chapters/MajorChanges/MajorChanges';
+import MajorChanges from '../components/Pages/Finances/Chapters/MajorChanges/MajorChanges';
+import SourceApplication from '../components/Pages/Finances/Chapters/SourceApplication/SourceApplication';
+import Application from '../components/Pages/Finances/Chapters/Application/Application';
+ import Resources from '../components/Pages/Finances/Chapters/Resources/Resources';
 // import Sources from '../components/Pages/Finances/Chapters/Sources/Sources';
 // import Resources from '../components/Pages/Finances/Chapters/Resources/Resources';
 // import Application from '../components/Pages/Finances/Chapters/Application/Application';
@@ -77,10 +86,10 @@ const Routes = () => {
                 <div className={ctx.themeChanger ? "bg bg2" : ""}></div>
                 <div className={ctx.themeChanger ? "bg bg3" : ""}></div>
                 <div id="page-wrap" className="pagewrap"
-                 style={{ height: "100%", overflow: "auto" }}
-                 >
+                    style={{ height: "100%", overflow: "auto" }}
+                >
                     <Switch>
-                        <Route exact path={['/']}  component={HomePage} />
+                        <Route exact path={['/']} component={HomePage} />
                         {/* <Route exact path={['/preface']}  component={Preface} /> */}
                         <Route path='/overview' exact component={Overview} />
                         <Route path='/overview/introduction' exact component={Introduction} />
@@ -89,6 +98,10 @@ const Routes = () => {
                         <Route path='/overview/structure' exact component={Structure} />
                         <Route path='/overview/budgetprocess' exact component={BudgetProcess} />
                         <Route path='/overview/snapshot-finances' exact component={FinanceSnapshot} />
+                        <Route path='/overview/snapshot-assets' exact component={AssetsSnapshot} />
+                        <Route path='/overview/fiscalparams' exact component={FiscalParams} />
+                        <Route path='/overview/fisc-situation' exact component={FiscalSituation} />
+                        <Route path='/overview/impact' exact component={Impact} />
                         {/* <Route path='/overview/profile' exact component={Profile} />
                         <Route path='/overview/basis' exact component={Basis} />
                         <Route path='/overview/structure' exact component={Structure} />
@@ -100,6 +113,10 @@ const Routes = () => {
                         <Route path='/overview/impact' exact component={Impact} /> */}
                         <Route path='/finances' exact component={Finances} />
                         <Route path='/finances/introduction' exact component={FinIntroduction} />
+                        <Route path='/finances/major-sources' exact component={MajorChanges} />
+                        <Route path='/finances/sources-application' exact component={SourceApplication} />
+                        <Route path='/finances/application' exact component={Application} />
+                        <Route path='/finances/resources' exact component={Resources} />
                         {/* <Route path='/finances/major-sources' exact component={MajorChanges} />
                         <Route path='/finances/sources-application' exact component={Sources} />
                         <Route path='/finances/resources' exact component={Resources} />

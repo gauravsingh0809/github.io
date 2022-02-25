@@ -7,7 +7,7 @@ import { FaSpinner } from 'react-icons/fa'
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
 
-const FinIntroduction = () => {
+const MajorChanges = () => {
 
     const ctx = useContext(MyContext)
     console.log(ctx.Chap2)
@@ -19,9 +19,12 @@ const FinIntroduction = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
-                        <Title>{ctx.chapterTwo.Introduction.title}</Title>
+                        <Title>{ctx.chapterTwo.Profile.Para1}</Title>
                         <Para>
-                            {ctx.chapterTwo.Introduction.para1}
+                            {ctx.chapterTwo.Profile.Para2}
+                        </Para>
+                        <Para>
+                            {ctx.chapterTwo.Profile.Para3}
                         </Para>
 
                     </div>
@@ -52,4 +55,4 @@ const FinIntroduction = () => {
     )
 }
 
-export default FinIntroduction
+export default MajorChanges
