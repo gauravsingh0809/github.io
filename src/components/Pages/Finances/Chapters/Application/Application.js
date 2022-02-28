@@ -10,7 +10,7 @@ import './../../Finances.css'
 const  Application = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.Chap2)
+    console.log(ctx.chapterTwo)
 
     return (
         ctx.langPref
@@ -103,12 +103,29 @@ const  Application = () => {
                             </Para> )}
                             </Para>
                             <Para>
-                        {["para5","para6","para7","para8","para9","para10","para11","para12","para13","para14","para15","para16","para17","para18","para18","para19","","Para20","para21","para22","para23","para24","para25","para26","para27","para28","para29","para30","para31","para32","para33"].map((item, ind) =>
+                        {["para5","para6","para7","para8","para9","para10","para11","para12","para13","para14","para15","para16","para17","para18",,"para19","","Para20","para21","para22","para23","para24","para25","para26","para27","para28","para29","para30","para31","para32","para33"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.first[item]}
                             </Para> )}
                             </Para>
-
+                            <Para>
+                            {ctx.chapterTwo.Second.para1h1}
+                            </Para>
+                            <Para>
+                            {ctx.chapterTwo.Second.para1}
+                            </Para>
+                            <Para>
+                            {["para2","para3","para4","para5","para6","para7"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterTwo.Second[item]}
+                            </Para> )}
+                            </Para>
+                            <Para>
+                        {["para8","para9","para10","para11","para12","para13"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterTwo.Second[item]}
+                            </Para> )}
+                            </Para>
 
 
                     </div>

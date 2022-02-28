@@ -30,6 +30,10 @@ import MajorChanges from '../components/Pages/Finances/Chapters/MajorChanges/Maj
 import SourceApplication from '../components/Pages/Finances/Chapters/SourceApplication/SourceApplication';
 import Application from '../components/Pages/Finances/Chapters/Application/Application';
  import Resources from '../components/Pages/Finances/Chapters/Resources/Resources';
+ import PublicAccount from '../components/Pages/Finances/Chapters/PublicAccount/PublicAccount';
+ import DebtManagement from '../components/Pages/Finances/Chapters/DebtManagement/DebtManagement';
+  import Dsa from '../components/Pages/Finances/Chapters/Dsa/Dsa';
+  import conclusion from '../components/Pages/Finances/Chapters/conclusion/conclusion';
 // import Sources from '../components/Pages/Finances/Chapters/Sources/Sources';
 // import Resources from '../components/Pages/Finances/Chapters/Resources/Resources';
 // import Application from '../components/Pages/Finances/Chapters/Application/Application';
@@ -117,9 +121,13 @@ const Routes = () => {
                         <Route path='/finances/sources-application' exact component={SourceApplication} />
                         <Route path='/finances/application' exact component={Application} />
                         <Route path='/finances/resources' exact component={Resources} />
+                        <Route path='/finances/publicaccount' exact component={PublicAccount} />
+                        <Route path='/finances/debtmanagement' exact component={DebtManagement} />
+                        <Route path='/finances/dsa' exact component={Dsa} />
+                        <Route path='/finances/conclusion' exact component={conclusion} /> 
                         {/* <Route path='/finances/major-sources' exact component={MajorChanges} />
                         <Route path='/finances/sources-application' exact component={Sources} />
-                        <Route path='/finances/resources' exact component={Resources} />
+                        <Route path='/finances/resources' exact component={Resources} /
                         <Route path='/finances/application' exact component={Application} />
                         <Route path='/finances/publicaccount' exact component={PublicAccount} />
                         <Route path='/finances/debtmanagement' exact component={DebtManagement} />
