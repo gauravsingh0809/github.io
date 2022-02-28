@@ -12,7 +12,6 @@ const columns = [
   {
     name: "Year",
     selector: "Year",
-    sortable: true,
     grow: 1.2,
     cell: column =>
     (<div data-tag="allowColumnEvents">

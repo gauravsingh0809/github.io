@@ -60,7 +60,7 @@ const HomePage = () => {
           Report No. 1 of the year 2021
         </div>
         <div>
-          <button class="button-51" role="button">
+          <button class="button-51">
             <Link to='/preface' style={{textDecoration:'none', color:'inherit'}}>
             Navigate to Preface
             </Link>
