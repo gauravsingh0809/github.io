@@ -33,7 +33,7 @@ import Application from '../components/Pages/Finances/Chapters/Application/Appli
  import PublicAccount from '../components/Pages/Finances/Chapters/PublicAccount/PublicAccount';
  import DebtManagement from '../components/Pages/Finances/Chapters/DebtManagement/DebtManagement';
   import Dsa from '../components/Pages/Finances/Chapters/Dsa/Dsa';
-  import conclusion from '../components/Pages/Finances/Chapters/conclusion/conclusion';
+  import Conclusion from '../components/Pages/Finances/Chapters/Conclusion/Conclusion';
 // import Sources from '../components/Pages/Finances/Chapters/Sources/Sources';
 // import Resources from '../components/Pages/Finances/Chapters/Resources/Resources';
 // import Application from '../components/Pages/Finances/Chapters/Application/Application';
@@ -45,7 +45,8 @@ import { SideBarProvider } from '../components/Sidebar/SideBarContext/SideBarCtx
 import Budget from '../components/Pages/Budget/Budget';
 import BudIntroduction from '../components/Pages/Budget/Chapters/Introduction/Introduction';
 import BudgetProcess from '../components/Pages/Budget/Chapters/BudgetProcess/BudgetProcess';
-// import GenderBudget from '../components/Pages/Budget/Chapters/GenderBudget/GenderBudget';
+import GenderBudget from '../components/Pages/Budget/Chapters/GenderBudget/GenderBudget';
+import ChildBudget from '../components/Pages/Budget/Chapters/ChildBudget/ChildBudget';
 // import MajorPolicy from '../components/Pages/Budget/Chapters/MajorPolicy/MajorPolicy';
 // import AppropAccounts from '../components/Pages/Budget/Chapters/AppropAccounts/AppropAccounts';
 // import Audit from '../components/Pages/Budget/Chapters/Audit/Audit';
@@ -124,7 +125,7 @@ const Routes = () => {
                         <Route path='/finances/publicaccount' exact component={PublicAccount} />
                         <Route path='/finances/debtmanagement' exact component={DebtManagement} />
                         <Route path='/finances/dsa' exact component={Dsa} />
-                        <Route path='/finances/conclusion' exact component={conclusion} /> 
+                        <Route path='/finances/conclusion' exact component={Conclusion} /> 
                         {/* <Route path='/finances/major-sources' exact component={MajorChanges} />
                         <Route path='/finances/sources-application' exact component={Sources} />
                         <Route path='/finances/resources' exact component={Resources} /
@@ -136,9 +137,9 @@ const Routes = () => {
                         <Route path='/Budget' exact component={Budget} />
                         <Route path='/Budget/introduction' exact component={BudIntroduction} />
                         <Route path='/Budget/budget-process' exact component={BudgetProcess} />
-                        {/* <Route path='/Budget/budget-process' exact component={BudgetProcess} />
                         <Route path='/Budget/gender-budget' exact component={GenderBudget} />
-                        <Route path='/Budget/policy' exact component={MajorPolicy} />
+                        <Route path='/Budget/child-budget' exact component={ChildBudget} />
+                       {/*<Route path='/Budget/policy' exact component={MajorPolicy} />
                         <Route path='/Budget/appropaccounts' exact component={AppropAccounts} />
                         <Route path='/Budget/audit' exact component={Audit} />
                         <Route path='/Budget/outcome' exact component={Outcome} />
