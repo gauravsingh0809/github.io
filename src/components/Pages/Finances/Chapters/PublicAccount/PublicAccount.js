@@ -20,24 +20,24 @@ const  PublicAccount = () => {
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
                         <Title>{ctx.chapterTwo.Second.para14}</Title>
-                        <Para>
+                        
                         {["para15","para16","para17"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.Second[item]}
                             </Para> )}
-                            </Para>
-                            <Para>
+                            
+                            
                         {["para18",,"para19","","Para20","para21","para22","para23","para24","para25","para26","para27","para28","para29","para30","para31","para32","para33","para34","para35","para36","para37","para38","para39","para32","para40","para41","para42","para43"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.Second[item]}
                             </Para> )}
-                            </Para>
-                            <Para>
+                            
+                        
                         {["para44",,"para45","","para46","para47","para48","para49","para50","para51","para52","para53","para54"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.Second[item]}
                             </Para> )}
-                            </Para>
+                            
                             
                             
 
