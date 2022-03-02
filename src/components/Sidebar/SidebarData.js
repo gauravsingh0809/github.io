@@ -191,42 +191,49 @@ export const SidebarData = [
         cName: 'sub-nav'
       },
       {
-        title: '3.4 Major policy pronouncements in the budget and their actual funding for ensuring implementation',
+        title: '3.4 Child Budget',
+        path: '/budget/child-budget',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '3.5 Major policy pronouncements in the budget and their actual funding for ensuring implementation',
         path: '/budget/policy',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '3.5 Appropriation Accounts',
+        title: '3.6 Appropriation Accounts',
         path: '/budget/appropaccounts',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '3.6 Audit of Appropriation',
+        title: '3.7 Audit of Appropriation',
         path: '/budget/audit',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '3.7 Outcome of review of selected Grants',
+        title: '3.8 Outcome of review of selected Grants',
         path: '/budget/outcome',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '3.8 Conclusion',
+        title: '3.9 Conclusion',
         path: '/budget/conclusion',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '3.9 Recommendations',
+        title: '3.10 Recommendations',
         path: '/budget/Recommendations',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
