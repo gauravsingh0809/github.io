@@ -6,6 +6,7 @@ import Navbar from "./../../../../Navbar/Navbar";
 import { FaSpinner } from "react-icons/fa";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton";
 import "./../../Budget.css";
+import Subtitle from  "../../../../Subtitle/Subtitle"
 
 const ChildBudget = () => {
   const ctx = useContext(MyContext);
@@ -19,18 +20,22 @@ const ChildBudget = () => {
           <FloatingActionButtons back="/budget" forward="budget-process" />
 
           <Title>{ctx.chapterThree.Profile.Para13}</Title>
-          {["Para14", "Para15", "Para16"].map(
+          <Subtitle>{ctx.chapterThree.Profile.Para14}</Subtitle>
+          {["Para15", "Para16"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )
           )}
-          <Title>{ctx.chapterThree.Profile.Para17}</Title>
+          <Subtitle>{ctx.chapterThree.Profile.Para17}</Subtitle>
           {["Para18", "Para19", "Para20", "Para21", "Para22", "Para23", "Para24"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )
           )}      
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
+             <Para>{ctx.chapterThree.Profile.Para25}</Para>
+             <Para>{ctx.chapterThree.Profile.Para26}</Para>
+             <Para>{ctx.chapterThree.Profile.Para27}</Para>
 
         </div>
       </div>
