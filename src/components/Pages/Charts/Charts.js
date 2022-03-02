@@ -92,7 +92,7 @@ export const Chart2 = () => {
 
   const char = useContext(MyContext)
   const classes = useStyles();
-  const chart = char.charts
+  const chart = char.charts1
 
   let chartTwo = chart
     ? chart.Chart2.filter((item, index) => index < (Object.keys(item).length - 1))
