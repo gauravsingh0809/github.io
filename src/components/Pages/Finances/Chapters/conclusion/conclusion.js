@@ -21,16 +21,11 @@ const Conclusion = () => {
                         <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
                         <Title>{ctx.chapterTwo.Second.para124}</Title>
                       
-                     
-                           
-                          
                             {["para125","para126","para127","para128","para129","para130","para131","para132","para133","para134","para135","para136","para137","para138","para139","para140","para141","para142","para143","para144","para145",].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.Second[item]}
                             </Para> )}
                             
-                        
-
                     </div>
                 </div>
                 : <div>
