@@ -94,7 +94,7 @@ export const MyProvider = (props) => {
   //   }
   // }
 
-  // console.log(report.Chap1.Charts)
+// console.log(report.Chap1.Charts)
   const themeClickHandler = () => setThemeChange(!themeChange)
   const langClickHandler = () => setswitchLang(!switchLang)
 

@@ -29,25 +29,27 @@ const Chart1 = () => {
   const char = useContext(MyContext)
   const classes = useStyles();
   const chart = char.charts1
-  console.log("chart",chart)
+  console.log("chart",chart.Chart1.map((item, index) => Object.keys(item)).filter(i => i !== "Year"))
+  // console.log(chart.Chart1.filter((item, index) => Object.keys(item)[0] !== "Year"))
+  // let k = chart.Chart1.map(item => Object.keys(item)[0]).filter(i => i !== "Year")
+  // console.log(chart.Chart1.map(item => Object.keys(item)).filter(i => i !== "Year"))
+  // console.log([].concat(...chart.Chart1.map(Object.keys)))
+  let k = Array.from(new Set([].concat(...chart.Chart1.map(Object.keys)))).sort()
+  console.log("k_final",k)
+
 
   let chartmap = chart
-    ? chart.Chart1.filter((item, index) => index < (Object.keys(item).length - 1))
+    ? chart.Chart1.filter((item, index) => index < (Object.keys(item).length))
       .map((item, ind) => {
+        console.log("item",item)
+        
         let data = {
           x: chart.Chart1.map((item, index) => item.Year),
+          // y: chart.Chart1.map((item) => item[k[ind]]),
           y: chart.Chart1.map((item, index) => Object.values(item)[ind]),
           type: 'scatter',
           name: Object.keys(item)[ind],
-          text: chart.Chart1.map((item, index) => Object.values(item)[ind]),
-          hoverinfo:"none",
-          mode:"markers+lines+text",
-          textposition:"top",
-          marker: {
-            symbol: "131",
-            color: colorScheme[ind],
-            opacity: 1,
-          },
+          
           line: {
             shape: 'spline',
             smoothing: 0.1,
@@ -66,7 +68,7 @@ const Chart1 = () => {
           title="Chart 1.1: Growth of India’s GDP and State’s GSDP"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
-          rangeStart="0"
+          rangeStart="-12"
           rangeEnd="20"
           step="2"
         /></Card>
@@ -75,7 +77,7 @@ const Chart1 = () => {
           title="Chart 1.1: Growth of India’s GDP and State’s GSDP"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
-          rangeStart="0"
+          rangeStart="-12"
           rangeEnd="20"
           step="2"
         />

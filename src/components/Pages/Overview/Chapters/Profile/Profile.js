@@ -27,6 +27,8 @@ const Profile = () => {
                         <Title>
                             1.2 Profile of the state
                         </Title>
+                        <Chart1 />
+
                         <Title>
                             {ctx.chapterOne.Profile.para1}
                         </Title>
