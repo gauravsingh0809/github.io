@@ -1,18 +1,19 @@
 import React, { useContext } from "react"
-import Navbar from "./../../../../Navbar/Navbar"
+import Navbar from "../../../../Navbar/Navbar"
 import './../../Quality.css'
 import { FaSpinner } from "react-icons/fa"
-import { MyContext } from './../../../../../Context/MyProvider';
-import Para from "./../../../../Para/Para"
-import Title from "./../../../../Title/Title";
-import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
+import { MyContext } from '../../../../../Context/MyProvider';
+import Para from "../../../../Para/Para"
+import Title from "../../../../Title/Title";
+import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import Table1 from '../../../Tables/Chapter4/Table1'
 
 
-const Funds = () => {
+const Compliance = () => {
 
     const ctx = useContext(MyContext)
     console.log(ctx.chapterFour)
+
 
 
 
@@ -23,27 +24,22 @@ const Funds = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/quality" forward="delay" />
-                        <Title>{ctx.chapterFour.title}</Title>
+                      
                         
-                        <Para>
-                        {ctx.chapterFour.para1}
-                        </Para>
-                        <Title>{ctx.chapterFour.para2}</Title>
-                        <Para>
-                        {ctx.chapterFour.first.title}
-                        </Para>
-                        {["para1","para2",":Para3","Para4","Para5","Para6","Para7","Para8","Para9"].map((item, ind) =>
+                        <Title>
+                        {ctx.chapterFour.Fourth.title}
+                        </Title>
+                        {["Para1","Para2","Para3"].map((item, ind) =>
                             <Para key={ind / 10}>
-                                {ctx.chapterFour.first[item]}
+                                {ctx.chapterFour.Fourth[item]}
                             </Para> )}
-                            <Para>
-                        {ctx.chapterFour.first.Para9a}
-                        </Para>
                         <Para>
-                        {ctx.chapterFour.first.Para9b}
+                        {ctx.chapterFour.Fourth.Para4}
                         </Para>
-
-
+                        
+                         
+                           
+                    
                     </div>
                 </div>
                 : <div>
@@ -112,4 +108,4 @@ const Funds = () => {
     )
 }
 
-export default Funds
+export default Compliance

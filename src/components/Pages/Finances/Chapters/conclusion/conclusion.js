@@ -10,7 +10,7 @@ import './../../Finances.css'
 const Conclusion = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.chapterTwo)
+    console.log(ctx.chapterFour)
 
     return (
         ctx.langPref

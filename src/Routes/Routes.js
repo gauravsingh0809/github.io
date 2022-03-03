@@ -55,6 +55,21 @@ import ChildBudget from '../components/Pages/Budget/Chapters/ChildBudget/ChildBu
 // import Recommendations from '../components/Pages/Budget/Chapters/Recommendations/Recommendations';
 import Quality from '../components/Pages/Quality/Quality';
 import Funds from '../components/Pages/Quality/Chapters/Funds/Funds';
+import Delay from '../components/Pages/Quality/Chapters/Delay/Delay';
+import Abstract from '../components/Pages/Quality/Chapters/Abstract/Abstract';
+import PD from '../components/Pages/Quality/Chapters/PD/PD';
+import OB from '../components/Pages/Quality/Chapters/OB/OB';
+import NonReconciliation from '../components/Pages/Quality/Chapters/NonReconciliation/NonReconciliation';
+import Reconciliation from '../components/Pages/Quality/Chapters/Reconciliation/Reconciliation';
+import Compliance from '../components/Pages/Quality/Chapters/Compliance/Compliance';
+import Submission from '../components/Pages/Quality/Chapters/Submission/Submission';
+import DCU from '../components/Pages/Quality/Chapters/DCU/DCU';
+import NonSubmission from '../components/Pages/Quality/Chapters/Nonsubmission/NonSubmission';
+import Timelines from '../components/Pages/Quality/Chapters/Timelines/Timelines';
+import Misapp from '../components/Pages/Quality/Chapters/Misapp/Misapp';
+ import Follow from '../components/Pages/Quality/Chapters/Follow/Follow';
+ import QualConclusion from '../components/Pages/Quality/Chapters/QualConclusion/QualConclusion';
+ import QualRecommendations from '../components/Pages/Quality/Chapters/QualRecommendations/QualRecommendations';
 // import Delay from '../components/Pages/Quality/Chapters/Delay/Delay';
 // import Abstract from '../components/Pages/Quality/Chapters/Abstract/Abstract';
 // import PD from '../components/Pages/Quality/Chapters/PDaccounts/PDAccounts';
@@ -147,6 +162,21 @@ const Routes = () => {
                         <Route path='/Budget/recommendations' exact component={Recommendations} /> */}
                         <Route path='/Quality' exact component={Quality} />
                         <Route path='/Quality/Funds' exact component={Funds} />
+                        <Route path='/Quality/Delay' exact component={Delay} />
+                        <Route path='/Quality/acbills' exact component={Abstract} />
+                        <Route path='/Quality/pdaccounts' exact component={PD} />
+                        <Route path='/Quality/balances' exact component={OB} />
+                        <Route path='/Quality/non-reconciliation' exact component={NonReconciliation} />
+                        <Route path='/Quality/reconciliation' exact component={Reconciliation} />
+                        <Route path='/Quality/compliance' exact component={Compliance} />
+                        <Route path='/Quality/Submission' exact component={Submission} />
+                        <Route path='/Quality/dcu' exact component={DCU} />
+                        <Route path='/Quality/non-submission' exact component={NonSubmission} />
+                        <Route path='/Quality/timelines' exact component={Timelines} />
+                        <Route path='/Quality/misappropriations' exact component={Misapp} />
+                        <Route path='/Quality/follow' exact component={Follow} />
+                        <Route path='/Quality/conclusion' exact component={QualConclusion} />
+                        <Route path='/Quality/recommendations' exact component={QualRecommendations} />
                         {/* <Route path='/Quality/Delay' exact component={Delay} />
                         <Route path='/Quality/acbills' exact component={Abstract} />
                         <Route path='/Quality/pdaccounts' exact component={PD} />
