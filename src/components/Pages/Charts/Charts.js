@@ -127,18 +127,18 @@ const Chart1 = () => {
           title="Chart 1.1: Growth of India’s GDP and State’s GSDP"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
-          rangeStart="0"
-          rangeEnd="20"
-          step="2"
+          rangeStart="-10"
+          rangeEnd="18"
+          step="3"
         /></Card>
       : <Card className={classes.cardMargin}>
         <CustomLineChart data={chartmap}
           title="Chart 1.1: Growth of India’s GDP and State’s GSDP"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
-          rangeStart="0"
-          rangeEnd="20"
-          step="2"
+          rangeStart="-10"
+          rangeEnd="18"
+          step="3"
         />
       </Card>
   );
@@ -213,7 +213,7 @@ export const Chart3 = () => {
           type: 'scatter',
           name: Object.keys(item)[ind],
           text: chart.Chart3.map((item, index) => Object.values(item)[ind]),
-          hoverinfo:"y",
+          hoverinfo:"none",
           mode:"markers+lines+text",
           textposition:ind%2 ===0 ? "top-left" : "bottom-right",
           marker: {
@@ -239,7 +239,7 @@ export const Chart3 = () => {
           title="Chart 1.3: Sectoral growth in GSDP"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
-          rangeStart="0"
+          rangeStart="-10"
           rangeEnd="30"
           step="3"
         /></Card>
@@ -249,7 +249,7 @@ export const Chart3 = () => {
           title="Chart 1.3: Sectoral growth in GSDP"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
-          rangeStart="0"
+          rangeStart="-10"
           rangeEnd="30"
           step="3"
         />
@@ -265,7 +265,7 @@ export const Chart4 = () => {
   const chart = char.charts
   let chartmap = chart
     ? chart.Chart4
-      .filter((item, index) => index < (Object.keys(item).length - 1))
+      .filter((i, index) => index < (Object.keys(i).length))
       .map((item, ind) => {
         let data = {
           labels: chart.Chart4.map(item => item.Occupation),
@@ -312,14 +312,14 @@ export const Chart5 = () => {
   const chart = char.charts
 
   let chartmap = chart
-    ? chart.Chart5.filter((item, index) => index < (Object.keys(item).length - 1))
+    ? chart.Chart7.filter((item, index) => index < (Object.keys(item).length - 1))
       .map((item, ind) => {
         let data = {
-          x: chart.Chart5.map(item => item.Year),
-          y: chart.Chart5.map(item => Object.values(item)[ind]),
+          x: chart.Chart6.map(item => item.Year),
+          y: chart.Chart6.map(item => Object.values(item)[ind]),
           type: 'scatter',
           name: Object.keys(item)[ind],
-          text: chart.Chart3.map((item, index) => Object.values(item)[ind]),
+          text: chart.Chart6.map((item, index) => Object.values(item)[ind]),
           hoverinfo:"y",
           mode:"markers+lines+text",
           textposition:ind%2 ===0 ? "top-left" : "bottom-right",
@@ -346,9 +346,9 @@ export const Chart5 = () => {
           title="Chart 1.6: Trends in deficit parameters"
           xaxisTitle="Year"
           yaxisTitle="In crores"
-          rangeStart="-45000"
-          rangeEnd="5000"
-          step="5000"
+          rangeStart="-70000"
+          rangeEnd="10000"
+          step="10000"
           legendX="1"
         />
       </Card>
@@ -358,9 +358,9 @@ export const Chart5 = () => {
           title="Chart 1.6: Trends in deficit parameters"
           xaxisTitle="Year"
           yaxisTitle="In crores"
-          rangeStart="-45000"
-          rangeEnd="5000"
-          step="5000"
+          rangeStart="-70000"
+          rangeEnd="10000"
+          step="10000"
           legendX="1"
         />
       </Card>
@@ -377,14 +377,17 @@ export const Chart6 = () => {
   const chart = char.charts
 
   let chartsix = chart
-    ? chart.Chart6.filter((item, index) => index < (Object.keys(item).length - 1))
+    ? chart.Chart7.filter((item, index) => index < (Object.keys(item).length - 1))
       .map((item, ind) => {
         let data = {
-          x: chart.Chart6.map((item) => item.Year),
-          y: chart.Chart6.map((item) => Object.values(item)[ind]),
+          x: chart.Chart7.map((item) => item.Year),
+          y: chart.Chart7.map((item) => Object.values(item)[ind]),
           type: 'bar',
           name: Object.keys(item)[ind],
+          // text: chart.Chart7.map((item) => Object.values(item)[ind]).map(String),
+          // mode:"markers+text",
           hoverinfo: 'y',
+          hovermode:"closest",
           marker: {
             color: colorScheme[ind],
             opacity: 1,
@@ -404,9 +407,9 @@ export const Chart6 = () => {
           title='Chart 1.7: Trends in Surplus/Deficit relative to GSDP'
           xaxisTitle="Sector"
           yaxisTitle="Contribution to GDP"
-          rangeStart="-2.7"
+          rangeStart="-4"
           rangeEnd="0.6"
-          step="0.3"
+          step="0.5"
         />
       </Card> :
       <Card
@@ -417,9 +420,9 @@ export const Chart6 = () => {
           title='Chart 1.7: Trends in Surplus/Deficit relative to GSDP'
           xaxisTitle="Sector"
           yaxisTitle="Contribution to GDP"
-          rangeStart="-2.7"
+          rangeStart="-4"
           rangeEnd="0.6"
-          step="0.3"
+          step="0.5"
         />
       </Card>
   );

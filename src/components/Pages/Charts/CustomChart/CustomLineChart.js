@@ -45,6 +45,7 @@ export const CustomLineChart = (props) => {
             itemwidth: 30,
             x: props.legendX ? props.legendX : 0.7,
             y: props.legendY ? props.legendY : 1.15,
+            r: 15
           },
           paper_bgcolor: 'rgba(0,0,0,0)',
           plot_bgcolor: 'rgba(0,0,0,0)',
