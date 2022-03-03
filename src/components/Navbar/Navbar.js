@@ -50,7 +50,9 @@ const Navbar = () => {
             <Link to="/">About</Link>
           </li>
           <li>
-            <a href='https://cedar.gov.in/sfrdashboard/' target="_blank" rel="noreferrer">Dashboard</a>
+            <a href='https://cedar.gov.in/sfrdashboard/' target="_blank" rel="noreferrer">
+              {/* Dashboard */}
+            </a>
           </li>
           <div className="dropdown">
             {ctx.langPref
