@@ -113,7 +113,7 @@ export const MyProvider = (props) => {
       chapter3kannada: report.Chapter3Kannada,
       chapterFour: report.Chap4,
       chapter4kannada: report.Chapter4Kannada,
-      charts1: report.Chap1 ? report.Chap1.Charts : "",
+      charts: reportch.Chartsnew,
       charts2: reportch.Chap2Charts,
       charts3: reportch.Chap3Charts,
       charts4: reportch.Chap4Charts,
