@@ -9,10 +9,11 @@ import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButt
 import Table1 from '../../../Tables/Chapter4/Table1'
 
 
-const Funds = () => {
+const PD = () => {
 
     const ctx = useContext(MyContext)
     console.log(ctx.chapterFour)
+
 
 
 
@@ -23,27 +24,30 @@ const Funds = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/quality" forward="delay" />
-                        <Title>{ctx.chapterFour.title}</Title>
+                      
                         
-                        <Para>
-                        {ctx.chapterFour.para1}
-                        </Para>
-                        <Title>{ctx.chapterFour.para2}</Title>
-                        <Para>
-                        {ctx.chapterFour.first.title}
-                        </Para>
-                        {["para1","para2",":Para3","Para4","Para5","Para6","Para7","Para8","Para9"].map((item, ind) =>
+                        <Title>
+                        {ctx.chapterFour.second.Para13}
+                        </Title>
+                        
+                           
+                         {["Para14","Para15","Para16"].map((item, ind) =>
                             <Para key={ind / 10}>
-                                {ctx.chapterFour.first[item]}
+                                {ctx.chapterFour.second[item]}
                             </Para> )}
-                            <Para>
-                        {ctx.chapterFour.first.Para9a}
-                        </Para>
-                        <Para>
-                        {ctx.chapterFour.first.Para9b}
-                        </Para>
-
-
+                            {["Para17","Para18"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterFour.second[item]}
+                            </Para> )}
+                            {["Para19","Para20","Para21","Para22"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterFour.second[item]}
+                            </Para> )}
+                            {["Para23","Para24","Para25","Para26","Para27","Para28"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterFour.second[item]}
+                            </Para> )}
+                    
                     </div>
                 </div>
                 : <div>
@@ -112,4 +116,4 @@ const Funds = () => {
     )
 }
 
-export default Funds
+export default PD

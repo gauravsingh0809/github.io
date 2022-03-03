@@ -9,10 +9,11 @@ import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButt
 import Table1 from '../../../Tables/Chapter4/Table1'
 
 
-const Funds = () => {
+const Abstract = () => {
 
     const ctx = useContext(MyContext)
     console.log(ctx.chapterFour)
+
 
 
 
@@ -23,25 +24,16 @@ const Funds = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/quality" forward="delay" />
-                        <Title>{ctx.chapterFour.title}</Title>
-                        
+                        <Title>{ctx.chapterFour.second.para7}</Title>
+
                         <Para>
-                        {ctx.chapterFour.para1}
+                            {ctx.chapterFour.second.para8}
                         </Para>
-                        <Title>{ctx.chapterFour.para2}</Title>
-                        <Para>
-                        {ctx.chapterFour.first.title}
-                        </Para>
-                        {["para1","para2",":Para3","Para4","Para5","Para6","Para7","Para8","Para9"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapterFour.first[item]}
-                            </Para> )}
-                            <Para>
-                        {ctx.chapterFour.first.Para9a}
-                        </Para>
-                        <Para>
-                        {ctx.chapterFour.first.Para9b}
-                        </Para>
+
+                            {["Para9", "Para10", "Para11", "Para12"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    {ctx.chapterFour.second[item]}
+                                </Para>)}
 
 
                     </div>
@@ -112,4 +104,4 @@ const Funds = () => {
     )
 }
 
-export default Funds
+export default Abstract
