@@ -8,7 +8,9 @@ import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButt
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 import Table1 from '../../../Tables/Chapter1/Table1'
-import Chart1 from '../../../Charts/Charts'
+import Chart1, { Chart2, Chart3, Chart4, Chart5, Chart6 } from '../../../Charts/Charts'
+import Subtitle from '../../../../Subtitle/Subtitle'
+import { Chart11a, Chart12b } from '../../../Charts/Chap2Charts'
 
 
 
@@ -27,7 +29,17 @@ const Profile = () => {
                         <Title>
                             1.2 Profile of the state
                         </Title>
+                        <Chart11a />
+                        <Chart12b />
+                        <Chart6 />
+                        {/* <Chart5 /> */}
+                        <Chart4 />
+                        <Chart3 />
+                        <Chart2 />
                         <Chart1 />
+                        <Subtitle>
+                            Hell
+                        </Subtitle>
 
                         <Title>
                             {ctx.chapterOne.Profile.para1}

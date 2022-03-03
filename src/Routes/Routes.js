@@ -43,7 +43,7 @@ import Application from '../components/Pages/Finances/Chapters/Application/Appli
 // import Conclusion from '../components/Pages/Finances/Chapters/Conclusion/Conclusion';
 import { SideBarProvider } from '../components/Sidebar/SideBarContext/SideBarCtxProvider';
 import Budget from '../components/Pages/Budget/Budget';
-import BudIntroduction from '../components/Pages/Budget/Chapters/Introduction/Introduction';
+import BudIntroduction from '../components/Pages/Budget/Chapters/BudIntroduction/BudIntroduction';
 import BudgetProcess from '../components/Pages/Budget/Chapters/BudgetProcess/BudgetProcess';
 import GenderBudget from '../components/Pages/Budget/Chapters/GenderBudget/GenderBudget';
 import ChildBudget from '../components/Pages/Budget/Chapters/ChildBudget/ChildBudget';
@@ -150,7 +150,7 @@ const Routes = () => {
                         <Route path='/finances/dsa' exact component={Dsa} />
                         <Route path='/finances/conclusion' exact component={Conclusion} /> */}
                         <Route path='/Budget' exact component={Budget} />
-                        <Route path='/Budget/introduction' exact component={BudIntroduction} />
+                        <Route path='/Budget/budget-introduction' exact component={BudIntroduction} />
                         <Route path='/Budget/budget-process' exact component={BudgetProcess} />
                         <Route path='/Budget/gender-budget' exact component={GenderBudget} />
                         <Route path='/Budget/child-budget' exact component={ChildBudget} />

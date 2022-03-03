@@ -119,7 +119,7 @@ export const Chart12b = () => {
       : <Card className={classes.cardMargin}>
         <CustomPieChart
           data={chartmap}
-          title="Chart 1.4: Sectoral growth"
+          title="Chart 2.1: Composition of resources"
         />
       </Card>
   );

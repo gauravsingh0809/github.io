@@ -25,31 +25,90 @@ const useStyles = makeStyles({
 
 const colorScheme = ["ef476f", "ffd166", "06d6a0", "118ab2", "073b4c"]
 
+// const Chart1 = () => {
+//   const char = useContext(MyContext)
+//   const classes = useStyles();
+//   const chart = char.charts
+//   // console.log("chart",chart.Chart1.map((item, index) => Object.keys(item)).filter(i => i !== "Year"))
+//   // console.log(chart.Chart1.filter((item, index) => Object.keys(item)[0] !== "Year"))
+//   // let k = chart.Chart1.map(item => Object.keys(item)[0]).filter(i => i !== "Year")
+//   // console.log(chart.Chart1.map(item => Object.keys(item)).filter(i => i !== "Year"))
+//   // console.log([].concat(...chart.Chart1.map(Object.keys)))
+//   let k = Array.from(new Set([].concat(...chart.Chart1.map(Object.keys)))).sort()
+//   // console.log("k_final",k)
+
+
+//   let chartmap = chart
+//     ? chart.Chart1.filter((item, index) => index < (Object.keys(item).length))
+//       .map((item, ind) => {
+//         // console.log("item",item)
+        
+//         let data = {
+//           x: chart.Chart1.map((item, index) => item.Year),
+//           // y: chart.Chart1.map((item) => item[k[ind]]),
+//           y: chart.Chart1.map((item, index) => Object.values(item)[ind]),
+//           type: 'scatter',
+//           name: Object.keys(item)[ind],
+          
+//           line: {
+//             shape: 'spline',
+//             smoothing: 0.1,
+//             width: 3
+//           },
+//         }
+//         return data
+//       }
+//       ) : "no data"
+
+//   return (
+//     char.themeChanger
+//       ?
+//       <Card className={classes.cardColored}>
+//         <CustomLineChart data={chartmap}
+//           title="Chart 1.1: Growth of India’s GDP and State’s GSDP"
+//           xaxisTitle="Year"
+//           yaxisTitle="In Percent"
+//           rangeStart="-12"
+//           rangeEnd="20"
+//           step="2"
+//         /></Card>
+//       : <Card className={classes.cardMargin}>
+//         <CustomLineChart data={chartmap}
+//           title="Chart 1.1: Growth of India’s GDP and State’s GSDP"
+//           xaxisTitle="Year"
+//           yaxisTitle="In Percent"
+//           rangeStart="-12"
+//           rangeEnd="20"
+//           step="2"
+//         />
+//       </Card>
+//   );
+// }
+// 
+// export default Chart1;
+
 const Chart1 = () => {
   const char = useContext(MyContext)
   const classes = useStyles();
-  const chart = char.charts1
-  console.log("chart",chart.Chart1.map((item, index) => Object.keys(item)).filter(i => i !== "Year"))
-  // console.log(chart.Chart1.filter((item, index) => Object.keys(item)[0] !== "Year"))
-  // let k = chart.Chart1.map(item => Object.keys(item)[0]).filter(i => i !== "Year")
-  // console.log(chart.Chart1.map(item => Object.keys(item)).filter(i => i !== "Year"))
-  // console.log([].concat(...chart.Chart1.map(Object.keys)))
-  let k = Array.from(new Set([].concat(...chart.Chart1.map(Object.keys)))).sort()
-  console.log("k_final",k)
-
+  const chart = char.charts
 
   let chartmap = chart
-    ? chart.Chart1.filter((item, index) => index < (Object.keys(item).length))
+    ? chart.Chart1.filter((item, index) => index < (Object.keys(item).length - 1))
       .map((item, ind) => {
-        console.log("item",item)
-        
         let data = {
           x: chart.Chart1.map((item, index) => item.Year),
-          // y: chart.Chart1.map((item) => item[k[ind]]),
           y: chart.Chart1.map((item, index) => Object.values(item)[ind]),
           type: 'scatter',
           name: Object.keys(item)[ind],
-          
+          text: chart.Chart1.map((item, index) => Object.values(item)[ind]),
+          hoverinfo:"none",
+          mode:"markers+lines+text",
+          textposition:"top",
+          marker: {
+            symbol: "131",
+            color: colorScheme[ind],
+            opacity: 1,
+          },
           line: {
             shape: 'spline',
             smoothing: 0.1,
@@ -68,7 +127,7 @@ const Chart1 = () => {
           title="Chart 1.1: Growth of India’s GDP and State’s GSDP"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
-          rangeStart="-12"
+          rangeStart="0"
           rangeEnd="20"
           step="2"
         /></Card>
@@ -77,7 +136,7 @@ const Chart1 = () => {
           title="Chart 1.1: Growth of India’s GDP and State’s GSDP"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
-          rangeStart="-12"
+          rangeStart="0"
           rangeEnd="20"
           step="2"
         />
@@ -93,12 +152,13 @@ export const Chart2 = () => {
   const char = useContext(MyContext)
   const classes = useStyles();
   const chart = char.charts
+  console.log(" Chartasdas",chart)
 
   let chartTwo = chart
     ? chart.Chart2.filter((item, index) => index < (Object.keys(item).length - 1))
       .map((item, ind) => {
         let data = {
-          x: chart.Chart2.map((item) => item.Sector),
+          x: chart.Chart2.map((item) => item.Column1),
           y: chart.Chart2.map((item) => Object.values(item)[ind]),
           type: 'bar',
           name: Object.keys(item)[ind],
@@ -208,10 +268,10 @@ export const Chart4 = () => {
       .filter((item, index) => index < (Object.keys(item).length - 1))
       .map((item, ind) => {
         let data = {
-          labels: chart.Chart4.map(item => item.Sector),
+          labels: chart.Chart4.map(item => item.Occupation),
           values: chart.Chart4.map(item => Object.values(item)[ind]),
           type: 'pie',
-          name: chart.Chart4.map(item => item.Sector),
+          name: chart.Chart4.map(item => item.Occupation),
           hole: 0.3,
           pull: 0.1,
           hovertext: "share is",
