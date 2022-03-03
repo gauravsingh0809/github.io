@@ -69,7 +69,9 @@ const SubMenu = ({ item }) => {
           <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
             <div>
               {item.icon}
-              <SidebarLabel >{item.title.toUpperCase()}</SidebarLabel>
+              <SidebarLabel >
+                {item.title.toUpperCase()}
+              </SidebarLabel>
             </div>
             <div>
               {item.subNav && isSubNavOpen
@@ -83,7 +85,9 @@ const SubMenu = ({ item }) => {
         : <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
           <div>
             {item.icon}
-            <SidebarLabel >{item.title.toUpperCase()}</SidebarLabel>
+            <SidebarLabel >
+              {item.title.toUpperCase()}
+            </SidebarLabel>
           </div>
           <div>
             {item.subNav && isSubNavOpen

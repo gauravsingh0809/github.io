@@ -37,9 +37,6 @@ const Profile = () => {
                         <Chart3 />
                         <Chart2 />
                         <Chart1 />
-                        <Subtitle>
-                            Hell
-                        </Subtitle>
 
                         <Title>
                             {ctx.chapterOne.Profile.para1}

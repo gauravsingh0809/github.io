@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getFirebase } from '../../../firebase/firebase';
 import "./HomePage.css";
+import ags1 from '../../../Assets/agoffice.svg';
+import emblem1 from '../../../Assets/emblem.svg';
+import url1 from '../../../Assets/logotp.svg';
+
 
 const HomePage = () => {
 
@@ -38,13 +42,13 @@ const HomePage = () => {
     <div>
       <div className="wrapper">
         <div className="one logo">
-          <ImageComponent src={emblem} color="#ffffff00" />
+          <ImageComponent src={emblem1} color="#ffffff00" />
         </div>
         <div className="three logo">
-          <ImageComponent src={url} color="#ffffff00" />
+          <ImageComponent src={url1} color="#ffffff00" />
         </div>
         <div className="two logo" style={{ marginLeft: "110px" }}>
-          <ImageComponent src={ags} color="#ffffff00" />
+          <ImageComponent src={ags1} color="#ffffff00" />
         </div>
       </div>
       <div className="heading">
