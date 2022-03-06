@@ -3,7 +3,7 @@ import Plot from 'react-plotly.js';
 
 import './CustomChart.css'
 
-export const CustomBarChart = (props) => {
+export const CustomBarhChart = (props) => {
 
     return (
           <Plot
@@ -64,12 +64,13 @@ export const CustomBarChart = (props) => {
                   enabled: true
                 }
               },
+              
               yaxis: {
                 // categoryorder:'total ascending',
                 title: {
                     text: props.yaxisTitle
                   },
-                autorange: false,
+                autorange: true,
                 range: [props.rangeStart, props.rangeEnd],
                 // tickmode:'linear',
                 dtick: props.step ? props.step : 10,

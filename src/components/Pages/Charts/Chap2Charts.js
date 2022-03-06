@@ -4,6 +4,7 @@ import './Charts.css'
 import Card from "@material-ui/core/Card";
 import { CustomLineChart } from './CustomChart/CustomLineChart';
 import { CustomBarChart } from './CustomChart/CustomBarChart';
+import { CustomBarhChart } from './CustomChart/CustomBarhChart';
 import { CustomPieChart } from './CustomChart/CustomPieChart';
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -203,14 +204,14 @@ export const Chart3 = () => {
   const chart = char.charts2
 
   let chartmap = chart
-    ? chart.Chart3.filter((item, index) => index < (Object.keys(item).length - 1))
+    ? chart.Chart4.filter((item, index) => index < (Object.keys(item).length - 1))
       .map((item, ind) => {
         let data = {
-          x: chart.Chart3.map((item, index) => item.Year),
-          y: chart.Chart3.map((item, index) => Object.values(item)[ind]),
+          x: chart.Chart4.map((item, index) => item.Year),
+          y: chart.Chart4.map((item, index) => Object.values(item)[ind]),
           type: 'scatter',
           name: Object.keys(item)[ind],
-          text: chart.Chart3.map((item, index) => Object.values(item)[ind]),
+          text: chart.Chart4.map((item, index) => Object.values(item)[ind]),
           hoverinfo: "none",
           mode: "markers+lines+text",
           textposition: "top",
@@ -246,7 +247,8 @@ export const Chart3 = () => {
           step="10000"
           legendX="0.8"
           legendY="1.2"
-        /></Card>
+        />
+      </Card>
       : <Card >
         <CustomLineChart data={chartmap}
           title="Chart 2.5: Trends of components of Revenue Receipts"
@@ -268,14 +270,14 @@ export const Chart4 = () => {
   const chart = char.charts2
   const kastam = () => {
     let chartTwo = []
-    for (let i = 0; i <= chart.Chart4.map((item) => Object.keys(item))[0].length - 2; i++) {
+    for (let i = 0; i <= chart.Chart5.map((item) => Object.keys(item))[0].length - 2; i++) {
       chartTwo.push(
         {
-          x: chart.Chart4.map((i) => i.Year),
-          y: chart.Chart4.map((it) => it[chart.Chart4.map((item) => Object.keys(item))[0][i]]),
+          x: chart.Chart5.map((i) => i.Year),
+          y: chart.Chart5.map((it) => it[chart.Chart5.map((item) => Object.keys(item))[0][i]]),
           type: 'bar',
           // width: 0.4,
-          name: chart.Chart4.map((item) => Object.keys(item))[0][i],
+          name: chart.Chart5.map((item) => Object.keys(item))[0][i],
           hoverinfo: 'y',
           marker: {
             color: colorScheme[i],
@@ -500,16 +502,16 @@ export const Chart10 = () => {
           y: chart.Chart10.map((i) => i.Year),
           type: 'bar',
           name: chart.Chart10.map((item) => Object.keys(item))[0][i],
-          text: "Percentage : ",
-          hoverinfo: 'text+x',
-          width: 0.3,
+          text: "Percentage: ",
+          hoverinfo: 'x+text',
+          width: 0.4,
           orientation: 'h',
           marker: {
             color: colorScheme[i],
             opacity: 1,
             line: {
               color: 'rgb(8,48,107)',
-              width: 1.5
+              width: 2
             }
           }
         })
@@ -520,28 +522,31 @@ export const Chart10 = () => {
   return (
     char.themeChanger
       ? <Card className={classes.cardColored}>
-        <CustomBarChart
+        <CustomBarhChart
           data={kastam()}
           title='Chart 2.10: Share of Committed Expenditure in Revenue Expenditure'
           xaxisTitle="Percentage"
           yaxisTitle="Year"
-          rangeStart="2015-16"
+          rangeStart="2016-17"
           rangeEnd="2020-21"
           step="1"
           barmode="stack"
           legendX="1"
           legendY="1"
-        /></Card>
+        />
+      </Card>
       : <Card className={classes.cardMargin}>
-        <CustomBarChart
+        <CustomBarhChart
           data={kastam()}
           title='Chart 2.10: Share of Committed Expenditure in Revenue Expenditure'
           xaxisTitle="Sector"
           yaxisTitle="Contribution to GDP"
-          rangeStart="0"
-          rangeEnd="100"
-          step="5"
+          rangeStart="2016-17"
+          rangeEnd="2020-21"
+          step="1"
           barmode="stack"
+          legendX="1"
+          legendY="1"
         />
       </Card>
   )
@@ -556,10 +561,10 @@ export const Chart11 = () => {
       .filter((item, index) => index < (Object.keys(item).length - 1))
       .map((item, ind) => {
         let data = {
-          labels: chart["Chart11"].map(item => item.Sector),
+          labels: chart["Chart11"].map(item => item.Column1),
           values: chart["Chart11"].map(item => Object.values(item)[1]),
           type: 'pie',
-          name: chart["Chart11"].map(item => item.Sector),
+          name: chart["Chart11"].map(item => item.Column1),
           hole: 0.3,
           pull: 0.1,
           hovertext: "received subsidies of(in crores): ",
@@ -647,7 +652,7 @@ export const Chart12 = () => {
           step="10"
           y2axisTitle="In Crore"
           y2RangeStart="0"
-          y2RangeEnd="45000"
+          y2RangeEnd="60000"
           y2Step="5000"
         /></Card>
       : <Card >
@@ -660,7 +665,7 @@ export const Chart12 = () => {
           step="20"
           y2axisTitle="In Crore"
           y2RangeStart="0"
-          y2RangeEnd="45000"
+          y2RangeEnd="60000"
           y2Step="5000"
         />
       </Card>
@@ -767,11 +772,11 @@ export const Chart14 = () => {
           xaxisTitle="Year"
           yaxisTitle="In Percent"
           rangeStart="16"
-          rangeEnd="20.5"
+          rangeEnd="25"
           step="0.5"
           y2axisTitle="In Crore"
           y2RangeStart="0"
-          y2RangeEnd="400000"
+          y2RangeEnd="450000"
           y2Step="50000"
         /></Card>
       : <Card >
@@ -779,13 +784,13 @@ export const Chart14 = () => {
           title="Chart 2.14: Outstanding Debt and its percentage to GSDP during 2015-20"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
-          rangeStart="0"
-          rangeEnd="120"
+          rangeStart="16"
+          rangeEnd="25"
           step="20"
           y2axisTitle="In Crore"
           y2RangeStart="0"
-          y2RangeEnd="45000"
-          y2Step="5000"
+          y2RangeEnd="450000"
+          y2Step="50000"
         />
       </Card>
   );
@@ -1031,7 +1036,10 @@ export const Chart19 = () => {
           y: chart.Chart19.map((item) => Object.values(item)[ind]),
           type: 'scatter',
           name: Object.keys(item)[ind],
-          hoverinfo: 'y',
+          hoverinfo: 'none',
+          text: chart.Chart19.map((item) => Object.values(item)[ind]),
+          mode:"markers+lines+text",
+          textposition:"top",
           marker: {
             symbol: "131",
             color: colorScheme[ind],
@@ -1060,7 +1068,7 @@ export const Chart19 = () => {
           xaxisTitle="Year"
           yaxisTitle="In Percent"
           rangeStart="0"
-          rangeEnd="210000"
+          rangeEnd="300000"
           step="40000"
         /></Card>
       : <Card >
@@ -1069,7 +1077,7 @@ export const Chart19 = () => {
           xaxisTitle="Year"
           yaxisTitle="In Percent"
           rangeStart="0"
-          rangeEnd="210000"
+          rangeEnd="300000"
           step="40000"
         />
       </Card>
@@ -1086,11 +1094,13 @@ export const Chart20 = () => {
     ? chart.Chart20.filter((item, index) => index < (Object.keys(item).length - 1))
       .map((item, ind) => {
         let data = {
-          x: chart.Chart20.map((item) => item.Month),
+          x: chart.Chart20.map((item) => item.Quarter),
           y: chart.Chart20.map((item) => Object.values(item)[ind]),
           type: 'scatter',
           name: Object.keys(item)[ind],
-          hoverinfo: 'y',
+          hoverinfo: 'none',
+          text: chart.Chart20.map((item) => Object.values(item)[ind]),
+          mode:"markers+lines+text",
           marker: {
             symbol: "131",
             color: colorScheme[ind],
