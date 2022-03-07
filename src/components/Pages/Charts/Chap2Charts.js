@@ -885,7 +885,7 @@ export const Chart16 = () => {
           xaxisTitle="Sector"
           yaxisTitle="Contribution to GDP"
           rangeStart="0"
-          rangeEnd="60000"
+          rangeEnd="80000"
           step="5000"
         /></Card>
       : <Card className={classes.cardMargin}>
@@ -895,7 +895,7 @@ export const Chart16 = () => {
           xaxisTitle="Sector"
           yaxisTitle="Contribution to GDP"
           rangeStart="0"
-          rangeEnd="60000"
+          rangeEnd="80000"
           step="5000"
         />
       </Card>
@@ -1101,6 +1101,7 @@ export const Chart20 = () => {
           hoverinfo: 'none',
           text: chart.Chart20.map((item) => Object.values(item)[ind]),
           mode:"markers+lines+text",
+          textposition:"top",
           marker: {
             symbol: "131",
             color: colorScheme[ind],
@@ -1129,8 +1130,8 @@ export const Chart20 = () => {
           xaxisTitle="Year"
           yaxisTitle="In Percent"
           rangeStart="0"
-          rangeEnd="40000"
-          step="8000"
+          rangeEnd="70000"
+          step="10000"
         /></Card>
       : <Card >
         <CustomLineChart data={chartmap}
@@ -1138,8 +1139,8 @@ export const Chart20 = () => {
           xaxisTitle="Year"
           yaxisTitle="In Percent"
           rangeStart="0"
-          rangeEnd="40000"
-          step="8000"
+          rangeEnd="70000"
+          step="10000"
         />
       </Card>
   );
@@ -1153,15 +1154,18 @@ export const Chart21 = () => {
   const chart = char.charts2
 
   let chartmap = chart
-    ? chart.Chart21.filter((item, index) => index < (Object.keys(item).length))
+    ? chart.Chart21.filter((item, index) => index < (Object.keys(item).length - 1))
       .map((item, ind) => {
         let data = {
-          x: chart.Chart21.map((item) => item.Month),
+          x: chart.Chart21.map((item) => item.Quarter),
           y: chart.Chart21.map((item) => Object.values(item)[ind]),
           type: 'scatter',
           name: Object.keys(item)[ind],
-          showlegend: ind === 1 ? false : true,
-          hoverinfo: 'y',
+          // showlegend: ind === 1 ? false : true,
+          hoverinfo: 'none',
+          text: chart.Chart21.map((item) => Object.values(item)[ind]),
+          mode:"markers+lines+text",
+          textposition:"top",
           marker: {
             symbol: "131",
             color: colorScheme[ind],
@@ -1189,18 +1193,18 @@ export const Chart21 = () => {
           title="Chart 2.20: Month-wise movement of Cash Balances and Net Cash Balance Investments during the year"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
-          rangeStart="-8000"
-          rangeEnd="20000"
-          step="1000"
+          rangeStart="-10000"
+          rangeEnd="30000"
+          step="5000"
         /></Card>
       : <Card >
         <CustomLineChart data={chartmap}
           title="Chart 2.20: Month-wise movement of Cash Balances and Net Cash Balance Investments during the year"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
-          rangeStart="-8000"
-          rangeEnd="20000"
-          step="8000"
+          rangeStart="-10000"
+          rangeEnd="30000"
+          step="5000"
         />
       </Card>
   );

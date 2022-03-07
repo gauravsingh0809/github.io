@@ -12,11 +12,15 @@ import Chart1, { Chart2, Chart3, Chart4, Chart5, Chart6 } from '../../../Charts/
 import Subtitle from '../../../../Subtitle/Subtitle'
 import { Chart10, Chart11, Chart11a, Chart12, Chart12b, 
     Chart13, Chart14, Chart15, Chart16, Chart17, 
-    Chart18, 
+    Chart18, Chart21,
     Chart19, 
     Chart2 as Chrt2, Chart20, Chart3 as Chrt3, Chart4 as Chrt4, Chart7, Chart8, Chart9 } from '../../../Charts/Chap2Charts'
 
+import { Chart3 as Chart3Chap3} from '../../../Charts/Chap3Charts'
+import { Chart1 as Chart1Chap4} from '../../../Charts/Chap4Charts'
 
+    
+    
 
 const Profile = () => {
 
@@ -33,6 +37,9 @@ const Profile = () => {
                         <Title>
                             1.2 Profile of the state
                         </Title>
+                        <Chart1Chap4 />
+                        <Chart3Chap3 />
+                        <Chart21 />
                         <Chart20 />
                         <Chart19 />
                         <Chart18 />
