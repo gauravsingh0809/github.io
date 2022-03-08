@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { Link } from "@material-ui/core"
 import { MyContext } from '../../../../../Context/MyProvider'
 import Para from '../../../../Para/Para'
 import Title from "./../../../../Title/Title"
@@ -13,7 +12,7 @@ import { FaSpinner } from 'react-icons/fa'
 const Basis = () => {
 
     const ctx = useContext(MyContext)
-    console.log("basis-context-viewer", ctx)
+    // console.log("basis-context-viewer", ctx)
 
     return (
         ctx.langPref
@@ -22,24 +21,25 @@ const Basis = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/overview/profile" forward="/overview/structure" />
-                        <Title>
-                        {ctx.chapterOne.Profile.Para15}
+                        <Title id="anchor">
+                            {ctx.chapterOne.Profile.Para15}
                         </Title>
-                        <div>
 
-                        </div>
                         <Para>
                             {ctx.chapterOne.Profile.Para16}
                         </Para>
                         <Para>
                             {ctx.chapterOne.Profile.Para17}
                         </Para>
-                        
+                        <Para>
+                            {ctx.chapterOne.Profile.Para18}
+                        </Para>
 
-                        
-                     {["Para18", "Para19","Para20","Para21","Para22","Para23","Para24","Para25"].map((item, ind) =>
+                        {[ "Para19", "Para20", "Para21", "Para22", "Para23", "Para24", "Para25"].map((item, ind) =>
                             <Para key={ind / 10}>
-                                {ctx.chapterOne.Profile[item]}
+                                <li>
+                                    {ctx.chapterOne.Profile[item]}
+                                </li>
                             </Para>
                         )}
 

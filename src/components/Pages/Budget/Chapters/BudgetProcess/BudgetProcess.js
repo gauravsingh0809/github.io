@@ -16,7 +16,7 @@ const BudgetProcess = () => {
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
+          <FloatingActionButtons back="/budget" forward="/budgetprocess" />
 
           <Title>{ctx.chapterThree.Profile.Para1}</Title>
           {["Para2", "Para3", "Para4", "Para5", "Para6", "Para7"].map(

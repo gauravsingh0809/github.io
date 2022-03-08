@@ -10,6 +10,7 @@ import '../App.css';
 import Profile from '../components/Pages/Overview/Chapters/Profile/Profile';
 import Basis from '../components/Pages/Overview/Chapters/Basis/Basis';
 import Structure from '../components/Pages/Overview/Chapters/Structure/Structure';
+import OverviewBP from '../components/Pages/Overview/Chapters/BudgetProcess/BudgetProcess';
 import FinanceSnapshot from '../components/Pages/Overview/Chapters/FinanceSnapshot/FinanceSnapshot';
 import AssetsSnapshot from '../components/Pages/Overview/Chapters/AssetsSnapshot/AssetsSnapshot';
 import FiscalParams from '../components/Pages/Overview/Chapters/FiscalParams/FiscalParams';
@@ -122,7 +123,7 @@ const Routes = () => {
                         <Route path='/overview/profile' exact component={Profile} />
                         <Route path='/overview/basis' exact component={Basis} />
                         <Route path='/overview/structure' exact component={Structure} />
-                        <Route path='/overview/budgetprocess' exact component={BudgetProcess} />
+                        <Route path='/overview/budgetprocess' exact component={OverviewBP} />
                         <Route path='/overview/snapshot-finances' exact component={FinanceSnapshot} />
                         <Route path='/overview/snapshot-assets' exact component={AssetsSnapshot} />
                         <Route path='/overview/fiscalparams' exact component={FiscalParams} />

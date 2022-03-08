@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
@@ -60,58 +61,9 @@ const conditionalRowStyles = [
     }
 ]
 
-const customStyles = {
-    header: {
-        style: {
-            fontSize: '22px',
-            color: '#fff',
-            backgroundColor: '#ff6359',
-            minHeight: '56px',
-            textAlign: "center",
-        },
-    },
-    rows: {
-        style: {
-            minHeight: '50px', // override the row height
-        }
-    },
-    headCells: {
-        style: {
-            '&:not(:last-of-type)': {
-                borderRightStyle: 'solid',
-                borderRightWidth: '1px',
-                borderRightColor: "black"
-            },
-            '&:nth-child(n+3)': {
-                borderRightStyle: 'none',
-                borderRightWidth: '1px',
-                borderRightColor: "black",
-                backgroundColor:"#b89e9c"
-            },
-            fontSize: '14px',
-            fontWeight: '500',
-            textTransform: 'uppercase',
-            padding: '10px',
-            color: '#D95783'
-        },
-    },
-    cells: {
-        style: {
-            '&:not(:last-of-type)': {
-                borderRightStyle: 'solid',
-                borderRightWidth: '1px',
-                borderRightColor: '#aaa',
-                // width: '120px',
-                // minWidth: '40px',
-            },
-            fontSize: '12px',
-            paddingLeft: '8px',
+const customStyles = styles;
 
-        },
-    },
-};
-
-const Table4 = () => {
+const Table5 = () => {
 
     const ctx = useContext(MyContext)
 
@@ -121,7 +73,7 @@ const Table4 = () => {
                 <DataTable
                     title="Table 1.5: Compliance with provisions of KFRA"
                     columns={columns}
-                    data={ctx.reportData.Tables.Table5}
+                    data={ctx.tables1.Table5}
                     customStyles={customStyles}
                     striped
                     conditionalRowStyles={conditionalRowStyles}
@@ -134,4 +86,4 @@ const Table4 = () => {
     );
 }
 
-export default Table4;
+export default Table5;

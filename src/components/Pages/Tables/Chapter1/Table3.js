@@ -4,12 +4,13 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "",
-        selector: "1",
+        name: "Sl no",
+        selector: "Sl no",
         grow: 0,
         wrap: true,
         width:'35px',
@@ -17,7 +18,7 @@ const columns = [
     {
         name: "",
         selector: "2",
-        grow: 0.4,
+        grow: 0.35,
         wrap: true,
         conditionalCellStyles: [
             {
@@ -33,42 +34,42 @@ const columns = [
         ]
     },
     {
-        name: "Liabilities",
-        selector: "Liabilities",
-        grow:0.05,
+        name: "Liabilities 2019-20",
+        selector: "Liabilities 2019-20",
+        grow:0.2,
         wrap: true,
-        format: data => data["Liabilities"].toLocaleString('en-IN')
+        format: data => data["Liabilities 2019-20"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
     },
     {
-        name: "",
-        selector: "3",
-        grow: 0.05,
+        name: "Liabilities 2020-21",
+        selector: "Liabilities 2020-21",
+        grow: 0.2,
         wrap: true,
-        format: data => data["3"].toLocaleString('en-IN')
+        format: data => data["Liabilities 2020-21"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
     },
     {
-        name: "",
-        selector: "4",
+        name: "Percent Increase",
+        selector: "Per cent increase",
         // grow: 0.05,
-        width:'110px',
+        width:'150px',
         wrap: true,
-        format: data => data["4"].toLocaleString('en-IN')
+        format: data => data["Per cent increase"].toLocaleString('en-IN')
     },
     {
-        name: "",
-        selector: "5",
+        name: "Sl No",
+        selector: "Sl no__1",
         grow: 0,
         wrap: true,
         width:'35px'
     },
     {
         name: "",
-        selector: "6",
-        grow: 0.4,
+        selector: "4",
+        grow: 0.35,
         wrap: true,
         conditionalCellStyles: [
             {
-                when: row => row["6"] === 'Total',
+                when: row => row["4"] === 'Total',
                 style: {
                     backgroundColor: 'rgba(63, 195, 128, 0.5)',
                     color: 'white',
@@ -80,82 +81,39 @@ const columns = [
         ]
     },
     {
-        name: "Assets",
-        selector: "Assets",
-        grow: 0.05,
+        name: "Assets 2019-20",
+        selector: "Assets 2019-20",
+        grow: 0.2,
         wrap: true,
-        format: data => data["Assets"].toLocaleString('en-IN')
+        format: data => data["Assets 2019-20"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
     },
     {
-        name: "",
-        selector: "7",
-        grow: 0.05,
+        name: "Assets 2020-21",
+        selector: "Assets 2020-21",
+        grow: 0.2,
         wrap: true,
-        format: data => data["7"].toLocaleString('en-IN')
+        format: data => data["Assets 2020-21"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
     },
     {
-        name: "",
-        selector: "8",
+        name: "Percent Increase",
+        selector: "Per cent increase__1",
         grow:0.05,
         wrap: true,
-        format: data => data["8"].toLocaleString('en-IN')
+        format: data => data["Per cent increase__1"].toLocaleString('en-IN')
     },
 ];
 
 const conditionalRowStyles = [
     {
-        when: row => row["4"] === 'Consolidated Fund' ||
-            row["4"] === 'Public Account',
+        when: row => row["Per cent increase"] === 'Consolidated Fund' ||
+            row["Per cent increase"] === 'Public Account',
         style: {
             backgroundColor: 'rgba(153, 165, 128, 0.9)',
         },
     }
 ]
 
-const customStyles = {
-    header: {
-        style: {
-            fontSize: '22px',
-            color: '#fff',
-            backgroundColor: '#ff6359',
-            minHeight: '56px',
-            textAlign: "center",
-        },
-    },
-    rows: {
-        style: {
-            minHeight: '50px', // override the row height
-        }
-    },
-    headCells: {
-        style: {
-            '&:not(:last-of-type)': {
-                borderRightStyle: 'none',
-                borderRightWidth: '0px',
-                borderRightColor: "black",
-            },
-            fontSize: '14px',
-            fontWeight: '500',
-            textTransform: 'uppercase',
-            padding: '10px',
-            color: '#D72483'
-        },
-    },
-    cells: {
-        style: {
-            '&:not(:last-of-type)': {
-                borderRightStyle: 'solid',
-                borderRightWidth: '1px',
-                borderRightColor: '#aaa',
-                // width: '120px',
-                // minWidth: '40px',
-            },
-            fontSize: '12px',
-            paddingLeft: '8px',
-           
-        },
-    },
-};
+const customStyles = styles;
 
 
 
@@ -169,7 +127,7 @@ const Table3 = () => {
                 <DataTable
                     title="Table 1.3: Summarised position of Assets and Liabilities"
                     columns={columns}
-                    data={ctx.reportData.Tables.Table3}
+                    data={ctx.tables1.Table3}
                     customStyles={customStyles}
                     striped
                     conditionalRowStyles={conditionalRowStyles}

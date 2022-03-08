@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
@@ -20,10 +21,10 @@ const columns = [
         grow: 2,
     },
     {
-        name: "Revenue Surplus",
-        selector: "Revenue Surplus",
+        name: "Revenue Deficit",
+        selector: "Revenue Deficit",
         wrap: true,
-        format: data => data["Revenue Surplus"].toLocaleString('en-IN')
+        format: data => data["Revenue Deficit"].toLocaleString('en-IN')
     },
     {
         name: "",
@@ -47,7 +48,7 @@ const columns = [
 
 const conditionalRowStyles = [
     {
-        when: row => row["Nature of transaction"] === 'Total' || row["Nature of transaction"] === 'Net Impact',
+        when: row => row["Sl No"] === 'Total',
         style: {
             backgroundColor: 'rgba(53, 165, 128, 0.5)',
         },
@@ -60,51 +61,7 @@ const conditionalRowStyles = [
     }
 ]
 
-
-const customStyles = {
-    header: {
-        style: {
-            fontSize: '22px',
-            color: '#fff',
-            backgroundColor: '#ff6359',
-            minHeight: '56px',
-            textAlign: "center",
-        },
-    },
-    rows: {
-        style: {
-            minHeight: '50px', // override the row height
-        }
-    },
-    headCells: {
-        style: {
-            '&:not(:last-of-type)': {
-                borderRightStyle: 'solid',
-                borderRightWidth: '1px',
-                borderRightColor: "black",
-            },
-            fontSize: '14px',
-            fontWeight: '500',
-            textTransform: 'uppercase',
-            padding: '10px',
-            color: '#D72483'
-        },
-    },
-    cells: {
-        style: {
-            '&:not(:last-of-type)': {
-                borderRightStyle: 'solid',
-                borderRightWidth: '1px',
-                borderRightColor: '#aaa',
-                // width: '120px',
-                // minWidth: '40px',
-            },
-            fontSize: '12px',
-            paddingLeft: '8px',
-
-        },
-    },
-};
+const customStyles = styles;
 
 const Table7 = () => {
 
@@ -116,7 +73,7 @@ const Table7 = () => {
                 <DataTable
                     title="Table 1.7: Impact of certain transactions during 2019-20"
                     columns={columns}
-                    data={ctx.reportData.Tables.Table7}
+                    data={ctx.tables1.Table7}
                     customStyles={customStyles}
                     conditionalRowStyles={conditionalRowStyles}
                     striped

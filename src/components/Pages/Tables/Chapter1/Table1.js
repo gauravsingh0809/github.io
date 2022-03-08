@@ -5,6 +5,7 @@ import SortIcon from "@material-ui/icons/ArrowDownward";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 // import { Tooltip } from "@material-ui/core";
 
 
@@ -15,7 +16,7 @@ const columns = [
     grow: 1.2,
     cell: column =>
     (<div data-tag="allowColumnEvents">
-      <div style={{ fontWeight: "bold", color:"#467880" }}>
+      <div style={{ fontWeight: "bold", color: "#467880" }}>
         {column.Year}
       </div>
     </div>)
@@ -26,17 +27,17 @@ const columns = [
     sortable: true,
     format: data => data["2016-17"].toLocaleString('en-IN'),
     conditionalCellStyles: [
-          {
-            when: row => (row["2016-17"] === 15.54),
-            style: {
-              backgroundColor: '#FFF89A',
-              color: 'black',
-              '&:hover': {
-                cursor: 'pointer',
-              },
-            },
+      {
+        when: row => (row["2016-17"] === 15.54),
+        style: {
+          backgroundColor: '#FFF89A',
+          color: 'black',
+          '&:hover': {
+            cursor: 'pointer',
           },
-        ]
+        },
+      },
+    ]
   },
   {
     name: "2017-18",
@@ -127,70 +128,14 @@ const columns = [
   // },
 ];
 
-// const conditionalRowStyles = [
-//   {
-//     when: row => row["2020-21"] < 0,
-//     style: (row) => ({
-//       backgroundColor: row["2020-21"] ? 'rgba(63, 195, 128, 0.9)' : "#ac8",
-//       color: 'yellow',
-//       '&:hover': {
-//         cursor: 'pointer',
-//       },
-//     }),
-//   },
-//   {
-//     when: row => row["State's GSDP* in crore"] >= 1600000,
-//     style: {
-//       backgroundColor: '#dcad0e',
-//       color: 'white',
-//       '&:hover': {
-//         cursor: 'not-allowed',
-//       },
-//     },
-//   },
-// ];
+const conditionalRowStyles = [
+   {
+    when: row => row["Year"] === "India's GDP* (` in crore)",
+    format: row => row["Year"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+}
+];
 
-const customStyles = {
-  header: {
-    style: {
-      fontSize: '22px',
-      color: '#fff',
-      backgroundColor: '#ff6359',
-      minHeight: '56px',
-      textAlign: "center"
-    },
-  },
-  rows: {
-    style: {
-      minHeight: '50px', // override the row height
-    }
-  },
-  headCells: {
-    style: {
-      '&:not(:last-of-type)': {
-        borderRightStyle: 'solid',
-        borderRightWidth: '1px',
-        borderRightColor: "black"
-      },
-      fontSize: '14px',
-      fontWeight: '500',
-      textTransform: 'uppercase',
-      backgroundColor:"#f0dca5"
-    },
-  },
-  cells: {
-    style: {
-      '&:not(:last-of-type)': {
-        borderRightStyle: 'solid',
-        borderRightWidth: '1px',
-        borderRightColor: '#aaa',
-      },
-      fontSize: '14px',
-      paddingLeft: '8px',
-    },
-  },
-};
-
+const customStyles = styles
 
 const Table1 = () => {
 
@@ -199,7 +144,9 @@ const Table1 = () => {
   console.log(ctx.tables1)
 
   return (
-    <div className="App" style={{ margin: "40px 0 40px 0" }} >
+    <div
+      className="App"
+      style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
           title={"1.1 " + ctx.tables1.T1H1}
@@ -209,7 +156,7 @@ const Table1 = () => {
           sortIcon={<SortIcon />}
           customStyles={customStyles}
           striped
-          // conditionalRowStyles={conditionalRowStyles}
+          conditionalRowStyles={conditionalRowStyles}
           highlightOnHover
           pointerOnHover
         />

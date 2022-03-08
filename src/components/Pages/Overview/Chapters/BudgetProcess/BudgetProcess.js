@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { Link } from "@material-ui/core"
 import { MyContext } from '../../../../../Context/MyProvider'
 import Para from '../../../../Para/Para'
 import Title from "../../../../Title/Title"
@@ -10,7 +9,7 @@ import { FaSpinner } from 'react-icons/fa'
 
 
 
-const BudgetProcess= () => {
+const OverviewBP = () => {
 
     const ctx = useContext(MyContext)
     console.log(ctx)
@@ -21,24 +20,15 @@ const BudgetProcess= () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview/profile" forward="/overview/structure" />
-                        <Title>
-                        {ctx.chapterOne.Profile.Para36}
+                        <FloatingActionButtons back="/overview/structure" forward="/overview/snapshot-finances" />
+                        <Title id="anchor">
+                            {ctx.chapterOne.Profile.Para36}
                         </Title>
-                        <div>
-
-                        </div>
-                      
-                        
-
-                        
-                     {["Para37", "Para38"].map((item, ind) =>
+                        {["Para37", "Para38"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
-
-
                     </div>
                 </div>
                 : <div>
@@ -63,4 +53,4 @@ const BudgetProcess= () => {
     )
 }
 
-export default BudgetProcess
+export default OverviewBP

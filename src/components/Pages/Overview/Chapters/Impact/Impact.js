@@ -7,13 +7,13 @@ import Navbar from "../../../../Navbar/Navbar"
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
+import Table7 from '../../../Tables/Chapter1/Table7'
 
 
 
 const Impact = () => {
 
     const ctx = useContext(MyContext)
-    
 
     return (
         ctx.langPref
@@ -21,22 +21,21 @@ const Impact = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview/profile" forward="/overview/structure" />
-                        <Title>
-                        {ctx.chapterOne.Profile.Para66}
+                        <FloatingActionButtons back="/overview/fisc-situation" forward="/finances" />
+                        <Title id="anchor">
+                            {ctx.chapterOne.Profile.Para66}
                         </Title>
-                        <div>
-
-                        </div>
-                        
-                        
 
                         {["Para67"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
-                        )}  
-                     {["Para68", "Para69","Para70","Para71", "Para72","Para73","Para74","Para75"].map((item, ind) =>
+                        )}
+                        <Table7 />
+                        <h6>
+                            {ctx.tables1.T7F1}
+                        </h6>
+                        {["Para68", "Para69", "Para70", "Para71", "Para72", "Para73", "Para74", "Para75"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>

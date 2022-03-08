@@ -7,37 +7,37 @@ import Navbar from "../../../../Navbar/Navbar"
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
+import Table3 from '../../../Tables/Chapter1/Table3'
 
 
 
 const AssetsSnapshot = () => {
 
     const ctx = useContext(MyContext)
-    
-
     return (
         ctx.langPref
             ? (ctx.chapterOne
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview/profile" forward="/overview/structure" />
-                        <Title>
-                        {ctx.chapterOne.Profile.Para43}
+                        <FloatingActionButtons back="/overview/snapshot-finances" forward="/overview/fiscalparams" />
+                        <Title id="anchor">
+                            {ctx.chapterOne.Profile.Para43}
                         </Title>
-                        <div>
-
-                        </div>
-                        
-                        
-
-                        
-                     {["Para44", "Para45",].map((item, ind) =>
+                        {["Para44"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
-
+                        <Table3 />
+                        <h6>
+                            {ctx.tables1.T3F1}
+                        </h6>
+                        {["Para45"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterOne.Profile[item]}
+                            </Para>
+                        )}
 
                     </div>
                 </div>
