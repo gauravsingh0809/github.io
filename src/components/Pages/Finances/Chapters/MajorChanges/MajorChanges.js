@@ -6,6 +6,14 @@ import Navbar from "./../../../../Navbar/Navbar"
 import { FaSpinner } from 'react-icons/fa'
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
+import Table1 from '../../../Tables/Chapter2/Table1'
+import Table2 from '../../../Tables/Chapter2/Table2'
+import Table3 from '../../../Tables/Chapter2/Table3'
+import Table5 from '../../../Tables/Chapter2/Table5'
+import Table7 from '../../../Tables/Chapter2/Table7'
+import Table9 from '../../../Tables/Chapter2/Table9'
+import Table10 from '../../../Tables/Chapter2/Table10'
+import Table11 from '../../../Tables/Chapter2/Table11'
 
 const MajorChanges = () => {
 
@@ -23,6 +31,19 @@ const MajorChanges = () => {
                         <Para>
                             {ctx.chapterTwo.Profile.Para2}
                         </Para>
+                        <Table1/>
+
+                        {/* Demo Tables for all chapters are here*/}
+
+                        <Table2/>
+                        <Table3/>
+                        <Table5/>
+                        <Table7/>
+                        <Table9/>
+                        <Table10/>
+                        <Table11/>
+
+
                         <Para>
                             {ctx.chapterTwo.Profile.Para3}
                         </Para>

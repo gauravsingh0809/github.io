@@ -118,6 +118,7 @@ export const MyProvider = (props) => {
       charts3: reportch.Chap3Charts,
       charts4: reportch.Chap4Charts,
       tables1: report.Chap1 ? report.Chap1.Tables : "",
+      tables2: report.Chap2 ? report.Chap2.Tables : "",
       themeChanger: themeChange,
       langPref: switchLang,
       execoverview: report.ExecSummaryOverview,
