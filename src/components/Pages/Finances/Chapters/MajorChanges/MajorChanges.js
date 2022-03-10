@@ -31,6 +31,7 @@ import Table24b from '../../../Tables/Chapter2/Table24b'
 import Table25 from '../../../Tables/Chapter2/Table25'
 import Table26 from '../../../Tables/Chapter2/Table26'
 import Table27 from '../../../Tables/Chapter2/Table27'
+import Table28 from '../../../Tables/Chapter2/Table28'
 
 const MajorChanges = () => {
 
