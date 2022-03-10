@@ -33,6 +33,8 @@ __pycache__
 .eslintcache
 backup-code.json
 backup-code-latest.json
+backup-code-after-two.json
+backup-code-before-compilation.json
 digitalsfrAPIkey.json
 firebase-rtdb.json
 sfrcmsAPIkey.json

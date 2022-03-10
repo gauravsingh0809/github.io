@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
@@ -63,48 +64,7 @@ const columns = [
 ];
 
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
+const customStyles = styles;
 
 
 const Table28 = () => {
@@ -117,7 +77,7 @@ const Table28 = () => {
                 <DataTable
                     title="Table 2.29: Component-wise net balances in Public Account as of 31 March of the year"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table28}
+                    data={ctx.tables2.Table29 ? ctx.tables2.Table29.t29 : ""}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

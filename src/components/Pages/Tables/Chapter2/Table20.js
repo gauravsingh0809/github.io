@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
@@ -15,19 +16,12 @@ const columns = [
         // width:'35px',
     },
     {
-        name: "2015 16",
-        selector: "2015 16",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["2015 16"].toLocaleString('en-IN')
-    },
-    {
         name: "2016 17",
         selector: "2016 17",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2016 17"].toLocaleString('en-IN')
+        format: data => data["2016 17"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "2017 18",
@@ -35,7 +29,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2017 18"].toLocaleString('en-IN')
+        format: data => data["2017 18"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "2018 19",
@@ -43,7 +37,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2018 19"].toLocaleString('en-IN')
+        format: data => data["2018 19"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "2019 20",
@@ -51,54 +45,27 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN')
+        format: data => data["2019 20"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
+    {
+        name: "2020 21",
+        selector: "2020 21",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["2020 21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+    }
 ];
 
+const conditionalRowStyles = [
+  {
+    when: row => row["Name of the Institution"] === 'Total',
+    style: {
+      backgroundColor: 'rgba(53, 65, 128, 0.9)',
+    }
+  }
+]
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table20 = () => {
 
@@ -110,10 +77,10 @@ const Table20 = () => {
                 <DataTable
                     title="Table 2.20: Financial Assistance to Other institutions"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table20}
+                    data={ctx.tables2.Table20}
                     customStyles={customStyles}
                     striped
-                    // conditionalRowStyles={conditionalRowStyles}
+                    conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
                     // pagination

@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
@@ -19,7 +20,7 @@ const columns = [
         selector: "Outstanding in respect of",
         // grow:0.05,
         wrap: true,
-        // format: data => data["Outstanding in respect of"].toLocaleString('en-IN')
+        format: data => data["Outstanding in respect of"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "Amount as per",
@@ -27,70 +28,23 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Amount as per"].toLocaleString('en-IN')
+        format: data => data["Amount as per"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: " ",
         selector: "1",
-        // grow: 0.05,
-        // width:'110px',
         wrap: true,
-        format: data => data["1"].toLocaleString('en-IN')
+        format: data => data["1"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "Difference",
         selector: "Difference",
-        // grow: 0.05,
-        // width:'110px',
         wrap: true,
-        // format: data => data["Difference"].toLocaleString('en-IN')
+        format: data => data["Difference"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     }
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table24b = () => {
 
@@ -102,7 +56,7 @@ const Table24b = () => {
                 <DataTable
                     title="Table 2.25: Equity, loans and guarantees outstanding as per Finance Accounts vis-à-vis records of SPSUs"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table24b}
+                    data={ctx.tables2.Table25 ? ctx.tables2.Table25.t25 : ""}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

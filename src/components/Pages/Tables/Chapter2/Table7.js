@@ -20,7 +20,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: (data, index) => data["2016 17"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+        format: data => data["2016 17"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
     },
     {
         name: "2017 18",

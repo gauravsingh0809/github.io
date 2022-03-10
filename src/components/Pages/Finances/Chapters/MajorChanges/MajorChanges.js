@@ -14,6 +14,23 @@ import Table7 from '../../../Tables/Chapter2/Table7'
 import Table9 from '../../../Tables/Chapter2/Table9'
 import Table10 from '../../../Tables/Chapter2/Table10'
 import Table11 from '../../../Tables/Chapter2/Table11'
+import Table12 from '../../../Tables/Chapter2/Table12'
+import Table13 from '../../../Tables/Chapter2/Table13'
+import Table14 from '../../../Tables/Chapter2/Table14'
+import Table15 from '../../../Tables/Chapter2/Table15'
+import Table16 from '../../../Tables/Chapter2/Table16'
+import Table17 from '../../../Tables/Chapter2/Table17'
+import Table18 from '../../../Tables/Chapter2/Table18'
+import Table19 from '../../../Tables/Chapter2/Table19'
+import Table20 from '../../../Tables/Chapter2/Table20'
+import Table21 from '../../../Tables/Chapter2/Table21'
+import Table22 from '../../../Tables/Chapter2/Table22'
+import Table23 from '../../../Tables/Chapter2/Table23'
+import Table24 from '../../../Tables/Chapter2/Table24'
+import Table24b from '../../../Tables/Chapter2/Table24b'
+import Table25 from '../../../Tables/Chapter2/Table25'
+import Table26 from '../../../Tables/Chapter2/Table26'
+import Table27 from '../../../Tables/Chapter2/Table27'
 
 const MajorChanges = () => {
 
@@ -42,6 +59,30 @@ const MajorChanges = () => {
                         <Table9/>
                         <Table10/>
                         <Table11/>
+                        <Table12/>
+                        <Table13/>
+                        <Table14/>
+                        <Table15/>
+                        <Table16/>
+                        <Table17/>
+                        <Table18/>
+                        <Table19/>
+                        <Table20/>
+                        <Table21/>
+                        <Table22/>
+                        <Table23/>
+                        <Table24/>
+                        <Table24b/>
+                        <Table25/>
+                        <Table26/>
+                        <Table27/>
+
+
+
+
+
+
+
 
 
                         <Para>

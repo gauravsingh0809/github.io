@@ -4,108 +4,68 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
-    {
-        name: "Major Heads of Account",
-        selector: "Major Heads of Account",
-        grow:3,
-        wrap: true,
-    },
-    {
-        name: "2018 19",
-        selector: "2018 19",
-        wrap: true,
-        format: data => data["2018 19"].toLocaleString('en-IN')
-    },
-    {
-        name: "2019 20",
-        selector: "2019 20",
-        wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN')
-    },
-    {
-        name: "Increase Decrease (In crore )",
-        selector: "Increase Decrease (In crore )",
-        wrap: true,
-        format: data => data["Increase Decrease (In crore )"].toLocaleString('en-IN')
-    },
-    {
-        name: "Percentage",
-        selector: "Percentage",
-        wrap: true,
-        format: data => data["Percentage"].toLocaleString('en-IN')
-    }
-    
+  {
+    name: "Major Heads of Account",
+    selector: "Major Heads of Account",
+    grow: 3,
+    wrap: true,
+  },
+  {
+    name: "2019 20",
+    selector: "2019 20",
+    wrap: true,
+    format: data => data["2019 20"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+  },
+  {
+    name: "2020 21",
+    selector: "2020 21",
+    wrap: true,
+    format: data => data["2020 21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+  },
+  {
+    name: "Increase or Decrease(In crore)",
+    selector: "Increase or Decrease(In crore)",
+    wrap: true,
+    format: data => data["Increase or Decrease(In crore)"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+  },
+  {
+    name: "Increase or Decrease(In per cent)",
+    selector: "Increase or Decrease(In per cent)",
+    wrap: true,
+    format: data => data["Increase or Decrease(In per cent)"].toLocaleString('en-IN')
+  }
+
 ];
 
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
+const customStyles = styles;
 
 
 const Table15 = () => {
 
-    const ctx = useContext(MyContext)
+  const ctx = useContext(MyContext)
 
-    return (
-        <div className="App" style={{ margin: "40px 0 40px 0" }} >
-            <Card>
-                <DataTable
-                    title="Table 2.15: Variation in Revenue Expenditure during 2019-20 compared to 2018-19(in crores)"
-                    columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table15}
-                    customStyles={customStyles}
-                    striped
-                    // conditionalRowStyles={conditionalRowStyles}
-                    highlightOnHover
-                    pointerOnHover
-                    // pagination
-                />
-            </Card>
-        </div>
-    );
+  return (
+    <div className="App" style={{ margin: "40px 0 40px 0" }} >
+      <Card>
+        <DataTable
+          title="Table 2.15: Variation in Revenue Expenditure during 2019-20 compared to 2018-19(in crores)"
+          columns={columns}
+          data={ctx.tables2.Table15}
+          customStyles={customStyles}
+          striped
+          // conditionalRowStyles={conditionalRowStyles}
+          highlightOnHover
+          pointerOnHover
+        // pagination
+        />
+      </Card>
+    </div>
+  );
 }
 
 export default Table15;
