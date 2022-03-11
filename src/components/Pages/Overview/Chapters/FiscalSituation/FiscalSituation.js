@@ -16,6 +16,7 @@ import Table6 from '../../../Tables/Chapter1/Table6'
 const FiscalSituation = () => {
 
     const ctx = useContext(MyContext)
+    console.log(ctx.chapter1kannada)
 
     return (
         ctx.langPref
@@ -79,19 +80,62 @@ const FiscalSituation = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
-                    <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter1kannada.Overview.Introduction.title}</Title>
-                        <Para>
-                            {ctx.chapter1kannada.Overview.Introduction.content}
+                <Navbar />
+                <div className="contentwrapper" id="home">
+                    <FloatingActionButtons back="/overview/fiscalparams" forward="/overview/impact" />
+                    <Title id="anchor">
+                        {ctx.chapter1kannada.Content.para58}
+                    </Title>
+                    {["para59"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
                         </Para>
-                    </div> */}
+                    )}
+                    <Subtitle>
+                        {ctx.chapter1kannada.Content.para60}
+                    </Subtitle>
+                    {["para61"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
+                        </Para>
+                    )}
+                    {/* <Table5 />
+                    <h6>
+                        {ctx.tables1.T5F1}
+                    </h6> */}
+                    {["para62", "para63"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
+                        </Para>
+                    )}
+
+                    <Subtitle>
+                        {ctx.chapter1kannada.Content["para64"]}
+                    </Subtitle>
+
+                    {["para65", "para66",].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
+                        </Para>
+                    )}
+
+                    {/* <Table6 />
+                    <h6>
+                        {ctx.tables1.T6F1} and MTFP 2019-23
+                        <br></br>
+                        {ctx.tables1.T6F2}
+                    </h6> */}
+                    {["para67", "para68"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
+                        </Para>
+                    )}
                 </div>
-                : <div>
-                    <Navbar />
-                    <FaSpinner icon="spinner" className="spinner" />
-                </div>)
+            </div>
+            : <div>
+                <Navbar />
+                <FaSpinner icon="spinner" className="spinner" />
+            </div>)
     )
 }
 

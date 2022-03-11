@@ -79,19 +79,63 @@ const FiscalParams = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
-                    <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter1kannada.Overview.Introduction.title}</Title>
-                        <Para>
-                            {ctx.chapter1kannada.Overview.Introduction.content}
+                <Navbar />
+                <div className="contentwrapper" id="home">
+                    <FloatingActionButtons back="/overview/snapshot-assets" forward="/overview/fisc-situation" />
+                    <Title id="anchor">
+                        {ctx.chapter1kannada.Content.para49}
+                    </Title>
+                    {["para50", "para51"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
                         </Para>
-                    </div> */}
+                    )}
+                    <Subtitle>
+                        {ctx.chapter1kannada.Content["para52"]}
+                    </Subtitle>
+
+                    {["para53"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
+                        </Para>
+                    )}
+                    <Chart5 />
+                    <Chart6 />
+
+                    {["Para54"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
+                        </Para>
+                    )}
+
+                    <Subtitle>
+                        {ctx.chapter1kannada.Content["Para55"]}
+                    </Subtitle>
+
+                    {["Para56"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
+                        </Para>
+                    )}
+                    <Table4 />
+                    <h6>
+                        {ctx.tables1.T4F1}
+                        <br></br>
+                        {ctx.tables1.T4F2}
+                    </h6>
+
+                    {["Para57"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
+                        </Para>
+                    )}
+
                 </div>
-                : <div>
-                    <Navbar />
-                    <FaSpinner icon="spinner" className="spinner" />
-                </div>)
+            </div>
+            : <div>
+                <Navbar />
+                <FaSpinner icon="spinner" className="spinner" />
+            </div>)
     )
 }
 

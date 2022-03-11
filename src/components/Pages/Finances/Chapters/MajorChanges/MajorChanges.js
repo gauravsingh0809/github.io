@@ -119,23 +119,60 @@ const MajorChanges = () => {
                 </div>)
             : (ctx.chapter2kannada
                 ? <div >
-                    <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter2kannada.Finances.Introduction.title}</Title>
-                        {ctx.isStatus.status1
-                            ? <div>
-                                <Para>
-                                    {ctx.chapter2kannada.Finances.Introduction.para1}
-                                </Para>
-                            </div>
-                            : ""}
-                    </div> */}
+                <Navbar />
+                <div className="contentwrapper" id="home">
+                    <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                    <Title>{ctx.chapter2kannada.Content.para4}</Title>
+                    <Para>
+                        {ctx.chapter2kannada.Content.para5}
+                    </Para>
+                    <Table1/>
+
+                    {/* Demo Tables for all chapters are here*/}
+
+                    <Table2/>
+                    <Table3/>
+                    <Table5/>
+                    <Table7/>
+                    <Table9/>
+                    <Table10/>
+                    <Table11/>
+                    <Table12/>
+                    <Table13/>
+                    <Table14/>
+                    <Table15/>
+                    <Table16/>
+                    <Table17/>
+                    <Table18/>
+                    <Table19/>
+                    <Table20/>
+                    <Table21/>
+                    <Table22/>
+                    <Table23/>
+                    <Table24/>
+                    <Table24b/>
+                    <Table25/>
+                    <Table26/>
+                    <Table27/>
+
+
+
+
+
+
+
+
+
+                    <Para>
+                        {ctx.chapter2kannada.Content.para6}
+                    </Para>
+
                 </div>
-                : <div>
-                    <Navbar />
-                    <FaSpinner icon="spinner" className="spinner" />
-                </div>)
+            </div>
+            : <div>
+                <Navbar />
+                <FaSpinner icon="spinner" className="spinner" />
+            </div>)
     )
 }
 

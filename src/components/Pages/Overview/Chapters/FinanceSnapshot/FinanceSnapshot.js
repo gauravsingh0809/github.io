@@ -50,19 +50,36 @@ const FinanceSnapshot = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
-                    <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter1kannada.Overview.Introduction.title}</Title>
-                        <Para>
-                            {ctx.chapter1kannada.Overview.Introduction.content}
+                <Navbar />
+                <div className="contentwrapper" id="home">
+                    <FloatingActionButtons back="/overview/budgetprocess" forward="/overview/snapshot-assets" />
+                    <Title id="anchor">
+                        {ctx.chapter1kannada.Content.para41}
+                    </Title>
+                    <Para >
+                        {ctx.chapter1kannada.Content["para42"]}
+                    </Para>
+                    {/* <Table2 />
+                    <h6>
+                        {ctx.tables1.T2F1}
+                        <br></br>
+                        {ctx.tables1.T2F2}
+                        <br></br>
+                        {ctx.tables1.T2F4.substring(0,97)}
+                    </h6> */}
+
+                    {[ "para43", "para44","para45"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
                         </Para>
-                    </div> */}
+                    )}
                 </div>
-                : <div>
-                    <Navbar />
-                    <FaSpinner icon="spinner" className="spinner" />
-                </div>)
+            </div>
+            : <div>
+                <Navbar />
+                <FaSpinner icon="spinner" className="spinner" />
+            </div>)
+                
     )
 }
 

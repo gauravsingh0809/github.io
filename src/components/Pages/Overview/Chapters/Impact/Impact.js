@@ -41,7 +41,6 @@ const Impact = () => {
                             </Para>
                         )}
 
-
                     </div>
                 </div>
                 : <div>
@@ -49,15 +48,30 @@ const Impact = () => {
                     <FaSpinner icon="spinner" className="spinner" />
                 </div>)
             : (ctx.chapter1kannada
-                ? <div >
+               ? <div>
                     <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter1kannada.Overview.Introduction.title}</Title>
-                        <Para>
-                            {ctx.chapter1kannada.Overview.Introduction.content}
-                        </Para>
-                    </div> */}
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/overview/fisc-situation" forward="/finances" />
+                        <Title id="anchor">
+                            {ctx.chapter1kannada.Content.para69}
+                        </Title>
+
+                        {["para70"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        {/* <Table7/>
+                        <h6>
+                            {ctx.tables1.T7F1}
+                        </h6> */}
+                        {["para71", "para72", "para73", "para74", "para75", "para76", "para77", "para78","para79"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+
+                    </div>
                 </div>
                 : <div>
                     <Navbar />
