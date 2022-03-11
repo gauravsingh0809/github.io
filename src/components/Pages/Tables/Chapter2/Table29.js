@@ -4,12 +4,13 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Major Head of Account 2245  Relief on Account of Natural Calamities",
-        selector: "Major Head of Account 2245  Relief on Account of Natural Calamities",
+        name: "Fund",
+        selector: "Fund",
         // grow: ,
         wrap: true,
         // width:'35px',
@@ -22,58 +23,15 @@ const columns = [
         format: data => data["Minor Head of Account"].toLocaleString('en-IN')
     },
     {
-        name: "Expenditure during 2019 20",
-        selector: "Expenditure during 2019 20",
+        name: "Expenditure during 2020 21",
+        selector: "Expenditure during 2020 21",
         // grow:0.05,
         wrap: true,
-        format: data => data["Expenditure during 2019 20"].toLocaleString('en-IN')
+        format: data => data["Expenditure during 2020 21"].toLocaleString('en-IN')
     }
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table29 = () => {
 
@@ -85,7 +43,7 @@ const Table29 = () => {
                 <DataTable
                     title="Table 2.30: Details of expenditure charged to Relief on Account of Natural Calamities"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table29}
+                    data={ctx.tables2.Table30 ? ctx.tables2.Table30.t30 : ""}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

@@ -5,6 +5,8 @@ import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
 
+// This is Table 11 in Chapter 3 of SFR
+
 
 const columns = [
     {

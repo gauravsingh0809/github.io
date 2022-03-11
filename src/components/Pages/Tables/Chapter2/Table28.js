@@ -23,13 +23,6 @@ const columns = [
         // width:'35px',
     },
     {
-        name: "2015 16",
-        selector: "2015 16",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["2015 16"].toLocaleString('en-IN')
-    },
-    {
         name: "2016 17",
         selector: "2016 17",
         // grow: 0.05,
@@ -61,11 +54,25 @@ const columns = [
         wrap: true,
         format: data => data["2019 20"].toLocaleString('en-IN')
     },
+    {
+        name: "2020 21",
+        selector: "2020 21",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["2020 21"].toLocaleString('en-IN')
+    }
 ];
 
+const conditionalRowStyles = [
+    {
+      when: row => row["Sector"] === 'Total',
+      style: {
+        backgroundColor:  'rgba(153, 165, 128, 0.9)',
+      }
+    }
+  ]
 
 const customStyles = styles;
-
 
 const Table28 = () => {
 
@@ -80,7 +87,7 @@ const Table28 = () => {
                     data={ctx.tables2.Table29 ? ctx.tables2.Table29.t29 : ""}
                     customStyles={customStyles}
                     striped
-                    // conditionalRowStyles={conditionalRowStyles}
+                    conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
                     // pagination

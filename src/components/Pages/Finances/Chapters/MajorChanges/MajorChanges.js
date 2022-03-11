@@ -32,11 +32,22 @@ import Table25 from '../../../Tables/Chapter2/Table25'
 import Table26 from '../../../Tables/Chapter2/Table26'
 import Table27 from '../../../Tables/Chapter2/Table27'
 import Table28 from '../../../Tables/Chapter2/Table28'
+import Table29 from '../../../Tables/Chapter2/Table29'
+import Table30 from '../../../Tables/Chapter2/Table30'
+import Table31 from '../../../Tables/Chapter2/Table31'
+import Table32 from '../../../Tables/Chapter2/Table32'
+import Table33 from '../../../Tables/Chapter2/Table33'
+import Table34 from '../../../Tables/Chapter2/Table34'
+import Table35 from '../../../Tables/Chapter2/Table35'
+import Table37 from '../../../Tables/Chapter2/Table37'
+import Table38 from '../../../Tables/Chapter2/Table38'
+import Table39 from '../../../Tables/Chapter2/Table39'
+import Table40 from '../../../Tables/Chapter2/Table40'
 
 const MajorChanges = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.Chap2)
+    console.log(ctx)
 
     return (
         ctx.langPref
@@ -77,9 +88,19 @@ const MajorChanges = () => {
                         <Table25/>
                         <Table26/>
                         <Table27/>
-
-
-
+                        <Table28/>
+                        <Table29/>
+                        <Table30/>
+                        <Table31/>
+                        <Table32/>
+                        <Table33/>
+                        <Table34/>
+                        <Table35/>
+                        <Table37/>
+                        <Table38/>
+                        <Table39/>
+                        <Table40/>
+                        
 
 
 

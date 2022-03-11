@@ -7,6 +7,7 @@ import { FaSpinner } from 'react-icons/fa'
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
 
+
 const Conclusion = () => {
 
     const ctx = useContext(MyContext)

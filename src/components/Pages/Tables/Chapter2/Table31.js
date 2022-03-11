@@ -4,119 +4,74 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
-    {
-        name: "Company/ Corporation/ Board",
-        selector: "CompanyCorporationBoard",
-        // grow: ,
-        wrap: true,
-        // width:'35px',
-    },
-    {
-        name: "Outstanding off budget borrowing",
-        selector: "Outstanding off budget borrowing",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Outstanding off budget borrowing"].toLocaleString('en-IN')
-    },
-    {
-        name: "Borrowings during 2019 20",
-        selector: "Borrowings during 2019 20",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Borrowings during 2019 20"].toLocaleString('en-IN')
-    },
-    {
-        name: "Repayment during 2019 20",
-        selector: "Repayment during 2019 20",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Repayment during 2019 20"].toLocaleString('en-IN')
-    },
-    {
-        name: "Repayment",
-        selector: "Repayment",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Repayment"].toLocaleString('en-IN')
-    },
-    {
-        name: "Closing Balance",
-        selector: "Closing Balance",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Closing Balance"].toLocaleString('en-IN')
-    }
+  {
+    name: "Company/ Corporation/ Board",
+    selector: "CompanyCorporationBoard",
+    wrap: true,
+  },
+  {
+    name: "Outstanding off budget borrowing",
+    selector: "Outstanding off budget borrowing",
+    wrap: true,
+    format: data => data["Outstanding off budget borrowing"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+  },
+  {
+    name: "Borrowings during 2020 21",
+    selector: "Borrowings during 2020 21",
+    // grow:0.05,
+    wrap: true,
+    format: data => data["Borrowings during 2020 21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+  },
+  {
+    name: "Repayment during 2020 21",
+    selector: "Repayment during 2020 21",
+    // grow:0.05,
+    wrap: true,
+    format: data => data["Repayment during 2020 21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+  },
+  {
+    name: "",
+    selector: "Repayment",
+    // grow:0.05,
+    wrap: true,
+    format: data => data["Repayment"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+  },
+  {
+    name: "Closing Balance",
+    selector: "Closing Balance",
+    // grow:0.05,
+    wrap: true,
+    format: data => data["Closing Balance"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+  }
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table31 = () => {
 
-    const ctx = useContext(MyContext)
+  const ctx = useContext(MyContext)
 
-    return (
-        <div className="App" style={{ margin: "40px 0 40px 0" }} >
-            <Card>
-                <DataTable
-                    title="Table 2.32: Entity-wise position of off-budget borrowings"
-                    columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table31}
-                    customStyles={customStyles}
-                    striped
-                    // conditionalRowStyles={conditionalRowStyles}
-                    highlightOnHover
-                    pointerOnHover
-                    // pagination
-                />
-            </Card>
-        </div>
-    );
+  return (
+    <div className="App" style={{ margin: "40px 0 40px 0" }} >
+      <Card>
+        <DataTable
+          title="Table 2.32: Entity-wise position of off-budget borrowings"
+          columns={columns}
+          data={ctx.tables2.Table32.t32}
+          customStyles={customStyles}
+          striped
+          // conditionalRowStyles={conditionalRowStyles}
+          highlightOnHover
+          pointerOnHover
+        // pagination
+        />
+      </Card>
+    </div>
+  );
 }
 
 export default Table31;

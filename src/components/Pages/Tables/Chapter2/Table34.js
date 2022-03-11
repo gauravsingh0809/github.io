@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
@@ -26,21 +27,21 @@ const columns = [
         selector: "Amount",
         // grow:0.05,
         wrap: true,
-        format: data => data["Amount"].toLocaleString('en-IN')
+        format: data => data["Amount"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "",
         selector: "1",
         // grow:0.05,
         wrap: true,
-        format: data => data["1"].toLocaleString('en-IN')
+        format: data => data["1"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "",
         selector: "2",
         // grow:0.05,
         wrap: true,
-        format: data => data["2"].toLocaleString('en-IN')
+        format: data => data["2"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "Per cent of total Public Debt",
@@ -51,50 +52,7 @@ const columns = [
     }
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table34 = () => {
 
@@ -106,7 +64,7 @@ const Table34 = () => {
                 <DataTable
                     title="Table 2.35: Maturity profile of Public Debt"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table34}
+                    data={ctx.tables2.Table35 ? ctx.tables2.Table35.t35 : ""}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

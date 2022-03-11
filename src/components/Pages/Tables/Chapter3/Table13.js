@@ -5,6 +5,8 @@ import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
 
+// This is 3.10 Chart in the Chapter 3 of SFR report
+
 
 const columns = [
     {

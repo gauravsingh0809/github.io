@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
@@ -19,7 +20,7 @@ const columns = [
         selector: "Opening Balance",
         // grow:0.05,
         wrap: true,
-        format: data => data["Opening Balance"].toLocaleString('en-IN')
+        format: data => data["Opening Balance"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "Closing Balance",
@@ -27,7 +28,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Closing Balance"].toLocaleString('en-IN')
+        format: data => data["Closing Balance"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "IncreaseDecrease",
@@ -35,7 +36,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["IncreaseDecrease"].toLocaleString('en-IN')
+        format: data => data["IncreaseDecrease"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "Interest earned",
@@ -43,54 +44,11 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Interest earned"].toLocaleString('en-IN')
+        format: data => data["Interest earned"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table40 = () => {
 
@@ -102,7 +60,7 @@ const Table40 = () => {
                 <DataTable
                     title="Table 2.41: Cash Balance Investment Account (Major Head-8673)"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table40}
+                    data={ctx.tables2.Table41 ? ctx.tables2.Table41.t41 : ""}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

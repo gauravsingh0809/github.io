@@ -9,25 +9,25 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "Identification",
-        selector: "Identification",
+        name: "Sl No",
+        selector: "Sl No",
         wrap: true,
     },
     {
-        name: "Classification",
-        selector: "Classification",
+        name: "Budgetary Assurance",
+        selector: "Budgetary Assurance",
         wrap: true
     },
     {
-      name: "Criteria",
-      selector: "Criteria",
-      wrap: true,
-  }
+        name: "Action taken",
+        selector: "Action taken",
+        wrap: true
+    }
 ];
 
 const customStyles = styles;
 
-const Table2 = () => {
+const Actual4 = () => {
 
     const ctx = useContext(MyContext)
 
@@ -35,9 +35,9 @@ const Table2 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.2: Decrease in allocation for women specific schemes"
+                    title="Table 3.6: Important initiatives where action was yet to be taken"
                     columns={columns}
-                    data={ctx.tables3.Table2}
+                    data={ctx.tables3.Table4}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -50,4 +50,4 @@ const Table2 = () => {
     );
 }
 
-export default Table2;
+export default Actual4;

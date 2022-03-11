@@ -35,6 +35,10 @@ backup-code.json
 backup-code-latest.json
 backup-code-after-two.json
 backup-code-before-compilation.json
+exportToFirebase.json
+exportedFromFirebase.json
+exportedOutOfFirebase.json
+uploadtofirebase.json
 digitalsfrAPIkey.json
 firebase-rtdb.json
 sfrcmsAPIkey.json

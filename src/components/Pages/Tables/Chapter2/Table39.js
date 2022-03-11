@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
@@ -15,66 +16,23 @@ const columns = [
         // width:'35px',
     },
     {
-        name: "Opening balance on 1 April 2019",
-        selector: "Opening balance on 1 April 2019",
+        name: "Opening balance on 1 April 2020",
+        selector: "Opening balance on 01-04-2020",
         // grow:0.05,
         wrap: true,
-        format: data => data["Opening balance on 1 April 2019"].toLocaleString('en-IN')
+        format: data => data["Opening balance on 01-04-2020"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
-        name: "Closing balance on 31-03-2020",
-        selector: "Closing balance on 31032020",
+        name: "Closing balance on 31 March 2021",
+        selector: "Closing balance on 31-03-2021",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Closing balance on 31032020"].toLocaleString('en-IN')
+        format: data => data["Closing balance on 31-03-2021"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     }
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table39 = () => {
 
@@ -86,7 +44,7 @@ const Table39 = () => {
                 <DataTable
                     title="Table 2.40: Cash Balances and their investment(in crores)"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table39}
+                    data={ctx.tables2.Table40 ? ctx.tables2.Table40.t40 : ""}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

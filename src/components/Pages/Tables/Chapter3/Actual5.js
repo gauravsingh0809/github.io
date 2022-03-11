@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
@@ -11,15 +12,12 @@ const columns = [
         name: "Sl No",
         selector: "1",
         grow: 2,
-        wrap: true,
-        // width:'60px',
+        wrap: true
     },
     {
         name: "Nature of Expenditure",
-        selector: "2",
-        // grow: ,
+        selector: "Nature of Expenditure",
         wrap: true,
-        // width:'35px',
     },
     {
         name: "Original grant Appropriation",
@@ -51,10 +49,10 @@ const columns = [
     },
     {
         name: "Unspent  Provision (-) / Excess over provision (+)",
-        selector: "Unspent  Provision Excess over provision",
+        selector: "Unspent Provision Excess over provision",
         // grow:0.05,
         wrap: true,
-        format: data => data["Unspent  Provision Excess over provision"].toLocaleString('en-IN')
+        format: data => data["Unspent Provision Excess over provision"].toLocaleString('en-IN')
     },
     {
         name: "Amount surrendered",
@@ -79,52 +77,9 @@ const columns = [
     }
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table7 = () => {
+const Actual5 = () => {
 
     const ctx = useContext(MyContext)
 
@@ -134,7 +89,7 @@ const Table7 = () => {
                 <DataTable
                     title="Table 3.7: Summarised position of actual expenditure vis-à-vis original/supplementary provision"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table7}
+                    data={ctx.tables3.Table5}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -147,4 +102,4 @@ const Table7 = () => {
     );
 }
 
-export default Table7;
+export default Actual5;
