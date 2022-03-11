@@ -125,13 +125,68 @@ const Profile = () => {
             : (ctx.chapter1kannada
                 ? <div >
                     <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter1kannada.Overview.Introduction.title}</Title>
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/overview/introduction" forward="/overview/basis" />
+
+                        <Title>
+                            {ctx.chapter1kannada.Content.para4}
+                        </Title>
+                        <Title>
+                            {ctx.chapter1kannada.Content.para5}
+                        </Title>
                         <Para>
-                            {ctx.chapter1kannada.Overview.Introduction.content}
+                            {ctx.chapter1kannada.Content.para6}
                         </Para>
-                    </div> */}
+                         <Title>
+                            {ctx.chapter1kannada.Content.para7}
+                        </Title>
+
+                        {["para8", "para9"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        
+                        <Title>
+                            {ctx.chapter1kannada.Content.para10}
+                        </Title>
+                        {["para11", "para12"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+
+                        {/* Table 1 goes here */}
+                        <Table1 id="table1" />
+                        <h6>
+                            {ctx.tables1.T1F1} <br></br>
+                            {ctx.tables1.T1F2}
+                        </h6>
+                        {/* Chart 1 goes here */}
+                        <Chart1 />
+
+                        {["para13", "para14"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        <Chart2 />
+                        <h6>
+                            3 Source: Directorate of Economics and Statistics, Government of Karnataka
+                            <br></br>
+                            ^ Sectoral Distribution to GSDP
+                        </h6>
+                        <Para>
+                            {ctx.chapter1kannada.Content.Para11}
+                        </Para>
+                        <Chart3 />
+                        {["para15", "para16", "para17"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        <Chart4/>
+                    </div>
                 </div>
                 : <div>
                     <Navbar />

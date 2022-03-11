@@ -19,13 +19,9 @@ const BudIntroduction = () => {
           <FloatingActionButtons back="/budget" forward="budget-process" />
           <Title>{ctx.chapterThree.Para1}</Title>
           <Title>{ctx.chapterThree.Introduction.Title}</Title>
-          {ctx.isStatus.status1 ? (
-            <div>
-              <Para>{ctx.chapterThree.Introduction.Para1}</Para>
-            </div>
-          ) : (
-            ""
-          )}
+
+          <Para>{ctx.chapterThree.Introduction.Para1}</Para>
+
         </div>
       </div>
     ) : (
@@ -36,24 +32,21 @@ const BudIntroduction = () => {
     )
   ) : ctx.chapter3kannada ? (
     <div>
-      <Navbar />
-      {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/budget" forward="budget-process" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter3kannada.Budget.Introduction.title}</Title>
-                        {ctx.isStatus.status1
-                            ? <div>
-                                <Para>
-                                    {ctx.chapter3kannada.Budget.Introduction.para1}
-                                </Para>
-                            </div>
-                            : ""}
-                    </div> */}
+    <Navbar />
+    <div className="contentwrapper" id="home">
+      <FloatingActionButtons back="/budget" forward="budget-process" />
+      <Title>{ctx.chapter3kannada.Content.para1}</Title>
+      <Title>{ctx.chapter3kannada.Content.para2}</Title>
+
+      <Para>{ctx.chapter3kannada.Content.para3}</Para>
+
     </div>
-  ) : (
-    <div>
-      <Navbar />
-      <FaSpinner icon="spinner" className="spinner" />
-    </div>
+  </div>
+) : (
+  <div>
+    <Navbar />
+    <FaSpinner icon="spinner" className="spinner" />
+  </div>
   );
 };
 

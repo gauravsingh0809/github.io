@@ -83,14 +83,66 @@ const Structure = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
+                       ? <div >
                     <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter1kannada.Overview.Introduction.title}</Title>
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/overview/basis" forward="/overview/budgetprocess" />
+                        <Title id="anchor">
+                            {ctx.chapter1kannada.Content.para29}
+                        </Title>
                         <Para>
-                            {ctx.chapter1kannada.Overview.Introduction.content}
+                            {ctx.chapter1kannada.Content.para30}
                         </Para>
-                    </div> */}
+
+                        {/* <ContentSlider
+                            position="left"
+                            content={ctx.chapter1kannada.Content.Para27a}
+                            title="Consolidated fund"
+                        />
+                        <ContentSlider
+                            position="right"
+                            content={ctx.chapter1kannada.Content.Para27b}
+                            title="Contingency fund"
+                        />
+                        <ContentSlider
+                            position="left"
+                            content={ctx.chapter1kannada.Content.Para27c}
+                            title="Public Account"
+                        /> */}
+
+                        <Para>
+                            {ctx.chapter1kannada.Content.para31}
+                        </Para>
+
+
+
+                        {["para31", "para32", "para33"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                <li>
+                                    {ctx.chapter1kannada.Content[item]}
+                                </li>
+                            </Para>
+                        )}
+                        {["para34", "para35"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                <li style={{ marginLeft: "25px", listStyle: "square" }}>
+                                    {ctx.chapter1kannada.Content[item]}
+                                </li>
+                            </Para>
+                        )}
+                        {["para36"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                <li>
+                                    {ctx.chapter1kannada.Content[item]}
+                                </li>
+                            </Para>
+                        )}
+                        <Para>
+                            {ctx.chapter1kannada.Content["para37"]}
+                        </Para>
+                        Flow Chart Image Comes here.
+                    </div>
+                </div>
                 </div>
                 : <div>
                     <Navbar />

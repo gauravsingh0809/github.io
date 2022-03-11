@@ -13,6 +13,7 @@ import { FaSpinner } from 'react-icons/fa'
 const Introduction = () => {
 
     const ctx = useContext(MyContext)
+    console.log(ctx.chapter1kannada)
 
     return (
         ctx.langPref
@@ -39,19 +40,27 @@ const Introduction = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
-                    <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter1kannada.Overview.Introduction.title}</Title>
+                <Navbar />
+                <div className="contentwrapper" id="home">
+                    <FloatingActionButtons back="/overview" forward="/overview/profile" />
+                    <Title id="anchor">
+                        {ctx.chapter1kannada.Content.para1}
+                    </Title>
+                    <div>
                         <Para>
-                            {ctx.chapter1kannada.Overview.Introduction.content}
+                            {ctx.chapter1kannada.Content.para2}
                         </Para>
-                    </div> */}
+                        <Para>
+                            {ctx.chapter1kannada.Content.para3}
+                        </Para>
+                    </div>
+                    
                 </div>
-                : <div>
-                    <Navbar />
-                    <FaSpinner icon="spinner" className="spinner" />
-                </div>)
+            </div>
+            : <div>
+                <Navbar />
+                <FaSpinner icon="spinner" className="spinner" />
+            </div>)
     )
 }
 

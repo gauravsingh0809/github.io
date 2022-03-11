@@ -37,19 +37,23 @@ const OverviewBP = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
-                    <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter1kannada.Overview.Introduction.title}</Title>
-                        <Para>
-                            {ctx.chapter1kannada.Overview.Introduction.content}
+                <Navbar />
+                <div className="contentwrapper" id="home">
+                    <FloatingActionButtons back="/overview/structure" forward="/overview/snapshot-finances" />
+                    <Title id="anchor">
+                        {ctx.chapter1kannada.Content.para38}
+                    </Title>
+                    {["para39", "para40"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
                         </Para>
-                    </div> */}
+                    )}
                 </div>
-                : <div>
-                    <Navbar />
-                    <FaSpinner icon="spinner" className="spinner" />
-                </div>)
+            </div>
+            : <div>
+                <Navbar />
+                <FaSpinner icon="spinner" className="spinner" />
+            </div>)
     )
 }
 

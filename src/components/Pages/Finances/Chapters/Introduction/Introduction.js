@@ -11,6 +11,7 @@ const FinIntroduction = () => {
 
     const ctx = useContext(MyContext)
     console.log(ctx.Chap2)
+    console.log(ctx.chapter2kannada)
 
     return (
         ctx.langPref
@@ -33,17 +34,17 @@ const FinIntroduction = () => {
             : (ctx.chapter2kannada
                 ? <div >
                     <Navbar />
-                    {/* <div className="contentwrapper" id="home">
+                    <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter2kannada.Finances.Introduction.title}</Title>
-                        {ctx.isStatus.status1
-                            ? <div>
-                                <Para>
-                                    {ctx.chapter2kannada.Finances.Introduction.para1}
-                                </Para>
-                            </div>
-                            : ""}
-                    </div> */}
+                        <Title>{ctx.chapter2kannada.Content.para1}</Title>
+                        <Para>
+                            {ctx.chapter2kannada.Content.para2}
+                        </Para>
+                        <Para>
+                            {ctx.chapter2kannada.Content.para3}
+                        </Para>
+
+                    </div>
                 </div>
                 : <div>
                     <Navbar />

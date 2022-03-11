@@ -47,24 +47,35 @@ const ChildBudget = () => {
     )
   ) : ctx.chapter3kannada ? (
     <div>
-      <Navbar />
-      {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/budget" forward="budget-process" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter3kannada.Budget.Introduction.title}</Title>
-                        {ctx.isStatus.status1
-                            ? <div>
-                                <Para>
-                                    {ctx.chapter3kannada.Budget.Introduction.para1}
-                                </Para>
-                            </div>
-                            : ""}
-                    </div> */}
-    </div>
-  ) : (
-    <div>
-      <Navbar />
-      <FaSpinner icon="spinner" className="spinner" />
-    </div>
+        <Navbar />
+        <div className="contentwrapper" id="home">
+          <FloatingActionButtons back="/budget" forward="budget-process" />
+
+          <Title>{ctx.chapter3kannada.Content.para19}</Title>
+          <Subtitle>{ctx.chapter3kannada.Content.para20}</Subtitle>
+          {["para21", "para22"].map(
+            (item, ind) => (
+              <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
+            )
+          )}
+          <Subtitle>{ctx.chapter3kannada.Content.para23}</Subtitle>
+          {["para24", "para25", "para26", "para27", "para28", "para29", "para30"].map(
+            (item, ind) => (
+              <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
+            )
+          )}      
+             {/* <Para>{ctx.chapter3kannada.Introduction.Para1}</Para> */}
+             <Para>{ctx.chapter3kannada.Content.para31}</Para>
+             <Para>{ctx.chapter3kannada.Content.para32}</Para>
+             <Para>{ctx.chapter3kannada.Content.para33}</Para>
+
+        </div>
+      </div>
+    ) : (
+      <div>
+        <Navbar />
+        <FaSpinner icon="spinner" className="spinner" />
+      </div>
   );
 };
 

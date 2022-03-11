@@ -34,23 +34,22 @@ const Conclusion = () => {
                 </div>)
             : (ctx.chapter2kannada
                 ? <div >
-                    <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter2kannada.Finances.Introduction.title}</Title>
-                        {ctx.isStatus.status1
-                            ? <div>
-                                <Para>
-                                    {ctx.chapter2kannada.Finances.Introduction.para1}
-                                </Para>
-                            </div>
-                            : ""}
-                    </div> */}
+                <Navbar />
+                <div className="contentwrapper" id="home">
+                    <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                    <Title>{ctx.chapter2kannada.Content.para327}</Title>
+                  
+                        {["para328","para329","para330","para331","para332","para333","para334","para335","para336","para337","para338","para339","para340","para341","para342","para343","para344","para345","para346","para347","para348",].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter2kannada.Content[item]}
+                        </Para> )}
+                        
                 </div>
-                : <div>
-                    <Navbar />
-                    <FaSpinner icon="spinner" className="spinner" />
-                </div>)
+            </div>
+            : <div>
+                <Navbar />
+                <FaSpinner icon="spinner" className="spinner" />
+            </div>)
     )
 }
 

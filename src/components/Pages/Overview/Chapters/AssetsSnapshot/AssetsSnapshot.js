@@ -47,19 +47,33 @@ const AssetsSnapshot = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
-                    <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter1kannada.Overview.Introduction.title}</Title>
-                        <Para>
-                            {ctx.chapter1kannada.Overview.Introduction.content}
+                <Navbar />
+                <div className="contentwrapper" id="home">
+                    <FloatingActionButtons back="/overview/snapshot-finances" forward="/overview/fiscalparams" />
+                    <Title id="anchor">
+                        {ctx.chapter1kannada.Content.para46}
+                    </Title>
+                    {["para47"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
                         </Para>
-                    </div> */}
+                    )}
+                    <Table3 />
+                    <h6>
+                        {ctx.tables1.T3F1}
+                    </h6>
+                    {["para48"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter1kannada.Content[item]}
+                        </Para>
+                    )}
+
                 </div>
-                : <div>
-                    <Navbar />
-                    <FaSpinner icon="spinner" className="spinner" />
-                </div>)
+            </div>
+            : <div>
+                <Navbar />
+                <FaSpinner icon="spinner" className="spinner" />
+            </div>)
     )
 }
 

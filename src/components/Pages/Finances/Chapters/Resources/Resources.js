@@ -10,7 +10,7 @@ import './../../Finances.css'
 const  Resources= () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.Chap2)
+    console.log(ctx.chapter2kannada)
 
     return (
         ctx.langPref
@@ -75,24 +75,65 @@ const  Resources= () => {
                     <FaSpinner icon="spinner" className="spinner" />
                 </div>)
             : (ctx.chapter2kannada
-                ? <div >
-                    <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter2kannada.Finances.Introduction.title}</Title>
-                        {ctx.isStatus.status1
-                            ? <div>
-                                <Para>
-                                    {ctx.chapter2kannada.Finances.Introduction.para1}
-                                </Para>
-                            </div>
-                            : ""}
-                    </div> */}
+                 ? <div >
+                <Navbar />
+                <div className="contentwrapper" id="home">
+                    <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                    <Title>{ctx.chapter2kannada.Content.para9}</Title>
+                    <Para>
+                        {ctx.chapter2kannada.Content.para10}
+                    </Para>
+                    {["para11", "para12","para13","para14", "para15"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter2kannada.Content[item]}
+                        </Para> )}
+                       {["para16", "para17","para18","para19", "para20","para21","para22","para23","para24","para25"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter2kannada.Content[item]}
+                        </Para> )}
+                        {["para26", "para27","para28","para29"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter2kannada.Content[item]}
+                        </Para> )}
+
+                        {["para30", "para31","para32","para33", "para34","para35","para36"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter2kannada.Content[item]}
+                        </Para> )}
+
+                        {["para37", "para38","para39", "para40","para41","para42","para43","para44"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter2kannada.Content[item]}
+                        </Para> )}
+
+                        {["para45", "para46","para47", "para48"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter2kannada.Content[item]}
+                        </Para> )}
+                        {["para49", "para50","para51","para52", "para53","para54","para55","para56","para57","para58","para59"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter2kannada.Content[item]}
+                        </Para> )}
+
+                        {["para60","para61","para62","para63","para64","para65"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter2kannada.Content[item]}
+                        </Para> )}
+                        {["para66","para67","para68","para69"].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter2kannada.Content[item]}
+                        </Para> )}
+                        {["para70","para71",].map((item, ind) =>
+                        <Para key={ind / 10}>
+                            {ctx.chapter2kannada.Content[item]}
+                        </Para> )}
+
                 </div>
-                : <div>
-                    <Navbar />
-                    <FaSpinner icon="spinner" className="spinner" />
-                </div>)
+            </div>
+            : <div>
+                <Navbar />
+                <FaSpinner icon="spinner" className="spinner" />
+            </div>)
     )
 }
 

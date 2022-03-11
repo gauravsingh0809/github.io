@@ -35,7 +35,7 @@ const Basis = () => {
                             {ctx.chapterOne.Profile.Para18}
                         </Para>
 
-                        {[ "Para19", "Para20", "Para21", "Para22", "Para23", "Para24", "Para25"].map((item, ind) =>
+                        {["Para19", "Para20", "Para21", "Para22", "Para23", "Para24", "Para25"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 <li>
                                     {ctx.chapterOne.Profile[item]}
@@ -53,13 +53,32 @@ const Basis = () => {
             : (ctx.chapter1kannada
                 ? <div >
                     <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview" forward="/overview/profile" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter1kannada.Overview.Introduction.title}</Title>
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/overview/profile" forward="/overview/structure" />
+                        <Title id="anchor">
+                            {ctx.chapter1kannada.Content.para18}
+                        </Title>
+
                         <Para>
-                            {ctx.chapter1kannada.Overview.Introduction.content}
+                            {ctx.chapter1kannada.Content.para19}
                         </Para>
-                    </div> */}
+                        <Para>
+                            {ctx.chapter1kannada.Content.para20}
+                        </Para>
+                        <Para>
+                            {ctx.chapter1kannada.Content.para21}
+                        </Para>
+
+                        {["para22", "para23", "para24", "para25", "para26", "para27", "para28"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                <li>
+                                    {ctx.chapter1kannada.Content[item]}
+                                </li>
+                            </Para>
+                        )}
+
+
+                    </div>
                 </div>
                 : <div>
                     <Navbar />
