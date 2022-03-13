@@ -87,7 +87,7 @@ const Actual5 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.7: Summarised position of actual expenditure vis-à-vis original/supplementary provision"
+                    title="Table 3.5: Summarised position of actual expenditure vis-à-vis original/supplementary provision"
                     columns={columns}
                     data={ctx.tables3.Table5}
                     customStyles={customStyles}

@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
@@ -17,16 +18,15 @@ const columns = [
     {
         name: "Disbursements",
         selector: "Disbursements",
-        // grow: ,
         wrap: true,
-        // width:'35px',
+        format: data => data["Disbursements"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: " ",
         selector: "1",
         // grow:0.05,
         wrap: true,
-        format: data => data["1"].toLocaleString('en-IN')
+        format: data => data["1"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "Savings (percentage of savings)",
@@ -44,50 +44,7 @@ const columns = [
     }
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table8 = () => {
 
@@ -97,9 +54,9 @@ const Table8 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.8: Voted and Charged disbursements for the period from 2015-16 to 2019-20"
+                    title="Table 3.6: Voted and Charged disbursement for the period form 2016-17 to 2020-21"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table8}
+                    data={ctx.tables3.Table6}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

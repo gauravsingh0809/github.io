@@ -11,6 +11,12 @@ import Table2 from "../../../Tables/Chapter3/Table2";
 import Table3 from "../../../Tables/Chapter3/Table3";
 import Actual4 from "../../../Tables/Chapter3/Actual4";
 import Actual5 from "../../../Tables/Chapter3/Actual5";
+import Table8 from "../../../Tables/Chapter3/Actual6";
+import Table11 from "../../../Tables/Chapter3/Actual7";
+import Actual8 from "../../../Tables/Chapter3/Actual8";
+import Actual9 from "../../../Tables/Chapter3/Actual9";
+import Table13 from "../../../Tables/Chapter3/Actual10";
+import Table14 from "../../../Tables/Chapter3/Actual11";
 
 const BudIntroduction = () => {
   const ctx = useContext(MyContext);
@@ -35,6 +41,13 @@ const BudIntroduction = () => {
           <Table3/>
           <Actual4/>
           <Actual5/>
+          <Table8/>
+          <Table11/>
+          <Actual8/>
+          <Actual9/>
+          <Table13/>
+          <Table14/>
+
 
         </div>
       </div>

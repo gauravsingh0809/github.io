@@ -26,7 +26,6 @@ const columns = [
         selector: "Head of account",
         grow:0.5,
         wrap: true,
-        // format: data => data["Head of account"].toLocaleString('en-IN')
     },
     {
         name: "Budget Provision",

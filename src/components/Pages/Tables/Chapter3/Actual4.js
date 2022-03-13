@@ -11,6 +11,7 @@ const columns = [
     {
         name: "Sl No",
         selector: "Sl No",
+        grow:0.05,
         wrap: true,
     },
     {
@@ -35,7 +36,7 @@ const Actual4 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.6: Important initiatives where action was yet to be taken"
+                    title="Table 3.4: Important initiatives where action was yet to be taken"
                     columns={columns}
                     data={ctx.tables3.Table4}
                     customStyles={customStyles}
