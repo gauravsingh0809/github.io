@@ -9,7 +9,7 @@ import "./../../Budget.css";
 
 const MajorPolicy = () => {
   const ctx = useContext(MyContext);
-  console.log(ctx.chapterThree);
+  console.log(ctx.chapter3kannada)
 
 
   return ctx.langPref ? (
