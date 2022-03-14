@@ -33,7 +33,6 @@ const CustomTooltip = (props) => {
             <Tooltip
                 TransitionComponent={Fade}
                 TransitionProps={{ timeout: 600 }}
-                interactive
                 arrow
                 placement = {'top'}
                 title={props.tooltip}
