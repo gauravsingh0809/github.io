@@ -4,90 +4,47 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
-
+import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "Sl No",
-        selector: "Sl No",
-        grow:0.2 ,
+        name: "Year",
+        selector: "Year",
         wrap: true,
-        // width:'60px',
     },
     {
-        name: "Head of Account",
-        selector: "Head of Account",
-        grow:2 ,
+        name: "Section",
+        selector: "Section",
         wrap: true,
-        // width:'35px',
     },
     {
-        name: "Savings",
-        selector: "Savings",
-        // grow:0.2 ,
+        name: "Budget Provision",
+        selector: "Budget Provision",
         wrap: true,
-        // width:'60px',
+        format: data => data["Budget Provision"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
-        name: " ",
-        selector: "1",
-        // grow:0.2 ,
+        name: "Total",
+        selector: "Total",
         wrap: true,
-        // width:'60px',
+        format: data => data["Total"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
-        name: " ",
-        selector: "2",
-        // grow:0.5 ,
+        name: "Expenditure",
+        selector: "Expenditure",
         wrap: true,
-        // width:'35px',
+        format: data => data["Expenditure"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+    },
+    {
+        name: "Unutilized provision and its percentage",
+        selector: "Unutilized provision and its percentage",
+        wrap: true,
+        format: data => data["Unutilized provision and its percentage"].toLocaleString('en-IN')
     }
 ];
 
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table15 = () => {
 
@@ -97,16 +54,13 @@ const Table15 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.15: Persistent Savings"
+                    title="Table 3.15 : Budget and Expenditure"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table15}
+                    data={ctx.tables3.Table15}
                     customStyles={customStyles}
                     striped
-                    // conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
-                    // noTableHead
-                    // pagination
                 />
             </Card>
         </div>

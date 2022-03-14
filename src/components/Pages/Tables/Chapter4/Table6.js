@@ -4,12 +4,13 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
         name: "SlNo",
-        selector: "SlNo",
+        selector: "Sl No",
         wrap: true,
         grow:0.1
     },
@@ -23,54 +24,11 @@ const columns = [
         selector: "Amount",
         wrap: true,
         grow:0.2,
-        format: data => data["Amount"].toLocaleString('en-IN')
+        format: data => data["Amount"].toLocaleString('en-IN', {style: 'currency', currency: 'INR'})
     }
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table6 = () => {
 
@@ -82,7 +40,7 @@ const Table6 = () => {
                 <DataTable
                     title="Table 4.6: Closing balances in PD Accounts"
                     columns={columns}
-                    data={ctx.reportData.Chap4Tables.Table6}
+                    data={ctx.tables4.Table6 ? ctx.tables4.Table6.t6 : ""}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

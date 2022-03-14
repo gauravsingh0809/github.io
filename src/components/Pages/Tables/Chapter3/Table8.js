@@ -9,38 +9,39 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "Year",
-        selector: "Year",
-        // grow: ,
+        name: "Sl No",
+        selector: "Sl No",
+        grow:0.2 ,
         // wrap: true,
         // width:'60px',
     },
     {
-        name: "Disbursements",
-        selector: "Disbursements",
+        name: "Head of Account",
+        selector: "Head of Account",
+        // grow:0.5 ,
         wrap: true,
-        format: data => data["Disbursements"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        // width:'35px',
     },
     {
-        name: " ",
-        selector: "1",
-        // grow:0.05,
+        name: "Budget provision",
+        selector: "Budget provision",
+        grow:0.2,
         wrap: true,
-        format: data => data["1"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Budget provision"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
-        name: "Savings (percentage of savings)",
-        selector: "Savings (percentage of savings)",
-        // grow:0.05,
+        name: "Expenditure incurred",
+        selector: "Expenditure incurred",
+        grow:0.2,
         wrap: true,
-        format: data => data["Savings (percentage of savings)"].toLocaleString('en-IN')
+        format: data => data["Expenditure incurred"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
-        name: " ",
-        selector: "2",
-        // grow:0.05,
+        name: "Amount released",
+        selector: "Amount released",
+        grow:0.2,
         wrap: true,
-        format: data => data["2"].toLocaleString('en-IN')
+        format: data => data["Amount released"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     }
 ];
 
@@ -54,9 +55,9 @@ const Table8 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.6: Voted and Charged disbursement for the period form 2016-17 to 2020-21"
+                    title="Table 3.8: Funds released under capital section for payment of salaries"
                     columns={columns}
-                    data={ctx.tables3.Table6}
+                    data={ctx.tables3.Table8}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

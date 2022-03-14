@@ -16,8 +16,8 @@ const columns = [
         grow:0.05
     },
     {
-        name: "HOA and Nomenclature",
-        selector: "HOA and Nomenclature",
+        name: "HoA and Nomenclature",
+        selector: "HoA and Nomenclature",
         wrap: true,
         grow:2
     },
@@ -40,7 +40,7 @@ const columns = [
         selector: "1",
         wrap: true,
         sortable:true,
-        format: data => data["1"].toLocaleString('en-IN')
+        format: data => data["1"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
         name: "Expenditure during March",
@@ -54,14 +54,14 @@ const columns = [
         selector: "2",
         wrap: true,
         sortable:true,
-        format: data => data["2"].toLocaleString('en-IN')
+        format: data => data["2"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     }
 ];
 
 
 const customStyles = styles;
 
-const Table17 = () => {
+const Table14 = () => {
 
     const ctx = useContext(MyContext)
 
@@ -69,9 +69,9 @@ const Table17 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.17: Rush of Expenditure"
+                    title="Table 3.14: Rush of Expenditure"
                     columns={columns}
-                    data={ctx.tables3.Table17}
+                    data={ctx.tables3.Table14}
                     customStyles={customStyles}
                     striped
                     highlightOnHover
@@ -82,4 +82,4 @@ const Table17 = () => {
     );
 }
 
-export default Table17;
+export default Table14;

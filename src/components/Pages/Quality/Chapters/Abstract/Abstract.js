@@ -6,16 +6,18 @@ import { MyContext } from './../../../../../Context/MyProvider';
 import Para from "./../../../../Para/Para"
 import Title from "./../../../../Title/Title";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
-import Table1 from '../../../Tables/Chapter4/Table1'
 
 
 const Abstract = () => {
 
     const ctx = useContext(MyContext)
+<<<<<<< HEAD
     console.log(ctx.chapter4kannada)
 
 
 
+=======
+>>>>>>> 26943ffd426a2559c1799dec5c4d32d3f3b8e20d
 
     return (
         ctx.langPref
@@ -24,16 +26,17 @@ const Abstract = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/quality" forward="delay" />
-                        <Title>{ctx.chapterFour.second.para7}</Title>
-
+                        <Title>
+                            {ctx.chapterFour.second.para7}
+                        </Title>
                         <Para>
                             {ctx.chapterFour.second.para8}
                         </Para>
 
-                            {["Para9", "Para10", "Para11", "Para12"].map((item, ind) =>
-                                <Para key={ind / 10}>
-                                    {ctx.chapterFour.second[item]}
-                                </Para>)}
+                        {["Para9", "Para10", "Para11", "Para12"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterFour.second[item]}
+                            </Para>)}
 
 
                     </div>

@@ -36,7 +36,7 @@ const columns = [
 
 const customStyles = styles;
 
-const Table11 = () => {
+const Table7 = () => {
 
     const ctx = useContext(MyContext)
 
@@ -44,7 +44,7 @@ const Table11 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.11:  Additional amounts released through executive orders during 2017-20"
+                    title="Table 3.7: Additional amounts released through executive orders during 2018-19 to 2020-21"
                     columns={columns}
                     data={ctx.tables3.Table7}
                     customStyles={customStyles}
@@ -59,4 +59,4 @@ const Table11 = () => {
     );
 }
 
-export default Table11;
+export default Table7;

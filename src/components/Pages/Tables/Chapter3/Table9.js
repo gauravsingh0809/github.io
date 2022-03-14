@@ -4,89 +4,48 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
         name: "Sl No",
         selector: "Sl No",
-        // grow: ,
+        grow:0.2 ,
         // wrap: true,
-        width:'60px',
+        // width:'60px',
     },
     {
-        name: "Grant No",
-        selector: "Grant No",
-        grow:0.5 ,
+        name: "Grant",
+        selector: "Grant",
+        // grow:0.5 ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "Head of account",
-        selector: "Head of account",
-        grow:0.5,
+        name: "Provision",
+        selector: "Provision",
+        grow:0.2,
         wrap: true,
+        format: data => data["Provision"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
-        name: "Budget Provision",
-        selector: "Budget Provision",
-        grow:0.05,
+        name: "Expenditure",
+        selector: "Expenditure",
+        grow:0.2,
         wrap: true,
-        format: data => data["Budget Provision"].toLocaleString('en-IN')
+        format: data => data["Expenditure"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
-        name: "Remarks",
-        selector: "Remarks",
-        // grow:0.05,
+        name: "Excess",
+        selector: "Excess",
+        grow:0.2,
         wrap: true,
-        format: data => data["Remarks"].toLocaleString('en-IN')
+        format: data => data["Excess"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     }
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table9 = () => {
 
@@ -96,9 +55,9 @@ const Table9 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.9: Error in Budgeting under voted/charged sections"
+                    title="Table 3.9: Excess expenditure over the provision during 2020-21 requiring regularization"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table9}
+                    data={ctx.tables3.Table9}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

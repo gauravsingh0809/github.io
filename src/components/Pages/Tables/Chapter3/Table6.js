@@ -9,45 +9,44 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "Sl No",
-        selector: "Sl No",
-        grow:0.2 ,
+        name: "Year",
+        selector: "Year",
+        // grow: ,
         // wrap: true,
         // width:'60px',
     },
     {
-        name: "Grant",
-        selector: "Grant",
-        // grow:0.5 ,
+        name: "Disbursements",
+        selector: "Disbursements",
         wrap: true,
-        // width:'35px',
+        format: data => data["Disbursements"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
-        name: "Provision",
-        selector: "Provision",
-        grow:0.2,
+        name: " ",
+        selector: "1",
+        // grow:0.05,
         wrap: true,
-        format: data => data["Provision"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["1"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
     },
     {
-        name: "Expenditure",
-        selector: "Expenditure",
-        grow:0.2,
+        name: "Savings (percentage of savings)",
+        selector: "Savings (percentage of savings)",
+        // grow:0.05,
         wrap: true,
-        format: data => data["Expenditure"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Savings (percentage of savings)"].toLocaleString('en-IN')
     },
     {
-        name: "Excess",
-        selector: "Excess",
-        grow:0.2,
+        name: " ",
+        selector: "2",
+        // grow:0.05,
         wrap: true,
-        format: data => data["Excess"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2"].toLocaleString('en-IN')
     }
 ];
 
 const customStyles = styles;
 
-const Actual9 = () => {
+const Table6 = () => {
 
     const ctx = useContext(MyContext)
 
@@ -55,9 +54,9 @@ const Actual9 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.9: Excess expenditure over the provision during 2020-21 requiring regularization"
+                    title="Table 3.6: Voted and Charged disbursement for the period form 2016-17 to 2020-21"
                     columns={columns}
-                    data={ctx.tables3.Table9}
+                    data={ctx.tables3.Table6}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -70,4 +69,4 @@ const Actual9 = () => {
     );
 }
 
-export default Actual9;
+export default Table6;
