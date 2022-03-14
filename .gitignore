@@ -42,3 +42,12 @@ uploadtofirebase.json
 digitalsfrAPIkey.json
 firebase-rtdb.json
 sfrcmsAPIkey.json
+
+# Firebase
+.firebase/
+.firebaserc
+.github/
+firebase.json
+firestore.indexes.json
+firestore.rules
+storage.rules
