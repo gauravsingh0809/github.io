@@ -11,6 +11,13 @@ import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButt
 const Abstract = () => {
 
     const ctx = useContext(MyContext)
+<<<<<<< HEAD
+    console.log(ctx.chapter4kannada)
+
+
+
+=======
+>>>>>>> 26943ffd426a2559c1799dec5c4d32d3f3b8e20d
 
     return (
         ctx.langPref
@@ -40,63 +47,27 @@ const Abstract = () => {
                 </div>)
             : (ctx.chapter4kannada
                 ? <div >
-                    <Navbar />
-                    {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
-                        <Para>
-                            {ctx.chapter4kannada.Quality.Funds["para0"]}
-                        </Para>
-                        <Title>A. Observations relating to completeness of accounts</Title>
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter4kannada.Quality.Funds.title}</Title>
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter4kannada.Quality.Funds.para1}</Title>
-                        {ctx.isStatus.status1
-                            ? <div>
-                                {['para2', 'para3', 'para4'].map((item, ind) =>
-                                    <Para key={ind}>
-                                        {ctx.chapter4kannada.Quality.Funds[item]}
-                                    </Para>
-                                )}
-                            </div>
-                            : ""}
-                            <p className="footer">
-                                In crores
-                            </p>
-                            <Table1 />
-                            {ctx.isStatus.status1
-                            ? <div>
-                                {['para5'].map((item, ind) =>
-                                    <Para key={ind}>
-                                        {ctx.chapter4kannada.Quality.Funds[item]}
-                                    </Para>
-                                )}
-                            </div>
-                            : ""}
-                        {ctx.isStatus.status1
-                            ? <div>
-                                {['para6', 'para7', 'para8'].map((item, ind) =>
-                                    <Para key={ind}>
-                                        <li className="list">
-                                            {ctx.chapter4kannada.Quality.Funds[item]}
-                                        </li>
-                                    </Para>
-                                )}
-                            </div>
-                            : ""}
-                        {ctx.isStatus.status1
-                            ? <div>
-                                {['para9', 'para10'].map((item, ind) =>
-                                    <Para key={ind}>
-                                        {ctx.chapter4kannada.Quality.Funds[item]}
-                                    </Para>
-                                )}
-                            </div>
-                            : ""}
-                    </div> */}
+                <Navbar />
+                <div className="contentwrapper" id="home">
+                    <FloatingActionButtons back="/quality" forward="delay" />
+                    <Title>{ctx.chapter4kannada.Content.para22}</Title>
+
+                    <Para>
+                        {ctx.chapter4kannada.Content.para23}
+                    </Para>
+
+                        {["para24", "para25", "para26", "para27"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter4kannada.Content[item]}
+                            </Para>)}
+
+
                 </div>
-                : <div>
-                    <Navbar />
-                    <FaSpinner icon="spinner" className="spinner" />
-                </div>)
+            </div>
+            : <div>
+                <Navbar />
+                <FaSpinner icon="spinner" className="spinner" />
+            </div>)
     )
 }
 

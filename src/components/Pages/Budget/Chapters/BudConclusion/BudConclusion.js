@@ -9,7 +9,7 @@ import "./../../Budget.css";
 
 const BudConclusion = () => {
   const ctx = useContext(MyContext);
-  console.log(ctx.chapterThree);
+  console.log(ctx.chapter3kannada);
 
 
   return ctx.langPref ? (
@@ -39,24 +39,27 @@ const BudConclusion = () => {
     )
   ) : ctx.chapter3kannada ? (
     <div>
-      <Navbar />
-      {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/budget" forward="budget-process" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter3kannada.Budget.Introduction.title}</Title>
-                        {ctx.isStatus.status1
-                            ? <div>
-                                <Para>
-                                    {ctx.chapter3kannada.Budget.Introduction.para1}
-                                </Para>
-                            </div>
-                            : ""}
-                    </div> */}
+    <Navbar />
+    <div className="contentwrapper" id="home">
+      <FloatingActionButtons back="/budget" forward="budget-process" />
+
+      <Title>{ctx.chapter3kannada.Content.para170}</Title>
+      {["para171","para172", "para173", "para174","para175"].map(
+        (item, ind) => (
+          <Para key={ind / 10}>
+          {ctx.chapter3kannada.Content[item]}
+          </Para>
+      ))}
+     
+      
+
     </div>
-  ) : (
-    <div>
-      <Navbar />
-      <FaSpinner icon="spinner" className="spinner" />
-    </div>
+  </div>
+) : (
+  <div>
+    <Navbar />
+    <FaSpinner icon="spinner" className="spinner" />
+  </div>
   );
 };
 

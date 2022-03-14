@@ -9,7 +9,7 @@ import "./../../Budget.css";
 
 const Audit = () => {
   const ctx = useContext(MyContext);
-  console.log(ctx.chapterThree);
+  console.log(ctx.chapter3kannada);
 
 
   return ctx.langPref ? (
@@ -20,7 +20,7 @@ const Audit = () => {
           <FloatingActionButtons back="/budget" forward="budget-process" />
 
           <Title>{ctx.chapterThree.Profile.Para40}</Title>
-          {["Para41", "Para42", "Para43","Para44", "Para45", "Para46",
+          {["p", "Para42", "Para43","Para44", "Para45", "Para46",
           "Para47", "Para48", "Para49","Para50", "Para51", "Para52","Para53", "Para54"].map(
             (item, ind) => (
               <Para key={ind / 10}>
@@ -78,24 +78,61 @@ const Audit = () => {
     )
   ) : ctx.chapter3kannada ? (
     <div>
-      <Navbar />
-      {/* <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/budget" forward="budget-process" />
-                        <Title status={ctx.isStatus.status1} id={1}>{ctx.chapter3kannada.Budget.Introduction.title}</Title>
-                        {ctx.isStatus.status1
-                            ? <div>
-                                <Para>
-                                    {ctx.chapter3kannada.Budget.Introduction.para1}
-                                </Para>
-                            </div>
-                            : ""}
-                    </div> */}
+    <Navbar />
+    <div className="contentwrapper" id="home">
+      <FloatingActionButtons back="/budget" forward="budget-process" />
+
+      <Title>{ctx.chapter3kannada.Content.para46}</Title>
+      {["para47", "para48", "para49","para50", "para51", "para52",
+      "para53", "para54", "para55","para56", "para57", "para58","para59", "para60"].map(
+        (item, ind) => (
+          <Para key={ind / 10}>
+          {ctx.chapter3kannada.Content[item]}
+          </Para>
+      ))}
+      {["para61","para62","para63","para64","para65","para66","para67"].map(
+        (item, ind) => (
+          <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
+        ))
+      }
+      {["para68","para69","para70","para71","para72","para73","para74"].map(
+        (item, ind) => (
+          <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
+        ))
+      }
+      {["para75","para76","para77","para78","para79","para80","para81","para82","para83","para84"].map(
+        (item, ind) => (
+          <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
+        )) 
+      }
+      {["para85","para86","para87","para88","para89","para90","para91","para92","para93","para94","para95","para96","para97","para98","para99","para100","para101","para102","para103","para104","para105","para106","para107","para108"].map(
+        (item, ind) => (
+          <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
+        )) 
+      }
+      {["para109","para110","para111","para112","para113","para114","para115","para116","para117","para118"].map(
+        (item, ind) => (
+          <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
+        )) 
+      }
+      {["para119","para120","para121"].map(
+        (item, ind) => (
+          <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
+        )) 
+      }
+      {["para122","para123"].map(
+        (item, ind) => (
+          <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
+        )) 
+      }
+  
     </div>
-  ) : (
-    <div>
-      <Navbar />
-      <FaSpinner icon="spinner" className="spinner" />
-    </div>
+  </div>
+) : (
+  <div>
+    <Navbar />
+    <FaSpinner icon="spinner" className="spinner" />
+  </div>
   );
 };
 
