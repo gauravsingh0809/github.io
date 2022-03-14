@@ -9,14 +9,21 @@ import "./../../Budget.css";
 import Table1 from "../../../Tables/Chapter3/Table1";
 import Table2 from "../../../Tables/Chapter3/Table2";
 import Table3 from "../../../Tables/Chapter3/Table3";
-import Actual4 from "../../../Tables/Chapter3/Actual4";
-import Actual5 from "../../../Tables/Chapter3/Actual5";
-import Table8 from "../../../Tables/Chapter3/Actual6";
-import Table11 from "../../../Tables/Chapter3/Actual7";
-import Actual8 from "../../../Tables/Chapter3/Actual8";
-import Actual9 from "../../../Tables/Chapter3/Actual9";
-import Table13 from "../../../Tables/Chapter3/Actual10";
-import Table14 from "../../../Tables/Chapter3/Actual11";
+import Table4 from "../../../Tables/Chapter3/Table4";
+import Table5 from "../../../Tables/Chapter3/Table5";
+import Table6 from "../../../Tables/Chapter3/Table6";
+import Table7 from "../../../Tables/Chapter3/Table7";
+import Table8 from "../../../Tables/Chapter3/Table8";
+import Table9 from "../../../Tables/Chapter3/Table9";
+import Table10 from "../../../Tables/Chapter3/Table10";
+import Table11 from "../../../Tables/Chapter3/Table11";
+import Table12 from "../../../Tables/Chapter3/Table12";
+import Table13 from "../../../Tables/Chapter3/Table13";
+import Table14 from "../../../Tables/Chapter3/Table14";
+import Table15 from "../../../Tables/Chapter3/Table15";
+import Table16 from "../../../Tables/Chapter3/Table16";
+import Table17 from "../../../Tables/Chapter3/Table17";
+
 
 const BudIntroduction = () => {
   const ctx = useContext(MyContext);
@@ -39,14 +46,19 @@ const BudIntroduction = () => {
           <Table1/>
           <Table2/>
           <Table3/>
-          <Actual4/>
-          <Actual5/>
+          <Table4/>
+          <Table5/>
+          <Table6/>
+          <Table7/>
           <Table8/>
+          <Table9/>
           <Table11/>
-          <Actual8/>
-          <Actual9/>
+          <Table12/>
           <Table13/>
           <Table14/>
+          <Table15/>
+          <Table16/>
+          <Table17/>
 
 
         </div>

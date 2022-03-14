@@ -4,106 +4,43 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Year",
-        selector: "Year",
+        name: "SlNo",
+        selector: "Sl No",
         wrap: true,
+        grow:0.2
     },
     {
-        name: "Total No of Controlling officers",
-        selector: "Total No of Controlling officers",
+        name: "Head of account",
+        selector: "Head of account",
         wrap: true,
-        format: data => data["Total No of Controlling officers"].toLocaleString('en-IN')
+        grow:0.4
     },
     {
-        name: "Fully reconciled",
-        selector: "Fully reconciled",
+        name: "Description",
+        selector: "Description",
         wrap: true,
-        format: data => data["Fully reconciled"].toLocaleString('en-IN')
+        grow:0.6
     },
     {
-        name: "Partially Reconciled",
-        selector: "Partially Reconciled",
+        name: "Amount",
+        selector: "Amount",
         wrap: true,
-        format: data => data["Partially Reconciled"].toLocaleString('en-IN')
+        grow:0.4,
+        format: data => data["Amount"].toLocaleString('en-IN')
     },
     {
-        name: "Not reconciled at all",
-        selector: "Not reconciled at all",
-        wrap: true,
-        format: data => data["Not reconciled at all"].toLocaleString('en-IN')
-    },
-    {
-        name: "CCOs not transacted during the month",
-        selector: "CCOs not transacted during the month",
-        wrap: true,
-    },
-    {
-        name: "Total Amount",
-        selector: "Total Amount",
-        wrap: true,
-        format: data => data["Total Amount"].toLocaleString('en-IN')
-    },
-    {
-        name: "Reconciled Amount",
-        selector: "Reconciled Amount",
-        wrap: true,
-        format: data => data["Reconciled Amount"].toLocaleString('en-IN')
-    },
-    {
-        name: "Percentage",
-        selector: "Percentage",
+        name: "Reason",
+        selector: "Reason",
         wrap: true,
     }
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
+const customStyles = styles;
 
 const Table9 = () => {
 
@@ -113,12 +50,11 @@ const Table9 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.9: Status of Reconciliation of Receipts and Expenditure figures"
+                    title="Table 4.8: Adverse balance under DDR Heads"
                     columns={columns}
-                    data={ctx.reportData.Chap4Tables.Table9}
+                    data={ctx.tables4.Table9 ? ctx.tables4.Table9.t9 : ""}
                     customStyles={customStyles}
                     striped
-                    // conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
                     // pagination
