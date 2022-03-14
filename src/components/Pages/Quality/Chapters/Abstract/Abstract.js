@@ -11,13 +11,6 @@ import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButt
 const Abstract = () => {
 
     const ctx = useContext(MyContext)
-<<<<<<< HEAD
-    console.log(ctx.chapter4kannada)
-
-
-
-=======
->>>>>>> 26943ffd426a2559c1799dec5c4d32d3f3b8e20d
 
     return (
         ctx.langPref
