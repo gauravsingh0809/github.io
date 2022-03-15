@@ -148,14 +148,6 @@ const Routes = () => {
                         <Route path='/finances/debtmanagement' exact component={DebtManagement} />
                         <Route path='/finances/dsa' exact component={Dsa} />
                         <Route path='/finances/conclusion' exact component={Conclusion} /> 
-                        {/* <Route path='/finances/major-sources' exact component={MajorChanges} />
-                        <Route path='/finances/sources-application' exact component={Sources} />
-                        <Route path='/finances/resources' exact component={Resources} /
-                        <Route path='/finances/application' exact component={Application} />
-                        <Route path='/finances/publicaccount' exact component={PublicAccount} />
-                        <Route path='/finances/debtmanagement' exact component={DebtManagement} />
-                        <Route path='/finances/dsa' exact component={Dsa} />
-                        <Route path='/finances/conclusion' exact component={Conclusion} /> */}
                         <Route path='/Budget' exact component={Budget} />
                         <Route path='/Budget/introduction' exact component={BudIntroduction} />
                         <Route path='/Budget/budget-process' exact component={BudgetProcess} />
