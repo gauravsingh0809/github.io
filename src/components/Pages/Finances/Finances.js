@@ -14,108 +14,72 @@ const Finances = () => {
 
     return (
         ctx.langPref
-            ? (ctx.execFinances
+            ? (ctx.execsummary
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/overview/impact" forward="/finances/introduction" />
-                        <Title>{ctx.execFinances.title}</Title>
-                        {['para1', 'para2'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinances[item]}
+                        <Title>{ctx.execsummary.para3}</Title>
+                        {['para4'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execFinances.para3}</Title>
-                        <Title >{ctx.execFinances.para4}</Title>
-                        {['para5', 'para6'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinances[item]}
+                        <Title>{ctx.execsummary.para7}</Title>
+                        {['para8'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execFinances.para7}</Title>
-                        {['para8'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinances[item]}
+                        <Title >{ctx.execsummary.para19}</Title>
+                        {['para20', 'para21'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execFinances.para9}</Title>
-                        {['para10'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinances[item]}
+                        <Title >{ctx.execsummary.para22}</Title>
+                        {['para23'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execFinances.para11}</Title>
-                        {['para12', 'para12a'].map((item, ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinances[item]}
+                        <Title >{ctx.execsummary.para24}</Title>
+                        {['para25'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execFinances.para13}</Title>
-                        {['para14'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinances[item]}
+                        <Title >{ctx.execsummary.para26}</Title>
+                        {['para27'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execFinances.para15}</Title>
-                        {['para16'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinances[item]}
+                        <Title >{ctx.execsummary.para28}</Title>
+                        {['para29'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
                             </Para>
                         )}
+                        <Title >{ctx.execsummary.para30}</Title>
+                        {['para31'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
+                            </Para>
+                        )}
+                        
                     </div>
                 </div>
                 : <div>
                     <Navbar />
                     <FaSpinner icon="spinner" className="spinner" />
                 </div>)
-            : (ctx.execFinanceskan
+            : (ctx.execsummarykan
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/overview/impact" forward="/finances/introduction" />
-                        <Title>{ctx.execFinanceskan.title}</Title>
-                        {['para1', 'para2'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinanceskan[item]}
-                            </Para>
-                        )}
-                        <Title >{ctx.execFinanceskan.para3}</Title>
-                        <Title >{ctx.execFinanceskan.para4}</Title>
-                        {['para5', 'para6'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinanceskan[item]}
-                            </Para>
-                        )}
-                        <Title >{ctx.execFinanceskan.para7}</Title>
-                        {['para8'].map((item, ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinanceskan[item]}
-                            </Para>
-                        )}
-                        <Title >{ctx.execFinanceskan.para9}</Title>
-                        {['para10'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinanceskan[item]}
-                            </Para>
-                        )}
-                        <Title >{ctx.execFinanceskan.para11}</Title>
-                        {['para12','para12a'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinanceskan[item]}
-                            </Para>
-                        )}
-                        <Title >{ctx.execFinanceskan.para13}</Title>
-                        {['para14'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinanceskan[item]}
-                            </Para>
-                        )}
-                        <Title >{ctx.execFinanceskan.para15}</Title>
-                        {['para16'].map((item,ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execFinanceskan[item]}
-                            </Para>
-                        )}
+                        
                     </div>
                 </div> 
                 : <div>

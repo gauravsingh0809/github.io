@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { Link } from "@material-ui/core"
 import { MyContext } from '../../../../../Context/MyProvider'
 import Para from '../../../../Para/Para'
 import Title from "../../../../Title/Title"
@@ -59,14 +58,14 @@ const FinanceSnapshot = () => {
                     <Para >
                         {ctx.chapter1kannada.Content["para42"]}
                     </Para>
-                    {/* <Table2 />
+                    <Table2 />
                     <h6>
                         {ctx.tables1.T2F1}
                         <br></br>
                         {ctx.tables1.T2F2}
                         <br></br>
                         {ctx.tables1.T2F4.substring(0,97)}
-                    </h6> */}
+                    </h6>
 
                     {[ "para43", "para44","para45"].map((item, ind) =>
                         <Para key={ind / 10}>

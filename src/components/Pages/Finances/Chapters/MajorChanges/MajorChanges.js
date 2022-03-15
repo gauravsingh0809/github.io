@@ -64,14 +64,14 @@ const MajorChanges = () => {
 
                         {/* Demo Tables for all chapters are here*/}
 
-                        <Table2/>
-                        <Table3/>
-                        <Table5/>
-                        <Table7/>
+                       
+                   
+                        
+                        
                         <Table9/>
-                        <Table10/>
-                        <Table11/>
-                        <Table12/>
+                        
+                        
+                        
                         <Table13/>
                         <Table14/>
                         <Table15/>
