@@ -41,7 +41,7 @@ const Table29 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.30: Details of expenditure charged to Relief on Account of Natural Calamities"
+                    title="Table 2.29: Details of expenditure/receipts under SDRF/SDMF"
                     columns={columns}
                     data={ctx.tables2.Table30 ? ctx.tables2.Table30.t30 : ""}
                     customStyles={customStyles}

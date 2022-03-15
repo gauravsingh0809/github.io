@@ -63,49 +63,7 @@ const MajorChanges = () => {
                         <Table1/>
 
                         {/* Demo Tables for all chapters are here*/}
-
-                       
-                   
-                        
-                        
-                        <Table9/>
-                        
-                        
-                        
-                        <Table13/>
-                        <Table14/>
-                        <Table15/>
-                        <Table16/>
-                        <Table17/>
-                        <Table18/>
-                        <Table19/>
-                        <Table20/>
-                        <Table21/>
-                        <Table22/>
-                        <Table23/>
-                        <Table24/>
-                        <Table24b/>
-                        <Table25/>
-                        <Table26/>
-                        <Table27/>
-                        <Table28/>
-                        <Table29/>
-                        <Table30/>
-                        <Table31/>
-                        <Table32/>
-                        <Table33/>
-                        <Table34/>
-                        <Table35/>
-                        <Table37/>
-                        <Table38/>
-                        <Table39/>
-                        <Table40/>
-                        
-
-
-
-
-
+          
 
                         <Para>
                             {ctx.chapterTwo.Profile.Para3}
