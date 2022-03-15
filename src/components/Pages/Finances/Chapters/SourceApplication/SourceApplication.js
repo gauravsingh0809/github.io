@@ -6,6 +6,11 @@ import Navbar from "../../../../Navbar/Navbar"
 import { FaSpinner } from 'react-icons/fa'
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
+import Table2 from '../../../Tables/Chapter2/Table2'
+import {
+     Chart11a,Chart12b
+    
+} from '../../../Charts/Chap2Charts'
 
 const  SourcesApplication = () => {
 
@@ -24,8 +29,11 @@ const  SourcesApplication = () => {
                             {ctx.chapterTwo.Profile.Para5}
                         </Para>
                         
-                         
+                        <Table2/>
+                        <Chart11a />
 
+                        <Chart12b />
+                   
                     </div>
                 </div>
                 : <div>
@@ -41,8 +49,11 @@ const  SourcesApplication = () => {
                     <Para>
                         {ctx.chapter2kannada.Content.para8}
                     </Para>
-                    
-                     
+                    <Table2/>
+                    <Chart11a />
+
+                    <Chart12b />
+                 
 
                 </div>
             </div>
