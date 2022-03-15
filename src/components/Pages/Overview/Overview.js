@@ -16,47 +16,47 @@ const Overview = () => {
 
     return (
         ctx.langPref
-            ? (ctx.execoverview
+            ? (ctx.execsummary
                 ?
                 <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/preface/" forward="/overview/introduction" />
-                        <Title>{ctx.execoverview.title}</Title>
-                        {['para1', 'para2'].map((item, ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execoverview[item]}
+                        <Title>{ctx.execsummary.para3}</Title>
+                        {['para4'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execoverview.para3}</Title>
-                        <Title >{ctx.execoverview.para4}</Title>
-                        {['para5', 'para6', 'para7'].map((item, ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execoverview[item]}
+                        <Title>{ctx.execsummary.para5}</Title>
+                        {['para6'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
                             </Para>
                         )}
+                        
                     </div>
                 </div> : <div>
                     <Navbar />
                     <FaSpinner icon="spinner" className="spinner" />
                 </div>)
-            : (ctx.execoverviewkan
+            : (ctx.execsummarykan
                 ?
                 <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/preface/" forward="/overview/introduction" />
-                        <Title>{ctx.execoverviewkan.title}</Title>
+                        <Title>{ctx.execsummarykan.title}</Title>
                         {['para1', 'para2'].map((item, ind) =>
                             <Para key={ind / 10}>
-                                {ctx.execoverviewkan[item]}
+                                {ctx.execsummarykan[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execoverviewkan.para3}</Title>
-                        <Title >{ctx.execoverviewkan.para4}</Title>
+                        <Title >{ctx.execsummarykan.para3}</Title>
+                        <Title >{ctx.execsummarykan.para4}</Title>
                         {['para5', 'para6', 'para7'].map((item, ind) =>
                             <Para key={ind / 10}>
-                                {ctx.execoverviewkan[item]}
+                                {ctx.execsummarykan[item]}
                             </Para>
                         )}
                     </div>

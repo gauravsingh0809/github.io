@@ -31,9 +31,9 @@ const Preface = () => {
                                 </li>
                             )}
                         </ol>
-                        <Title>{ctx.preface.para7}</Title>
+                        <Title>{ctx.execsummary.para1}</Title>
                         <Para>
-                            {ctx.preface['para8']}
+                            {ctx.execsummary['para2']}
                         </Para>
                     </div>
                 </div> : <div>

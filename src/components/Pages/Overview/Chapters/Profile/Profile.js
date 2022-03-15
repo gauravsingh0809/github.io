@@ -20,7 +20,7 @@ import {
 import { Chart3 as Chart3Chap3 } from '../../../Charts/Chap3Charts'
 // import { Chart1 as Chart1Chap4} from '../../../Charts/Chap4Charts'
 
-
+import CustomTooltip from '../../../../CustomTooltip/CustomTooltip'
 
 
 const Profile = () => {
@@ -66,7 +66,13 @@ const Profile = () => {
                             {ctx.chapterOne.Profile.para1}
                         </Title>
                         <Para>
-                            {ctx.chapterOne.Profile.para2}
+                            {ctx.chapterOne.Profile.para2.substring(0, 304)}
+                            <CustomTooltip
+                                tooltip="As per Economic Survey of Karnataka 2020-21"
+                                content={ctx.chapterOne.Profile.para2.substring(304, 309)}
+                                supScript="1" />
+                            {ctx.chapterOne.Profile.para2.substring(309,)}
+
                         </Para>
                         <Title>
                             {ctx.chapterOne.Profile.para3}
@@ -77,7 +83,7 @@ const Profile = () => {
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
-                        
+
                         <Title>
                             {ctx.chapterOne.Profile.para6}
                         </Title>
@@ -116,7 +122,7 @@ const Profile = () => {
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
-                        <Chart4/>
+                        <Chart4 />
                     </div>
                 </div>
                 : <div>
@@ -138,7 +144,7 @@ const Profile = () => {
                         <Para>
                             {ctx.chapter1kannada.Content.para6}
                         </Para>
-                         <Title>
+                        <Title>
                             {ctx.chapter1kannada.Content.para7}
                         </Title>
 
@@ -147,7 +153,7 @@ const Profile = () => {
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        
+
                         <Title>
                             {ctx.chapter1kannada.Content.para10}
                         </Title>
@@ -186,7 +192,7 @@ const Profile = () => {
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        <Chart4/>
+                        <Chart4 />
                     </div>
                 </div>
                 : <div>
