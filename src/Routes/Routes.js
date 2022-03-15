@@ -58,6 +58,10 @@ import Misapp from '../components/Pages/Quality/Chapters/Misapp/Misapp';
 
 import four_o_four from '../components/404/404';
 import Preface from '../components/Pages/Preface/Preface';
+import Appendix1 from '../components/Pages/Appendices/Appendix1';
+import Appendix2 from '../components/Pages/Appendices/Appendix2';
+import Appendix3 from '../components/Pages/Appendices/Appendix3';
+import Appendix4 from '../components/Pages/Appendices/Appendix4';
 
 
 const Routes = () => {
@@ -98,6 +102,7 @@ const Routes = () => {
                         <Route path='/finances/debtmanagement' exact component={DebtManagement} />
                         <Route path='/finances/dsa' exact component={Dsa} />
                         <Route path='/finances/conclusion' exact component={Conclusion} /> 
+
                         <Route path='/Budget' exact component={Budget} />
                         <Route path='/Budget/introduction' exact component={BudIntroduction} />
                         <Route path='/Budget/budget-process' exact component={BudgetProcess} />
@@ -128,6 +133,12 @@ const Routes = () => {
                         <Route path='/Quality/conclusion' exact component={QualConclusion} />
                         <Route path='/Quality/recommendations' exact component={QualRecommendations} />
                         
+                        <Route path='/appendices/appendix-1' exact component={Appendix1} />
+                        <Route path='/appendices/appendix-2' exact component={Appendix2} />
+                        <Route path='/appendices/appendix-3' exact component={Appendix3} />
+                        <Route path='/appendices/appendix-4' exact component={Appendix4} />
+
+
                         <Route component={four_o_four} />
                     </Switch>
                 </div>
