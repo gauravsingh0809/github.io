@@ -57,7 +57,7 @@ const Table33 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.34: Receipts and Disbursements under components financing the fiscal deficit during 2019-20"
+                    title="Table 2.33: Receipts and Disbursements under components financing the fiscal deficit during 2019-20"
                     columns={columns}
                     data={ctx.tables2.Table34 ? ctx.tables2.Table34.t34 : ""}
                     customStyles={customStyles}

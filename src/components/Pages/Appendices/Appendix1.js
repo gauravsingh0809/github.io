@@ -7,6 +7,10 @@ import FloatingActionButtons from "../../FloatingActionButtons/FloatButton"
 import ImageComponent from "material-ui-image";
 import { getFirebase } from "../../../firebase/firebase";
 
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+
+import AppendixOne from './../../../AppendixOne.pdf';
+
 
 const Appendix1 = () => {
 
@@ -14,6 +18,13 @@ const Appendix1 = () => {
 
     const [allImages, setImages] = useState({});
     const [allImagesKan, setImagesKan] = useState({});
+
+    const [numPages, setNumPages] = useState(null);
+    const [pageNumber, setPageNumber] = useState(1);
+
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages);
+    }
 
 
     useEffect(() => {
@@ -53,11 +64,16 @@ const Appendix1 = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/Quality/recommendations" forward="/appendices/appendix-2" />
-                        <ImageComponent src={allImages["appendix1-1.png"]} aspectRatio="1/0.8" />
-                        <ImageComponent src={allImages["appendix1-1_1.png"]} aspectRatio="1/1.6" />
-                        {/* <Appendix1_2 /> */}
-                        <ImageComponent src={allImages["appendix1-2.png"]} aspectRatio="1/0.8" />
-                        <ImageComponent src={allImages["appendix1-3.png"]} aspectRatio="1/0.8" />
+
+                        <object
+                            width="100%"
+                            height="600"
+                            data="https://firebasestorage.googleapis.com/v0/b/digital-sfr.appspot.com/o/pdfs%2FAppendix-1-to-upload.pdf?alt=media&token=bf9ac43a-a103-47be-8924-b868762312d6"
+                            type="application/pdf">
+                            <embed
+                                src="https://firebasestorage.googleapis.com/v0/b/digital-sfr.appspot.com/o/pdfs%2FAppendix-1-to-upload.pdf?alt=media&token=bf9ac43a-a103-47be-8924-b868762312d6"
+                                type="application/pdf" />
+                        </object>
                     </div>
                 </div>
                 : <div>
@@ -69,7 +85,15 @@ const Appendix1 = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/Quality/recommendations" forward="/appendices/appendix-2" />
-                        {Object.keys(allImagesKan).sort().map((i) => <ImageComponent src={allImagesKan[i]} />)}
+                        <object
+                            width="100%"
+                            height="600"
+                            data="https://firebasestorage.googleapis.com/v0/b/digital-sfr.appspot.com/o/pdfs%2FAppendix-1-to-upload.pdf?alt=media&token=bf9ac43a-a103-47be-8924-b868762312d6"
+                            type="application/pdf">
+                            <embed
+                                src="https://firebasestorage.googleapis.com/v0/b/digital-sfr.appspot.com/o/pdfs%2FAppendix-1-to-upload.pdf?alt=media&token=bf9ac43a-a103-47be-8924-b868762312d6"
+                                type="application/pdf" />
+                        </object>
                     </div>
                 </div>
                 : <div>

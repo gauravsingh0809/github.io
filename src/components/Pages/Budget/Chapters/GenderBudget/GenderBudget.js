@@ -6,6 +6,7 @@ import Navbar from "../../../../Navbar/Navbar";
 import { FaSpinner } from "react-icons/fa";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton";
 import "./../../Budget.css";
+import Table1 from "../../../Tables/Chapter3/Table1";
 
 const GenderBudget = () => {
   const ctx = useContext(MyContext);
@@ -24,6 +25,7 @@ const GenderBudget = () => {
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )
           )}
+          <Table1/>
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 
         </div>
@@ -46,6 +48,7 @@ const GenderBudget = () => {
           <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
         )
       )}
+      <Table1/>
       <Para>{ctx.chapter3kannada.Content.para18}</Para>
          {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 

@@ -35,7 +35,7 @@ const Table2 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.2: Decrease in allocation for women specific schemes"
+                    title="Table 3.2: Criteria for identification and classification of Child Centric Programme/Schemes"
                     columns={columns}
                     data={ctx.tables3.Table2}
                     customStyles={customStyles}

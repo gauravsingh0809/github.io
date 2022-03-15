@@ -42,7 +42,7 @@ const Table39 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.40: Cash Balances and their investment(in crores)"
+                    title="Table 2.38: Cash Balances and their investment(in crores)"
                     columns={columns}
                     data={ctx.tables2.Table40 ? ctx.tables2.Table40.t40 : ""}
                     customStyles={customStyles}

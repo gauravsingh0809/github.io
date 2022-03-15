@@ -19,12 +19,14 @@
     "react-data-table-component": "^6.11.7",
     "react-dom": "^17.0.2",
     "react-icons": "^4.1.0",
+    "react-pdf": "^5.7.1",
     "react-plotly.js": "^2.5.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.0",
     "styled-components": "^5.2.3",
     "web-vitals": "^2.1.4"
   },
+  "proxy": "https://firebasestorage.googleapis.com/v0/b/digital-sfr.appspot.com/o",
   "scripts": {
     "start": "react-scripts --max-old-space-size=1024 start",
     "build": "react-scripts build",

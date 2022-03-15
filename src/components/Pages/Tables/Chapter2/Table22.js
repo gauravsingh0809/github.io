@@ -69,7 +69,7 @@ const Table22 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.22: Return on Investment"
+                    title="Table 2.21: Return on Investment"
                     columns={columns}
                     data={ctx.tables2.Table22}
                     customStyles={customStyles}
