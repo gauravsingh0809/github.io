@@ -11,7 +11,7 @@ import Table29 from '../../../Tables/Chapter2/Table29'
 import {
     
     Chart13
-    } from '../../../Charts/Chap2Charts
+    } from '../../../Charts/Chap2Charts'
 
 const  PublicAccount = () => {
 
