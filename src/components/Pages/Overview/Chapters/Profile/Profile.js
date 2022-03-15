@@ -46,21 +46,27 @@ const Profile = () => {
                         
                         
                         <Chrt4 />
-                        
+
                         {/* <Chrt3 /> */}
                         {/* <Chrt2 /> */}
-                        
-                        
 
                         <Title>
                             {ctx.chapterOne.Profile.para1}
                         </Title>
+
+
                         <Para>
                             {ctx.chapterOne.Profile.para2.substring(0, 304)}
-                            <CustomTooltip
-                                tooltip="As per Economic Survey of Karnataka 2020-21"
-                                content={ctx.chapterOne.Profile.para2.substring(304, 309)}
-                                supScript="1" />
+
+                            {/* Tooltip Code Snippet */}
+
+                            <span className="tooltip">
+                                {ctx.chapterOne.Profile.para2.substring(304, 309)}
+                                <span className="tooltiptext">
+                                    Refers to the contribution the employee had to make from the date of his entry into service to the date of implementation of the scheme.
+                                </span>
+                                <sup>1</sup>
+                            </span>
                             {ctx.chapterOne.Profile.para2.substring(309,)}
 
                         </Para>
