@@ -52,6 +52,7 @@ const BudIntroduction = () => {
           <Table7/>
           <Table8/>
           <Table9/>
+          <Table10/>
           <Table11/>
           <Table12/>
           <Table13/>

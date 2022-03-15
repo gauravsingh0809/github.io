@@ -297,7 +297,7 @@ export const Chart4 = () => {
       ? <Card className={classes.cardColored}>
         <CustomBarChart
           data={kastam()}
-          title='Chart 2.6: Growth of Own Tax Revenue during 2015-20'
+          title='Chart 2.6: Growth/Decline of Own Tax Revenue during 2016-21'
           xaxisTitle="Sector"
           yaxisTitle="Contribution to GDP"
           rangeStart="0"
@@ -310,7 +310,7 @@ export const Chart4 = () => {
       : <Card className={classes.cardMargin}>
         <CustomBarChart
           data={kastam()}
-          title='Chart 2.6: Growth of Own Tax Revenue during 2015-20"'
+          title='Chart 2.6: Growth/Decline of Own Tax Revenue during 2016-21'
           xaxisTitle="Sector"
           yaxisTitle="Contribution to GDP"
           rangeStart="0"

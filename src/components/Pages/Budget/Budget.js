@@ -14,48 +14,54 @@ const Budget = () => {
 
     return (
         ctx.langPref
-            ? (ctx.execBudget
+            ? (ctx.execsummary
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances/conclusion" forward="/budget/introduction" />
-                        <Title>{ctx.execBudget.title}</Title>
-                        {['para1', 'para2'].map((item, ind) =>
-                            <Para key={ind/10}>
-                                {ctx.execBudget[item]}
+                        <Title>{ctx.execsummary.para3}</Title>
+                        {['para4'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execBudget.para3}</Title>
-                        <Title >{ctx.execBudget.para4}</Title>
-                        {['para5', 'para6', 'para7', 'para8',
-                            'para9', 'para10', 'para11', 'para12'].map((item,ind) =>
-                                <Para key={ind/10}>
-                                    {ctx.execBudget[item]}
-                                </Para>
-                            )}
+                        <Title>{ctx.execsummary.para9}</Title>
+                        {['para10'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
+                            </Para>
+                        )}
+                        <Title >{ctx.execsummary.para32}</Title>
+                        {['para33', 'para34','para35','para36',
+                        'para37', 'para38','para39','para40'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
+                            </Para>
+                        )}
+
                     </div>
                 </div>
                 : <div>
                     <Navbar />
                     <FaSpinner icon="spinner" className="spinner" />
                 </div>)
-            : (ctx.execBudgetkan
+            : (ctx.execsummarykan
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances/conclusion" forward="/budget/introduction" />
-                        <Title>{ctx.execBudgetkan.title}</Title>
+                        <Title>{ctx.execsummarykan.title}</Title>
                         {['para1', 'para2'].map((item, ind) =>
                             <Para key = {ind/10}>
-                                {ctx.execBudgetkan[item]}
+                                {ctx.execsummarykan[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execBudgetkan.para3}</Title>
-                        <Title >{ctx.execBudgetkan.para4}</Title>
+                        <Title >{ctx.execsummarykan.para3}</Title>
+                        <Title >{ctx.execsummarykan.para4}</Title>
                         {['para5', 'para6', 'para7', 'para8',
                             'para9', 'para10', 'para11', 'para12'].map((item, ind) =>
                                 <Para key = {ind/10}>
-                                    {ctx.execBudgetkan[item]}
+                                    {ctx.execsummarykan[item]}
                                 </Para>
                             )}
                     </div>

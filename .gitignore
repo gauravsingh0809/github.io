@@ -43,11 +43,20 @@ digitalsfrAPIkey.json
 firebase-rtdb.json
 sfrcmsAPIkey.json
 
+<<<<<<< HEAD
 # Firebase
+=======
+#firebase
+
+>>>>>>> main
 .firebase/
 .firebaserc
 .github/
 firebase.json
 firestore.indexes.json
 firestore.rules
+<<<<<<< HEAD
 storage.rules
+=======
+storage.rules
+>>>>>>> main

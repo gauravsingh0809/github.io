@@ -60,7 +60,9 @@ const AssetsSnapshot = () => {
                     )}
                     <Table3 />
                     <h6>
-                        {ctx.tables1.T3F1}
+                    ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
+              
+                    
                     </h6>
                     {["para48"].map((item, ind) =>
                         <Para key={ind / 10}>

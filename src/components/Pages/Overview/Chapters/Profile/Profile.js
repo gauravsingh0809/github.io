@@ -16,6 +16,7 @@ import {
     Chart2 as Chrt2, Chart20, Chart3 as Chrt3, Chart4 as Chrt4, Chart7, Chart8, Chart9
 } from '../../../Charts/Chap2Charts'
 
+
 import { Chart3 as Chart3Chap3 } from '../../../Charts/Chap3Charts'
 // import { Chart1 as Chart1Chap4} from '../../../Charts/Chap4Charts'
 
@@ -55,11 +56,11 @@ const Profile = () => {
                         <Chart8 />
                         <Chart7 />
                         <Chrt4 />
-                        <Chrt3 />
-                        <Chrt2 />
-                        <Chart11a />
-                        <Chart12b />
-
+                        
+                        {/* <Chrt3 /> */}
+                        {/* <Chrt2 /> */}
+                        
+                        
 
                         <Title>
                             {ctx.chapterOne.Profile.para1}
