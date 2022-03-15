@@ -59,7 +59,7 @@ const Table25    = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.26: Age profile of incomplete projects 
+                    title="Table 2.25: Age profile of incomplete projects 
                     which are more than one crore as on
                     31 March 2020
                     (` in crore)"

@@ -64,7 +64,7 @@ const Table23 = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="Table 2.23: Investments made in loss making Companies"
+          title="Table 2.22: Investments made in loss making Companies"
           columns={columns}
           data={ctx.tables2.Table23}
           customStyles={customStyles}

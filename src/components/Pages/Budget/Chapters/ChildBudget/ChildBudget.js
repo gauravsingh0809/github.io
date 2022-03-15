@@ -7,7 +7,7 @@ import { FaSpinner } from "react-icons/fa";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton";
 import "./../../Budget.css";
 import Subtitle from  "../../../../Subtitle/Subtitle"
-
+import Table2 from "../../../Tables/Chapter3/Table2";
 const ChildBudget = () => {
   const ctx = useContext(MyContext);
   console.log("ctx", ctx);
@@ -31,7 +31,9 @@ const ChildBudget = () => {
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )
-          )}      
+          )}  
+          <Table2/> 
+
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
              <Para>{ctx.chapterThree.Profile.Para25}</Para>
              <Para>{ctx.chapterThree.Profile.Para26}</Para>
@@ -63,7 +65,8 @@ const ChildBudget = () => {
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
             )
-          )}      
+          )}    
+          <Table2/>  
              {/* <Para>{ctx.chapter3kannada.Introduction.Para1}</Para> */}
              <Para>{ctx.chapter3kannada.Content.para31}</Para>
              <Para>{ctx.chapter3kannada.Content.para32}</Para>

@@ -42,19 +42,9 @@ const Profile = () => {
                         <Chart3Chap3 />
                         <Chart21 />
                         <Chart20 />
-                        <Chart19 />
-                        <Chart18 />
-                        <Chart17 />
-                        <Chart16 />
-                        <Chart15 />
-                        <Chart14 />
-                        <Chart13 />
-                        <Chart12 />
-                        <Chart11 />
-                        <Chart10 />
-                        <Chart9 />
-                        <Chart8 />
-                        <Chart7 />
+                        
+                        
+                        
                         <Chrt4 />
 
                         {/* <Chrt3 /> */}
