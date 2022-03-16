@@ -20,7 +20,7 @@ const DCU = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                    <FloatingActionButtons back="/quality/submission" forward="/quality/non-submission" />
                       
                         
                         <Title>
@@ -45,7 +45,7 @@ const DCU = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                    <FloatingActionButtons back="/quality/submission" forward="/quality/non-submission" />
                   
                     
                     <Title>

@@ -23,7 +23,7 @@ const Compliance = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                        <FloatingActionButtons back="/quality/reconciliation" forward="/quality/submission" />
                       
                         
                         <Title>
@@ -52,7 +52,7 @@ const Compliance = () => {
                 ?<div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                <FloatingActionButtons back="/quality/reconciliation" forward="/quality/submission" />
                   
                     
                     <Title>

@@ -20,7 +20,7 @@ const NonSubmission = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                    <FloatingActionButtons back="/quality/dcu" forward="/quality/timelines" />
                       
                         
                         <Title>
@@ -45,7 +45,7 @@ const NonSubmission = () => {
                 ?<div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                    <FloatingActionButtons back="/quality/dcu" forward="/quality/timelines" />
                   
                     
                     <Title>

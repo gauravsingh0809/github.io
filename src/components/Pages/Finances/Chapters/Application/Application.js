@@ -42,7 +42,7 @@ const  Application = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                        <FloatingActionButtons back="/finances/resources" forward="/finances/publicaccount" />
                         <Title>{ctx.chapterTwo.Profile.Para67}</Title>
                         {["Para68","Para69","Para70","Para71"].map((item, ind) =>
                             <Para key={ind / 10}>
@@ -193,7 +193,7 @@ const  Application = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                <FloatingActionButtons back="/finances/resources" forward="/finances/publicaccount" />
                     <Title>{ctx.chapter2kannada.Content.para72}</Title>
                     {["para73"].map((item, ind) =>
                         <Para key={ind / 10}>

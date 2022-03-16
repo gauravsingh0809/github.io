@@ -18,7 +18,7 @@ const ChildBudget = () => {
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
+        <FloatingActionButtons back="/budget/gender-budget" forward="/budget/policy" />
 
           <Title>{ctx.chapterThree.Profile.Para13}</Title>
           <Subtitle>{ctx.chapterThree.Profile.Para14}</Subtitle>
@@ -55,7 +55,7 @@ const ChildBudget = () => {
     <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
+          <FloatingActionButtons back="/budget/gender-budget" forward="/budget/policy" />
 
           <Title>{ctx.chapter3kannada.Content.para19}</Title>
           <Subtitle>{ctx.chapter3kannada.Content.para20}</Subtitle>

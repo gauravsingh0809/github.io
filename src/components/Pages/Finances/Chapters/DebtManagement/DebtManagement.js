@@ -30,7 +30,7 @@ const DebtManagement = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                        <FloatingActionButtons back="/finances/publicaccount" forward="/finances/dsa" />
                         <Title>{ctx.chapterTwo.Second.para55}</Title>
                         <Para>
                         {ctx.chapterTwo.Second.para56}
@@ -82,7 +82,7 @@ const DebtManagement = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                <FloatingActionButtons back="/finances/publicaccount" forward="/finances/dsa" />
                     <Title>{ctx.chapter2kannada.Content.para256}</Title>
                     <Para>
                     {ctx.chapter2kannada.Content.para257}

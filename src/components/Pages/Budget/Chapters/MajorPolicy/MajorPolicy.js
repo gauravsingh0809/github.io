@@ -17,7 +17,7 @@ const MajorPolicy = () => {
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
+          <FloatingActionButtons back="/budget/child-budget" forward="/budget/appropaccounts" />
 
           <Title>{ctx.chapterThree.Profile.Para28}</Title>
           {["Para29", "Para30", "Para31", "Para32"].map(
@@ -40,7 +40,7 @@ const MajorPolicy = () => {
     <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
+        <FloatingActionButtons back="/budget/child-budget" forward="/budget/appropaccounts" />
 
           <Title>{ctx.chapter3kannada.Content.para34}</Title>
           {["para35", "para36", "para37", "para38"].map(

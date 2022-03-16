@@ -20,7 +20,7 @@ const Submission = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                        <FloatingActionButtons back="/quality/compliance" forward="/quality/dcu" />
                       
                         
                         <Title>
@@ -45,7 +45,8 @@ const Submission = () => {
                 ?  <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                    
+                <FloatingActionButtons back="/quality/compliance" forward="/quality/dcu" />
                   
                     
                     <Title>

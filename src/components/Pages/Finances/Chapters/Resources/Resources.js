@@ -29,7 +29,7 @@ const  Resources= () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                        <FloatingActionButtons back="/finances/sources-application" forward="/finances/application" />
                         <Title>{ctx.chapterTwo.Profile.Para6}</Title>
                         <Para>
                             {ctx.chapterTwo.Profile.Para5}
@@ -98,7 +98,7 @@ const  Resources= () => {
                  ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                <FloatingActionButtons back="/finances/sources-application" forward="/finances/application" />
                     <Title>{ctx.chapter2kannada.Content.para9}</Title>
                     <Para>
                         {ctx.chapter2kannada.Content.para10}

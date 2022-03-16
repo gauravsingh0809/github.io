@@ -20,7 +20,7 @@ const Timelines = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                    <FloatingActionButtons back="/quality/non-submission" forward="/quality/misappropriations" />
                       
                         
                         <Title>
@@ -45,7 +45,7 @@ const Timelines = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                    <FloatingActionButtons back="/quality/non-submission" forward="/quality/misappropriations" />
                   
                     
                     <Title>

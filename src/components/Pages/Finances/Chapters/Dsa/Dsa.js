@@ -29,7 +29,7 @@ const Dsa = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                    <FloatingActionButtons back="/finances/debtmanagement" forward="/finances/conclusion" />
                         <Title>{ctx.chapterTwo.Second.para79}</Title>
                       
                         {["para80","para81","para82"].map((item, ind) =>
@@ -87,7 +87,7 @@ const Dsa = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                        <FloatingActionButtons back="/finances/debtmanagement" forward="/finances/conclusion" />
                         <Title>{ctx.chapter2kannada.Content.para282}</Title>
                       
                         {["para283","para284","para285"].map((item, ind) =>

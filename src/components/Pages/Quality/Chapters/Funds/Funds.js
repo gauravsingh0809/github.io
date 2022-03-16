@@ -30,7 +30,7 @@ const Funds = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                        <FloatingActionButtons back="/quality" forward="/quality/delay" />
                         <Title>{ctx.chapterFour.title}</Title>
 
                         
@@ -76,7 +76,7 @@ const Funds = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                <FloatingActionButtons back="/quality" forward="/quality/delay" />
                     <Title>{ctx.chapter4kannada.Content.para1}</Title>
                     
                     <Para>

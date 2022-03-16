@@ -18,7 +18,7 @@ const AppropAccounts = () => {
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
+        <FloatingActionButtons back="//budget/policy" forward="/budget/audit" />
 
           <Title>{ctx.chapterThree.Profile.Para33}</Title>
           {["Para34", "Para35", "Para36"].map(
@@ -50,7 +50,7 @@ const AppropAccounts = () => {
     <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
+          <FloatingActionButtons back="//budget/policy" forward="/budget/audit" />
 
           <Title>{ctx.chapter3kannada.Content.para39}</Title>
           {["para40", "para41", "para42"].map(

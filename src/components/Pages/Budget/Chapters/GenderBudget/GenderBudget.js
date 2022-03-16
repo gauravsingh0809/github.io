@@ -17,7 +17,7 @@ const GenderBudget = () => {
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
+          <FloatingActionButtons back="/budget/budget-process" forward="/budget/child-budget" />
 
           <Title>{ctx.chapterThree.Profile.Para8}</Title>
           {["Para9", "Para10", "Para11", "Para12"].map(
@@ -40,7 +40,7 @@ const GenderBudget = () => {
     <div>
     <Navbar />
     <div className="contentwrapper" id="home">
-      <FloatingActionButtons back="/budget" forward="budget-process" />
+    <FloatingActionButtons back="/budget/budget-process" forward="/budget/child-budget" />
 
       <Title>{ctx.chapter3kannada.Content.para12}</Title>
       {["para13", "para14", "para15", "para16","para17"].map(

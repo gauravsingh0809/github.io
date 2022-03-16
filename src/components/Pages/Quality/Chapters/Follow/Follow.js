@@ -20,7 +20,7 @@ const Follow = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                    <FloatingActionButtons back="/quality/misappropriations" forward="/quality/conclusion" />
                       
                         
                         <Title>
@@ -45,7 +45,7 @@ const Follow = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                    <FloatingActionButtons back="/quality/misappropriations" forward="/quality/conclusion" />
                   
                     
                     <Title>
