@@ -7,9 +7,9 @@ import FloatingActionButtons from "../../FloatingActionButtons/FloatButton"
 import ImageComponent from "material-ui-image";
 import { getFirebase } from "../../../firebase/firebase";
 
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+// import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
-import AppendixOne from './../../../AppendixOne.pdf';
+// import AppendixOne from './../../../AppendixOne.pdf';
 
 
 const Appendix1 = () => {
