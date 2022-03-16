@@ -6,7 +6,7 @@ import { MyContext } from './../../../../../Context/MyProvider';
 import Para from "./../../../../Para/Para"
 import Title from "./../../../../Title/Title";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
-
+import Table4 from "../../../Tables/Chapter4/Table4";
 
 const Abstract = () => {
 
@@ -29,7 +29,9 @@ const Abstract = () => {
                         <Para>
                             {ctx.chapterFour.second.para8}
                         </Para>
-
+                        <Table4/>
+                        <h6>Source- Finance Accounts 
+                        <br>*Excluding Bills for the Month of March 2021 </br>	</h6>
                         {["Para9", "Para10", "Para11", "Para12"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.second[item]}
@@ -52,7 +54,10 @@ const Abstract = () => {
                     <Para>
                         {ctx.chapter4kannada.Content.para23}
                     </Para>
-
+                    <Table4/>
+                    <h6>ಆಕರ-ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
+                    <br>* ಮಾರ್ಚ್‌ ೨೦೨೧ರ ಬಿಲ್ಲುಗಳನ್ನು ಹೊರತುಪಡಿಸಿ </br> </h6>
+                    
                         {["para24", "para25", "para26", "para27"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}

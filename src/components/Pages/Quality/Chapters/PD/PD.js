@@ -7,7 +7,9 @@ import Para from "./../../../../Para/Para"
 import Title from "./../../../../Title/Title";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
 import Table1 from '../../../Tables/Chapter4/Table1'
-
+import Table5 from "../../../Tables/Chapter4/Table5";
+import Table6 from "../../../Tables/Chapter4/Table6";
+import Table7 from "../../../Tables/Chapter4/Table7";
 
 const PD = () => {
 
@@ -35,14 +37,19 @@ const PD = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.second[item]}
                             </Para> )}
+                            <Table5/>
+                            <h6>Source- Finance Accounts</h6>
                             {["Para17","Para18"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.second[item]}
                             </Para> )}
+                            <Table6/>
+                            <h6>Source- DDR Ledger</h6>
                             {["Para19","Para20","Para21","Para22"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.second[item]}
                             </Para> )}
+                            <Table7/>
                             {["Para23","Para24","Para25","Para26","Para27","Para28"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.second[item]}
@@ -70,14 +77,20 @@ const PD = () => {
                                 <Para key={ind / 10}>
                                     {ctx.chapter4kannada.Content[item]}
                                 </Para> )}
+                                <Table5/>
+                            <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
+
                                 {["para32","para33"].map((item, ind) =>
                                 <Para key={ind / 10}>
                                     {ctx.chapter4kannada.Content[item]}
                                 </Para> )}
+                                <Table6/>
+                                <h6>ಆಕರ: ಡಿಡಿಆರ್‌ ಲೆಡ್ಜರ್</h6>
                                 {["para34","para35","para36","para37","para37a"].map((item, ind) =>
                                 <Para key={ind / 10}>
                                     {ctx.chapter4kannada.Content[item]}
                                 </Para> )}
+                                <Table7/>
                                 {["para38","para39","para40","para41","para42","para43"].map((item, ind) =>
                                 <Para key={ind / 10}>
                                     {ctx.chapter4kannada.Content[item]}
