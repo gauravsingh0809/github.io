@@ -67,18 +67,32 @@ const Profile = () => {
                                 </span>
                                 <sup>1</sup>
                             </span>
-                            {ctx.chapterOne.Profile.para2.substring(309,)}
 
+                            {ctx.chapterOne.Profile.para2.substring(309,)}
                         </Para>
+
                         <Title>
                             {ctx.chapterOne.Profile.para3}
                         </Title>
 
-                        {["para4", "para5"].map((item, ind) =>
+                        {["para4"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
+                         <Para>
+                            {ctx.chapterOne.Profile.para5.substring(0, 186)}
+
+                            <span className="tooltip">
+                                {ctx.chapterOne.Profile.para5.substring(186, 195)}
+                                <span className="tooltiptext">
+                                    The difference between per capita income of the State and National’s average during 2020-21 was `99,828
+                                </span>
+                                <sup>2</sup>
+                            </span>
+                            {ctx.chapterOne.Profile.para5.substring(195,350)}
+
+                        </Para>
 
                         <Title>
                             {ctx.chapterOne.Profile.para6}
@@ -98,11 +112,24 @@ const Profile = () => {
                         {/* Chart 1 goes here */}
                         <Chart1 />
 
-                        {["Para9", "Para10"].map((item, ind) =>
+                        {["Para9"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
+                        <Para>
+                            {ctx.chapterOne.Profile.para10.substring(0, 165)}
+
+                            <span className="tooltip">
+                                {ctx.chapterOne.Profile.para10.substring(165, 174)}
+                                <span className="tooltiptext">
+                                Product taxes or subsidies are paid or received on per unit of product. Some examples of product taxes are excise tax, sales tax, service tax and import and export duties. Product subsidies include food, petroleum and fertilizer subsidies, interest subsidies given to farmers, households, etc. through banks
+                                </span>
+                                <sup>3</sup>
+                            </span>
+                            {ctx.chapterOne.Profile.para5.substring(174,)}
+
+                        </Para>
                         <Chart2 />
                         <h6>
                             3 Source: Directorate of Economics and Statistics, Government of Karnataka

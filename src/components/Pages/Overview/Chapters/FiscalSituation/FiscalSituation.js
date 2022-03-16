@@ -45,11 +45,24 @@ const FiscalSituation = () => {
                         <h6>
                             {ctx.tables1.T5F1}
                         </h6>
-                        {["Para59", "Para60"].map((item, ind) =>
+                        {["Para59"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
+                        <Para>
+                            {ctx.chapterOne.Profile.Para60.substring(0, 177)}
+
+                            <span className="tooltip">
+                                {ctx.chapterOne.Profile.Para60.substring(177, 185)}
+                                <span className="tooltiptext">
+                                Borrowings by PSUs and SPVs are Off-budget borrowings
+                                </span>
+                                <sup>5</sup>
+                            </span>
+                            {ctx.chapterOne.Profile.Para60.substring(185,)}
+
+                        </Para>
 
                         <Subtitle>
                             {ctx.chapterOne.Profile["Para61"]}
@@ -67,11 +80,29 @@ const FiscalSituation = () => {
                             <br></br>
                             {ctx.tables1.T6F2}
                         </h6>
-                        {["Para64", "Para65"].map((item, ind) =>
+                        <Para>
+                            {ctx.chapterOne.Profile.Para64.substring(0, 98)}
+
+                            <span className="tooltip">
+                                {ctx.chapterOne.Profile.Para64.substring(98, 108)}
+                                <span className="tooltiptext">
+                                Fiscal indicators like revenue surplus/deficit, fiscal deficit, Debt-GSDP ratio and GSDP growth rate at current prices.
+                                </span>
+                                <sup>6</sup>
+                            </span>
+                            {ctx.chapterOne.Profile.Para64.substring(108,)}
+
+                        </Para>
+                        {["Para65"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
+                     
+                            
+                            
+
+                        
                     </div>
                 </div>
                 : <div>
@@ -103,11 +134,12 @@ const FiscalSituation = () => {
                     <h6>
                         {ctx.tables1.T5F1}
                     </h6> */}
-                    {["para62", "para63"].map((item, ind) =>
+                    {["para62","para63"].map((item, ind) =>
                         <Para key={ind / 10}>
                             {ctx.chapter1kannada.Content[item]}
                         </Para>
                     )}
+                    
 
                     <Subtitle>
                         {ctx.chapter1kannada.Content["para64"]}
