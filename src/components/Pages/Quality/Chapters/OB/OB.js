@@ -6,8 +6,9 @@ import { MyContext } from '../../../../../Context/MyProvider';
 import Para from "../../../../Para/Para"
 import Title from "../../../../Title/Title";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
-import Table1 from '../../../Tables/Chapter4/Table1'
+import Table8 from '../../../Tables/Chapter4/Table8'
 import Table9 from "../../../Tables/Chapter4/Table9";
+
 const OB = () => {
 
     const ctx = useContext(MyContext)
