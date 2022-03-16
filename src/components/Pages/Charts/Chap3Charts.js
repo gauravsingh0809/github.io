@@ -60,7 +60,7 @@ export const Chart3 = () => {
       ? <Card className={classes.cardColored}>
         <CustomBarChart
           data={chartTwo}
-          title='Chart 3.6: Monthly receipts and Expenditure during 2019-20'
+          title='Chart 3.3: Monthly Receipts and Disbursements during 2020-21'
           xaxisTitle="Sector"
           yaxisTitle="Contribution to GDP"
           rangeStart="0"
@@ -73,7 +73,7 @@ export const Chart3 = () => {
       : <Card className={classes.cardMargin}>
         <CustomBarChart
           data={chartTwo}
-          title='Chart 3.6: Monthly receipts and Expenditure during 2019-20'
+          title='Chart 3.3: Monthly Receipts and Disbursements during 2020-21'
           xaxisTitle="Sector"
           yaxisTitle="Contribution to GDP"
           rangeStart="0"

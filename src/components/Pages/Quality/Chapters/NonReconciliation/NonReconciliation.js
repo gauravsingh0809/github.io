@@ -7,7 +7,7 @@ import Para from "../../../../Para/Para"
 import Title from "../../../../Title/Title";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import Table1 from '../../../Tables/Chapter4/Table1'
-
+import Table10 from "../../../Tables/Chapter4/Table10";
 
 const NonReconciliation = () => {
 
@@ -35,6 +35,8 @@ const NonReconciliation = () => {
                         <Para>
                         {ctx.chapterFour.Third.Para26}
                         </Para>
+                        <Table10/>
+                        <h6>Source- Report on MCA and Finance Accounts</h6>
                         <Para>
                         {ctx.chapterFour.Third.Para27}
                         </Para>
@@ -63,6 +65,8 @@ const NonReconciliation = () => {
                     <Para>
                     {ctx.chapter4kannada.Content.para68}
                     </Para>
+                    <Table10/>
+                    <h6>ಆಕರ-ಎಮ್‌ಸಿಎ ಮೇಲಿನ ವರದಿ ಮತ್ತು ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
                     <Para>
                     {ctx.chapter4kannada.Content.para69}
                     </Para>

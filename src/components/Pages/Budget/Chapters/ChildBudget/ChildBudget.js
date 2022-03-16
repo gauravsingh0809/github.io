@@ -8,6 +8,7 @@ import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButt
 import "./../../Budget.css";
 import Subtitle from  "../../../../Subtitle/Subtitle"
 import Table2 from "../../../Tables/Chapter3/Table2";
+import Table3 from "../../../Tables/Chapter3/Table3";
 const ChildBudget = () => {
   const ctx = useContext(MyContext);
   console.log("ctx", ctx);
@@ -33,9 +34,12 @@ const ChildBudget = () => {
             )
           )}  
           <Table2/> 
-
+          <h6>i) Budgetary allocation and expenditure for Child Centric Non-programme/Scheme comprise institutional set ups, establishments, infrastructure facilities and administrative support that benefit children.
+          <br>(ii) Beneficiaries of 100% Child Centric Programme include pregnant or expectant mothers and lactating mothers.</br>
+          </h6>
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
              <Para>{ctx.chapterThree.Profile.Para25}</Para>
+             <Table3/>
              <Para>{ctx.chapterThree.Profile.Para26}</Para>
              <Para>{ctx.chapterThree.Profile.Para27}</Para>
 
@@ -67,8 +71,12 @@ const ChildBudget = () => {
             )
           )}    
           <Table2/>  
+          <h6>ಟಿಪ್ಪಣಿ: (i)ಮಕ್ಕಳ ಕೇಂದ್ರಿತವಲ್ಲದ ಕಾರ್ಯಕ್ರಮ/ಯೋಜನೆಗೆ ಆಯವ್ಯಯ ಹಂಚಿಕೆ ಮತ್ತು ವೆಚ್ಚವು ಮಕ್ಕಳಿಗೆ ಪ್ರಯೋಜನವಾಗುವ ಸಾಂಸ್ಥಿಕ ಸ್ಥಾಪನೆಗಳು, ಆಡಳಿತ ಭಾಗಗಳು, ಮೂಲಸೌಕರ್ಯ ಸೌಲಭ್ಯಗಳು ಮತ್ತು ಆಡಳಿತಾತ್ಮಕ ಬೆಂಬಲವನ್ನು ಒಳಗೊಂಡ ಯೋಜನೆಗಳು.
+          <br>(ii) ಶೇಕಡ ೧೦೦ರಷ್ಟು ಕೇಂದ್ರಿತ ಕಾರ್ಯಕ್ರಮದ ಫಲಾನುಭವಿಗಳಲ್ಲಿ ಗರ್ಭಿಣಿ ಅಥವಾ ನಿರೀಕ್ಷಿತ ತಾಯಂದಿರು ಮತ್ತು ಹಾಲುಣಿಸುವ ತಾಯಂದಿರು ಸೇರಿದ್ದಾರೆ.</br>
+          </h6>
              {/* <Para>{ctx.chapter3kannada.Introduction.Para1}</Para> */}
              <Para>{ctx.chapter3kannada.Content.para31}</Para>
+             <Table3/>
              <Para>{ctx.chapter3kannada.Content.para32}</Para>
              <Para>{ctx.chapter3kannada.Content.para33}</Para>
 

@@ -31,7 +31,8 @@ const Misapp = () => {
                                 {ctx.chapterFour.Fourth[item]}
                             </Para> )}
                        
-                        
+                            <Table12/>
+                   <h6>Source: Office of the Pr.AG(Audit I) and AG(Audit II)</h6>
                          
                            
                     
@@ -55,7 +56,8 @@ const Misapp = () => {
                         <Para key={ind / 10}>
                             {ctx.chapter4kannada.Content[item]}
                         </Para> )}
-                   
+                        <Table12/>
+                   <h6>ಆಕರ: ಮಹಾಲೇಖಪಾಲರು (ಆಡಿಟ್ I) ಮತ್ತು ಮಹಾಲೇಖಪಾಲರು (ಆಡಿಟ್ II) ಕಚೇರಿ</h6>
                     
                      
                        
