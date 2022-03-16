@@ -7,8 +7,8 @@ import Para from "./../../../../Para/Para"
 import Title from "./../../../../Title/Title";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
 import Table1 from '../../../Tables/Chapter4/Table1'
-
-
+import Table2 from "../../../Tables/Chapter4/Table2";
+import Table3 from "../../../Tables/Chapter4/Table3";
 const Delay = () => {
 
     const ctx = useContext(MyContext)
@@ -32,6 +32,10 @@ const Delay = () => {
                         <Para>
                         {ctx.chapterFour.second.para2}
                         </Para>
+                        <Table2/>
+                        <h6>Source: Office of the Pr.AG(A&E)</h6>
+                        <Table3/>
+                        <h6>Source: Office of the Pr.AG(A&E)</h6>
                         <Para>
                         {ctx.chapterFour.second.para4}
                         </Para>
@@ -59,6 +63,10 @@ const Delay = () => {
                     <Para>
                     {ctx.chapter4kannada.Content.para18}
                     </Para>
+                    <Table2/>
+                    <h6>ಆಕರ - ಮಹಾಲೇಖಪಾಲರ (ಲೆ ಮತ್ತು ಹ) ಕಚೇರಿ</h6>
+                    <Table3/>
+                    <h6>ಆಕರ - ಮಹಾಲೇಖಪಾಲರ (ಲೆ ಮತ್ತು ಹ) ಕಚೇರಿ</h6>
                     <Para>
                     {ctx.chapter4kannada.Content.para19}
                     </Para>

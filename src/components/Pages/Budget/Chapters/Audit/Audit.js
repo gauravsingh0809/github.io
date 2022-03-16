@@ -6,7 +6,12 @@ import Navbar from "../../../../Navbar/Navbar";
 import { FaSpinner } from "react-icons/fa";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton";
 import "./../../Budget.css";
-
+import Table7 from "../../../Tables/Chapter3/Table7";
+import Table8 from "../../../Tables/Chapter3/Table8";
+import Table9 from "../../../Tables/Chapter3/Table9";
+import Table10 from "../../../Tables/Chapter3/Table10";
+import Table11 from "../../../Tables/Chapter3/Table11";
+import { Chart3 as Chart3Chap3 } from '../../../Charts/Chap3Charts'
 const Audit = () => {
   const ctx = useContext(MyContext);
   console.log(ctx.chapter3kannada);
@@ -20,18 +25,21 @@ const Audit = () => {
           <FloatingActionButtons back="/budget" forward="budget-process" />
 
           <Title>{ctx.chapterThree.Profile.Para40}</Title>
-          {["p", "Para42", "Para43","Para44", "Para45", "Para46",
+          {["para41", "Para42", "Para43","Para44", "Para45", "Para46",
           "Para47", "Para48", "Para49","Para50", "Para51", "Para52","Para53", "Para54"].map(
             (item, ind) => (
               <Para key={ind / 10}>
               {ctx.chapterThree.Profile[item]}
               </Para>
           ))}
+          <Table7/>
           {["Para55","Para56","Para57","Para58","Para59","Para60","Para61"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             ))
           }
+          <Table8/>
+          <h6>Source: Grant Register</h6>
           {["Para62","Para63","Para64","Para65","Para66","Para67","Para68"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
@@ -47,6 +55,7 @@ const Audit = () => {
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )) 
           }
+          <Table9/>
           {["Para103","Para104","Para105","Para106","Para107","Para108","Para109","Para110","Para111","Para112"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
@@ -57,11 +66,13 @@ const Audit = () => {
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )) 
           }
+          <Chart3Chap3 />
           {["Para116","Para117"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )) 
           }
+          <Table10/>
           {["Para118","Para119"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
@@ -90,11 +101,14 @@ const Audit = () => {
           {ctx.chapter3kannada.Content[item]}
           </Para>
       ))}
+      <Table7/>
       {["para61","para62","para63","para64","para65","para66","para67"].map(
         (item, ind) => (
           <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
         ))
       }
+      <Table8/>
+      <h6>ಆಕರ: ಅನುದಾನ ವಹಿ</h6>
       {["para68","para69","para70","para71","para72","para73","para74"].map(
         (item, ind) => (
           <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
@@ -110,16 +124,19 @@ const Audit = () => {
           <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
         )) 
       }
+      <Table9/>
       {["para109","para110","para111","para112","para113","para114","para115","para116","para117","para118"].map(
         (item, ind) => (
           <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
         )) 
       }
+       <Chart3Chap3 />
       {["para119","para120","para121"].map(
         (item, ind) => (
           <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
         )) 
       }
+      <Table10/>
       {["para122","para123"].map(
         (item, ind) => (
           <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>

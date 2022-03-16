@@ -6,7 +6,8 @@ import Navbar from "../../../../Navbar/Navbar";
 import { FaSpinner } from "react-icons/fa";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton";
 import "./../../Budget.css";
-
+import Table5 from "../../../Tables/Chapter3/Table5";
+import Table6 from "../../../Tables/Chapter3/Table6";
 const AppropAccounts = () => {
   const ctx = useContext(MyContext);
   console.log(ctx.chapter3kannada);
@@ -25,11 +26,14 @@ const AppropAccounts = () => {
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )
           )}
+          <Table5/>
           {["Para37", "Para38", "Para39"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )
           )}
+          <Table6/>
+          <h6>Source: Appropriation Accounts</h6>
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 
         </div>
@@ -54,11 +58,15 @@ const AppropAccounts = () => {
               <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
             )
           )}
+          <Table5/>
+
           {["para43", "para44", "para45"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
             )
           )}
+          <Table6/>
+          <h6>ಆಧಾರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 
         </div>

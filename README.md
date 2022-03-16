@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Create React App.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,65 +6,97 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To create build directory run
 
-### `npm test`
+## `npm run build`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## For running the Flask app
 
-### `npm run build`
+Navigate to Flask directory
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `cd flask`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Upgrad pip (Optional)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `python -m pip install - upgrade pip`
 
-### `npm run eject`
+Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `pip install -r requirements.txt`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+and run following command
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `python -m flask run`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Flask server will be running at localhost:5000/
 
-## Learn More
+# Deploying to IIS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## React App
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Deploying react application is pretty straight forward. 
 
-### Code Splitting
+1. Run npm run build to create a production build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Create a new application pool. Application Pools> Add Application Pools
 
-### Analyzing the Bundle Size
+3. Set pool identity as custom account. Right click on Application Pools > Advanced settings > Identity > custom account
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Add site > Give physical path for the react app build folder and Port
 
-### Making a Progressive Web App
+### Note: As the react application we are deploying uses react-router-dom, it needs url-rewrite module for IIS.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Flask App
 
-### Advanced Configuration
+Before deploying the flask make sure the python version 3.9 and wfastcgi is installed globally on windows. Prefer separately installing python and wfastcgi over installing wfastcgi bundle from web platform installer as this will come with a prefixed python version of 3.4
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Create application pool and give a separate pool identity.
 
-### Deployment
+2. Add site and give flask application root
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. Click on Handler mappings of this site. Click add module mapping
+*  Set request path to *
+*  Set module as FastCgiModule
+*  Executable file  C:\Python39\Python.exe|C:\your\application\path\wfastcgi.py  - Give the path of these files in server
+*  Click “Request Restrictions” adn make sure “Invoke handler only if request is mapped to:” checkbox is unchecked
+*  Confirm the module mapping dialog by clicking yes.
 
-### `npm run build` fails to minify
+4. Go to the root server settings and click on the FastCgi Settings. Double click to open environment variables collection editor.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. Add python path variable with name: PYTHONPATH and value: C:\your\flask\app\folder\
+
+6. Add WSGI_HANDLER with name: WGSI_HANDLER and value: app.app. Click OK to browse the site.
+
+# Adding Application as directory
+
+## For react
+
+1. Install Application Request Routing
+
+2. Enable proxy at the root level
+
+3. Go to default site
+
+4. Click on url_rewrite
+
+5. Click on add rule. Give name 'ReactApp'
+
+6. Specify pattern as sfrreport(/)?(.*) Also select ignore case
+
+7. Give the rewrite URL as http://localhost:port_of_react_app/{R:2}
+
+8. Check Append query string, log rewritten url and stop processing of subsequent rules
+
+## For Flask App
+
+1. Follow the above mentioned steps from point 3
+
+2. Specify pattern as sfrdashboard(/)?(.*) and proxy as http://localhost:port_of_flask_app/{R:2}
+
+* Now, you should be able to access them at cedar.gov.in/home and cedar.gov.in/sfrdashboard

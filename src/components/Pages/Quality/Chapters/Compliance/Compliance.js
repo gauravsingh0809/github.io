@@ -7,7 +7,7 @@ import Para from "../../../../Para/Para"
 import Title from "../../../../Title/Title";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import Table1 from '../../../Tables/Chapter4/Table1'
-
+import Table11 from "../../../Tables/Chapter4/Table11";
 
 const Compliance = () => {
 
@@ -33,6 +33,8 @@ const Compliance = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para> )}
+                            <Table11/>
+
                         <Para>
                         {ctx.chapter4kannada.Content.Para4}
                         </Para>
@@ -60,6 +62,7 @@ const Compliance = () => {
                         <Para key={ind / 10}>
                             {ctx.chapter4kannada.Content[item]}
                         </Para> )}
+                        <Table11/>
                  
                      
                        
