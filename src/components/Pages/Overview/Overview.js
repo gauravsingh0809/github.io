@@ -6,6 +6,7 @@ import { MyContext } from './../../../Context/MyProvider';
 import Para from "../../Para/Para"
 import Title from "../../Title/Title";
 import FloatingActionButtons from "../../FloatingActionButtons/FloatButton"
+import { Helmet } from "react-helmet";
 
 
 const Overview = () => {
@@ -19,6 +20,11 @@ const Overview = () => {
             ? (ctx.execsummary
                 ?
                 <div >
+                    <Helmet>
+                        <meta charSet="utf-8" />
+                        <title>SFR Overview</title>
+                        <link rel="canonical" href="https://cedar.gov.in/sfrreport/#/overview" />
+                    </Helmet>
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/preface/" forward="/overview/introduction" />
@@ -34,7 +40,7 @@ const Overview = () => {
                                 {ctx.execsummary[item]}
                             </Para>
                         )}
-                        
+
                     </div>
                 </div> : <div>
                     <Navbar />

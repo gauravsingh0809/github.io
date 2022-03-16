@@ -128,12 +128,12 @@ const columns = [
   // },
 ];
 
-const conditionalRowStyles = [
-   {
-    when: row => row["Year"] === "India's GDP* (` in crore)",
-    format: row => row["Year"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
-}
-];
+// const conditionalRowStyles = [
+//    {
+//     when: row => row["Year"] === "India's GDP* (` in crore)",
+//     format: row => row["Year"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+// }
+// ];
 
 const customStyles = styles
 
@@ -156,7 +156,7 @@ const Table1 = () => {
           sortIcon={<SortIcon />}
           customStyles={customStyles}
           striped
-          conditionalRowStyles={conditionalRowStyles}
+          // conditionalRowStyles={conditionalRowStyles}
           highlightOnHover
           pointerOnHover
         />
