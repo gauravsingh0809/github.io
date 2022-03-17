@@ -30,9 +30,11 @@ const AssetsSnapshot = () => {
                             </Para>
                         )}
                         <Table3 />
-                        <h6>
+                        <h5 className='footnote'>
                             {ctx.tables1.T3F1}
-                        </h6>
+                            <br></br>
+                            * Effective Loans and Advances for GoI would be ` 14,210 crore as the Department of Expenditure, GoI had decided that GST compensation of ` 12,407 crore given to the state as back-to- back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
+                        </h5>
                         {["Para45"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}

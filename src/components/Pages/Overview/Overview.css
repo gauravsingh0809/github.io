@@ -130,3 +130,12 @@ p {
 .tooltip:hover .tooltiptext {
   opacity: 1;
 }
+
+.footnote {
+  margin-top: -10px;
+}
+
+.headnote {
+  text-align:right;
+  margin-bottom:-30px;
+}

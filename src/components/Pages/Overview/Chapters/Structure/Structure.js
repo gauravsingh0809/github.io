@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext , useState} from 'react'
 import { MyContext } from '../../../../../Context/MyProvider'
 import Para from '../../../../Para/Para'
 import Title from "../../../../Title/Title"
@@ -7,12 +7,24 @@ import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 import ContentSlider from '../../../../ContentSlider/ContentSlider'
+import ImageComponent from 'material-ui-image'
+import { getFirebase } from '../../../../../firebase/firebase'
 
 
 
 const Structure = () => {
 
     const ctx = useContext(MyContext)
+
+    const [url, setURL] = useState("");
+
+    getFirebase()
+        .storage()
+        .ref('/images/chap1chart5.png')
+        .getDownloadURL()
+        .then((url) => {
+            setURL(url);
+        });
 
     return (
         ctx.langPref
@@ -48,8 +60,6 @@ const Structure = () => {
                             {ctx.chapterOne.Profile.Para28}
                         </Para>
 
-
-
                         {["Para29", "Para30", "Para31"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 <li>
@@ -74,7 +84,8 @@ const Structure = () => {
                         <Para>
                             {ctx.chapterOne.Profile["Para35"]}
                         </Para>
-                        Flow Chart Image Comes here.
+
+                        <ImageComponent src={url} alt="chart5" aspectRatio={1/0.8} />
                     </div>
                 </div>
                 : <div>
@@ -83,18 +94,18 @@ const Structure = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
-                       ? <div >
-                    <Navbar />
-                    <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/overview/basis" forward="/overview/budgetprocess" />
-                        <Title id="anchor">
-                            {ctx.chapter1kannada.Content.para29}
-                        </Title>
-                        <Para>
-                            {ctx.chapter1kannada.Content.para30}
-                        </Para>
+                    ? <div >
+                        <Navbar />
+                        <div className="contentwrapper" id="home">
+                            <FloatingActionButtons back="/overview/basis" forward="/overview/budgetprocess" />
+                            <Title id="anchor">
+                                {ctx.chapter1kannada.Content.para29}
+                            </Title>
+                            <Para>
+                                {ctx.chapter1kannada.Content.para30}
+                            </Para>
 
-                        {/* <ContentSlider
+                            {/* <ContentSlider
                             position="left"
                             content={ctx.chapter1kannada.Content.Para27a}
                             title="Consolidated fund"
@@ -110,39 +121,39 @@ const Structure = () => {
                             title="Public Account"
                         /> */}
 
-                        <Para>
-                            {ctx.chapter1kannada.Content.para31}
-                        </Para>
+                            <Para>
+                                {ctx.chapter1kannada.Content.para31}
+                            </Para>
 
 
 
-                        {["para31", "para32", "para33"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                <li>
-                                    {ctx.chapter1kannada.Content[item]}
-                                </li>
+                            {["para31", "para32", "para33"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    <li>
+                                        {ctx.chapter1kannada.Content[item]}
+                                    </li>
+                                </Para>
+                            )}
+                            {["para34", "para35"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    <li style={{ marginLeft: "25px", listStyle: "square" }}>
+                                        {ctx.chapter1kannada.Content[item]}
+                                    </li>
+                                </Para>
+                            )}
+                            {["para36"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    <li>
+                                        {ctx.chapter1kannada.Content[item]}
+                                    </li>
+                                </Para>
+                            )}
+                            <Para>
+                                {ctx.chapter1kannada.Content["para37"]}
                             </Para>
-                        )}
-                        {["para34", "para35"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                <li style={{ marginLeft: "25px", listStyle: "square" }}>
-                                    {ctx.chapter1kannada.Content[item]}
-                                </li>
-                            </Para>
-                        )}
-                        {["para36"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                <li>
-                                    {ctx.chapter1kannada.Content[item]}
-                                </li>
-                            </Para>
-                        )}
-                        <Para>
-                            {ctx.chapter1kannada.Content["para37"]}
-                        </Para>
-                        Flow Chart Image Comes here.
+                            <ImageComponent src={url} alt="chart5" aspectRatio={1/0.8} />
+                        </div>
                     </div>
-                </div>
                 </div>
                 : <div>
                     <Navbar />

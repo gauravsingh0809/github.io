@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <div className="App">
       <nav className="Navbar">
-        <h2>eSFAR</h2>
+        <h2>e-SFAR</h2>
         <ul>
           <li>
             <Link to="/">About</Link>

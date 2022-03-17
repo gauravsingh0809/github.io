@@ -26,18 +26,18 @@ const columns = [
     selector: "2016-17",
     sortable: true,
     format: data => data["2016-17"].toLocaleString('en-IN'),
-    conditionalCellStyles: [
-      {
-        when: row => (row["2016-17"] === 15.54),
-        style: {
-          backgroundColor: '#FFF89A',
-          color: 'black',
-          '&:hover': {
-            cursor: 'pointer',
-          },
-        },
-      },
-    ]
+    // conditionalCellStyles: [
+    //   {
+    //     when: row => (row["2016-17"] === 15.54),
+    //     style: {
+    //       backgroundColor: '#FFF89A',
+    //       color: 'black',
+    //       '&:hover': {
+    //         cursor: 'pointer',
+    //       },
+    //     },
+    //   },
+    // ]
   },
   {
     name: "2017-18",
@@ -62,18 +62,18 @@ const columns = [
     selector: "2020-21",
     sortable: true,
     format: data => data["2020-21"].toLocaleString('en-IN'),
-    conditionalCellStyles: [
-      {
-        when: row => (row["2020-21"] === "-4.27"),
-        style: {
-          backgroundColor: '#FFF89A',
-          color: 'black',
-          '&:hover': {
-            cursor: 'pointer',
-          },
-        },
-      },
-    ]
+    // conditionalCellStyles: [
+    //   {
+    //     when: row => (row["2020-21"] === "-4.27"),
+    //     style: {
+    //       backgroundColor: '#FFF89A',
+    //       color: 'black',
+    //       '&:hover': {
+    //         cursor: 'pointer',
+    //       },
+    //     },
+    //   },
+    // ]
   },
 
 
@@ -128,12 +128,12 @@ const columns = [
   // },
 ];
 
-const conditionalRowStyles = [
-   {
-    when: row => row["Year"] === "India's GDP* (` in crore)",
-    format: row => row["Year"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
-}
-];
+// const conditionalRowStyles = [
+//    {
+//     when: row => row["Year"] === "India's GDP* (` in crore)",
+//     format: row => row["Year"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+// }
+// ];
 
 const customStyles = styles
 
@@ -156,7 +156,7 @@ const Table1 = () => {
           sortIcon={<SortIcon />}
           customStyles={customStyles}
           striped
-          conditionalRowStyles={conditionalRowStyles}
+          // conditionalRowStyles={conditionalRowStyles}
           highlightOnHover
           pointerOnHover
         />

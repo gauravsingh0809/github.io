@@ -47,7 +47,7 @@ const FiscalParams = () => {
                             {ctx.chapterOne.Profile.Para51.substring(0, 91)}
 
                             <span className="tooltip">
-                                {ctx.chapterOne.Profile.para10.substring(91, 98)}
+                                {ctx.chapterOne.Profile.Para51.substring(91, 98)}
                                 <span className="tooltiptext">
                                 Growth rate of Revenue Receipts and Revenue Expenditure for 2020-21 is (-) 10.67 per cent and 1.03 per cent respectively. The difference between these two is (-) 9.64 per cent.
                                 </span>

@@ -9,7 +9,7 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "Sl no",
+        name: " ",
         selector: "Sl no",
         grow: 0,
         wrap: true,
@@ -38,14 +38,14 @@ const columns = [
         selector: "Liabilities 2019-20",
         grow:0.2,
         wrap: true,
-        format: data => data["Liabilities 2019-20"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+        format: data => data["Liabilities 2019-20"].toLocaleString('en-IN')
     },
     {
         name: "Liabilities 2020-21",
         selector: "Liabilities 2020-21",
         grow: 0.2,
         wrap: true,
-        format: data => data["Liabilities 2020-21"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+        format: data => data["Liabilities 2020-21"].toLocaleString('en-IN')
     },
     {
         name: "Percent Increase",
@@ -56,7 +56,7 @@ const columns = [
         format: data => data["Per cent increase"].toLocaleString('en-IN')
     },
     {
-        name: "Sl No",
+        name: " ",
         selector: "Sl no__1",
         grow: 0,
         wrap: true,
@@ -85,14 +85,14 @@ const columns = [
         selector: "Assets 2019-20",
         grow: 0.2,
         wrap: true,
-        format: data => data["Assets 2019-20"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+        format: data => data["Assets 2019-20"].toLocaleString('en-IN')
     },
     {
         name: "Assets 2020-21",
         selector: "Assets 2020-21",
         grow: 0.2,
         wrap: true,
-        format: data => data["Assets 2020-21"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+        format: data => data["Assets 2020-21"].toLocaleString('en-IN')
     },
     {
         name: "Percent Increase",
