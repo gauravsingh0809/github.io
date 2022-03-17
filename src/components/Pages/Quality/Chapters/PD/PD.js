@@ -25,7 +25,7 @@ const PD = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                        <FloatingActionButtons back="/quality/acbills" forward="/quality/balances" />
                       
                         
                         <Title>
@@ -65,7 +65,7 @@ const PD = () => {
                     ? <div >
                         <Navbar />
                         <div className="contentwrapper" id="home">
-                            <FloatingActionButtons back="/quality" forward="delay" />
+                        <FloatingActionButtons back="/quality/acbills" forward="/quality/balances" />
                           
                             
                             <Title>
