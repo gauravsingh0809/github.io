@@ -30,11 +30,13 @@ const AssetsSnapshot = () => {
                             </Para>
                         )}
                         <Table3 />
-                        <h5 className='footnote'>
-                            {ctx.tables1.T3F1}
-                            <br></br>
-                            * Effective Loans and Advances for GoI would be ` 14,210 crore as the Department of Expenditure, GoI had decided that GST compensation of ` 12,407 crore given to the state as back-to- back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
-                        </h5>
+                        <h4 className='footnote'>
+                            <i>
+                                {ctx.tables1.T3F1}
+                                <br></br>
+                                * Effective Loans and Advances for GoI would be ` 14,210 crore as the Department of Expenditure, GoI had decided that GST compensation of ` 12,407 crore given to the state as back-to- back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
+                            </i>
+                        </h4>
                         {["Para45"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
@@ -49,35 +51,35 @@ const AssetsSnapshot = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
-                <Navbar />
-                <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/overview/snapshot-finances" forward="/overview/fiscalparams" />
-                    <Title id="anchor">
-                        {ctx.chapter1kannada.Content.para46}
-                    </Title>
-                    {["para47"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
-                    <Table3 />
-                    <h6>
-                    ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
-              
-                    
-                    </h6>
-                    {["para48"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
+                    <Navbar />
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/overview/snapshot-finances" forward="/overview/fiscalparams" />
+                        <Title id="anchor">
+                            {ctx.chapter1kannada.Content.para46}
+                        </Title>
+                        {["para47"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        <Table3 />
+                        <h4>
+                            <i>
+                                ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
+                            </i>
+                        </h4>
+                        {["para48"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
 
+                    </div>
                 </div>
-            </div>
-            : <div>
-                <Navbar />
-                <FaSpinner icon="spinner" className="spinner" />
-            </div>)
+                : <div>
+                    <Navbar />
+                    <FaSpinner icon="spinner" className="spinner" />
+                </div>)
     )
 }
 

@@ -20,7 +20,7 @@ const columns = [
         selector: "Outstanding in respect of",
         // grow:0.05,
         wrap: true,
-        format: data => data["Outstanding in respect of"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Outstanding in respect of"].toLocaleString('en-IN')
     },
     {
         name: "Amount as per",
@@ -28,19 +28,19 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Amount as per"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Amount as per"].toLocaleString('en-IN')
     },
     {
         name: " ",
         selector: "1",
         wrap: true,
-        format: data => data["1"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["1"].toLocaleString('en-IN')
     },
     {
         name: "Difference",
         selector: "Difference",
         wrap: true,
-        format: data => data["Difference"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Difference"].toLocaleString('en-IN')
     }
 ];
 

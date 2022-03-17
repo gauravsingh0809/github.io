@@ -20,20 +20,20 @@ const columns = [
         selector: "XV FC assessment",
         // grow:0.05,
         wrap: true,
-        format: data => data["XV FC assessment"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["XV FC assessment"].toLocaleString('en-IN')
     },
     {
         name: "Budget Estimates",
         selector: "Budget Estimates",
         // grow:0.05,
         wrap: true,
-        format: data => data["Budget Estimates"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Budget Estimates"].toLocaleString('en-IN')
     },
     {
         name: "Actual",
         selector: "Actual",
         wrap: true,
-        format: data => data["Actual"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Actual"].toLocaleString('en-IN')
     },
     {
         name: "Percentage variation of actual over",

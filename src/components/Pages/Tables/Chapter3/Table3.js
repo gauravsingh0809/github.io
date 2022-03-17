@@ -22,13 +22,13 @@ const columns = [
         name: "Allocation during 2020-21",
         selector: "Allocation during 2020-21",
         wrap: true,
-        format: data => data["Allocation during 2020-21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Allocation during 2020-21"].toLocaleString('en-IN')
     },
     {
         name: "Expenditure",
         selector: "Expenditure",
         wrap: true,
-        format: data => data["Expenditure"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Expenditure"].toLocaleString('en-IN')
     },
     {
         name: "Savings (in percentage)",

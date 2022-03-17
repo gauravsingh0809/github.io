@@ -21,19 +21,19 @@ const columns = [
         name: "Budget Provision",
         selector: "Budget Provision",
         wrap: true,
-        format: data => data["Budget Provision"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Budget Provision"].toLocaleString('en-IN')
     },
     {
         name: "Total",
         selector: "Total",
         wrap: true,
-        format: data => data["Total"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Total"].toLocaleString('en-IN')
     },
     {
         name: "Expenditure",
         selector: "Expenditure",
         wrap: true,
-        format: data => data["Expenditure"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Expenditure"].toLocaleString('en-IN')
     },
     {
         name: "Unutilized provision and its percentage",

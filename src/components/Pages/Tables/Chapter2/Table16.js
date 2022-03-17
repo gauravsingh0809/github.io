@@ -20,7 +20,7 @@ const columns = [
         selector: "Budget",
         // grow:0.05,
         wrap: true,
-        format: data => data["Budget"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Budget"].toLocaleString('en-IN')
     },
     {
         name: "Expenditure",
@@ -28,7 +28,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Expenditure"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Expenditure"].toLocaleString('en-IN')
     },
     {
         name: "Utilisation percentage",

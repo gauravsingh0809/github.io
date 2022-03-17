@@ -27,7 +27,7 @@ const columns = [
         selector: "Receipt",
         // grow:0.05,
         wrap: true,
-        format: data => data["Receipt"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Receipt"].toLocaleString('en-IN')
     },
     {
         name: "Disbursement",
@@ -35,7 +35,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Disbursement"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Disbursement"].toLocaleString('en-IN')
     },
     {
         name: "Net",
@@ -43,7 +43,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Net"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Net"].toLocaleString('en-IN')
     }
 ];
 

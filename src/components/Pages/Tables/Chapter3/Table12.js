@@ -20,7 +20,7 @@ const columns = [
         selector: "1",
         wrap: true,
         sortable:true,
-        format: data => data["1"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["1"].toLocaleString('en-IN')
 
     },
     {
@@ -28,35 +28,35 @@ const columns = [
         selector: "Revenue",
         wrap: true,
         sortable:true,
-        format: data => data["Revenue"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Revenue"].toLocaleString('en-IN')
     },
     {
         name: " ",
         selector: "2",
         wrap: true,
         sortable:true,
-        format: data => data["2"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2"].toLocaleString('en-IN')
     },
     {
         name: " ",
         selector: "3",
         wrap: true,
         sortable:true,
-        format: data => data["3"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["3"].toLocaleString('en-IN')
     },
     {
         name: "Capital",
         selector: "Capital",
         wrap: true,
         sortable:true,
-        format: data => data["Capital"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Capital"].toLocaleString('en-IN')
     },
     {
         name: " ",
         selector: "4",
         wrap: true,
         sortable:true,
-        format: data => data["4"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["4"].toLocaleString('en-IN')
     }
 ];
 

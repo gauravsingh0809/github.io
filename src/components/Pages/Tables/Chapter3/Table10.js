@@ -21,42 +21,42 @@ const columns = [
         name: "1st Qtr",
         selector: "1st Qtr",
         wrap: true,
-        format: data => data["1st Qtr"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["1st Qtr"].toLocaleString('en-IN')
     },
     {
         name: "2nd Qtr",
         selector: "2nd Qtr",
         // grow:0.2 ,
         wrap: true,
-        format: data => data["2nd Qtr"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2nd Qtr"].toLocaleString('en-IN')
     },
     {
         name: "3rd Qtr",
         selector: "3rd Qtr",
         // grow:0.5 ,
         wrap: true,
-        format: data => data["3rd Qtr"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["3rd Qtr"].toLocaleString('en-IN')
     },
     {
         name: "4th Qtr",
         selector: "4th Qtr",
         // grow:0.2 ,
         wrap: true,
-        format: data => data["4th Qtr"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["4th Qtr"].toLocaleString('en-IN')
     },
     {
         name: "Total Expenditure",
         selector: "Total Expenditure",
         // grow:0.5 ,
         wrap: true,
-        format: data => data["Total Expenditure"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Total Expenditure"].toLocaleString('en-IN')
     },
     {
         name: "Expenditure in March",
         selector: "Expenditure in March",
         // grow:0.2 ,
         wrap: true,
-        format: data => data["Expenditure in March"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Expenditure in March"].toLocaleString('en-IN')
     },
     {
         name: "Expenditure in March as a percentage of TE",

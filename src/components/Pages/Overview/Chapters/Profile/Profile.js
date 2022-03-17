@@ -80,7 +80,7 @@ const Profile = () => {
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
-                         <Para>
+                        <Para>
                             {ctx.chapterOne.Profile.para5.substring(0, 186)}
 
                             <span className="tooltip">
@@ -90,7 +90,7 @@ const Profile = () => {
                                 </span>
                                 <sup>2</sup>
                             </span>
-                            {ctx.chapterOne.Profile.para5.substring(195,350)}
+                            {ctx.chapterOne.Profile.para5.substring(195, 350)}
 
                         </Para>
 
@@ -105,10 +105,12 @@ const Profile = () => {
 
                         {/* Table 1 goes here */}
                         <Table1 id="table1" />
-                        <h5 className='footnote'>
-                            {ctx.tables1.T1F1} <br></br>
-                            {ctx.tables1.T1F2}
-                        </h5>
+                        <h4 className='footnote'>
+                            <i>
+                                {ctx.tables1.T1F1} <br></br>
+                                {ctx.tables1.T1F2}
+                            </i>
+                        </h4>
                         {/* Chart 1 goes here */}
                         <Chart1 />
 
@@ -124,7 +126,7 @@ const Profile = () => {
                             <span className="tooltip">
                                 {ctx.chapterOne.Profile.Para10.substring(165, 174)}
                                 <span className="tooltiptext">
-                                Product taxes or subsidies are paid or received on per unit of product. Some examples of product taxes are excise tax, sales tax, service tax and import and export duties. Product subsidies include food, petroleum and fertilizer subsidies, interest subsidies given to farmers, households, etc. through banks
+                                    Product taxes or subsidies are paid or received on per unit of product. Some examples of product taxes are excise tax, sales tax, service tax and import and export duties. Product subsidies include food, petroleum and fertilizer subsidies, interest subsidies given to farmers, households, etc. through banks
                                 </span>
                                 <sup>3</sup>
                             </span>
@@ -132,28 +134,34 @@ const Profile = () => {
 
                         </Para>
                         <Chart2 />
-                        <h5 className='footnote'>
-                            3 Source: Directorate of Economics and Statistics, Government of Karnataka
-                            <br></br>
-                            ^ Sectoral Distribution to GSDP
-                        </h5>
+                        <h4 className='footnote'>
+                            <i>
+                                3 Source: Directorate of Economics and Statistics, Government of Karnataka
+                                <br></br>
+                                ^ Sectoral Distribution to GSDP
+                            </i>
+                        </h4>
                         <Para>
                             {ctx.chapterOne.Profile.Para11}
                         </Para>
                         <Chart3 />
 
-                        <h5 className='footnote'>
-                            Source: Directorate of Economics and Statistics, Government of Karnataka
-                        </h5>
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Directorate of Economics and Statistics, Government of Karnataka
+                            </i>
+                        </h4>
                         {["Para12", "Para13", "Para14"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
                         <Chart4 />
-                        <h5 className='footnote'>
-                            Source: Directorate of Economics and Statistics, Government of Karnataka
-                        </h5>
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Directorate of Economics and Statistics, Government of Karnataka
+                            </i>
+                        </h4>
                     </div>
                 </div>
                 : <div>
@@ -218,18 +226,22 @@ const Profile = () => {
                             {ctx.chapter1kannada.Content.Para11}
                         </Para>
                         <Chart3 />
-                        <h5 className='footnote'>
+                        <h4 className='footnote'>
+                            <i>
                             Source: Directorate of Economics and Statistics, Government of Karnataka
-                        </h5>
+                        </i>
+                        </h4>
                         {["para15", "para16", "para17"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
                         <Chart4 />
-                        <h5 className='footnote'>
+                        <h4 className='footnote'>
+                            <i>
                             Source: Directorate of Economics and Statistics, Government of Karnataka
-                        </h5>
+                            </i>
+                        </h4>
                     </div>
                 </div>
                 : <div>

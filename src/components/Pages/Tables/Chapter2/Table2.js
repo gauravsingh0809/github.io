@@ -49,7 +49,7 @@ const Table2 = () => {
             <Card>
                 <DataTable
                     title="Table 2.2: Details of Sources and Application of funds during 
-                    2018-19 and 2019-20"
+                    2019-20 and 2020-21"
                     columns={columns}
                     data={ctx.tables2.Table2}
                     customStyles={customStyles}

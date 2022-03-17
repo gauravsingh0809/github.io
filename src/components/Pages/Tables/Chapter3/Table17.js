@@ -26,14 +26,14 @@ const columns = [
         selector: "Total Expenditure",
         wrap: true,
         sortable:true,
-        format: data => data["Total Expenditure"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Total Expenditure"].toLocaleString('en-IN')
     },
     {
         name: "Expenditure during last quarter",
         selector: "Expenditure during last quarter",
         wrap: true,
         sortable:true,
-        format: data => data["Expenditure during last quarter"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Expenditure during last quarter"].toLocaleString('en-IN')
     },
     {
         name: " ",
@@ -47,7 +47,7 @@ const columns = [
         selector: "Expenditure during March",
         wrap: true,
         sortable:true,
-        format: data => data["Expenditure during March"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Expenditure during March"].toLocaleString('en-IN')
     },
     {
         name: " ",

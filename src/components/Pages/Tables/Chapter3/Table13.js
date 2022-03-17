@@ -20,7 +20,7 @@ const columns = [
         selector: "HoANomenclature",
         wrap: true,
         grow:2,
-        format: data => data["HoANomenclature"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["HoANomenclature"].toLocaleString('en-IN')
 
     },
     {
@@ -28,21 +28,21 @@ const columns = [
         selector: "2018 19",
         wrap: true,
         sortable:true,
-        format: data => data["2018 19"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2018 19"].toLocaleString('en-IN')
     },
     {
         name: "2019 20",
         selector: "2019 20",
         wrap: true,
         sortable:true,
-        format: data => data["2019 20"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2019 20"].toLocaleString('en-IN')
     },
     {
         name: "2020 21",
         selector: "2020 21",
         wrap: true,
         sortable:true,
-        format: data => data["2020 21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2020 21"].toLocaleString('en-IN')
     }
 ];
 

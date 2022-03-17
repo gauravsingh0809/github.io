@@ -132,10 +132,11 @@ p {
 }
 
 .footnote {
-  margin-top: -10px;
+  margin-bottom: -10px;
+  padding-bottom: 10px;
 }
 
 .headnote {
   text-align:right;
-  margin-bottom:-30px;
+  margin-top:20px;
 }
