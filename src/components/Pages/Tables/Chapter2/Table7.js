@@ -52,7 +52,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2020 21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2020 21"].toLocaleString('en-IN')
     },
 ];
 

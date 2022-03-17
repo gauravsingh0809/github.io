@@ -20,13 +20,21 @@ const GenderBudget = () => {
           <FloatingActionButtons back="/budget/budget-process" forward="/budget/child-budget" />
 
           <Title>{ctx.chapterThree.Profile.Para8}</Title>
-          {["Para9", "Para10", "Para11", "Para12"].map(
+          {["Para9", "Para10", "Para11"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )
           )}
-          <Table1/>
-             {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
+          <h3 className="headnote">
+            ₹ In crore
+          </h3>
+          <Table1 />
+          {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
+          <h4 className="footnote">
+            <i>
+              Source: Gender Budget
+            </i>
+          </h4>
 
         </div>
       </div>
@@ -38,27 +46,27 @@ const GenderBudget = () => {
     )
   ) : ctx.chapter3kannada ? (
     <div>
-    <Navbar />
-    <div className="contentwrapper" id="home">
-    <FloatingActionButtons back="/budget/budget-process" forward="/budget/child-budget" />
+      <Navbar />
+      <div className="contentwrapper" id="home">
+        <FloatingActionButtons back="/budget/budget-process" forward="/budget/child-budget" />
 
-      <Title>{ctx.chapter3kannada.Content.para12}</Title>
-      {["para13", "para14", "para15", "para16","para17"].map(
-        (item, ind) => (
-          <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
-        )
-      )}
-      <Table1/>
-      <Para>{ctx.chapter3kannada.Content.para18}</Para>
-         {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
+        <Title>{ctx.chapter3kannada.Content.para12}</Title>
+        {["para13", "para14", "para15", "para16", "para17"].map(
+          (item, ind) => (
+            <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
+          )
+        )}
+        <Table1 />
+        <Para>{ctx.chapter3kannada.Content.para18}</Para>
+        {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 
+      </div>
     </div>
-  </div>
-) : (
-  <div>
-    <Navbar />
-    <FaSpinner icon="spinner" className="spinner" />
-  </div>
+  ) : (
+    <div>
+      <Navbar />
+      <FaSpinner icon="spinner" className="spinner" />
+    </div>
   );
 };
 

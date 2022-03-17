@@ -27,21 +27,21 @@ const columns = [
         selector: "Amount",
         // grow:0.05,
         wrap: true,
-        format: data => data["Amount"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Amount"].toLocaleString('en-IN')
     },
     {
         name: "",
         selector: "1",
         // grow:0.05,
         wrap: true,
-        format: data => data["1"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["1"].toLocaleString('en-IN')
     },
     {
         name: "",
         selector: "2",
         // grow:0.05,
         wrap: true,
-        format: data => data["2"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2"].toLocaleString('en-IN')
     },
     {
         name: "Per cent of total Public Debt",

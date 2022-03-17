@@ -31,17 +31,19 @@ const FinanceSnapshot = () => {
                             ₹ in crore
                         </h3>
                         <Table2 />
-                        <h5 className='footnote'>
-                            {ctx.tables1.T2F1}
-                            <br></br>
-                            {ctx.tables1.T2F2}
-                            <br></br>
-                            {ctx.tables1.T2F4.substring(0, 97)}
-                            <br></br>
-                            ^^ Effective Public Debt Receipts would be ` 72,121 crore as the Department of Expenditure, GoI had decided that GST compensation of ` 12,407 crore given to the state as back-to-back loan under Debt Receipts would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
-                        </h5>
+                        <h4 className='footnote'>
+                            <i>
+                                {ctx.tables1.T2F1}
+                                <br></br>
+                                {ctx.tables1.T2F2}
+                                <br></br>
+                                {ctx.tables1.T2F4.substring(0, 97)}
+                                <br></br>
+                                ^^ Effective Public Debt Receipts would be ` 72,121 crore as the Department of Expenditure, GoI had decided that GST compensation of ` 12,407 crore given to the state as back-to-back loan under Debt Receipts would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
+                            </i>
+                        </h4>
 
-                        {["Para40a","Para41", "Para42"].map((item, ind) =>
+                        {["Para40a", "Para41", "Para42"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
@@ -64,13 +66,15 @@ const FinanceSnapshot = () => {
                             {ctx.chapter1kannada.Content["para42"]}
                         </Para>
                         <Table2 />
-                        <h6>
-                            {ctx.tables1.T2F1}
-                            <br></br>
-                            {ctx.tables1.T2F2}
-                            <br></br>
-                            {ctx.tables1.T2F4.substring(0, 97)}
-                        </h6>
+                        <h4>
+                            <i>
+                                {ctx.tables1.T2F1}
+                                <br></br>
+                                {ctx.tables1.T2F2}
+                                <br></br>
+                                {ctx.tables1.T2F4.substring(0, 97)}
+                            </i>
+                        </h4>
 
                         {["para43", "para44", "para45"].map((item, ind) =>
                             <Para key={ind / 10}>

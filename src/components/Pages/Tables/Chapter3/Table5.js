@@ -9,7 +9,7 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "Sl No",
+        name: " ",
         selector: "1",
         grow: 2,
         wrap: true

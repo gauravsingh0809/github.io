@@ -30,7 +30,7 @@ const columns = [
         selector: "Amount",
         grow:0.2,
         wrap: true,
-        format: data => data["Amount"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Amount"].toLocaleString('en-IN')
     }
 ];
 

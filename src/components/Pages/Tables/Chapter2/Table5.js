@@ -22,7 +22,7 @@ const columns = [
         // grow:0.05,
         sortable:true,
         wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+        format: data => data["2019 20"].toLocaleString('en-IN')
     },
     {
         name: "2020-21",
@@ -30,7 +30,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2020 21"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+        format: data => data["2020 21"].toLocaleString('en-IN')
     },
     {
         name: "Increase/ Decrease",
@@ -38,7 +38,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Increase or Decrease"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+        format: data => data["Increase or Decrease"].toLocaleString('en-IN')
     },
     
 ];

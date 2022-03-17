@@ -19,14 +19,14 @@ const columns = [
         name: "Disbursements",
         selector: "Disbursements",
         wrap: true,
-        format: data => data["Disbursements"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Disbursements"].toLocaleString('en-IN')
     },
     {
         name: " ",
         selector: "1",
         // grow:0.05,
         wrap: true,
-        format: data => data["1"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["1"].toLocaleString('en-IN')
     },
     {
         name: "Savings (percentage of savings)",

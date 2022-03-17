@@ -20,34 +20,34 @@ const columns = [
         selector: "Total Allocation",
         // grow:0.05,
         wrap: true,
-        format: data => data["Total Allocation"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Total Allocation"].toLocaleString('en-IN')
     },
     {
-        name: "Total Category A allocation",
+        name: "Total Category 'A' allocation",
         selector: "Total Category A allocation",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Total Category A allocation"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Total Category A allocation"].toLocaleString('en-IN')
     },
     {
-        name: "Total Category B allocation",
+        name: "Total Category 'B' allocation",
         selector: "Total Category B allocation",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Total Category B allocation"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Total Category B allocation"].toLocaleString('en-IN')
     },
     {
-        name: "30% of Category B allocation",
+        name: "30% of Category 'B' allocation",
         selector: "30% of Category B allocation",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["30% of Category B allocation"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["30% of Category B allocation"].toLocaleString('en-IN')
     },
     {
-        name: "Percentage of Category A to total allocation",
+        name: "Percentage of Category 'A' to total allocation",
         selector: "Percentage of Category A to total allocation",
         // grow: 0.05,
         // width:'110px',
@@ -55,7 +55,7 @@ const columns = [
         format: data => data["Percentage of Category A to total allocation"].toLocaleString('en-IN')
     },
     {
-        name: "Percentage of Category B (30%) to total allocation",
+        name: "Percentage of Category 'B' (30%) to total allocation",
         selector: "Percentage of Category B to total allocation",
         // grow: 0.05,
         // width:'110px',

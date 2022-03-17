@@ -21,13 +21,13 @@ const columns = [
         format: data => data["KFRA target"].toLocaleString('en-IN')
     },
     {
-        name: " ",
+        name: "Achievement",
         selector: "1",
         wrap: true,
         format: data => data["1"].toLocaleString('en-IN')
     },
     {
-        name: " ",
+        name: "Achievement",
         selector: "2",
         wrap: true,
         format: data => data["2"].toLocaleString('en-IN')
@@ -39,13 +39,13 @@ const columns = [
         format: data => data["Achievement"].toLocaleString('en-IN')
     },
     {
-        name: " ",
+        name: "Achievement",
         selector: "3",
         wrap: true,
         format: data => data["3"].toLocaleString('en-IN')
     },
     {
-        name: " ",
+        name: "Achievement",
         selector: "4",
         wrap: true,
         format: data => data["4"].toLocaleString('en-IN')

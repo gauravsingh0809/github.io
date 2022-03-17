@@ -20,28 +20,28 @@ const columns = [
     selector: "Cumulative loss at the end of 2017-18",
     // grow:0.05,
     wrap: true,
-    format: data => data["Cumulative loss at the end of 2017-18"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+    format: data => data["Cumulative loss at the end of 2017-18"].toLocaleString('en-IN')
   },
   {
     name: "Cumulative loss at the end of 2018-19",
     selector: "Cumulative loss at the end of 2018-19",
     // grow:0.05,
     wrap: true,
-    format: data => data["Cumulative loss at the end of 2018-19"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+    format: data => data["Cumulative loss at the end of 2018-19"].toLocaleString('en-IN')
   },
   {
     name: "Cumulative loss at the end of 2019-20",
     selector: "Cumulative loss at the end of 2019-20",
     // grow:0.05,
     wrap: true,
-    format: data => data["Cumulative loss at the end of 2019-20"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+    format: data => data["Cumulative loss at the end of 2019-20"].toLocaleString('en-IN')
   },
   {
     name: "Investment made up to 2020-21",
     selector: "Investment made up to 2020-21",
     // grow:0.05,
     wrap: true,
-    format: data => data["Investment made up to 2020-21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+    format: data => data["Investment made up to 2020-21"].toLocaleString('en-IN')
   }
 ];
 
