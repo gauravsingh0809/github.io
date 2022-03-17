@@ -56,13 +56,16 @@ import Follow from '../components/Pages/Quality/Chapters/Follow/Follow';
 import QualConclusion from '../components/Pages/Quality/Chapters/QualConclusion/QualConclusion';
 import QualRecommendations from '../components/Pages/Quality/Chapters/QualRecommendations/QualRecommendations';
 
-import four_o_four from '../components/404/404';
 import Preface from '../components/Pages/Preface/Preface';
 import Appendix1 from '../components/Pages/Appendices/Appendix1';
 import Appendix2 from '../components/Pages/Appendices/Appendix2';
 import Appendix3 from '../components/Pages/Appendices/Appendix3';
 import Appendix4 from '../components/Pages/Appendices/Appendix4';
 import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
+<<<<<<< HEAD
+=======
+import Error from '../components/404/404';
+>>>>>>> prerender
 
 
 const Routes = () => {
@@ -104,6 +107,7 @@ const Routes = () => {
                             <Route path='/finances/debtmanagement' exact component={DebtManagement} />
                             <Route path='/finances/dsa' exact component={Dsa} />
                             <Route path='/finances/conclusion' exact component={Conclusion} />
+<<<<<<< HEAD
 
                             <Route path='/Budget' exact component={Budget} />
                             <Route path='/Budget/introduction' exact component={BudIntroduction} />
@@ -135,13 +139,52 @@ const Routes = () => {
                             <Route path='/Quality/conclusion' exact component={QualConclusion} />
                             <Route path='/Quality/recommendations' exact component={QualRecommendations} />
 
+=======
+
+                            <Route path='/Budget' exact component={Budget} />
+                            <Route path='/Budget/introduction' exact component={BudIntroduction} />
+                            <Route path='/Budget/budget-process' exact component={BudgetProcess} />
+                            <Route path='/Budget/gender-budget' exact component={GenderBudget} />
+                            <Route path='/Budget/child-budget' exact component={ChildBudget} />
+                            <Route path='/Budget/policy' exact component={MajorPolicy} />
+                            <Route path='/Budget/appropaccounts' exact component={AppropAccounts} />
+                            <Route path='/Budget/audit' exact component={Audit} />
+                            <Route path='/Budget/outcome' exact component={Outcome} />
+                            <Route path='/Budget/conclusion' exact component={BudConclusion} />
+                            <Route path='/Budget/recommendations' exact component={Recommendations} />
+
+                            <Route path='/Quality' exact component={Quality} />
+                            <Route path='/Quality/Funds' exact component={Funds} />
+                            <Route path='/Quality/Delay' exact component={Delay} />
+                            <Route path='/Quality/acbills' exact component={Abstract} />
+                            <Route path='/Quality/pdaccounts' exact component={PD} />
+                            <Route path='/Quality/balances' exact component={OB} />
+                            <Route path='/Quality/non-reconciliation' exact component={NonReconciliation} />
+                            <Route path='/Quality/reconciliation' exact component={Reconciliation} />
+                            <Route path='/Quality/compliance' exact component={Compliance} />
+                            <Route path='/Quality/Submission' exact component={Submission} />
+                            <Route path='/Quality/dcu' exact component={DCU} />
+                            <Route path='/Quality/non-submission' exact component={NonSubmission} />
+                            <Route path='/Quality/timelines' exact component={Timelines} />
+                            <Route path='/Quality/misappropriations' exact component={Misapp} />
+                            <Route path='/Quality/follow' exact component={Follow} />
+                            <Route path='/Quality/conclusion' exact component={QualConclusion} />
+                            <Route path='/Quality/recommendations' exact component={QualRecommendations} />
+
+>>>>>>> prerender
                             <Route path='/appendices/appendix-1' exact component={Appendix1} />
                             <Route path='/appendices/appendix-2' exact component={Appendix2} />
                             <Route path='/appendices/appendix-3' exact component={Appendix3} />
                             <Route path='/appendices/appendix-4' exact component={Appendix4} />
+<<<<<<< HEAD
                         </ErrorBoundary>
                         
                         <Route component={four_o_four} />
+=======
+
+                            <Route component={Error} />
+                        </ErrorBoundary>
+>>>>>>> prerender
                     </Switch>
                 </div>
             </SideBarProvider>

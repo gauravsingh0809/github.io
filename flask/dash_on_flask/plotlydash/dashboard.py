@@ -87,14 +87,15 @@ def init_dashboard(server):
                                     title="Snapshot of Karnataka finances between 2015-16 and 2019-20",
                                     height=800,
 
-                                    template="seaborn",
+                                    # template="seaborn",
                                     color="Year",
-
+                                    color_discrete_sequence=px.colors.diverging.Tropic[1:3] + [
+                                    '#229e8a']
                                 ).update_traces(
                                     go.Treemap(
                                         hovertemplate='Rupees in crores: %{value:,.0f}')
                                 ).update_layout(
-                                    font_family="Times New Roman",
+                                    font_family="Roboto",
                                     showlegend=False,
                                     font_size=15,
                                     uniformtext_minsize=15
