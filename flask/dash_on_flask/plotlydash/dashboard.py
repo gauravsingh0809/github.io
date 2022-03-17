@@ -51,7 +51,7 @@ def init_dashboard(server):
         "treemap_fin.csv"), engine="python")
     ntrpie = pd.read_csv(DATA_PATH.joinpath(
         "nontaxrevpie.csv"), engine="python")
-    
+
     # Custom HTML layout
     #dash_app.index_string = html_layout
 
@@ -86,10 +86,10 @@ def init_dashboard(server):
                                     values="Values",
                                     title="Snapshot of Karnataka finances between 2015-16 and 2019-20",
                                     height=800,
-                                    
+
                                     template="seaborn",
                                     color="Year",
-                                    
+
                                 ).update_traces(
                                     go.Treemap(
                                         hovertemplate='Rupees in crores: %{value:,.0f}')
@@ -127,7 +127,7 @@ def init_dashboard(server):
                                 title="Summary of Fiscal Transactions 2018-19",
                                 height=600,
                                 width=600,
-                               
+
                                 color="Section",
                                 color_discrete_sequence=px.colors.diverging.Tropic[1:3] + [
                                     '#229e8a']
@@ -214,7 +214,7 @@ def init_dashboard(server):
             ),
 
 
-           
+
 
             # financial assistance to local bodies
 
@@ -232,7 +232,10 @@ def init_dashboard(server):
                                          multi=True),
                             dcc.Checklist(id="year_list",
                                           options=[
-                                              {'label': " " + i, 'value': i} for i in
+                                            #   {'label': " " + i, 'value': i} for i in
+                                            # Deleting 'i' becasue of data type issue. 
+
+                                              {'label': " ", 'value': i} for i in
                                               tab_e.iloc[0:, 0].unique()
                                           ],
                                           value=[
@@ -251,7 +254,7 @@ def init_dashboard(server):
                                       )
                         ],
                         style={"padding": 30}
-                    ), 
+                    ),
                 ]
             ),
 
@@ -276,10 +279,9 @@ def init_callbacks(dash_app):
     }
 
     tab_e = pd.read_csv(DATA_PATH.joinpath("data.csv"), engine="python")
-    
+
     ntrpie = pd.read_csv(DATA_PATH.joinpath(
         "nontaxrevpie.csv"), engine="python")
-    
 
     @dash_app.callback(dash.dependencies.Output("year_vs_everything", "figure"),
                        [dash.dependencies.Input("outlay", "value"),
@@ -360,4 +362,3 @@ def init_callbacks(dash_app):
                     },
                 )
         })
-   
