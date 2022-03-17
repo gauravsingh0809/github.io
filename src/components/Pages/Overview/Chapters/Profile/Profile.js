@@ -39,13 +39,13 @@ const Profile = () => {
                             1.2 Profile of the state
                         </Title>
                         {/* <Chart1Chap4 /> */} { /* This one will be an image */}
-                        <Chart3Chap3 />
+                        {/* <Chart3Chap3 />
                         <Chart21 />
                         <Chart20 />
                         
                         
                         
-                        <Chrt4 />
+                        <Chrt4 /> */}
 
                         {/* <Chrt3 /> */}
                         {/* <Chrt2 /> */}
