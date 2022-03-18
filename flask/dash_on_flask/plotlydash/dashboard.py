@@ -167,15 +167,6 @@ def init_dashboard(server):
                 )
             ], className="row",
             ),
-            html.Div(
-                [
-                    html.P(
-                        "Total Reciepts for the year 2018-19 is exclusive of Capital Receipts i.e, Rs. -6 Crores")
-                ], style={
-                    "margin-left": "100px",
-                    "margin-right": "100px"
-                }
-            ),
 
             # receipts graphs
             # Deleted receipt graphs from here.
@@ -215,49 +206,47 @@ def init_dashboard(server):
             ),
 
 
-
-
             # financial assistance to local bodies
 
-            html.Div(
-                className="row",
-                children=[
-                    html.Div(
-                        className="ten columns card",
-                        children=[
-                            dcc.Dropdown(id="outlay",
-                                         options=[{'label': i, 'value': i}
-                                                  for i in tab_e.columns[1:]],
-                                         value=[
-                                             tab_e.columns[1], tab_e.columns[2], tab_e.columns[3]],
-                                         multi=True),
-                            dcc.Checklist(id="year_list",
-                                          options=[
-                                            #   {'label': " " + i, 'value': i} for i in
-                                            # Deleting 'i' becasue of data type issue. 
+            # html.Div(
+            #     className="row",
+            #     children=[
+            #         html.Div(
+            #             className="ten columns card",
+            #             children=[
+            #                 dcc.Dropdown(id="outlay",
+            #                              options=[{'label': i, 'value': i}
+            #                                       for i in tab_e.columns[1:]],
+            #                              value=[
+            #                                  tab_e.columns[1], tab_e.columns[2], tab_e.columns[3]],
+            #                              multi=True),
+            #                 dcc.Checklist(id="year_list",
+            #                               options=[
+            #                                   {'label': " " + i, 'value': i} for i in
+            #                                 # Deleting 'i' becasue of data type issue. 
 
-                                              {'label': " ", 'value': i} for i in
-                                              tab_e.iloc[0:, 0].unique()
-                                          ],
-                                          value=[
-                                              tab_e.iloc[4, 0], tab_e.iloc[3, 0], tab_e.iloc[2, 0]],
-                                          labelStyle={
-                                              "display": "inline-block",
-                                              "margin-right": "20px",
-                                              "cursor": "pointer"}
-                                          ),
-                            dcc.Graph(id="year_vs_everything",
-                                      config={
-                                          'modeBarButtonsToRemove': ['lasso2d'],
-                                          'displaylogo': False,
-                                          # 'responsive': True
-                                      },
-                                      )
-                        ],
-                        style={"padding": 30}
-                    ),
-                ]
-            ),
+            #                                 #   {'label': " ", 'value': i} for i in
+            #                                   tab_e.iloc[0:, 0].unique()
+            #                               ],
+            #                               value=[
+            #                                   tab_e.iloc[4, 0], tab_e.iloc[3, 0], tab_e.iloc[2, 0]],
+            #                               labelStyle={
+            #                                   "display": "inline-block",
+            #                                   "margin-right": "20px",
+            #                                   "cursor": "pointer"}
+            #                               ),
+            #                 dcc.Graph(id="year_vs_everything",
+            #                           config={
+            #                               'modeBarButtonsToRemove': ['lasso2d'],
+            #                               'displaylogo': False,
+            #                               # 'responsive': True
+            #                           },
+            #                           )
+            #             ],
+            #             style={"padding": 30}
+            #         ),
+            #     ]
+            # ),
 
         ], className="subpage1",
         id="dash-container"
