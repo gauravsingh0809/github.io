@@ -21,6 +21,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
+        sortable:true,
         format: data => data["2016 17"].toLocaleString('en-IN')
     },
     {

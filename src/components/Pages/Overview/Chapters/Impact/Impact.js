@@ -32,10 +32,24 @@ const Impact = () => {
                             </Para>
                         )}
                         <Table7 />
-                        <h6>
-                            {ctx.tables1.T7F1}
-                        </h6>
-                        {["Para68", "Para69", "Para70", "Para71", "Para72", "Para73", "Para74", "Para75"].map((item, ind) =>
+                        <h4 className='footnote'>
+                            <i>
+                                {ctx.tables1.T7F1}
+                            </i>
+                        </h4>
+                        <Para>
+                            {ctx.chapterOne.Profile["Para68"]}
+                        </Para>
+                        {["Para69", "Para70", "Para71",
+                            "Para72", "Para73"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    <li>
+                                        {ctx.chapterOne.Profile[item]}
+                                    </li>
+                                </Para>
+                            )}
+
+                        {["Para74", "Para75"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
@@ -48,7 +62,7 @@ const Impact = () => {
                     <FaSpinner icon="spinner" className="spinner" />
                 </div>)
             : (ctx.chapter1kannada
-               ? <div>
+                ? <div>
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/overview/fisc-situation" forward="/finances" />
@@ -65,7 +79,7 @@ const Impact = () => {
                         <h6>
                             {ctx.tables1.T7F1}
                         </h6> */}
-                        {["para71", "para72", "para73", "para74", "para75", "para76", "para77", "para78","para79"].map((item, ind) =>
+                        {["para71", "para72", "para73", "para74", "para75", "para76", "para77", "para78", "para79"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>

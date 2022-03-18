@@ -22,7 +22,7 @@ const Audit = () => {
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
+          <FloatingActionButtons back="/budget/appropaccounts" forward="/budget/outcome" />
 
           <Title>{ctx.chapterThree.Profile.Para40}</Title>
           {["para41", "Para42", "Para43","Para44", "Para45", "Para46",
@@ -91,7 +91,7 @@ const Audit = () => {
     <div>
     <Navbar />
     <div className="contentwrapper" id="home">
-      <FloatingActionButtons back="/budget" forward="budget-process" />
+    <FloatingActionButtons back="/budget/appropaccounts" forward="/budget/outcome" />
 
       <Title>{ctx.chapter3kannada.Content.para46}</Title>
       {["para47", "para48", "para49","para50", "para51", "para52",

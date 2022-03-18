@@ -27,21 +27,21 @@ const columns = [
         selector: "Budget provision",
         grow:0.2,
         wrap: true,
-        format: data => data["Budget provision"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Budget provision"].toLocaleString('en-IN')
     },
     {
         name: "Expenditure incurred",
         selector: "Expenditure incurred",
         grow:0.2,
         wrap: true,
-        format: data => data["Expenditure incurred"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Expenditure incurred"].toLocaleString('en-IN')
     },
     {
         name: "Amount released",
         selector: "Amount released",
         grow:0.2,
         wrap: true,
-        format: data => data["Amount released"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Amount released"].toLocaleString('en-IN')
     }
 ];
 

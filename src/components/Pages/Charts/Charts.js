@@ -177,8 +177,8 @@ export const Chart2 = () => {
       ? <Card className={classes.cardColored}>
         <CustomBarChart
           data={chartTwo}
-          title='Chart 1.2: Change in Sectoral contribution to GSDP (2015-16 and 2019-20)'
-          xaxisTitle="Sector"
+          title='Chart 1.2: Change in Sectoral contribution to GSVA (2016-17 and 2020-21)'
+          xaxisTitle=" "
           yaxisTitle="Contribution to GDP(In percent)"
           rangeStart="0"
           rangeEnd="70"
@@ -187,8 +187,8 @@ export const Chart2 = () => {
       : <Card className={classes.cardMargin}>
         <CustomBarChart
           data={chartTwo}
-          title='Chart 1.2: Change in Sectoral contribution to GSDP (2015-16 and 2019-20)'
-          xaxisTitle="Sector"
+          title='Chart 1.2: Change in Sectoral contribution to GSVA (2016-17 and 2020-21)'
+          xaxisTitle=" "
           yaxisTitle="Contribution to GDP(In percent)"
           rangeStart="0"
           rangeEnd="70"
@@ -293,13 +293,13 @@ export const Chart4 = () => {
       ? <Card className={classes.cardColored}>
         <CustomPieChart
           data={chartmap}
-          title="Chart 1.4: Sectoral growth"
+          title="Chart 1.4: Sectoral contribution to GSDP during 2020-21"
         />
       </Card >
       : <Card className={classes.cardMargin}>
         <CustomPieChart
           data={chartmap}
-          title="Chart 1.4: Sectoral growth"
+          title="Chart 1.4: Sectoral contribution to GSDP during 2020-21"
         />
       </Card>
   );
@@ -344,7 +344,7 @@ export const Chart5 = () => {
         <CustomLineChart
           data={chartmap}
           title="Chart 1.6: Trends in deficit parameters"
-          xaxisTitle="Year"
+          xaxisTitle=" "
           yaxisTitle="In crores"
           rangeStart="-70000"
           rangeEnd="10000"
@@ -356,7 +356,7 @@ export const Chart5 = () => {
         <CustomLineChart
           data={chartmap}
           title="Chart 1.6: Trends in deficit parameters"
-          xaxisTitle="Year"
+          xaxisTitle=" "
           yaxisTitle="In crores"
           rangeStart="-70000"
           rangeEnd="10000"
@@ -405,8 +405,8 @@ export const Chart6 = () => {
         <CustomBarChart
           data={chartsix}
           title='Chart 1.7: Trends in Surplus/Deficit relative to GSDP'
-          xaxisTitle="Sector"
-          yaxisTitle="Contribution to GDP"
+          xaxisTitle=" "
+          yaxisTitle="In percentage to GSDP"
           rangeStart="-4"
           rangeEnd="0.6"
           step="0.5"
@@ -418,8 +418,8 @@ export const Chart6 = () => {
         <CustomBarChart
           data={chartsix}
           title='Chart 1.7: Trends in Surplus/Deficit relative to GSDP'
-          xaxisTitle="Sector"
-          yaxisTitle="Contribution to GDP"
+          xaxisTitle=" "
+          yaxisTitle="In percentage to GSDP"
           rangeStart="-4"
           rangeEnd="0.6"
           step="0.5"

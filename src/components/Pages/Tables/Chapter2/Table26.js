@@ -26,7 +26,7 @@ const columns = [
         name: "Estimated cost",
         selector: "Estimated cost",
         wrap: true,
-        format: data => data["Estimated cost"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Estimated cost"].toLocaleString('en-IN')
     },
     {
         name: "Expenditure",
@@ -34,7 +34,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Expenditure"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Expenditure"].toLocaleString('en-IN')
     }
 ];
 

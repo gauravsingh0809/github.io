@@ -20,7 +20,7 @@ const Misapp = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                        <FloatingActionButtons back="/quality/timelines" forward="/quality/follow" />
                       
                         
                         <Title>
@@ -46,7 +46,7 @@ const Misapp = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                <FloatingActionButtons back="/quality/timelines" forward="/quality/follow" />
                   
                     
                     <Title>

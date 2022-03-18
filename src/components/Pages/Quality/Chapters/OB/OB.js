@@ -23,7 +23,7 @@ const OB = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                        <FloatingActionButtons back="/quality/pdaccounts" forward="/quality/non-reconciliation" />
                       
                         
                         <Title>
@@ -57,7 +57,7 @@ const OB = () => {
                 ?  <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                <FloatingActionButtons back="/quality/pdaccounts" forward="/quality/non-reconciliation" />
                   
                     
                     <Title>

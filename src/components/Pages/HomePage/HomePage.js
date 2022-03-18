@@ -55,16 +55,16 @@ const HomePage = () => {
         <div>
           Digital State Finance Audit Report of the
           Comptroller and Auditor General of India
-          for the year ended March 2020
+          for the year ended March 2021
         </div>
         <div className='gradient__text'>
           Government of Karnataka
         </div>
         <div className='gradient__text'>
-          Report No. 1 of the year 2021
+          Report No. 1 of the year 2022
         </div>
         <div>
-          <button class="button-51">
+          <button className="button-51">
             <Link to='/preface' style={{textDecoration:'none', color:'inherit'}}>
             Navigate to Preface
             </Link>

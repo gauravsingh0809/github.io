@@ -18,19 +18,19 @@ const columns = [
       name: "2019 20",
       selector: "2019 20",
       wrap: true,
-      format: data => data["2019 20"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+      format: data => data["2019 20"].toLocaleString('en-IN')
   },
   {
       name: "2020 21",
       selector: "2020 21",
       wrap: true,
-      format: data => data["2020 21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+      format: data => data["2020 21"].toLocaleString('en-IN')
   },
   {
       name: "Increase Decrease (In crore )",
       selector: "Increase Decrease (In crore )",
       wrap: true,
-      format: data => data["Increase Decrease (In crore )"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+      format: data => data["Increase Decrease (In crore )"].toLocaleString('en-IN')
   },
   {
       name: "Variation in percentage",

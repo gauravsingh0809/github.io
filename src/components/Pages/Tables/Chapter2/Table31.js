@@ -17,35 +17,35 @@ const columns = [
     name: "Outstanding off budget borrowing",
     selector: "Outstanding off budget borrowing",
     wrap: true,
-    format: data => data["Outstanding off budget borrowing"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+    format: data => data["Outstanding off budget borrowing"].toLocaleString('en-IN')
   },
   {
     name: "Borrowings during 2020 21",
     selector: "Borrowings during 2020 21",
     // grow:0.05,
     wrap: true,
-    format: data => data["Borrowings during 2020 21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+    format: data => data["Borrowings during 2020 21"].toLocaleString('en-IN')
   },
   {
     name: "Repayment during 2020 21",
     selector: "Repayment during 2020 21",
     // grow:0.05,
     wrap: true,
-    format: data => data["Repayment during 2020 21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+    format: data => data["Repayment during 2020 21"].toLocaleString('en-IN')
   },
   {
     name: "",
     selector: "Repayment",
     // grow:0.05,
     wrap: true,
-    format: data => data["Repayment"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+    format: data => data["Repayment"].toLocaleString('en-IN')
   },
   {
     name: "Closing Balance",
     selector: "Closing Balance",
     // grow:0.05,
     wrap: true,
-    format: data => data["Closing Balance"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+    format: data => data["Closing Balance"].toLocaleString('en-IN')
   }
 ];
 

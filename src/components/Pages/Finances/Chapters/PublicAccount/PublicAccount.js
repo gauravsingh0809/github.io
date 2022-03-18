@@ -24,7 +24,7 @@ const  PublicAccount = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                        <FloatingActionButtons back="/finances/application" forward="/finances/debtmanagement" />
                         <Title>{ctx.chapterTwo.Second.para14}</Title>
                         
                         {["para15","para16","para17"].map((item, ind) =>
@@ -62,7 +62,7 @@ const  PublicAccount = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                    <FloatingActionButtons back="/finances/application" forward="/finances/debtmanagement" />
                         <Title>{ctx.chapter2kannada.Content.para214}</Title>
                         
                         {["para215","para216","para217"].map((item, ind) =>

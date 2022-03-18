@@ -20,7 +20,7 @@ const columns = [
         selector: "Opening Balance",
         // grow:0.05,
         wrap: true,
-        format: data => data["Opening Balance"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Opening Balance"].toLocaleString('en-IN')
     },
     {
         name: "Closing Balance",
@@ -28,7 +28,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Closing Balance"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Closing Balance"].toLocaleString('en-IN')
     },
     {
         name: "IncreaseDecrease",
@@ -36,7 +36,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["IncreaseDecrease"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["IncreaseDecrease"].toLocaleString('en-IN')
     },
     {
         name: "Interest earned",
@@ -44,7 +44,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Interest earned"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Interest earned"].toLocaleString('en-IN')
     },
 ];
 

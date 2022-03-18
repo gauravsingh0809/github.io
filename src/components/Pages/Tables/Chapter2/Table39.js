@@ -20,7 +20,7 @@ const columns = [
         selector: "Opening balance on 01-04-2020",
         // grow:0.05,
         wrap: true,
-        format: data => data["Opening balance on 01-04-2020"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Opening balance on 01-04-2020"].toLocaleString('en-IN')
     },
     {
         name: "Closing balance on 31 March 2021",
@@ -28,7 +28,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Closing balance on 31-03-2021"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["Closing balance on 31-03-2021"].toLocaleString('en-IN')
     }
 ];
 

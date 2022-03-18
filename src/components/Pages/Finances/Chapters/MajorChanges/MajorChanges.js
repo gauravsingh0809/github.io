@@ -55,7 +55,7 @@ const MajorChanges = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                        <FloatingActionButtons back="/finances/introduction" forward="/finances/sources-application" />
                         <Title>{ctx.chapterTwo.Profile.Para1}</Title>
                         <Para>
                             {ctx.chapterTwo.Profile.Para2}
@@ -79,7 +79,7 @@ const MajorChanges = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                <FloatingActionButtons back="/finances/introduction" forward="/finances/sources-application" />
                     <Title>{ctx.chapter2kannada.Content.para4}</Title>
                     <Para>
                         {ctx.chapter2kannada.Content.para5}
@@ -88,7 +88,7 @@ const MajorChanges = () => {
 
                     {/* Demo Tables for all chapters are here*/}
 
-                    <Table2/>
+                    {/* <Table2/>
                     <Table3/>
                     <Table5/>
                     <Table7/>
@@ -111,7 +111,7 @@ const MajorChanges = () => {
                     <Table24b/>
                     <Table25/>
                     <Table26/>
-                    <Table27/>
+                    <Table27/> */}
 
 
 

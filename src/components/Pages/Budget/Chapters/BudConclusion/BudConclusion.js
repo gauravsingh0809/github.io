@@ -17,7 +17,7 @@ const BudConclusion = () => {
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
+        <FloatingActionButtons back="/budget/outcome" forward="/budget/Recommendationss" />
 
           <Title>{ctx.chapterThree.Profile.Para169}</Title>
           {["Para170","Para171", "Para172", "Para173","Para174"].map(
@@ -41,7 +41,7 @@ const BudConclusion = () => {
     <div>
     <Navbar />
     <div className="contentwrapper" id="home">
-      <FloatingActionButtons back="/budget" forward="budget-process" />
+      <FloatingActionButtons back="/budget/outcome" forward="/budget/Recommendationss" />
 
       <Title>{ctx.chapter3kannada.Content.para170}</Title>
       {["para171","para172", "para173", "para174","para175"].map(

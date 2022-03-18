@@ -23,7 +23,7 @@ const Delay = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                        <FloatingActionButtons back="/quality/funds" forward="/quality/acbills" />
                         <Title>{ctx.chapterFour.second.Para1}</Title>
                         
                         <Para>
@@ -54,7 +54,7 @@ const Delay = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                <FloatingActionButtons back="/quality/funds" forward="/quality/acbills" />
                     <Title>{ctx.chapter4kannada.Content.para16}</Title>
                     
                     <Para>

@@ -21,7 +21,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2016 17"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2016 17"].toLocaleString('en-IN')
     },
     {
         name: "2017 18",
@@ -29,7 +29,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2017 18"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2017 18"].toLocaleString('en-IN')
     },
     {
         name: "2018 19",
@@ -37,7 +37,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2018 19"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2018 19"].toLocaleString('en-IN')
     },
     {
         name: "2019 20",
@@ -45,14 +45,14 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2019 20"].toLocaleString('en-IN')
     },
     {
         name: "2020 21",
         selector: "2020 21",
         // grow:0.05,
         wrap: true,
-        format: data => data["2020 21"].toLocaleString('en-IN',{style: 'currency', currency: 'INR'})
+        format: data => data["2020 21"].toLocaleString('en-IN')
     }
 ];
 

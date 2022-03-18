@@ -20,7 +20,7 @@ const QualConclusion = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                        <FloatingActionButtons back="/quality/follow"forward="/quality/recommendations" />
                       
                         
                         <Title>
@@ -45,7 +45,7 @@ const QualConclusion = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                <FloatingActionButtons back="/quality/follow"forward="/quality/recommendations" />
                   
                     
                     <Title>

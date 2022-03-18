@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { MyContext } from "../../../../../Context/MyProvider";
 import Para from "../../../../Para/Para";
 import Title from "./../../../../Title/Title";
@@ -7,16 +7,30 @@ import { FaSpinner } from "react-icons/fa";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton";
 import "./../../Budget.css";
 
+import ImageComponent from 'material-ui-image'
+import { getFirebase } from '../../../../../firebase/firebase'
+
+
+
 const BudgetProcess = () => {
   const ctx = useContext(MyContext);
-  console.log("ctx", ctx);
+
+  const [url, setURL] = useState("");
+
+    getFirebase()
+        .storage()
+        .ref('/images/chap1chart5.png')
+        .getDownloadURL()
+        .then((url) => {
+            setURL(url);
+        });
 
   return ctx.langPref ? (
     ctx.chapterThree ? (
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="/budgetprocess" />
+          <FloatingActionButtons back="/budget/introduction" forward="/budget/gender-budget" />
 
           <Title>{ctx.chapterThree.Profile.Para1}</Title>
           {["Para2", "Para3", "Para4", "Para5", "Para6", "Para7"].map(
@@ -25,6 +39,7 @@ const BudgetProcess = () => {
             )
           )}
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
+             <ImageComponent src={url} alt="chart5" aspectRatio={1/0.8} />
 
         </div>
       </div>
@@ -38,7 +53,7 @@ const BudgetProcess = () => {
     <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="/budgetprocess" />
+        <FloatingActionButtons back="/budget/introduction" forward="/budget/gender-budget" />
 
           <Title>{ctx.chapter3kannada.Content.para4}</Title>
           {["para5", "para6", "para7", "para8", "para9", "para10"].map(

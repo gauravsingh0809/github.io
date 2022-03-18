@@ -43,11 +43,19 @@ const FiscalParams = () => {
                         <Chart5 />
                         <Chart6 />
 
-                        {["Para51"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapterOne.Profile[item]}
-                            </Para>
-                        )}
+                        <Para>
+                            {ctx.chapterOne.Profile.Para51.substring(0, 91)}
+
+                            <span className="tooltip">
+                                {ctx.chapterOne.Profile.Para51.substring(91, 99)}
+                                <span className="tooltiptext">
+                                    Growth rate of Revenue Receipts and Revenue Expenditure for 2020-21 is (-) 10.67 per cent and 1.03 per cent respectively. The difference between these two is (-) 9.64 per cent.
+                                </span>
+                                <sup>4</sup>
+                            </span>
+                            {ctx.chapterOne.Profile.Para51.substring(99,)}
+
+                        </Para>
 
                         <Subtitle>
                             {ctx.chapterOne.Profile["Para52"]}
@@ -58,14 +66,20 @@ const FiscalParams = () => {
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
-                        <Table4 />
-                        <h6>
-                            {ctx.tables1.T4F1}
-                            <br></br>
-                            {ctx.tables1.T4F2}
-                        </h6>
 
-                        {["Para54"].map((item, ind) =>
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table4 />
+                        <h4 className='footnote'>
+                            <i>
+                                {ctx.tables1.T4F1}
+                                <br></br>
+                                * Effective Loans and Advances for GoI would be ₹ 14,210 crore as the Department of Expenditure, GoI had decided that GST compensation of ₹ 12,407 crore given to the state as back-to-back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
+                            </i>
+                        </h4>
+
+                        {["Para53a","Para54"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
@@ -79,63 +93,64 @@ const FiscalParams = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
-                <Navbar />
-                <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/overview/snapshot-assets" forward="/overview/fisc-situation" />
-                    <Title id="anchor">
-                        {ctx.chapter1kannada.Content.para49}
-                    </Title>
-                    {["para50", "para51"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
-                    <Subtitle>
-                        {ctx.chapter1kannada.Content["para52"]}
-                    </Subtitle>
+                    <Navbar />
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/overview/snapshot-assets" forward="/overview/fisc-situation" />
+                        <Title id="anchor">
+                            {ctx.chapter1kannada.Content.para49}
+                        </Title>
+                        {["para50", "para51"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        <Subtitle>
+                            {ctx.chapter1kannada.Content["para52"]}
+                        </Subtitle>
 
-                    {["para53"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
-                    <Chart5 />
-                    <Chart6 />
+                        {["para53"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        <Chart5 />
+                        <Chart6 />
 
-                    {["Para54"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
+                        {["Para54"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
 
-                    <Subtitle>
-                        {ctx.chapter1kannada.Content["Para55"]}
-                    </Subtitle>
+                        <Subtitle>
+                            {ctx.chapter1kannada.Content["Para55"]}
+                        </Subtitle>
 
-                    {["Para56"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
-                    <Table4 />
-                    <h6>
-                        {ctx.tables1.T4F1}
-                        <br></br>
-                        {ctx.tables1.T4F2}
-                    </h6>
+                        {["Para56"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        <Table4 />
+                        <h4 className='footnote'>
+                            <i>
+                                {ctx.tables1.T4F1}
+                                <br></br>
+                                * Effective Loans and Advances for GoI would be ₹ 14,210 crore as the Department of Expenditure, GoI had decided that GST compensation of ₹ 12,407 crore given to the state as back-to-back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
+                            </i>
+                        </h4>
+                        {["Para56a","Para57"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
 
-                    {["Para57"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
-
+                    </div>
                 </div>
-            </div>
-            : <div>
-                <Navbar />
-                <FaSpinner icon="spinner" className="spinner" />
-            </div>)
+                : <div>
+                    <Navbar />
+                    <FaSpinner icon="spinner" className="spinner" />
+                </div>)
     )
 }
 

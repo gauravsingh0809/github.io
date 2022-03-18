@@ -87,7 +87,7 @@ Before deploying the flask make sure the python version 3.9 and wfastcgi is inst
 
 5. Click on add rule. Give name 'ReactApp'
 
-6. Specify pattern as sfrreport(/)?(.*) Also select ignore case
+6. Specify pattern as sfrreport22(/)?(.*) Also select ignore case
 
 7. Give the rewrite URL as http://localhost:port_of_react_app/{R:2}
 

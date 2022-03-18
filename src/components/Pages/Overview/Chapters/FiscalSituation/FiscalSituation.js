@@ -42,10 +42,31 @@ const FiscalSituation = () => {
                             </Para>
                         )}
                         <Table5 />
-                        <h6>
-                            {ctx.tables1.T5F1}
-                        </h6>
-                        {["Para59", "Para60"].map((item, ind) =>
+                        <h4 className='footnote'>
+                            <i>
+                                {ctx.tables1.T5F1}
+                            </i>
+                        </h4>
+                        {["Para58a"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterOne.Profile[item]}
+                            </Para>
+                        )}
+                        <Para>
+                            {ctx.chapterOne.Profile.Para59.substring(0, 177)}
+
+                            <span className="tooltip">
+                                {ctx.chapterOne.Profile.Para59.substring(177, 185)}
+                                <span className="tooltiptext">
+                                    Borrowings by PSUs and SPVs are Off-budget borrowings
+                                </span>
+                                <sup>5</sup>
+                            </span>
+                            {ctx.chapterOne.Profile.Para59.substring(185,)}
+
+                        </Para>
+
+                        {["Para60"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
@@ -62,16 +83,38 @@ const FiscalSituation = () => {
                         )}
 
                         <Table6 />
-                        <h6>
-                            {ctx.tables1.T6F1} and MTFP 2019-23
-                            <br></br>
-                            {ctx.tables1.T6F2}
-                        </h6>
-                        {["Para64", "Para65"].map((item, ind) =>
+                        <h4 className='footnote'>
+                            <i>
+                                {ctx.tables1.T6F1} and MTFP 2019-23
+                                <br></br>
+                                * Effective total debt would be ₹403,519 crore as the Department of Expenditure, GoI had decided that GST compensation of ₹12,407 crore given to the state as back-to-back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission and therefore, the effective variation would be 6.59 per cent.
+                                <br></br>
+                                **The back-to-back Loan (₹12,407 crore) received from GoI in lieu of GST compensation has not been considered as Debt for working out the indicator.
+                            </i>
+                        </h4>
+                        <Para>
+                            {ctx.chapterOne.Profile.Para64.substring(0, 98)}
+
+                            <span className="tooltip">
+                                {ctx.chapterOne.Profile.Para64.substring(98, 108)}
+                                <span className="tooltiptext">
+                                    Fiscal indicators like revenue surplus/deficit, fiscal deficit, Debt-GSDP ratio and GSDP growth rate at current prices.
+                                </span>
+                                <sup>6</sup>
+                            </span>
+                            {ctx.chapterOne.Profile.Para64.substring(108,)}
+
+                        </Para>
+                        {["Para65"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
+
+
+
+
+
                     </div>
                 </div>
                 : <div>
@@ -80,62 +123,63 @@ const FiscalSituation = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
-                <Navbar />
-                <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/overview/fiscalparams" forward="/overview/impact" />
-                    <Title id="anchor">
-                        {ctx.chapter1kannada.Content.para58}
-                    </Title>
-                    {["para59"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
-                    <Subtitle>
-                        {ctx.chapter1kannada.Content.para60}
-                    </Subtitle>
-                    {["para61"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
-                    {/* <Table5 />
+                    <Navbar />
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/overview/fiscalparams" forward="/overview/impact" />
+                        <Title id="anchor">
+                            {ctx.chapter1kannada.Content.para58}
+                        </Title>
+                        {["para59"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        <Subtitle>
+                            {ctx.chapter1kannada.Content.para60}
+                        </Subtitle>
+                        {["para61"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        {/* <Table5 />
                     <h6>
                         {ctx.tables1.T5F1}
                     </h6> */}
-                    {["para62", "para63"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
+                        {["para62", "para63"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
 
-                    <Subtitle>
-                        {ctx.chapter1kannada.Content["para64"]}
-                    </Subtitle>
 
-                    {["para65", "para66",].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
+                        <Subtitle>
+                            {ctx.chapter1kannada.Content["para64"]}
+                        </Subtitle>
 
-                    {/* <Table6 />
+                        {["para65", "para66",].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+
+                        {/* <Table6 />
                     <h6>
                         {ctx.tables1.T6F1} and MTFP 2019-23
                         <br></br>
                         {ctx.tables1.T6F2}
                     </h6> */}
-                    {["para67", "para68"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter1kannada.Content[item]}
-                        </Para>
-                    )}
+                        {["para67", "para68"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                    </div>
                 </div>
-            </div>
-            : <div>
-                <Navbar />
-                <FaSpinner icon="spinner" className="spinner" />
-            </div>)
+                : <div>
+                    <Navbar />
+                    <FaSpinner icon="spinner" className="spinner" />
+                </div>)
     )
 }
 

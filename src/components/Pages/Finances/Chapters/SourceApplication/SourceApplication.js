@@ -23,16 +23,33 @@ const  SourcesApplication = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                        <FloatingActionButtons back="/finances/major-sources" forward="/finances/resources" />
                         <Title>{ctx.chapterTwo.Profile.Para4}</Title>
                         <Para>
                             {ctx.chapterTwo.Profile.Para5}
                         </Para>
                         
                         <Table2/>
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Finance Accounts
+                                <br></br>
+                            * Effective Public Debt Receipts (Net) would be ₹61,105 crore as the Department of Expenditure, GoI had decided that GST compensation of ₹12,407 crore given to the sate as back-to-back loan under Debt Receipts would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
+                            </i>
+                        </h4>
                         <Chart11a />
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Finance Accounts
+                            </i>
+                        </h4>
 
                         <Chart12b />
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Finance Accounts
+                            </i>
+                        </h4>
                    
                     </div>
                 </div>
@@ -44,7 +61,7 @@ const  SourcesApplication = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
+                <FloatingActionButtons back="/finances/major-sources" forward="/finances/resources" />
                     <Title>{ctx.chapter2kannada.Content.para7}</Title>
                     <Para>
                         {ctx.chapter2kannada.Content.para8}

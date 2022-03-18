@@ -23,7 +23,7 @@ const NonReconciliation = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                    <FloatingActionButtons back="/quality/balances" forward="/quality/reconciliation" />
                       
                         
                         <Title>
@@ -53,7 +53,7 @@ const NonReconciliation = () => {
                 ? <div >
                 <Navbar />
                 <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
+                    <FloatingActionButtons back="/quality/balances" forward="/quality/reconciliation" />
                   
                     
                     <Title>

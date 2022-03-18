@@ -23,8 +23,8 @@ const Outcome = () => {
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
-
+          
+        <FloatingActionButtons back="/budget/audit" forward="/budget/conclusion" />
           <Title>{ctx.chapterThree.Profile.Para120}</Title>
           {["Para121", "Para122", "Para123","Para124", "Para125", "Para126",
           "Para127", "Para128"].map(
@@ -90,7 +90,7 @@ const Outcome = () => {
         <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget" forward="budget-process" />
+          <FloatingActionButtons back="/budget/audit" forward="/budget/conclusion" />
 
           <Title>{ctx.chapter3kannada.Content.para124}</Title>
           {["para125", "para126", "para127","para128", "para129", "para130",

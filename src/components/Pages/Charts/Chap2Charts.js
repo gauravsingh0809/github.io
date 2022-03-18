@@ -64,13 +64,13 @@ export const Chart11a = () => {
       ? <Card className={classes.cardColored}>
         <CustomPieChart
           data={chartmap}
-          title="Chart 2.1: Composition of resources"
+          title="Chart 2.1: Composition of resources(in percent)"
         />
       </Card>
       : <Card className={classes.cardMargin}>
         <CustomPieChart
           data={chartmap}
-          title="Chart 2.1: Composition of resources"
+          title="Chart 2.1: Composition of resources(in percent)"
         />
       </Card>
   );
@@ -114,13 +114,13 @@ export const Chart12b = () => {
       ? <Card className={classes.cardColored}>
         <CustomPieChart
           data={chartmap}
-          title="Chart 2.1: Composition of resources"
+          title="Chart 2.2: Application of resources(in percent)"
         />
       </Card>
       : <Card className={classes.cardMargin}>
         <CustomPieChart
           data={chartmap}
-          title="Chart 2.1: Composition of resources"
+          title="Chart 2.2: Application of resources(in percent)"
         />
       </Card>
   );
