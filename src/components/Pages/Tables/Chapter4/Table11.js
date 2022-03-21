@@ -47,7 +47,7 @@ const Table11 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.10: Compliance to Accounting Standards."
+                    title="Table 4.11: Compliance to Accounting Standards."
                     columns={columns}
                     data={ctx.tables4.Table11 ? ctx.tables4.Table11.t11 : ""}
                     customStyles={customStyles}

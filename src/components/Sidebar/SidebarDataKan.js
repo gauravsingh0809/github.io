@@ -226,7 +226,7 @@ export const SidebarDataKan = [
       },
       {
         title: '3.9 ಶಿಫಾರಸುಗಳು',
-        path: '/budget/Recommendations',
+        path: '/budget/recommendations',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'

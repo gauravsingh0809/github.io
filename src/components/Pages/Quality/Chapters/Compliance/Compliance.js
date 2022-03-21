@@ -5,18 +5,12 @@ import { FaSpinner } from "react-icons/fa"
 import { MyContext } from '../../../../../Context/MyProvider';
 import Para from "../../../../Para/Para"
 import Title from "../../../../Title/Title";
+import Subtitle from "../../../../Subtitle/Subtitle";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
-import Table1 from '../../../Tables/Chapter4/Table1'
 import Table11 from "../../../Tables/Chapter4/Table11";
 
 const Compliance = () => {
-
     const ctx = useContext(MyContext)
-    console.log(ctx.chapter4kannada)
-
-
-
-
     return (
         ctx.langPref
             ? (ctx.chapterFour
@@ -24,24 +18,22 @@ const Compliance = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/quality/reconciliation" forward="/quality/submission" />
-                      
-                        
+                
                         <Title>
-                        {ctx.chapter4kannada.Content.title}
+                        {ctx.chapterFour.Fourth.title}
                         </Title>
-                        {["Para1","Para2","Para3"].map((item, ind) =>
+                        <Subtitle>
+                        {ctx.chapterFour.Fourth.Para1}
+                        </Subtitle>
+                        {["Para2","Para3"].map((item, ind) =>
                             <Para key={ind / 10}>
-                                {ctx.chapter4kannada.Content[item]}
+                                {ctx.chapterFour.Fourth[item]}
                             </Para> )}
                             <Table11/>
 
                         <Para>
-                        {ctx.chapter4kannada.Content.Para4}
+                        {ctx.chapterFour.Fourth.Para4}
                         </Para>
-                        
-                         
-                           
-                    
                     </div>
                 </div>
                 : <div>
@@ -63,10 +55,6 @@ const Compliance = () => {
                             {ctx.chapter4kannada.Content[item]}
                         </Para> )}
                         <Table11/>
-                 
-                     
-                       
-                
                 </div>
             </div>
             : <div>

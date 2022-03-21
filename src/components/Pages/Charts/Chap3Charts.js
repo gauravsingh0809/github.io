@@ -38,7 +38,7 @@ export const Chart3 = () => {
           x: chart.Chart3.map((item) => item.month),
           y: chart.Chart3.map((item) => Object.values(item)[ind]),
           type: 'bar',
-          showlegend:ind===1 ? false : true,
+          showlegend:ind===2 ? false : true,
           width: 0.35,
           name: Object.keys(item)[ind],
           hoverinfo: 'y',
@@ -61,8 +61,8 @@ export const Chart3 = () => {
         <CustomBarChart
           data={chartTwo}
           title='Chart 3.3: Monthly Receipts and Disbursements during 2020-21'
-          xaxisTitle="Sector"
-          yaxisTitle="Contribution to GDP"
+          xaxisTitle=" "
+          yaxisTitle=" "
           rangeStart="0"
           rangeEnd="70000"
           step="5000"
@@ -74,8 +74,8 @@ export const Chart3 = () => {
         <CustomBarChart
           data={chartTwo}
           title='Chart 3.3: Monthly Receipts and Disbursements during 2020-21'
-          xaxisTitle="Sector"
-          yaxisTitle="Contribution to GDP"
+          xaxisTitle=" "
+          yaxisTitle=" "
           rangeStart="0"
           rangeEnd="70000"
           step="5000"

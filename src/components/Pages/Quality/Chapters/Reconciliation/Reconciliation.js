@@ -12,33 +12,23 @@ import Table1 from '../../../Tables/Chapter4/Table1'
 const Reconciliation = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.chapter4kannada)
-
-
-
-
     return (
         ctx.langPref
             ? (ctx.chapterFour
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality/non-reconciliation" forward="/quality/compliance" />
-                      
-                        
+                        <FloatingActionButtons back="/quality/non-reconciliation" forward="/quality/compliance" />
+
                         <Title>
-                        {ctx.chapterFour.Third.Para28}
+                            {ctx.chapterFour.Third.Para28}
                         </Title>
                         <Para>
-                        {ctx.chapterFour.Third.Para29}
+                            {ctx.chapterFour.Third.Para29}
                         </Para>
                         <Para>
-                        {ctx.chapterFour.Third.Para30}
+                            {ctx.chapterFour.Third.Para30}
                         </Para>
-                     
-                         
-                           
-                    
                     </div>
                 </div>
                 : <div>
@@ -47,33 +37,29 @@ const Reconciliation = () => {
                 </div>)
             : (ctx.chapter4kannada
                 ? <div >
-                <Navbar />
-                <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality/non-reconciliation" forward="/quality/compliance" />
-                  
-                    
-                    <Title>
-                    {ctx.chapter4kannada.Content.para71}
-                    </Title>
-                    <Para>
-                    {ctx.chapter4kannada.Content.para72}
-                    </Para>
-                    <Para>
-                    {ctx.chapter4kannada.Content.para73}
-                    </Para>
-                    <Para>
-                    {ctx.chapter4kannada.Content.para74}
-                    </Para>
-                 
-                     
-                       
-                
+                    <Navbar />
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/quality/non-reconciliation" forward="/quality/compliance" />
+
+
+                        <Title>
+                            {ctx.chapter4kannada.Content.para71}
+                        </Title>
+                        <Para>
+                            {ctx.chapter4kannada.Content.para72}
+                        </Para>
+                        <Para>
+                            {ctx.chapter4kannada.Content.para73}
+                        </Para>
+                        <Para>
+                            {ctx.chapter4kannada.Content.para74}
+                        </Para>
+                    </div>
                 </div>
-            </div>
-            : <div>
-                <Navbar />
-                <FaSpinner icon="spinner" className="spinner" />
-            </div>)
+                : <div>
+                    <Navbar />
+                    <FaSpinner icon="spinner" className="spinner" />
+                </div>)
     )
 }
 

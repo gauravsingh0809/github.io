@@ -19,7 +19,7 @@ const BudgetProcess = () => {
 
     getFirebase()
         .storage()
-        .ref('/images/chap1chart5.png')
+        .ref('/pdfs/chart31.png')
         .getDownloadURL()
         .then((url) => {
             setURL(url);
@@ -39,7 +39,7 @@ const BudgetProcess = () => {
             )
           )}
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
-             <ImageComponent src={url} alt="chart5" aspectRatio={1/0.8} />
+             <ImageComponent src={url} alt="chart32" aspectRatio={1/0.35} />
 
         </div>
       </div>

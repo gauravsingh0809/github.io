@@ -10,8 +10,6 @@ import './../../Finances.css'
 const FinIntroduction = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.Chap2)
-    console.log(ctx.chapter2kannada)
 
     return (
         ctx.langPref
@@ -20,7 +18,9 @@ const FinIntroduction = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
-                        <Title>{ctx.chapterTwo.Introduction.title}</Title>
+                        <Title>
+                            {ctx.chapterTwo.Introduction.title}
+                            </Title>
                         <Para>
                             {ctx.chapterTwo.Introduction.para1}
                         </Para>

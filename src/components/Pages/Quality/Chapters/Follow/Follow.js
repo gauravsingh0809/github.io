@@ -12,16 +12,14 @@ import Table1 from '../../../Tables/Chapter4/Table1'
 const Follow = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.chapter4kannada)
-
+    
     return (
         ctx.langPref
             ? (ctx.chapterFour
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality/misappropriations" forward="/quality/conclusion" />
-                      
+                    <FloatingActionButtons back="/quality/misappropriations" forward="/quality/conclusion" />                  
                         
                         <Title>
                         {ctx.chapterFour.Fourth.Para23}
@@ -31,10 +29,6 @@ const Follow = () => {
                                 {ctx.chapterFour.Fourth[item]}
                             </Para> )}
                        
-                        
-                         
-                           
-                    
                     </div>
                 </div>
                 : <div>
@@ -46,7 +40,6 @@ const Follow = () => {
                 <Navbar />
                 <div className="contentwrapper" id="home">
                     <FloatingActionButtons back="/quality/misappropriations" forward="/quality/conclusion" />
-                  
                     
                     <Title>
                     {ctx.chapter4kannada.Content.para95}
@@ -55,11 +48,6 @@ const Follow = () => {
                         <Para key={ind / 10}>
                             {ctx.chapter4kannada.Content[item]}
                         </Para> )}
-                   
-                    
-                     
-                       
-                
                 </div>
             </div>
             : <div>

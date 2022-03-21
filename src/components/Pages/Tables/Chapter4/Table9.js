@@ -50,7 +50,7 @@ const Table9 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.8: Adverse balance under DDR Heads"
+                    title="Table 4.9: Adverse balance under DDR Heads"
                     columns={columns}
                     data={ctx.tables4.Table9 ? ctx.tables4.Table9.t9 : ""}
                     customStyles={customStyles}

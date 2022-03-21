@@ -9,11 +9,12 @@ import './../../Finances.css'
 import Table28 from '../../../Tables/Chapter2/Table28'
 import Table29 from '../../../Tables/Chapter2/Table29'
 import {
-    
-    Chart13
-    } from '../../../Charts/Chap2Charts'
 
-const  PublicAccount = () => {
+    Chart13
+} from '../../../Charts/Chap2Charts'
+import Subtitle from '../../../../Subtitle/Subtitle'
+
+const PublicAccount = () => {
 
     const ctx = useContext(MyContext)
     console.log(ctx.chapter2kannada)
@@ -26,32 +27,65 @@ const  PublicAccount = () => {
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances/application" forward="/finances/debtmanagement" />
                         <Title>{ctx.chapterTwo.Second.para14}</Title>
-                        
-                        {["para15","para16","para17"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapterTwo.Second[item]}
-                            </Para> )}
-                            <Table28/>
-                            <h6>  Source: Finance Accounts
-                            <br>
- Note: +ve denotes debit balance and –ve denotes credit balances</br>
-</h6>
-                            
-                            <Chart13 />
-                        {["para18",,"para19","","Para20","para21","para22","para23","para24","para25","para26","para27","para28","para29","para30","para31","para32","para33","para34","para35","para36","para37","para38","para39","para32","para40","para41","para42","para43"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapterTwo.Second[item]}
-                            </Para> )}
-                            <Table29/>
-                        
-                        {["para44",,"para45","","para46","para47","para48","para49","para50","para51","para52","para53","para54"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapterTwo.Second[item]}
-                            </Para> )}
-                            
-                            
-                            
 
+                        {["para15"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterTwo.Second[item]}
+                            </Para>)}
+                        <Subtitle>
+                            {ctx.chapterTwo.Second["para16"]}
+                        </Subtitle>
+                        {["para17"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterTwo.Second[item]}
+                            </Para>)}
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table28 />
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Finance Accounts
+                                <br></br>
+                                Note: +ve denotes debit balance and –ve denotes credit balances
+                            </i>
+                        </h4>
+
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Chart13 />
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Finance Accounts
+                            </i>
+                        </h4>
+
+                        {["para18", , "para19", "", "Para20", "para21",
+                            "para22", "para23", "para24", "para25", "para26",
+                            "para27", "para28", "para29", "para30", "para31",
+                            "para32", "para33", "para34", "para35", "para36",
+                            "para37", "para38", "para39", "para32", "para40",
+                            "para41", "para42", "para43"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    {ctx.chapterTwo.Second[item]}
+                                </Para>)}
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table29 />
+                        <h4 className='footnote'>
+                            <i>
+                                Source: XV Finance Commission and NTA 2020-21
+                            </i>
+                        </h4>
+
+                        {["para44", , "para45", "para46", "para47",
+                            "para48", "para49", "para50", "para51",
+                            "para52", "para53", "para54"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    {ctx.chapterTwo.Second[item]}
+                                </Para>)}
                     </div>
                 </div>
                 : <div>
@@ -62,35 +96,33 @@ const  PublicAccount = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/finances/application" forward="/finances/debtmanagement" />
+                        <FloatingActionButtons back="/finances/application" forward="/finances/debtmanagement" />
                         <Title>{ctx.chapter2kannada.Content.para214}</Title>
-                        
-                        {["para215","para216","para217"].map((item, ind) =>
+
+                        {["para215", "para216", "para217"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
-                            </Para> )}
-                            <Table28/>
-                            <h6>  Source: Finance Accounts
+                            </Para>)}
+                        <Table28 />
+                        <h6>  Source: Finance Accounts
                             <br>
- Note: +ve denotes debit balance and –ve denotes credit balances</br>
-</h6>
-                            <Chart13 />
-                            
-                            
-                        {["para218","para219","para220","para221","para222","para223","para224","para225","para226","para227","para228","para229","para230","para231","para232","para233","para234","para235","para236","para237","para238","para239","para240","para241","para242","para243","para244"].map((item, ind) =>
+                            </br>
+                            Note: +ve denotes debit balance and –ve denotes credit balances
+                        </h6>
+                        <Chart13 />
+
+
+                        {["para218", "para219", "para220", "para221", "para222", "para223", "para224", "para225", "para226", "para227", "para228", "para229", "para230", "para231", "para232", "para233", "para234", "para235", "para236", "para237", "para238", "para239", "para240", "para241", "para242", "para243", "para244"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
-                            </Para> )}
-                            <Table29/>
-                            
-                    
-                        {["para245",,"para246","para247","para248","para249","para250","para251","para252","para253","para254","para255"].map((item, ind) =>
+                            </Para>)}
+                        <Table29 />
+
+
+                        {["para245", , "para246", "para247", "para248", "para249", "para250", "para251", "para252", "para253", "para254", "para255"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
-                            </Para> )}
-                            
-                            
-                            
+                            </Para>)}
 
                     </div>
                 </div>

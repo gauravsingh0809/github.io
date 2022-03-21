@@ -12,7 +12,6 @@ import Table1 from '../../../Tables/Chapter4/Table1'
 const NonSubmission = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.chapter4kannada)
 
     return (
         ctx.langPref
@@ -30,11 +29,6 @@ const NonSubmission = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.Fourth[item]}
                             </Para> )}
-                       
-                        
-                         
-                           
-                    
                     </div>
                 </div>
                 : <div>
@@ -55,11 +49,6 @@ const NonSubmission = () => {
                         <Para key={ind / 10}>
                             {ctx.chapter4kannada.Content[item]}
                         </Para> )}
-                   
-                    
-                     
-                       
-                
                 </div>
             </div>
             : <div>

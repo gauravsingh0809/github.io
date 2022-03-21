@@ -12,7 +12,6 @@ import Table1 from '../../../Tables/Chapter4/Table1'
 const DCU = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.chapter4kannada)
 
     return (
         ctx.langPref
@@ -20,21 +19,17 @@ const DCU = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality/submission" forward="/quality/non-submission" />
-                      
-                        
+                        <FloatingActionButtons back="/quality/submission" forward="/quality/non-submission" />
+
+
                         <Title>
-                        {ctx.chapterFour.Fourth.Para8}
+                            {ctx.chapterFour.Fourth.Para8}
                         </Title>
-                        {["Para9","Para10","Para11","Para12"].map((item, ind) =>
+                        {["Para9", "Para10", "Para11", "Para12"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.Fourth[item]}
-                            </Para> )}
-                       
-                        
-                         
-                           
-                    
+                            </Para>)}
+
                     </div>
                 </div>
                 : <div>
@@ -43,29 +38,24 @@ const DCU = () => {
                 </div>)
             : (ctx.chapter4kannada
                 ? <div >
-                <Navbar />
-                <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality/submission" forward="/quality/non-submission" />
-                  
-                    
-                    <Title>
-                    {ctx.chapter4kannada.Content.para81}
-                    </Title>
-                    {["para82","para83","para84"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter4kannada.Content[item]}
-                        </Para> )}
-                   
-                    
-                     
-                       
-                
+                    <Navbar />
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/quality/submission" forward="/quality/non-submission" />
+
+                        <Title>
+                            {ctx.chapter4kannada.Content.para81}
+                        </Title>
+                        {["para82", "para83", "para84"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter4kannada.Content[item]}
+                            </Para>)}
+
+                    </div>
                 </div>
-            </div>
-            : <div>
-                <Navbar />
-                <FaSpinner icon="spinner" className="spinner" />
-            </div>)
+                : <div>
+                    <Navbar />
+                    <FaSpinner icon="spinner" className="spinner" />
+                </div>)
     )
 }
 

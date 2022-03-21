@@ -644,7 +644,7 @@ export const Chart12 = () => {
       ?
       <Card className={classes.cardColored}>
         <CustomLineChart data={chartmap}
-          title="Chart 2.12: Trend of Capital Expenditure (inclusive of Loans and Advances) over the five-year period from 2015-16 to 2019-20"
+          title="Chart 2.12: Trend of Capital Expenditure (inclusive of Loans and Advances) over the five-year period from 2016-17 to 2020-21"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
           rangeStart="0"
@@ -657,7 +657,7 @@ export const Chart12 = () => {
         /></Card>
       : <Card >
         <CustomLineChart data={chartmap}
-          title="Chart 2.12: Trend of Capital Expenditure (inclusive of Loans and Advances) over the five-year period from 2015-16 to 2019-20"
+          title="Chart 2.12: Trend of Capital Expenditure (inclusive of Loans and Advances) over the five-year period from 2016-17 to 2020-21"
           xaxisTitle="Year"
           yaxisTitle="In Percent"
           rangeStart="0"

@@ -140,8 +140,8 @@ const Routes = () => {
                             <Route path='/appendices/appendix-3' exact component={Appendix3} />
                             <Route path='/appendices/appendix-4' exact component={Appendix4} />
 
-                            <Route component={Error} />
                         </ErrorBoundary>
+                        <Route component={Error} />
                     </Switch>
                 </div>
             </SideBarProvider>

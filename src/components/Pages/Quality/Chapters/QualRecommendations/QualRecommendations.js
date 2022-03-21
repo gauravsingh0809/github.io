@@ -12,7 +12,6 @@ import Table1 from '../../../Tables/Chapter4/Table1'
 const QualRecommendations = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.chapterFour)
 
     return (
         ctx.langPref
@@ -21,20 +20,19 @@ const QualRecommendations = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/quality/conclusion" forward="/appendices/appendix-1" />
-                      
-                        
+
                         <Title>
-                        {ctx.chapterFour.Fourth.Para31}
+                            {ctx.chapterFour.Fourth.Para31}
                         </Title>
-                        {["Para32","Para33","Para34","Para35","Para36"].map((item, ind) =>
+                        {["Para32", "Para33", "Para34", "Para35", "Para36"].map((item, ind) =>
                             <Para key={ind / 10}>
-                                {ctx.chapterFour.Fourth[item]}
-                            </Para> )}
-                       
-                        
-                         
-                           
-                    
+                                <li>
+                                    <i>
+                                        {ctx.chapterFour.Fourth[item]}
+                                    </i>
+                                </li>
+                            </Para>)}
+
                     </div>
                 </div>
                 : <div>
@@ -43,29 +41,27 @@ const QualRecommendations = () => {
                 </div>)
             : (ctx.chapter4kannada
                 ? <div >
-                <Navbar />
-                <div className="contentwrapper" id="home">
-                    <FloatingActionButtons back="/quality" forward="delay" />
-                  
-                    
-                    <Title>
-                    {ctx.chapter4kannada.Content.para103}
-                    </Title>
-                    {["para104","para105","para106","para107","para108"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter4kannada.Content[item]}
-                        </Para> )}
-                   
-                    
-                     
-                       
-                
+                    <Navbar />
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/quality" forward="delay" />
+
+
+                        <Title>
+                            {ctx.chapter4kannada.Content.para103}
+                        </Title>
+                        {["para104", "para105", "para106", "para107", "para108"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                <i>
+                                    {ctx.chapter4kannada.Content[item]}
+                                </i>
+                            </Para>)}
+
+                    </div>
                 </div>
-            </div>
-            : <div>
-                <Navbar />
-                <FaSpinner icon="spinner" className="spinner" />
-            </div>)
+                : <div>
+                    <Navbar />
+                    <FaSpinner icon="spinner" className="spinner" />
+                </div>)
     )
 }
 

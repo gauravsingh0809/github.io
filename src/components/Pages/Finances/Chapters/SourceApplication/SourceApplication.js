@@ -15,7 +15,6 @@ import {
 const  SourcesApplication = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.Chap2)
 
     return (
         ctx.langPref

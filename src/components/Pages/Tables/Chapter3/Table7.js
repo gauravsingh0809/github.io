@@ -11,7 +11,6 @@ const columns = [
     {
         name: "Year",
         selector: "Year",
-        grow:0.2
     },
     {
         name: "Number of grants covered",
@@ -21,14 +20,13 @@ const columns = [
     {
         name: "Number of cases",
         selector: "No of cases",
-        grow:0.2,
+        // grow:0.2,
         wrap: true,
         format: data => data["No of cases"].toLocaleString('en-IN')
     },
     {
         name: "Amount",
         selector: "Amount",
-        grow:0.2,
         wrap: true,
         format: data => data["Amount"].toLocaleString('en-IN')
     }

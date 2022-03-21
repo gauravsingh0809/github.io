@@ -106,12 +106,12 @@ const Table10 = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="Table 2.10: Transfer of recommended and actual release of grants during 2015-16 to 2019-20"
+          title="Table 2.9: Recommended and actual release of grants during 2020-21"
           columns={columns}
           data={ctx.tables2.Table10}
           customStyles={customStyles}
           striped
-          conditionalRowStyles={conditionalRowStyles}
+          // conditionalRowStyles={conditionalRowStyles}
           highlightOnHover
           pointerOnHover
         // pagination

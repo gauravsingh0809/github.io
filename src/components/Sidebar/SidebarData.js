@@ -234,7 +234,7 @@ export const SidebarData = [
       },
       {
         title: '3.10 Recommendations',
-        path: '/budget/Recommendations',
+        path: '/budget/recommendations',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'

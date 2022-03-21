@@ -12,7 +12,6 @@ import Table1 from '../../../Tables/Chapter4/Table1'
 const Submission = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.chapter4kannada)
 
     return (
         ctx.langPref
@@ -21,20 +20,15 @@ const Submission = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/quality/compliance" forward="/quality/dcu" />
-                      
-                        
+
                         <Title>
-                        {ctx.chapterFour.Fourth.Para5}
+                            {ctx.chapterFour.Fourth.Para5}
                         </Title>
-                        {["Para6","Para7"].map((item, ind) =>
+                        {["Para6", "Para7"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.Fourth[item]}
-                            </Para> )}
-                       
-                        
-                         
-                           
-                    
+                            </Para>)}
+
                     </div>
                 </div>
                 : <div>
@@ -42,31 +36,27 @@ const Submission = () => {
                     <FaSpinner icon="spinner" className="spinner" />
                 </div>)
             : (ctx.chapter4kannada
-                ?  <div >
-                <Navbar />
-                <div className="contentwrapper" id="home">
-                    
-                <FloatingActionButtons back="/quality/compliance" forward="/quality/dcu" />
-                  
-                    
-                    <Title>
-                    {ctx.chapter4kannada.Content.para79}
-                    </Title>
-                    {["para80"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter4kannada.Content[item]}
-                        </Para> )}
-                   
-                    
-                     
-                       
-                
+                ? <div >
+                    <Navbar />
+                    <div className="contentwrapper" id="home">
+
+                        <FloatingActionButtons back="/quality/compliance" forward="/quality/dcu" />
+
+
+                        <Title>
+                            {ctx.chapter4kannada.Content.para79}
+                        </Title>
+                        {["para80"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter4kannada.Content[item]}
+                            </Para>)}
+
+                    </div>
                 </div>
-            </div>
-            : <div>
-                <Navbar />
-                <FaSpinner icon="spinner" className="spinner" />
-            </div>)
+                : <div>
+                    <Navbar />
+                    <FaSpinner icon="spinner" className="spinner" />
+                </div>)
     )
 }
 

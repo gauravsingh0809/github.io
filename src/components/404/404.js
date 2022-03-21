@@ -7,7 +7,7 @@ const Error = () => {
         <div className='four_o_four'>
             <h1>404</h1>
             <p>Oops! Something is wrong.</p>
-            <Link className="button" to="/preface">
+            <Link className="button" to="http://localhost:3000/#/overview">
                 <i className="icon-home">
                 </i>
                 Go back to Preface

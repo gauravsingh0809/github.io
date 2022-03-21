@@ -24,7 +24,7 @@ const columns = [
         selector: "Unutilised Amount",
         wrap: true,
         grow:0.2,
-        format: data => data["Unutilised Amount"].toLocaleString('en-IN', {style: 'currency', currency: 'INR'})
+        format: data => data["Unutilised Amount"].toLocaleString('en-IN')
     }
 ];
 
@@ -38,7 +38,7 @@ const Table7 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.6: Closing balances in PD Accounts"
+                    title="Table 4.7: Unutilised amounts of Central and State Finance Commissions and other funds in PD Accounts"
                     columns={columns}
                     data={ctx.tables4.Table7 ? ctx.tables4.Table7.t7 : ""}
                     customStyles={customStyles}

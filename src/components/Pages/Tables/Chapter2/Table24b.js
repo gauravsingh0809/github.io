@@ -54,7 +54,7 @@ const Table24b = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.24b: Equity, loans and guarantees outstanding as per Finance Accounts vis-à-vis records of SPSUs"
+                    title="Table 2.24: Equity, loans and guarantees outstanding as per Finance Accounts vis-à-vis records of SPSUs"
                     columns={columns}
                     data={ctx.tables2.Table25 ? ctx.tables2.Table25.t25 : ""}
                     customStyles={customStyles}

@@ -12,7 +12,6 @@ import Table1 from '../../../Tables/Chapter4/Table1'
 const Timelines = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.chapterFour)
 
     return (
         ctx.langPref
@@ -21,8 +20,7 @@ const Timelines = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                     <FloatingActionButtons back="/quality/non-submission" forward="/quality/misappropriations" />
-                      
-                        
+                         
                         <Title>
                         {ctx.chapterFour.Fourth.Para19}
                         </Title>
@@ -30,11 +28,6 @@ const Timelines = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.Fourth[item]}
                             </Para> )}
-                       
-                        
-                         
-                           
-                    
                     </div>
                 </div>
                 : <div>
@@ -55,10 +48,6 @@ const Timelines = () => {
                         <Para key={ind / 10}>
                             {ctx.chapter4kannada.Content[item]}
                         </Para> )}
-                   
-                    
-                     
-                       
                 
                 </div>
             </div>

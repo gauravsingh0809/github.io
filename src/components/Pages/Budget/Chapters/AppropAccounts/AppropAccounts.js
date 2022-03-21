@@ -53,6 +53,9 @@ const AppropAccounts = () => {
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )
           )}
+          <h3 className="headnote">
+          ₹ In crore
+          </h3>
           <Table6 />
           <h4 className="footnote">
             <i>

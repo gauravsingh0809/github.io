@@ -5,7 +5,6 @@ import './App.css';
 import Routes from './Routes/Routes';
 import { useEffect } from 'react';
 import History from './Helper/History';
-import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 
 
 const App = () => {

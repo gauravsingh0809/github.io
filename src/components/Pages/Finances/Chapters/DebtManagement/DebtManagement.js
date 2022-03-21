@@ -12,17 +12,13 @@ import Table32 from '../../../Tables/Chapter2/Table32'
 import Table33 from '../../../Tables/Chapter2/Table33'
 import Table34 from '../../../Tables/Chapter2/Table34'
 import {
-    Chart10, Chart11, Chart11a, Chart12, Chart12b,
-    Chart13, Chart14, Chart15, Chart16, Chart17,
-    Chart18, Chart21,
-    Chart19,
-    Chart2 as Chrt2, Chart20, Chart3 as Chrt3, Chart4 as Chrt4, Chart7, Chart8, Chart9
+    Chart14, Chart15, Chart16,
 } from '../../../Charts/Chap2Charts'
+import Subtitle from '../../../../Subtitle/Subtitle'
 
 const DebtManagement = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.chapter2kannada)
 
     return (
         ctx.langPref
@@ -31,47 +27,141 @@ const DebtManagement = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances/publicaccount" forward="/finances/dsa" />
-                        <Title>{ctx.chapterTwo.Second.para55}</Title>
+                        <Title>
+                            {ctx.chapterTwo.Second.para55}
+                        </Title>
                         <Para>
-                        {ctx.chapterTwo.Second.para56}
+                            {ctx.chapterTwo.Second.para56}
                         </Para>
                         <Chart14 />
-                        {["para56","para57","para58","para59","para60"].map((item, ind) =>
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Finance Accounts.
+                            </i>
+                        </h4>
+                        {["para56a", "para57"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.Second[item]}
-                            </Para> )}
-                            <Table30/>
-                            <h6>*The back-to-back Loan (` 12,407 crore) received from GoI in lieu of GST compensation has not been considered as Debt for working out the indicator.</h6>
-                            {["para61","para62","para63","para64"].map((item, ind) =>
+                            </Para>)}
+                        <Subtitle>
+                            {ctx.chapterTwo.Second["para58"]}
+                        </Subtitle>
+                        {["para59", "para60"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.Second[item]}
-                            </Para> )}
-                            <Chart15 />
-                            <h6>Note: Effective GOI loans would be `14,210 crore as the Department of Expenditure, GOI had decided that GST compensation of `12,407 crore given to the State as back-to-back loan under debt receipts (6004-101. Loans and Advances from GOI) would not be treated as debt of the State for any norms which may be prescribed by the Finance Commission, thus, impacting the total debt to `4,03,519 crore.</h6>
-                            <Chart16 />
-                            {["para65","para66","para67","para68","para69"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapterTwo.Second[item]}
-                            </Para> )}
-                            <Table31/>
-                            <h6>Source: Finance Accounts</h6>
-                            {["para70","para71","para72","para73","para74"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapterTwo.Second[item]}
-                            </Para> )}
-                            <Table32/>
-                            <Table33/>
-                            {["para75","para76","para77"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapterTwo.Second[item]}
-                            </Para> )}
-                            <Table34/>
-                            <Para>
-                        {ctx.chapterTwo.Second.para78}
-                        </Para>
-                            
-                        
+                            </Para>)}
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table30 />
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Finance Accounts
+                                <br></br>
+                                *The back-to-back Loan (₹ 12,407 crore) received
+                                from GoI in lieu of GST compensation has not been
+                                considered as Debt for working out the indicator.
+                            </i>
+                        </h4>
 
+                        {["para61"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterTwo.Second[item]}
+                            </Para>)}
+                        {["para63", "para64"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                <li>
+                                    {ctx.chapterTwo.Second[item]}
+                                </li>
+                            </Para>)}
+                        <Chart15 />
+                        <h4 className='footnote'>
+                            <i>
+                                Note: Effective GOI loans would be ₹14,210 crore as the
+                                Department of Expenditure, GOI had decided that GST
+                                compensation of ₹12,407 crore given to the State as
+                                back-to-back loan under debt receipts (6004-101. Loans
+                                and Advances from GOI) would not be treated as debt of
+                                the State for any norms which may be prescribed by the
+                                Finance Commission, thus, impacting the total debt to
+                                ₹4,03,519 crore.
+                            </i>
+                        </h4>
+
+                        <Chart16 />
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Finance Accounts
+                            </i>
+                        </h4>
+                        {["para65", "para66"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterTwo.Second[item]}
+                            </Para>)}
+                        <Subtitle>
+                            {ctx.chapterTwo.Second["para67"]}
+                        </Subtitle>
+                        {["para68", "para69"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterTwo.Second[item]}
+                            </Para>)}
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table31 />
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Finance Accounts
+                            </i>
+                        </h4>
+                        {["para70", "para71", "para72"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterTwo.Second[item]}
+                            </Para>)}
+                        <Subtitle>
+                            {ctx.chapterTwo.Second["para73"]}
+                        </Subtitle>
+                        <Para>
+                            {ctx.chapterTwo.Second["para74"]}
+                        </Para>
+
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table32 />
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Finance Accounts
+                                <br></br>
+                                *All these figures are net disbursement/outflows during the year
+                            </i>
+                        </h4>
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table33 />
+                        <h4 className='footnote'>
+                            <i>
+                                Source: Finance Accounts
+                            </i>
+                        </h4>
+                       
+                        <Para>
+                            {ctx.chapterTwo.Second["para75"]}
+                        </Para>
+                        <Subtitle>
+                            {ctx.chapterTwo.Second["para76"]}
+                        </Subtitle>
+                        <Para>
+                            {ctx.chapterTwo.Second["para77"]}
+                        </Para>
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table34 />
+                        <Para>
+                            {ctx.chapterTwo.Second.para78}
+                        </Para>
                     </div>
                 </div>
                 : <div>
@@ -80,58 +170,76 @@ const DebtManagement = () => {
                 </div>)
             : (ctx.chapter2kannada
                 ? <div >
-                <Navbar />
-                <div className="contentwrapper" id="home">
-                <FloatingActionButtons back="/finances/publicaccount" forward="/finances/dsa" />
-                    <Title>{ctx.chapter2kannada.Content.para256}</Title>
-                    <Para>
-                    {ctx.chapter2kannada.Content.para257}
-                    </Para>
-                    <Chart14 />
-                    {["para258","para259","para260","para261","para262"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter2kannada.Content[item]}
-                        </Para> )}
-                        <Table30/>
-                        <h6>*The back-to-back Loan (` 12,407 crore) received from GoI in lieu of GST compensation has not been considered as Debt for working out the indicator.</h6>
+                    <Navbar />
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/finances/publicaccount" forward="/finances/dsa" />
+                        <Title>{ctx.chapter2kannada.Content.para256}</Title>
+                        <Para>
+                            {ctx.chapter2kannada.Content.para257}
+                        </Para>
+                        <Chart14 />
+                        {["para258", "para259", "para260", "para261", "para262"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table30 />
+                        <h6>*The back-to-back Loan (₹ 12,407 crore) received from GoI in lieu of GST compensation has not been considered as Debt for working out the indicator.</h6>
                         <Chart16 />
-                        {["para263","para264","para265","para266"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter2kannada.Content[item]}
-                        </Para> )}
+                        {["para263", "para264", "para265", "para266"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
                         <Chart15 />
-                        <h6>Note: Effective GOI loans would be `14,210 crore as the Department of Expenditure, GOI had decided that GST compensation of `12,407 crore given to the State as back-to-back loan under debt receipts (6004-101. Loans and Advances from GOI) would not be treated as debt of the State for any norms which may be prescribed by the Finance Commission, thus, impacting the total debt to `4,03,519 crore.</h6>
-                        {["para267","para268","para269","para270","para271"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter2kannada.Content[item]}
-                        </Para> )}
-                        <Table31/>
+                        <h6>Note: Effective GOI loans would be ₹14,210 crore as the Department of Expenditure, GOI had decided that GST compensation of ₹12,407 crore given to the State as back-to-back loan under debt receipts (6004-101. Loans and Advances from GOI) would not be treated as debt of the State for any norms which may be prescribed by the Finance Commission, thus, impacting the total debt to ₹4,03,519 crore.</h6>
+                        {["para267", "para268", "para269", "para270", "para271"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table31 />
                         <h6>Source: Finance Accounts</h6>
-                        {["para272","para273","para274","para275","para276"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter2kannada.Content[item]}
-                        </Para> )}
-                        <Table32/>
-                        <Table33/>
+                        {["para272", "para273", "para274", "para275", "para276"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table32 />
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table33 />
                         <Para>
-                    {ctx.chapter2kannada.Content.para277}
-                    </Para>
+                            {ctx.chapter2kannada.Content.para277}
+                        </Para>
                         <Para>
-                    {ctx.chapter2kannada.Content.para278}
-                    </Para>
-                    {["para279","para280","para281"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter2kannada.Content[item]}
-                        </Para> )}
-                        <Table34/>
-                    
+                            {ctx.chapter2kannada.Content.para278}
+                        </Para>
+                        {["para279", "para280", "para281"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                        <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
+                        <Table34 />
 
+
+                    </div>
                 </div>
-            </div>
-            : <div>
-                <Navbar />
-                <FaSpinner icon="spinner" className="spinner" />
-            </div>)
+                : <div>
+                    <Navbar />
+                    <FaSpinner icon="spinner" className="spinner" />
+                </div>)
     )
 }
 

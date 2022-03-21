@@ -8,17 +8,6 @@ import Title from "./../../../../Title/Title";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
 import Table1 from '../../../Tables/Chapter4/Table1'
 
-import Table4 from "../../../Tables/Chapter4/Table4";
-import Table5 from "../../../Tables/Chapter4/Table5";
-import Table6 from "../../../Tables/Chapter4/Table6";
-import Table7 from "../../../Tables/Chapter4/Table7";
-import Table8 from "../../../Tables/Chapter4/Table8";
-import Table9 from "../../../Tables/Chapter4/Table9";
-import Table10 from "../../../Tables/Chapter4/Table10";
-import Table11 from "../../../Tables/Chapter4/Table11";
-import Table12 from "../../../Tables/Chapter4/Table12";
-
-
 
 const Funds = () => {
 
@@ -31,40 +20,46 @@ const Funds = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/quality" forward="/quality/delay" />
-                        <Title>{ctx.chapterFour.title}</Title>
-
-                        
-                        
-                        
-                      
-                      
-                        
-                       
-                        
-                       
-                        
-                       
-                        
-                        
+                        <Title>
+                            {ctx.chapterFour.title}
+                        </Title>
                         <Para>
-                        {ctx.chapterFour.para1}
+                            {ctx.chapterFour.para1}
                         </Para>
                         <Title>{ctx.chapterFour.para2}</Title>
                         <Para>
-                        {ctx.chapterFour.first.title}
-                        </Para>
-                        {["para1","para2",":Para3","Para4","Para5","Para6","Para7","Para8","Para9"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapterFour.first[item]}
-                            </Para> )}
-                            <Table1/>
-                            <Para>
-                        {ctx.chapterFour.first.Para9a}
+                            {ctx.chapterFour.first.title}
                         </Para>
                         <Para>
-                        {ctx.chapterFour.first.Para9b}
+                            <li>
+                                {ctx.chapterFour.first.para1}
+                            </li>
                         </Para>
+                        {["para2", "Para3", "Para4", "Para5"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterFour.first[item]}
+                            </Para>)}
+                        <Para>
+                            <li>
+                                {ctx.chapterFour.first.Para6}
+                            </li>
+                        </Para>
+                        {["Para7", "Para8", "Para9"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterFour.first[item]}
+                            </Para>)}
 
+                        <h3 className="headnote">
+                            ₹ In lakhs
+                        </h3>
+                        <Table1 />
+
+                        <Para>
+                            {ctx.chapterFour.first.Para9a}
+                        </Para>
+                        <Para>
+                            {ctx.chapterFour.first.Para9b}
+                        </Para>
 
                     </div>
                 </div>
@@ -74,37 +69,37 @@ const Funds = () => {
                 </div>)
             : (ctx.chapter4kannada
                 ? <div >
-                <Navbar />
-                <div className="contentwrapper" id="home">
-                <FloatingActionButtons back="/quality" forward="/quality/delay" />
-                    <Title>{ctx.chapter4kannada.Content.para1}</Title>
-                    
-                    <Para>
-                    {ctx.chapter4kannada.Content.para2}
-                    </Para>
-                    <Title>{ctx.chapter4kannada.Content.para3}</Title>
-                    <Para>
-                    {ctx.chapter4kannada.Content.para4}
-                    </Para>
-                    {["para5","para6","para7","para8","para9","para10","para11","para12","para13"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter4kannada.Content[item]}
-                        </Para> )}
-                        <Table1/>
+                    <Navbar />
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/quality" forward="/quality/delay" />
+                        <Title>{ctx.chapter4kannada.Content.para1}</Title>
+
                         <Para>
-                    {ctx.chapter4kannada.Content.para14}
-                    </Para>
-                    <Para>
-                    {ctx.chapter4kannada.Content.para15}
-                    </Para>
+                            {ctx.chapter4kannada.Content.para2}
+                        </Para>
+                        <Title>{ctx.chapter4kannada.Content.para3}</Title>
+                        <Para>
+                            {ctx.chapter4kannada.Content.para4}
+                        </Para>
+                        {["para5", "para6", "para7", "para8", "para9", "para10", "para11", "para12", "para13"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter4kannada.Content[item]}
+                            </Para>)}
+                        <Table1 />
+                        <Para>
+                            {ctx.chapter4kannada.Content.para14}
+                        </Para>
+                        <Para>
+                            {ctx.chapter4kannada.Content.para15}
+                        </Para>
 
 
+                    </div>
                 </div>
-            </div>
-            : <div>
-                <Navbar />
-                <FaSpinner icon="spinner" className="spinner" />
-            </div>)
+                : <div>
+                    <Navbar />
+                    <FaSpinner icon="spinner" className="spinner" />
+                </div>)
     )
 }
 

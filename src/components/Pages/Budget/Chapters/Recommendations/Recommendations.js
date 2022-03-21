@@ -17,17 +17,19 @@ const Recommendations = () => {
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-        <FloatingActionButtons back="/budget/conclusion" forward="/quality" />
+          <FloatingActionButtons back="/budget/conclusion" forward="/quality" />
 
           <Title>{ctx.chapterThree.Profile.Para175}</Title>
-          {["Para176","Para177", "Para178", "Para179"].map(
+          {["Para176", "Para177", "Para178", "Para179"].map(
             (item, ind) => (
               <Para key={ind / 10}>
-              {ctx.chapterThree.Profile[item]}
+                <i>
+                  {ctx.chapterThree.Profile[item]}
+                </i>
               </Para>
-          ))}
-         
-          
+            ))}
+
+
 
         </div>
       </div>
@@ -39,27 +41,27 @@ const Recommendations = () => {
     )
   ) : ctx.chapter3kannada ? (
     <div>
-    <Navbar />
-    <div className="contentwrapper" id="home">
-      <FloatingActionButtons back="/budget/conclusion" forward="/quality" />
+      <Navbar />
+      <div className="contentwrapper" id="home">
+        <FloatingActionButtons back="/budget/conclusion" forward="/quality" />
 
-      <Title>{ctx.chapter3kannada.Content.para176}</Title>
-      {["para177","para178", "para179", "para180"].map(
-        (item, ind) => (
-          <Para key={ind / 10}>
-          {ctx.chapter3kannada.Content[item]}
-          </Para>
-      ))}
-     
-      
+        <Title>{ctx.chapter3kannada.Content.para176}</Title>
+        {["para177", "para178", "para179", "para180"].map(
+          (item, ind) => (
+            <Para key={ind / 10}>
+              {ctx.chapter3kannada.Content[item]}
+            </Para>
+          ))}
 
+
+
+      </div>
     </div>
-  </div>
-) : (
-  <div>
-    <Navbar />
-    <FaSpinner icon="spinner" className="spinner" />
-  </div>
+  ) : (
+    <div>
+      <Navbar />
+      <FaSpinner icon="spinner" className="spinner" />
+    </div>
   );
 };
 
