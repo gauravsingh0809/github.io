@@ -65,8 +65,8 @@ const HomePage = () => {
         </div>
         <div>
           <button className="button-51">
-            <Link to='/preface' style={{textDecoration:'none', color:'inherit'}}>
-            Navigate to Preface
+            <Link to='/overview' style={{textDecoration:'none', color:'inherit'}}>
+            Navigate to Overview
             </Link>
           </button>
         </div>
