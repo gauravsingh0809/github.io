@@ -46,13 +46,13 @@ def get_header_dashboard(app):
                     ),
                     html.Div(
                         [
-                            html.H4("STATE FINANCE AUDIT REPORT FOR THE YEAR ENDED MARCH 2020, KARNATAKA",
+                            html.H5("STATE FINANCE AUDIT REPORT FOR THE YEAR ENDED MARCH 2021, KARNATAKA",
                                     style={"fontWeight": "bold"}
                                     )
                         ],
-                        className="eight columns main-title",
+                        className="nine columns main-title",
                         style={
-                            "margin-left": "50px",
+                            "margin-left": "30px",
                             "margin-top": "30px"
                         }
                     ),
@@ -61,12 +61,12 @@ def get_header_dashboard(app):
                             html.Img(
                                 src=app.get_asset_url("emblem.png"),
                                 style={
-                                    'height': '46%',
-                                    'width': '46%',
-                                    'justifyItems':"left"
+                                    'height': '76%',
+                                    'width': '76%',
+                                    'justifyItems':"right"
                                 }
                             ),
-                            className="two columns",
+                            className="one columns",
                             href="https://cag.gov.in",
                             target="_blank")
                     )

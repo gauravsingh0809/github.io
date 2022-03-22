@@ -64,11 +64,13 @@ const HomePage = () => {
           Report No. 1 of the year 2022
         </div>
         <div>
-          <button className="button-51">
-            <Link to='/overview' style={{textDecoration:'none', color:'inherit'}}>
-            Navigate to Overview
-            </Link>
-          </button>
+
+          <Link to='/overview' style={{ textDecoration: 'none', color: 'inherit' }}>
+            <button className="button-51">
+              Navigate to Overview
+            </button>
+          </Link>
+
         </div>
 
       </div>

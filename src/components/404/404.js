@@ -10,7 +10,7 @@ const Error = () => {
 
             <i className="icon-home">
             </i>
-            <a href='https://digital-sfr.firebaseapp.com/#/overview' className='button'>
+            <a href='https://cedar.gov.in/sfr-report-22/#//overview' className='button'>
                 Go back to Overview
             </a>
 

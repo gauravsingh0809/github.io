@@ -14,9 +14,9 @@ import Table40 from '../../../Tables/Chapter2/Table40'
 import {
     Chart17,
     Chart18,
-    Chart19,
-    Chart2 as Chrt2, Chart3 as Chrt3, Chart4 as Chrt4
+    Chart19
 } from '../../../Charts/Chap2Charts'
+import Subtitle from '../../../../Subtitle/Subtitle'
 const Dsa = () => {
 
     const ctx = useContext(MyContext)
@@ -43,28 +43,64 @@ const Dsa = () => {
                             <br></br>
                             #Net debt available to the State Government is calculated as excess of Public Debt receipts over Public Debt repayment and interest payments on Public Debt and does not include back-to-back loans received from GoI as GST compensation.
                             <br></br>
-                            ^The back-to-back Loan (` 12,407 crore) received from GoI in lieu of GST compensation has not been considered as Debt for working out the indicator.
+                            ^The back-to-back Loan (₹ 12,407 crore) received from GoI in lieu of GST compensation has not been considered as Debt for working out the indicator.
                         </h6>
-                        {["para83", "para84", "para85", "para86", "para87", "para88", "para89", "para90", "para91", "para92", "para93", "para94", "para95", "para96"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapterTwo.Second[item]}
-                            </Para>)}
+                        {["para83", "para84", "para85", "para86", "para87",
+                            "para88", "para89", "para90", "para91", "para92",
+                            "para93", "para94"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    {ctx.chapterTwo.Second[item]}
+                                </Para>)}
+                        <Subtitle>
+                            {ctx.chapterTwo.Second["para95"]}
+                        </Subtitle>
+                        <Para>
+                            {ctx.chapterTwo.Second["para96"]}
+                        </Para>
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
                         <Table37 />
-                        {["para97", "para98", "para99", "para100"].map((item, ind) =>
+                        {["para97", "para98"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.Second[item]}
                             </Para>)}
+                            <Subtitle>
+                            {ctx.chapterTwo.Second["para99"]}
+                        </Subtitle>
+                        <Para>
+                        {ctx.chapterTwo.Second["para100"]}
+                        </Para>
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
                         <Table38 />
-                        {["para101", "para102", "para103", "para104", "para105", "para106", "para107", "para108", "para109", "para110", "para111"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapterTwo.Second[item]}
-                            </Para>)}
+                        <Para>
+                            <li>
+                                {ctx.chapterTwo.Second.para101.substring(0,)}
+                                <span className="tooltip">
+                                    <span className="tooltiptext">
+                                    Irrigation (₹16,061 crore), Co-operation (₹1,175 crore), Finance (₹1,251 crore), Power (₹10,855 crore), Housing (₹2,439 crore), Transport (₹426 crore) and other sectors (₹198 crore)
+                                        </span>
+                                    <sup>29</sup>
+                                </span>
+
+                            </li>
+                        </Para>
+
+                        {["para101", "para102", "para103",
+                        "para104", "para105", "para106"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    {ctx.chapterTwo.Second[item]}
+                                </Para>)}
+                                <Subtitle>
+                                {ctx.chapterTwo.Second["para107"]}
+                                </Subtitle>
+                        
+                        {[  "para108", "para109", "para110", "para111"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    {ctx.chapterTwo.Second[item]}
+                                </Para>)}
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
@@ -117,7 +153,7 @@ const Dsa = () => {
                             <br></br>
                             #	 ರಾಜ್ಯ ಸರ್ಕಾರಕ್ಕೆ ಲಭ್ಯವಿರುವ ನಿವ್ವಳ ಸಾಲವನ್ನು, ಸಾರ್ವಜನಿಕ ಸಾಲ ಮರುಪಾವತಿ ಮತ್ತು ಸಾರ್ವಜನಿಕ ಸಾಲದ ಮೇಲಿನ ಬಡ್ಡಿ ಪಾವತಿಗಳ ಮೇಲಿನ ಸಾರ್ವಜನಿಕ ಸಾಲ ಸ್ವೀಕೃತಿಗಳ ಹೆಚ್ಚುವರಿ ಎಂದು ಲೆಕ್ಕಹಾಕಲಾಗುತ್ತದೆ ಮತ್ತು ಸರಕು ಮತ್ತು ಸೇವಾ ತೆರಿಗೆ ಪರಿಹಾರವಾಗಿ ಭಾರತ ಸರ್ಕಾರದಿಂದ ಪಡೆದ ಬ್ಯಾಕ್-ಟು-ಬ್ಯಾಕ್ ಸಾಲಗಳನ್ನು ಒಳಗೊಂಡಿರುವುದಿಲ್ಲ.
                             <br></br>
-                            ^  ಸರಕು ಮತ್ತು ಸೇವಾ ತೆರಿಗೆ ಪರಿಹಾರದ ಬದಲಾಗಿ ಭಾರತ ಸರ್ಕಾರದಿಂದ ಪಡೆದ ಬ್ಯಾಕ್-ಟು-ಬ್ಯಾಕ್ ಸಾಲವನ್ನು (`12,407 ಕೋಟಿ) ಸೂಚಕವನ್ನು ಲೆಕ್ಕ ಹಾಕಲು ಪರಿಗಣಿಸಲಾಗಿಲ್ಲ.
+                            ^  ಸರಕು ಮತ್ತು ಸೇವಾ ತೆರಿಗೆ ಪರಿಹಾರದ ಬದಲಾಗಿ ಭಾರತ ಸರ್ಕಾರದಿಂದ ಪಡೆದ ಬ್ಯಾಕ್-ಟು-ಬ್ಯಾಕ್ ಸಾಲವನ್ನು (₹12,407 ಕೋಟಿ) ಸೂಚಕವನ್ನು ಲೆಕ್ಕ ಹಾಕಲು ಪರಿಗಣಿಸಲಾಗಿಲ್ಲ.
                         </h6>
                         {["para286", "para287", "para288", "para289", "para290", "para291", "para292", "para293", "para294", "para295", "para296", "para297", "para298", "para299"].map((item, ind) =>
                             <Para key={ind / 10}>

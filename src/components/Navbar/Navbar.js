@@ -49,11 +49,11 @@ const Navbar = () => {
           <li>
             <Link to="/">About</Link>
           </li>
-          {/* <li>
+          <li>
             <a href='https://cedar.gov.in/sfrdashboard/' target="_blank" rel="noreferrer">
               Dashboard
             </a>
-          </li> */}
+          </li>
           <div className="dropdown">
             {ctx.langPref
               ? <p onClick={ctx.langChange} title="Switch Language" style={{ fontSize: "20px", fontWeight: "450", margin: "0px 10px 0 -30px", borderStyle: "solid" }}>ಕಖ</p>

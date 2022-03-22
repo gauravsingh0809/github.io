@@ -30,7 +30,7 @@ export default function FloatingActionButtons(props) {
                     <ArrowBackIosIcon />
                 </Fab>
             </Link>
-            <Fab color="primary" aria-label="home" href="/">
+            <Fab color="primary" aria-label="home" href="/sfr-report-22/">
                 <HomeOutlinedIcon />
             </Fab>
             <Link to={props.forward}>

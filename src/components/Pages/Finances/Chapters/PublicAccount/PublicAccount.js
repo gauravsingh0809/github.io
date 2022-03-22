@@ -62,8 +62,27 @@ const PublicAccount = () => {
                         </h4>
 
                         {["para18", , "para19", "", "Para20", "para21",
-                            "para22", "para23", "para24", "para25", "para26",
-                            "para27", "para28", "para29", "para30", "para31",
+                            "para22", "para23", "para24", "para25", "para26"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    {ctx.chapterTwo.Second[item]}
+                                </Para>)}
+                        <Para>
+                            <li>
+                                {ctx.chapterTwo.Second.para27.substring(0, 113)}
+                                <span className="tooltip">
+                                    {ctx.chapterTwo.Second.para27.substring(113, 122)}
+                                    <span className="tooltiptext">
+                                        Green Tax Cess is cess on old vehicles which have completed fifteen years in respect of two
+                                        wheelers and non-transport vehicles and seven years in respect of transport vehicles at the time of renewal of Certificate of Registration in addition to the tax levied at the rates specified for the purpose of implementation of various measures to control air pollution.
+                                    </span>
+                                    <sup>27</sup>
+                                </span>
+                                {ctx.chapterTwo.Second.para27.substring(122,)}
+
+                            </li>
+                        </Para>
+
+                        {["para28", "para29", "para30", "para31",
                             "para32", "para33", "para34", "para35", "para36",
                             "para37", "para38", "para39", "para32", "para40",
                             "para41", "para42", "para43"].map((item, ind) =>

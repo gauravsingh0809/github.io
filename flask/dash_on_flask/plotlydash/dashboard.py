@@ -63,7 +63,7 @@ def init_dashboard(server):
             ),
             html.Button(
                 html.A("SFAR",
-                       href='https://cedar.gov.in/sfrreport/',
+                       href='https://cedar.gov.in/sfrreport22/',
                        target='_blank'
                        ),
                 className="sidebarbtn"
@@ -84,13 +84,13 @@ def init_dashboard(server):
                                     path=['Root', "Type", "Year",
                                           "Sub Type", "Minor Head"],
                                     values="Values",
-                                    title="Snapshot of Karnataka finances between 2015-16 and 2019-20",
+                                    title="Snapshot of Karnataka finances between 2017-18 and 2020-21",
                                     height=800,
 
                                     # template="seaborn",
                                     color="Year",
-                                    color_discrete_sequence=px.colors.diverging.Tropic[1:3] + [
-                                    '#229e8a']
+                                    # color_discrete_sequence=px.colors.diverging.Tropic[1:3] + ['#229e8a'],
+                                    color_discrete_sequence=px.colors.qualitative.Pastel1
                                 ).update_traces(
                                     go.Treemap(
                                         hovertemplate='Rupees in crores: %{value:,.0f}')
@@ -116,31 +116,6 @@ def init_dashboard(server):
             # First Sunburst Graphs
             html.Div([
                 html.Div(
-                    children=[
-                        dcc.Graph(
-                            config={
-                                'displaylogo': False,
-                                'responsive': True},
-                            figure=px.sunburst(
-                                summary,
-                                path=['Type', 'Section', 'Name'],
-                                values='Values',
-                                title="Summary of Fiscal Transactions 2018-19",
-                                height=600,
-                                width=600,
-
-                                color="Section",
-                                color_discrete_sequence=px.colors.diverging.Tropic[1:3] + [
-                                    '#229e8a']
-                            ).update_traces(
-                                go.Sunburst(
-                                    hovertemplate='<b>%{label} </b> ₹ in crores: %{value:,.0f}'),
-                            ),
-                        ),
-                    ],
-                    className="six columns card"
-                ),
-                html.Div(
                     [
                         dcc.Graph(
                             config={
@@ -151,7 +126,7 @@ def init_dashboard(server):
                                 summary2,
                                 path=['Type', 'Section', 'Name'],
                                 values='Values',
-                                title="Summary of Fiscal Transactions 2019-20",
+                                title="Summary of Fiscal Transactions 2020-21",
                                 height=600,
                                 width=600,
                                 color="Section",
@@ -164,8 +139,34 @@ def init_dashboard(server):
                         ),
                     ],
                     className="six columns card"
-                )
-            ], className="row",
+                ),
+                html.Div(
+                    children=[
+                        dcc.Graph(
+                            config={
+                                'displaylogo': False,
+                                'responsive': True},
+                            figure=px.sunburst(
+                                summary,
+                                path=['Type', 'Section', 'Name'],
+                                values='Values',
+                                title="Summary of Fiscal Transactions 2019-20",
+                                height=600,
+                                width=600,
+
+                                color="Section",
+                                color_discrete_sequence=px.colors.diverging.Tropic[1:3] + [
+                                    '#229e8a']
+                            ).update_traces(
+                                go.Sunburst(
+                                    hovertemplate='<b>%{label} </b> ₹ in crores: %{value:,.0f}'),
+                            ),
+                        ),
+                    ],
+                    className="five columns card"
+                ),
+                
+            ], className="row"
             ),
 
             # receipts graphs

@@ -32,12 +32,12 @@ const Budget = () => {
                             </Para>
                         )}
                         <Title >{ctx.execsummary.para32}</Title>
-                        {['para33', 'para34','para35','para36',
-                        'para37', 'para38','para39','para40'].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.execsummary[item]}
-                            </Para>
-                        )}
+                        {['para33', 'para34', 'para35', 'para36',
+                            'para37', 'para38', 'para39', 'para40'].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    {ctx.execsummary[item]}
+                                </Para>
+                            )}
 
                     </div>
                 </div>
@@ -50,20 +50,27 @@ const Budget = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances/conclusion" forward="/budget/introduction" />
-                        <Title>{ctx.execsummarykan.title}</Title>
-                        {['para1', 'para2'].map((item, ind) =>
-                            <Para key = {ind/10}>
+                        <Title>{ctx.execsummarykan.para4}</Title>
+                        {['para5'].map((item, ind) =>
+                            <Para key={ind / 10}>
                                 {ctx.execsummarykan[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execsummarykan.para3}</Title>
-                        <Title >{ctx.execsummarykan.para4}</Title>
-                        {['para5', 'para6', 'para7', 'para8',
-                            'para9', 'para10', 'para11', 'para12'].map((item, ind) =>
-                                <Para key = {ind/10}>
-                                    {ctx.execsummarykan[item]}
-                                </Para>
-                            )}
+                        <Title >{ctx.execsummarykan.para10}</Title>
+                        {['para11'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummarykan[item]}
+                            </Para>
+                        )}
+                        <Title >{ctx.execsummarykan.para15}</Title>
+                        <Title >{ctx.execsummarykan.para33}</Title>
+                        {['para34','para35','para36','para37',
+                        'para38','para39','para40','para41'
+                        ].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummarykan[item]}
+                            </Para>
+                        )}
                     </div>
                 </div>
                 : <div>

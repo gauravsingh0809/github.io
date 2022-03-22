@@ -13,7 +13,6 @@ const Overview = () => {
 
     const ctx = useContext(MyContext)
 
-    console.log("ctx", ctx)
 
     return (
         ctx.langPref
@@ -52,15 +51,21 @@ const Overview = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/preface/" forward="/overview/introduction" />
-                        <Title>{ctx.execsummarykan.title}</Title>
-                        {['para1', 'para2'].map((item, ind) =>
+                        <Title>{ctx.execsummarykan.para4}</Title>
+                        {['para5'].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.execsummarykan[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execsummarykan.para3}</Title>
-                        <Title >{ctx.execsummarykan.para4}</Title>
-                        {['para5', 'para6', 'para7'].map((item, ind) =>
+                        <Title >{ctx.execsummarykan.para6}</Title>
+                        {['para7'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummarykan[item]}
+                            </Para>
+                        )}
+                        <Title >{ctx.execsummarykan.para15}</Title>
+                        <Title >{ctx.execsummarykan.para16}</Title>
+                        {['para17','para18','para19'].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.execsummarykan[item]}
                             </Para>

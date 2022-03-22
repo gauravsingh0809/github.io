@@ -124,6 +124,7 @@ export const MyProvider = (props) => {
       themeChanger: themeChange,
       langPref: switchLang,
       execsummary: report.ExecSummary,
+      execsummarykan: report.ExecSummaryKan,  
       langChange: langClickHandler,
       changeTheme: themeClickHandler,
       // paraToggle: paraClickHandler,

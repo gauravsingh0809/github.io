@@ -432,7 +432,26 @@ const Application = () => {
                         </h3>
                         <Table24 />
 
-                        {["Para149", "Para150", "Para151", "Para152", "Para153", "Para154", "Para155", "Para156", "Para157"].map((item, ind) =>
+                        {["Para149", "Para150", "Para151", "Para152"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterTwo.Profile[item]}
+                            </Para>)}
+
+                        <Para>
+                            <li>
+                                {ctx.chapterTwo.Profile.Para153.substring(0, 240)}
+
+                                <span className="tooltip">
+                                    {ctx.chapterTwo.Profile.Para153.substring(240, 246)}
+                                    <span className="tooltiptext">
+                                        In 2019-20, 16 out of 842 institutions have furnished the information                                    </span>
+                                    <sup>18</sup>
+                                </span>
+
+                                {ctx.chapterTwo.Profile.Para153.substring(246,)}
+                            </li>
+                        </Para>
+                        {["Para154", "Para155", "Para156", "Para157"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.Profile[item]}
                             </Para>)}
@@ -443,25 +462,134 @@ const Application = () => {
                             {ctx.chapterTwo.first.para1}
                         </Para>
                         <ImageComponent src={url} alt="table2543" aspectRatio={1 / 0.25} />
-                        {["para2", "para3"].map((item, ind) =>
+
+                        <Para>
+                            <li>
+                                {ctx.chapterTwo.first.para2.substring(0, 70)}
+                                <span className="tooltip">
+                                    {ctx.chapterTwo.first.para2.substring(70, 83)}
+                                    <span className="tooltiptext">
+                                        Latest finalized accounts as of November 2021
+                                    </span>
+                                    <sup>19</sup>
+                                </span>
+
+                                {ctx.chapterTwo.first.para2.substring(83,)}
+                            </li>
+                        </Para>
+
+                        {["para3"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.first[item]}
                             </Para>)}
+
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
                         <Table24b />
                         <Para>
-                            {ctx.chapterTwo.first.para4}
+                            <li>
+                                {ctx.chapterTwo.first.para4.substring(0, 121)}
+                                <span className="tooltip">
+                                    {ctx.chapterTwo.first.para4.substring(121, 125)}
+                                    <span className="tooltiptext">
+                                        Equity: Karnataka Neeravari Nigam Limited, Cauvery Neeravari Nigama Limited, Vishveswaraya Jala Nigam Limited, Rail Infrastructure Development Corporation (Karnataka) Limited, Karnataka Power Transmission corporation limited and Krishna Bhagya Jala Nigam Limited,
+                                        Loans Mangalore electricity Supply Company limited, Cauvery Neeravari Nigam Limited and KPC Gas Power Corporation limited.
+                                        Guarantees Raichur power Company Limited, Mangalore electricity Supply Company limited KPC Gas Power Corporation limited.
+                                    </span>
+                                    <sup>20</sup>
+                                </span>
+
+                                {ctx.chapterTwo.first.para4.substring(125,)}
+                            </li>
                         </Para>
-                        {["para5", "para6", "para7", "para8", "para9", "para10",
-                            "para11", "para12", "para13", "para14", "para15", "para16",
+                        <Para>
+                            {ctx.chapterTwo.first.para5}
+                        </Para>
+                        <Para>
+                            <li>
+                                {ctx.chapterTwo.first.para6.substring(0, 39)}
+                                <span className="tooltip">
+                                    {ctx.chapterTwo.first.para6.substring(39, 43)}
+                                    <span className="tooltiptext">
+                                        Statutory corporations-6, Working Government companies -105, Non-working Government companies-13
+                                    </span>
+                                    <sup>21</sup>
+                                </span>
+
+                                {ctx.chapterTwo.first.para6.substring(43,)}
+                            </li>
+                        </Para>
+                        {["para7", "para8", "para9"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterTwo.first[item]}
+                            </Para>)}
+                        <Para>
+                            <li>
+                                {ctx.chapterTwo.first.para10.substring(0, 39)}
+                                <span className="tooltip">
+                                    {ctx.chapterTwo.first.para10.substring(39,)}
+                                    <span className="tooltiptext">
+                                        For the purpose of paragraphs(iii),(v) and (vi), subsidiaries companies were also considered during 2019-20 and 2020-21.
+                                    </span>
+                                    <sup>22</sup>
+                                </span>
+
+                            </li>
+                        </Para>
+                        <Para>
+                            {ctx.chapterTwo.first.para11}
+                        </Para>
+                        <Para>
+                            <li>
+                                {ctx.chapterTwo.first.para12.substring(0, 73)}
+                                <span className="tooltip">
+                                    {ctx.chapterTwo.first.para12.substring(73, 83)}
+                                    <span className="tooltiptext">
+                                        Measures the profit or loss made in a fixed year relating to the amount of money invested in the form of equity and long-term loans and is expressed as a percentage of profit to total investment                                    </span>
+                                    <sup>23</sup>
+                                </span>
+
+                                {ctx.chapterTwo.first.para12.substring(83, 95)}
+                                <span className="tooltip">
+                                    {ctx.chapterTwo.first.para12.substring(95, 101)}
+                                    <span className="tooltiptext">
+                                        Measure of performance calculated by dividing net profit by shareholder’s funds                                    </span>
+                                    <sup>24</sup>
+                                </span>
+                                {ctx.chapterTwo.first.para12.substring(101, 125)}
+
+                                <span className="tooltip">
+                                    {ctx.chapterTwo.first.para12.substring(125, 133)}
+                                    <span className="tooltiptext">
+                                        Financial ratio that measures the company’s profitability and the efficiency with which its capital is used and is calculated by dividing the company’s earnings before interest and taxes by capital employed.                                    </span>
+                                    <sup>25</sup>
+                                </span>
+
+                            </li>
+                        </Para>
+                        {["para13", "para14", "para15", "para16",
                             "para17", "para18", "para19", "para20", "para21", "para22",
                             "para23", "para24", "para25", "para26", "para27", "para28",
-                            "para29", "para30", "para31", "para32", "para33"].map((item, ind) =>
+                            "para29", "para30", "para31", "para32"].map((item, ind) =>
                                 <Para key={ind / 10}>
                                     {ctx.chapterTwo.first[item]}
                                 </Para>)}
+                        <Para>
+                            <li>
+                                {ctx.chapterTwo.first.para33.substring(0, 317)}
+                                <span className="tooltip">
+                                    {ctx.chapterTwo.first.para33.substring(317, 319)}
+                                    <span className="tooltiptext">
+                                        The Ministry of Corporate Affairs has given general extension of time for finalisation of accounts  by SPSUs upto November 2021.
+                                    </span>
+                                    <sup>26</sup>
+                                </span>
+                                {ctx.chapterTwo.first.para33.substring(319,)}
+
+                            </li>
+                        </Para>
+
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>

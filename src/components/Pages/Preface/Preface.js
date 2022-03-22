@@ -45,13 +45,10 @@ const Preface = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/" forward="/overview/" />
-                        <Title>{ctx.prefacekan.para7}</Title>
-                        <Para>
-                            {ctx.prefacekan['para8']}
-                        </Para>
+                        
                         <Title >{ctx.prefacekan.title}</Title>
                         <ol>
-                            {['para1', 'para2', 'para3', 'para4', 'para5', 'para6'].map((item, ind) =>
+                            {['para1', 'para2', 'para3', 'para4', 'para5', 'para6',"para7"].map((item, ind) =>
                                 <li key={ind / 10} className="list">
                                     <Para >
                                         {ctx.prefacekan[item]}
@@ -59,6 +56,10 @@ const Preface = () => {
                                 </li>
                             )}
                         </ol>
+                        <Title>{ctx.execsummarykan.para2}</Title>
+                        <Para>
+                            {ctx.execsummarykan['para3']}
+                        </Para>
                     </div>
                 </div>
                 : <div>
