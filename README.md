@@ -97,6 +97,6 @@ Before deploying the flask make sure the python version 3.9 and wfastcgi is inst
 
 1. Follow the above mentioned steps from point 3
 
-2. Specify pattern as sfrdashboard(/)?(.*) and proxy as http://localhost:port_of_flask_app/{R:2}
+2. Specify pattern as sfrdashboard22(/)?(.*) and proxy as http://localhost:port_of_flask_app/{R:2}
 
-* Now, you should be able to access them at cedar.gov.in/home and cedar.gov.in/sfrdashboard
+* Now, you should be able to access them at cedar.gov.in/sfrreport22 and cedar.gov.in/sfrdashboard22
