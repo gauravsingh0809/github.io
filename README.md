@@ -22,7 +22,7 @@ Navigate to Flask directory
 
 ### `cd flask`
 
-Upgrad pip (Optional)
+Upgrade pip (Optional)
 
 ### `python -m pip install - upgrade pip`
 

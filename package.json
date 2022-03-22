@@ -28,6 +28,7 @@
     "web-vitals": "^2.1.4"
   },
   "proxy": "https://firebasestorage.googleapis.com/v0/b/digital-sfr.appspot.com/o",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts --max-old-space-size=1024 start",
     "build": "react-scripts build",
