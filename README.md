@@ -64,7 +64,7 @@ Before deploying the flask make sure the python version 3.9 and wfastcgi is inst
 *  Set request path to *
 *  Set module as FastCgiModule
 *  Executable file  C:\Python39\Python.exe|C:\your\application\path\wfastcgi.py  - Give the path of these files in server
-*  Click “Request Restrictions” adn make sure “Invoke handler only if request is mapped to:” checkbox is unchecked
+*  Click “Request Restrictions” and make sure “Invoke handler only if request is mapped to:” checkbox is unchecked
 *  Confirm the module mapping dialog by clicking yes.
 
 4. Go to the root server settings and click on the FastCgi Settings. Double click to open environment variables collection editor.
@@ -100,3 +100,7 @@ Before deploying the flask make sure the python version 3.9 and wfastcgi is inst
 2. Specify pattern as sfrdashboard22(/)?(.*) and proxy as http://localhost:port_of_flask_app/{R:2}
 
 * Now, you should be able to access them at cedar.gov.in/sfrreport22 and cedar.gov.in/sfrdashboard22
+
+## If you already have an existing flask app
+
+Please change the variables in web config file of Flask app accordingly.
