@@ -1,4 +1,4 @@
-import React, { useContext , useState} from 'react'
+import React, { useContext, useState } from 'react'
 import { MyContext } from '../../../../../Context/MyProvider'
 import Para from '../../../../Para/Para'
 import Title from "../../../../Title/Title"
@@ -85,7 +85,7 @@ const Structure = () => {
                             {ctx.chapterOne.Profile["Para35"]}
                         </Para>
 
-                        <ImageComponent src={url} alt="chart5" aspectRatio={1/0.8} />
+                        <ImageComponent src={url} alt="chart5" aspectRatio={1 / 0.8} />
                     </div>
                 </div>
                 : <div>
@@ -105,28 +105,21 @@ const Structure = () => {
                                 {ctx.chapter1kannada.Content.para30}
                             </Para>
 
-                            {/* <ContentSlider
-                            position="left"
-                            content={ctx.chapter1kannada.Content.Para27a}
-                            title="Consolidated fund"
-                        />
-                        <ContentSlider
-                            position="right"
-                            content={ctx.chapter1kannada.Content.Para27b}
-                            title="Contingency fund"
-                        />
-                        <ContentSlider
-                            position="left"
-                            content={ctx.chapter1kannada.Content.Para27c}
-                            title="Public Account"
-                        /> */}
-
-                            <Para>
-                                {ctx.chapter1kannada.Content.para31}
-                            </Para>
-
-
-
+                            <ContentSlider
+                                position="left"
+                                content={ctx.chapter1kannada.Content.para27a}
+                                title="ಸಂಚಿತ ನಿಧಿ"
+                            />
+                            <ContentSlider
+                                position="right"
+                                content={ctx.chapter1kannada.Content.para27b}
+                                title="ಸಾದಿಲ್ವಾರು ನಿಧಿ"
+                            />
+                            <ContentSlider
+                                position="left"
+                                content={ctx.chapter1kannada.Content.para27c}
+                                title="ಸಾರ್ವಜನಿಕ ಲೆಕ್ಕ"
+                            />
                             {["para31", "para32", "para33"].map((item, ind) =>
                                 <Para key={ind / 10}>
                                     <li>
@@ -151,7 +144,7 @@ const Structure = () => {
                             <Para>
                                 {ctx.chapter1kannada.Content["para37"]}
                             </Para>
-                            <ImageComponent src={url} alt="chart5" aspectRatio={1/0.8} />
+                            <ImageComponent src={url} alt="chart5" aspectRatio={1 / 0.8} />
                         </div>
                     </div>
                 </div>

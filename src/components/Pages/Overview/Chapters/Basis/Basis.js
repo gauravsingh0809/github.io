@@ -35,15 +35,14 @@ const Basis = () => {
                             {ctx.chapterOne.Profile.Para18}
                         </Para>
 
-                        {["Para19", "Para20", "Para21", "Para22", "Para23", "Para24", "Para25"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                <li>
-                                    {ctx.chapterOne.Profile[item]}
-                                </li>
-                            </Para>
-                        )}
-
-
+                        {["Para19", "Para20", "Para21", "Para22",
+                            "Para23", "Para24", "Para25"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    <li>
+                                        {ctx.chapterOne.Profile[item]}
+                                    </li>
+                                </Para>
+                            )}
                     </div>
                 </div>
                 : <div>
@@ -69,7 +68,8 @@ const Basis = () => {
                             {ctx.chapter1kannada.Content.para21}
                         </Para>
 
-                        {["para22", "para23", "para24", "para25", "para26", "para27", "para28"].map((item, ind) =>
+                        {["para22", "para23", "para24", "para25",
+                         "para26", "para27", "para28"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 <li>
                                     {ctx.chapter1kannada.Content[item]}

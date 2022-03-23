@@ -7,20 +7,7 @@ import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButt
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 import Table1 from '../../../Tables/Chapter1/Table1'
-import Chart1, { Chart2, Chart3, Chart4, Chart5, Chart6 } from '../../../Charts/Charts'
-import {
-    Chart10, Chart11, Chart11a, Chart12, Chart12b,
-    Chart13, Chart14, Chart15, Chart16, Chart17,
-    Chart18, Chart21,
-    Chart19,
-    Chart2 as Chrt2, Chart20, Chart3 as Chrt3, Chart4 as Chrt4, Chart7, Chart8, Chart9
-} from '../../../Charts/Chap2Charts'
-
-
-import { Chart3 as Chart3Chap3 } from '../../../Charts/Chap3Charts'
-// import { Chart1 as Chart1Chap4} from '../../../Charts/Chap4Charts'
-
-import CustomTooltip from '../../../../CustomTooltip/CustomTooltip'
+import Chart1, { Chart2, Chart3, Chart4 } from '../../../Charts/Charts'
 
 
 const Profile = () => {
@@ -38,17 +25,7 @@ const Profile = () => {
                         <Title>
                             1.2 Profile of the state
                         </Title>
-                        {/* <Chart1Chap4 /> */} { /* This one will be an image */}
-                        {/* <Chart3Chap3 />
-                        <Chart21 />
-                        <Chart20 />
-                        
-                        
-                        
-                        <Chrt4 /> */}
 
-                        {/* <Chrt3 /> */}
-                        {/* <Chrt2 /> */}
 
                         <Title>
                             {ctx.chapterOne.Profile.para1}
@@ -181,26 +158,66 @@ const Profile = () => {
                             {ctx.chapter1kannada.Content.para5}
                         </Title>
                         <Para>
-                            {ctx.chapter1kannada.Content.para6}
+                            {ctx.chapter1kannada.Content.para6.substring(0, 344)}
+
+                            <span className="tooltip">
+                                {ctx.chapter1kannada.Content.para6.substring(344, 349)}
+                                <span className="tooltiptext">
+                                    2020-21ರ ಭಾರತದ ಆರ್ಥಿಕ ಸಮೀಕ್ಷೆಯ ಪ್ರಕಾರ
+                                </span>
+                                <sup>1</sup>
+                            </span>
+
+                            {ctx.chapter1kannada.Content.para6.substring(349,)}
                         </Para>
                         <Title>
                             {ctx.chapter1kannada.Content.para7}
                         </Title>
 
-                        {["para8", "para9"].map((item, ind) =>
+                        {["para8"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        <Para>
+                            {ctx.chapter1kannada.Content.para9.substring(0, 191)}
+
+                            <span className="tooltip">
+                                {ctx.chapter1kannada.Content.para9.substring(191, 201)}
+                                <span className="tooltiptext">
+                                    2020-21ರಲ್ಲಿ ರಾಜ್ಯದ ತಲಾ ಆದಾಯ ಮತ್ತು ರಾಷ್ಟ್ರೀಯ ಸರಾಸರಿ ನಡುವಿನ ವ್ಯತ್ಯಾಸವು `99,828 ಆಗಿತ್ತು                                </span>
+                                <sup>2</sup>
+                            </span>
+
+                            {ctx.chapter1kannada.Content.para9.substring(201,)}
+                        </Para>
+
+                        <Title>
+                            {ctx.chapter1kannada.Content.para10}
+                        </Title>
+                        {["para11"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
 
-                        <Title>
-                            {ctx.chapter1kannada.Content.para10}
-                        </Title>
-                        {["para11", "para12"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapter1kannada.Content[item]}
-                            </Para>
-                        )}
+                        <Para>
+                            {ctx.chapter1kannada.Content.para12.substring(0, 403)}
+
+                            <span className="tooltip">
+                                {ctx.chapter1kannada.Content.para12.substring(403, 413)}
+                                <span className="tooltiptext">
+                                    ಉತ್ಪನ್ನದ ಮೇಲಿನ ತೆರಿಗೆಗಳು ಅಥವಾ ಸಹಾಯಧನಗಳನ್ನು ಉತ್ಪನ್ನದ ಘಟಕವನ್ನಾಗಿ ಪಾವತಿಸಲಾಗುತ್ತದೆ/ ಸ್ವೀಕರಿಸಲಾಗುತ್ತದೆ.
+                                    ಉದಾಹರಣೆಯಾಗಿ ಉತ್ಪನ್ನದ ಮೇಲಿನ ತೆರಿಗೆಗಳಿಗೆ ಅಬಕಾರಿ ತೆರಿಗೆ, ಮಾರಾಟ ತೆರಿಗೆ, ಸೇವಾ ತೆರಿಗೆ ಮತ್ತು ಆಮದು ಮತ್ತು ರಫ್ತು
+                                    ಸುಂಕಗಳಾಗಿವೆ. ಬ್ಯಾಂಕಿನ ಮೂಲಕ ಪಡೆಯುವ ಉತ್ಪನ್ನ ಸಹಾಯಧನಗಳು ಆಹಾರ, ಪೆಟ್ತೋಲಿಯಮ್ ಮತ್ತು ಗೊಬ್ಬರ
+                                    ಸಹಾಯಧನಗಳು, ರೈತರಿಗೆ ನೀಡಲಾಗುವ ಬಡ್ಡಿ ಸಹಾಯಧನಗಳು, ಗೃಹೋಪಯೋಗಿ ವಸ್ತುಗಳು ಮುಂತಾದವುಗಳನ್ನು
+                                    ಒಳಗೊಂಡಿವೆ.
+                                </span>
+                                <sup>3</sup>
+                            </span>
+
+                            {ctx.chapter1kannada.Content.para12.substring(413,)}
+                        </Para>
 
                         {/* Table 1 goes here */}
                         <Table1 id="table1" />
@@ -211,11 +228,12 @@ const Profile = () => {
                         {/* Chart 1 goes here */}
                         <Chart1 />
 
-                        {["para13", "para14"].map((item, ind) =>
+                        {["para13"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
+
                         <Chart2 />
                         <h6>
                             3 Source: Directorate of Economics and Statistics, Government of Karnataka
@@ -223,13 +241,14 @@ const Profile = () => {
                             ^ Sectoral Distribution to GSDP
                         </h6>
                         <Para>
-                            {ctx.chapter1kannada.Content.Para11}
+                            {ctx.chapter1kannada.Content.para14}
                         </Para>
+
                         <Chart3 />
                         <h4 className='footnote'>
                             <i>
-                            Source: Directorate of Economics and Statistics, Government of Karnataka
-                        </i>
+                                Source: Directorate of Economics and Statistics, Government of Karnataka
+                            </i>
                         </h4>
                         {["para15", "para16", "para17"].map((item, ind) =>
                             <Para key={ind / 10}>
@@ -239,7 +258,7 @@ const Profile = () => {
                         <Chart4 />
                         <h4 className='footnote'>
                             <i>
-                            Source: Directorate of Economics and Statistics, Government of Karnataka
+                                Source: Directorate of Economics and Statistics, Government of Karnataka
                             </i>
                         </h4>
                     </div>

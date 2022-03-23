@@ -116,17 +116,17 @@ const FiscalParams = () => {
                         <Chart5 />
                         <Chart6 />
 
-                        {["Para54"].map((item, ind) =>
+                        {["para54"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
 
                         <Subtitle>
-                            {ctx.chapter1kannada.Content["Para55"]}
+                            {ctx.chapter1kannada.Content["para55"]}
                         </Subtitle>
 
-                        {["Para56"].map((item, ind) =>
+                        {["para56"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
@@ -139,7 +139,12 @@ const FiscalParams = () => {
                                 * Effective Loans and Advances for GoI would be ₹ 14,210 crore as the Department of Expenditure, GoI had decided that GST compensation of ₹ 12,407 crore given to the state as back-to-back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
                             </i>
                         </h4>
-                        {["Para56a","Para57"].map((item, ind) =>
+                        {["para56a","para57"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+                        {["para58"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>

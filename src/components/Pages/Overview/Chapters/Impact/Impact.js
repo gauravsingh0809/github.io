@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { Link } from "@material-ui/core"
 import { MyContext } from '../../../../../Context/MyProvider'
 import Para from '../../../../Para/Para'
 import Title from "../../../../Title/Title"
@@ -8,8 +7,6 @@ import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 import Table7 from '../../../Tables/Chapter1/Table7'
-
-
 
 const Impact = () => {
 
@@ -67,23 +64,35 @@ const Impact = () => {
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/overview/fisc-situation" forward="/finances" />
                         <Title id="anchor">
-                            {ctx.chapter1kannada.Content.para69}
+                            {ctx.chapter1kannada.Content.para71}
                         </Title>
 
-                        {["para70"].map((item, ind) =>
+                        {["para72"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        {/* <Table7/>
-                        <h6>
-                            {ctx.tables1.T7F1}
-                        </h6> */}
-                        {["para71", "para72", "para73", "para74", "para75", "para76", "para77", "para78", "para79"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapter1kannada.Content[item]}
-                            </Para>
-                        )}
+                        <Table7 />
+                        <h4 className='footnote'>
+                            <i>
+                                {ctx.tables1.T7F1}
+                            </i>
+                        </h4>
+                        <Para>
+                            {ctx.chapter1kannada.Content["para73"]}
+                        </Para>
+                        {["para74", "para75", "para76", "para77"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    <li>
+                                        {ctx.chapter1kannada.Content[item]}
+                                    </li>
+                                </Para>
+                            )}
+                        {["para78", "para79"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                        {ctx.chapter1kannada.Content[item]}
+                                </Para>
+                            )}
 
                     </div>
                 </div>

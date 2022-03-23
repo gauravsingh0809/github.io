@@ -34,7 +34,7 @@ const AssetsSnapshot = () => {
                             <i>
                                 {ctx.tables1.T3F1}
                                 <br></br>
-                                * Effective Loans and Advances for GoI would be ` 14,210 crore as the Department of Expenditure, GoI had decided that GST compensation of ` 12,407 crore given to the state as back-to- back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
+                                * Effective Loans and Advances for GoI would be ₹ 14,210 crore as the Department of Expenditure, GoI had decided that GST compensation of ₹ 12,407 crore given to the state as back-to- back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
                             </i>
                         </h4>
                         {["Para45"].map((item, ind) =>
@@ -63,9 +63,14 @@ const AssetsSnapshot = () => {
                             </Para>
                         )}
                         <Table3 />
-                        <h4>
+                        <h4 className='footnote'>
                             <i>
                                 ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
+                                <br></br>
+                                * ಋಣ ಸ್ವೀಕೃತಿಗಳಡಿಯಲ್ಲಿ ರಾಜ್ಯಕ್ಕೆ ಬ್ಯಾಕ್-ಟು-ಬ್ಯಾಕ್ ಸಾಲವಾಗಿ ನೀಡಲಾದ ₹12,407 ಕೋಟಿ ಸರಕು ಮತ್ತು
+                                 ಸೇವಾ ತೆರಿಗೆ ಪರಿಹಾರವನ್ನು, ಹಣಕಾಸು ಆಯೋಗವು ಸೂಚಿಸಬಹುದಾದ ಯಾವುದೇ ಮಾನದಂಡಗಳಿಗೆ ರಾಜ್ಯದ
+                                  ಸಾಲವೆಂದು ಪರಿಗಣಿಸಲಾಗುವುದಿಲ್ಲ ಎಂದು ಭಾರತ ಸರ್ಕಾರದ ವೆಚ್ಚದ ಇಲಾಖೆಯು ನಿರ್ಧರಿಸಿರುವುದರಿಂದ ಭಾರತ 
+                                  ಸರ್ಕಾರದಿಂದ ನಿವ್ವಳ ಸಾಲಗಳು ಮತ್ತು ಮುಂಗಡಗಳು ₹1೪,೨೧೦ ಕೋಟಿಯಾ ಗುತ್ತದೆ
                             </i>
                         </h4>
                         {["para48"].map((item, ind) =>

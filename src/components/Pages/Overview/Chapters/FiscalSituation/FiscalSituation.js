@@ -16,7 +16,6 @@ import Table6 from '../../../Tables/Chapter1/Table6'
 const FiscalSituation = () => {
 
     const ctx = useContext(MyContext)
-    console.log(ctx.chapter1kannada)
 
     return (
         ctx.langPref
@@ -111,10 +110,6 @@ const FiscalSituation = () => {
                             </Para>
                         )}
 
-
-
-
-
                     </div>
                 </div>
                 : <div>
@@ -127,26 +122,28 @@ const FiscalSituation = () => {
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/overview/fiscalparams" forward="/overview/impact" />
                         <Title id="anchor">
-                            {ctx.chapter1kannada.Content.para58}
+                            {ctx.chapter1kannada.Content.para59}
                         </Title>
-                        {["para59"].map((item, ind) =>
+                        {["para60"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
                         <Subtitle>
-                            {ctx.chapter1kannada.Content.para60}
+                            {ctx.chapter1kannada.Content.para61}
                         </Subtitle>
-                        {["para61"].map((item, ind) =>
+                        {["para62"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        {/* <Table5 />
-                    <h6>
-                        {ctx.tables1.T5F1}
-                    </h6> */}
-                        {["para62", "para63"].map((item, ind) =>
+                        <Table5 />
+                        <h4 className='footnote'>
+                            <i>
+                                {ctx.tables1.T5F1}
+                            </i>
+                        </h4>
+                        {["para63", "para64", "para65"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
@@ -154,22 +151,24 @@ const FiscalSituation = () => {
 
 
                         <Subtitle>
-                            {ctx.chapter1kannada.Content["para64"]}
+                            {ctx.chapter1kannada.Content["para66"]}
                         </Subtitle>
 
-                        {["para65", "para66",].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapter1kannada.Content[item]}
-                            </Para>
-                        )}
-
-                        {/* <Table6 />
-                    <h6>
-                        {ctx.tables1.T6F1} and MTFP 2019-23
-                        <br></br>
-                        {ctx.tables1.T6F2}
-                    </h6> */}
                         {["para67", "para68"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
+
+                        <Table6 />
+                        <h4 className='footnote'>
+                            <i>
+                                {ctx.tables1.T6F1} and MTFP 2019-23
+                                <br></br>
+                                {ctx.tables1.T6F2}
+                            </i>
+                        </h4>
+                        {["para69", "para70"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
