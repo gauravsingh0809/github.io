@@ -63,7 +63,7 @@ def init_dashboard(server):
             ),
             html.Button(
                 html.A("SFAR",
-                       href='https://cedar.gov.in/sfrreport22/',
+                       href='https://cedar.gov.in/sfr-report-22/',
                        target='_blank'
                        ),
                 className="sidebarbtn"
