@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getFirebase } from "./../firebase/firebase"
 // import { collection, getDocs } from "firebase/firestore";
+import jsonData from '../uploadtofirebase.json';
 
 // make a new context
 export const MyContext = React.createContext();
@@ -8,42 +9,30 @@ export const MyContext = React.createContext();
 // create the provider
 export const MyProvider = (props) => {
 
-  const [report, setReportDoc] = useState([]);
+
+  // Commenting out old method of uploading file to the Firebase Firestore Database
+  // Instead I opted to upload the file in src folder itself.
+
+  // const [report, setReportDoc] = useState([]);
   
-  useEffect(() => {
-    let a = []
-    const fetchData = async () => {
-      const db = getFirebase().firestore()
-      const data = await db.collection("/document").get()
-      data.docs.map(doc => (a[doc["id"]] = doc.data() ))
-      setReportDoc(a)
-    }
-    fetchData()
-  }, [])
+  // useEffect(() => {
+  //   let a = []
+  //   const fetchData = async () => {
+  //     const db = getFirebase().firestore()
+  //     const data = await db.collection("/document").get()
+  //     data.docs.map(doc => (a[doc["id"]] = doc.data() ))
+  //     setReportDoc(a)
+  //   }
+  //   fetchData()
+  // }, [])
+  // setReportDoc(loadData()['document'])
 
-  // console.log("report Chap2", report.Chap2)
-  // if (!reportDoc.length) {
-  //   console.log(getFirebase()
-  //     .firestore()
-  //     .collection("Chapter1")
-  //     .get())
-  //       }
-
+  //Setting the Report Data
+  const report = JSON.parse(JSON.stringify(jsonData))
 
   const [themeChange, setThemeChange] = useState(true);
   const [switchLang, setswitchLang] = useState(true);
   const [reportch, setReportCh] = useState([]);
-  // const [paraOpen, setParaOpen] = useState({
-  //   status1: true,
-  //   status2: true,
-  //   status3: true,
-  //   status4: true,
-  //   status5: true,
-  //   status6: true,
-  //   status7: true,
-  //   status8: true,
-
-  // });
 
   let a = [];
   if (!reportch.length) {
@@ -61,40 +50,6 @@ export const MyProvider = (props) => {
       );
   }
 
-  // console.log(reportch)
-
-
-  // const paraClickHandler = (id) => {
-  //   if (id === 1) {
-  //     return setParaOpen((prevState) => ({ ...prevState, status1: !paraOpen.status1 }));
-  //   }
-  //   else if (id === 2) {
-  //     return setParaOpen((prevState) => ({ ...prevState, status2: !paraOpen.status2 }));
-  //   }
-  //   else if (id === 3) {
-  //     return setParaOpen((prevState) => ({ ...prevState, status3: !paraOpen.status3 }));
-  //   }
-  //   else if (id === 4) {
-  //     return setParaOpen((prevState) => ({ ...prevState, status4: !paraOpen.status4 }));
-  //   }
-  //   else if (id === 5) {
-  //     return setParaOpen((prevState) => ({ ...prevState, status5: !paraOpen.status5 }));
-  //   }
-  //   else if (id === 6) {
-  //     return setParaOpen((prevState) => ({ ...prevState, status6: !paraOpen.status6 }));
-  //   }
-  //   else if (id === 7) {
-  //     return setParaOpen((prevState) => ({ ...prevState, status7: !paraOpen.status7 }));
-  //   }
-  //   else if (id === 8) {
-  //     return setParaOpen((prevState) => ({ ...prevState, status8: !paraOpen.status8 }));
-  //   }
-  //   else {
-  //     return ("")
-  //   }
-  // }
-
-// console.log(report.Chap1.Charts)
   const themeClickHandler = () => setThemeChange(!themeChange)
   const langClickHandler = () => setswitchLang(!switchLang)
 
