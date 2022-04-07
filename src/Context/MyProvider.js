@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getFirebase } from "./../firebase/firebase"
 // import { collection, getDocs } from "firebase/firestore";
-import jsonData from '../uploadtofirebase.json';
+import jsonData from '../reportJson.json';
 
 // make a new context
 export const MyContext = React.createContext();
