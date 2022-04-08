@@ -6,7 +6,7 @@ import Navbar from "./../../../../Navbar/Navbar"
 import { FaSpinner } from 'react-icons/fa'
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
-
+import Subtitle from "../../../../Subtitle/Subtitle"
 const FinIntroduction = () => {
 
     const ctx = useContext(MyContext)
@@ -37,9 +37,9 @@ const FinIntroduction = () => {
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
                         <Title>{ctx.chapter2kannada.Content.para1}</Title>
-                        <Para>
+                        <Subtitle>
                             {ctx.chapter2kannada.Content.para2}
-                        </Para>
+                            </Subtitle>
                         <Para>
                             {ctx.chapter2kannada.Content.para3}
                         </Para>

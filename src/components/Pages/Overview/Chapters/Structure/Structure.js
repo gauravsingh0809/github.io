@@ -94,58 +94,62 @@ const Structure = () => {
                 </div>)
             : (ctx.chapter1kannada
                 ? <div >
-                    ? <div >
-                        <Navbar />
-                        <div className="contentwrapper" id="home">
-                            <FloatingActionButtons back="/overview/basis" forward="/overview/budgetprocess" />
-                            <Title id="anchor">
-                                {ctx.chapter1kannada.Content.para29}
-                            </Title>
-                            <Para>
-                                {ctx.chapter1kannada.Content.para30}
-                            </Para>
+                    <Navbar />
+                    <div className="contentwrapper" id="home">
+                        <FloatingActionButtons back="/overview/basis" forward="/overview/budgetprocess" />
+                        <Title id="anchor">
+                            {ctx.chapter1kannada.Content.para29}
+                        </Title>
 
-                            <ContentSlider
-                                position="left"
-                                content={ctx.chapter1kannada.Content.para27a}
-                                title="ಸಂಚಿತ ನಿಧಿ"
-                            />
-                            <ContentSlider
-                                position="right"
-                                content={ctx.chapter1kannada.Content.para27b}
-                                title="ಸಾದಿಲ್ವಾರು ನಿಧಿ"
-                            />
-                            <ContentSlider
-                                position="left"
-                                content={ctx.chapter1kannada.Content.para27c}
-                                title="ಸಾರ್ವಜನಿಕ ಲೆಕ್ಕ"
-                            />
-                            {["para31", "para32", "para33"].map((item, ind) =>
-                                <Para key={ind / 10}>
-                                    <li>
-                                        {ctx.chapter1kannada.Content[item]}
-                                    </li>
-                                </Para>
-                            )}
-                            {["para34", "para35"].map((item, ind) =>
-                                <Para key={ind / 10}>
-                                    <li style={{ marginLeft: "25px", listStyle: "square" }}>
-                                        {ctx.chapter1kannada.Content[item]}
-                                    </li>
-                                </Para>
-                            )}
-                            {["para36"].map((item, ind) =>
-                                <Para key={ind / 10}>
-                                    <li>
-                                        {ctx.chapter1kannada.Content[item]}
-                                    </li>
-                                </Para>
-                            )}
-                            <Para>
-                                {ctx.chapter1kannada.Content["para37"]}
+                        <Para>
+                            {ctx.chapter1kannada.Content.para29a}
+                        </Para>
+
+
+                        <ContentSlider
+                            position="left"
+                            content={ctx.chapter1kannada.Content.para27a}
+                            title="ಸಂಚಿತ ನಿಧಿ"
+                        />
+                        <ContentSlider
+                            position="right"
+                            content={ctx.chapter1kannada.Content.para27b}
+                            title="ಸಾದಿಲ್ವಾರು ನಿಧಿ"
+                        />
+                        <ContentSlider
+                            position="left"
+                            content={ctx.chapter1kannada.Content.para27c}
+                            title="ಸಾರ್ವಜನಿಕ ಲೆಕ್ಕ"
+                        />
+
+                        <Para>
+                            {ctx.chapter1kannada.Content.para30}
+                        </Para>
+                        {["para31", "para32", "para33"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                <li>
+                                    {ctx.chapter1kannada.Content[item]}
+                                </li>
                             </Para>
-                            <ImageComponent src={url} alt="chart5" aspectRatio={1 / 0.8} />
-                        </div>
+                        )}
+                        {["para34", "para35"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                <li style={{ marginLeft: "25px", listStyle: "square" }}>
+                                    {ctx.chapter1kannada.Content[item]}
+                                </li>
+                            </Para>
+                        )}
+                        {["para36"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                <li>
+                                    {ctx.chapter1kannada.Content[item]}
+                                </li>
+                            </Para>
+                        )}
+                        <Para>
+                            {ctx.chapter1kannada.Content["para37"]}
+                        </Para>
+                        <ImageComponent src={url} alt="chart5" aspectRatio={1 / 0.8} />
                     </div>
                 </div>
                 : <div>

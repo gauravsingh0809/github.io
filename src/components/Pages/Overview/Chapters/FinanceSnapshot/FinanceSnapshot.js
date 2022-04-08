@@ -66,15 +66,13 @@ const FinanceSnapshot = () => {
                             {ctx.chapter1kannada.Content["para42"]}
                         </Para>
                         <Table2 />
-                        <h4>
-                            <i>
-                                {ctx.tables1.T2F1}
-                                <br></br>
-                                {ctx.tables1.T2F2}
-                                <br></br>
-                                {ctx.tables1.T2F4.substring(0, 97)}
-                            </i>
-                        </h4>
+                      
+                        <h4 >
+                            {["f4", "f5", "f6","f7"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}</h4>
 
                         {["para43", "para44", "para45"].map((item, ind) =>
                             <Para key={ind / 10}>

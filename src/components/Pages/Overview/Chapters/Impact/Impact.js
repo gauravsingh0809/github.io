@@ -73,11 +73,12 @@ const Impact = () => {
                             </Para>
                         )}
                         <Table7 />
-                        <h4 className='footnote'>
-                            <i>
-                                {ctx.tables1.T7F1}
-                            </i>
-                        </h4>
+                        hellaso
+                        {["f14"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
                         <Para>
                             {ctx.chapter1kannada.Content["para73"]}
                         </Para>

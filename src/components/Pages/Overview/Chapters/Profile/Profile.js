@@ -8,7 +8,7 @@ import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 import Table1 from '../../../Tables/Chapter1/Table1'
 import Chart1, { Chart2, Chart3, Chart4 } from '../../../Charts/Charts'
-
+import Subtitle from '../../../../Subtitle/Subtitle'
 
 const Profile = () => {
 
@@ -154,9 +154,9 @@ const Profile = () => {
                         <Title>
                             {ctx.chapter1kannada.Content.para4}
                         </Title>
-                        <Title>
+                        <Subtitle>
                             {ctx.chapter1kannada.Content.para5}
-                        </Title>
+                            </Subtitle>
                         <Para>
                             {ctx.chapter1kannada.Content.para6.substring(0, 344)}
 
@@ -170,9 +170,9 @@ const Profile = () => {
 
                             {ctx.chapter1kannada.Content.para6.substring(349,)}
                         </Para>
-                        <Title>
+                        <Subtitle>
                             {ctx.chapter1kannada.Content.para7}
-                        </Title>
+                            </Subtitle>
 
                         {["para8"].map((item, ind) =>
                             <Para key={ind / 10}>
@@ -201,6 +201,16 @@ const Profile = () => {
                             </Para>
                         )}
 
+                     
+ 
+                        {/* Table 1 goes here */}
+                        <Table1 id="table1" />
+                        <h6>
+                            {ctx.chapter1kannada.Content.t1f1} <br></br>
+                            {ctx.chapter1kannada.Content.t1f2}
+                        </h6>
+                        {/* Chart 1 goes here */}
+                        <Chart1 />
                         <Para>
                             {ctx.chapter1kannada.Content.para12.substring(0, 403)}
 
@@ -218,16 +228,6 @@ const Profile = () => {
 
                             {ctx.chapter1kannada.Content.para12.substring(413,)}
                         </Para>
-
-                        {/* Table 1 goes here */}
-                        <Table1 id="table1" />
-                        <h6>
-                            {ctx.tables1.T1F1} <br></br>
-                            {ctx.tables1.T1F2}
-                        </h6>
-                        {/* Chart 1 goes here */}
-                        <Chart1 />
-
                         {["para13"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
@@ -236,9 +236,9 @@ const Profile = () => {
 
                         <Chart2 />
                         <h6>
-                            3 Source: Directorate of Economics and Statistics, Government of Karnataka
+                        ಆಕರ: ಆರ್ಥಿಕ ಮತ್ತು ಅಂಕಿ ಅಂಶಗಳ ನಿರ್ದೇಶನಾಲಯ, ಕರ್ನಾಟಕ ಸರ್ಕಾರ
                             <br></br>
-                            ^ Sectoral Distribution to GSDP
+                            ^ ರಾಒಆಂಉಕ್ಕೆ ವಿಭಾಗೀಯ ಕೊಡುಗೆ
                         </h6>
                         <Para>
                             {ctx.chapter1kannada.Content.para14}
@@ -247,7 +247,7 @@ const Profile = () => {
                         <Chart3 />
                         <h4 className='footnote'>
                             <i>
-                                Source: Directorate of Economics and Statistics, Government of Karnataka
+                            ಆಕರ: ಆರ್ಥಿಕ ಮತ್ತು ಅಂಕಿ ಅಂಶಗಳ ನಿರ್ದೇಶನಾಲಯ, ಕರ್ನಾಟಕ ಸರ್ಕಾರ
                             </i>
                         </h4>
                         {["para15", "para16", "para17"].map((item, ind) =>
@@ -258,7 +258,7 @@ const Profile = () => {
                         <Chart4 />
                         <h4 className='footnote'>
                             <i>
-                                Source: Directorate of Economics and Statistics, Government of Karnataka
+                            ಆಕರ: ಆರ್ಥಿಕ ಮತ್ತು ಅಂಕಿ ಅಂಶಗಳ ನಿರ್ದೇಶನಾಲಯ, ಕರ್ನಾಟಕ ಸರ್ಕಾರ
                             </i>
                         </h4>
                     </div>

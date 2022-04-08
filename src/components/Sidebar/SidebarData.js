@@ -9,6 +9,7 @@ export const SidebarData = [
     iconOpened: <FaIcons.FaRegMinusSquare size="12px" />,
     nolink: true,
   },
+  
   {
     title: '1.Overview',
     path: '/overview',

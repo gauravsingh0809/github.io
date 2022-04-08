@@ -138,11 +138,11 @@ const FiscalSituation = () => {
                             </Para>
                         )}
                         <Table5 />
-                        <h4 className='footnote'>
-                            <i>
-                                {ctx.tables1.T5F1}
-                            </i>
-                        </h4>
+                        {["f11"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
                         {["para63", "para64", "para65"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
@@ -161,13 +161,11 @@ const FiscalSituation = () => {
                         )}
 
                         <Table6 />
-                        <h4 className='footnote'>
-                            <i>
-                                {ctx.tables1.T6F1} and MTFP 2019-23
-                                <br></br>
-                                {ctx.tables1.T6F2}
-                            </i>
-                        </h4>
+                        {["f12","f13"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter1kannada.Content[item]}
+                            </Para>
+                        )}
                         {["para69", "para70"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}

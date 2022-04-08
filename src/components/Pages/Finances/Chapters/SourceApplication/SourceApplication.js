@@ -66,6 +66,12 @@ const  SourcesApplication = () => {
                         {ctx.chapter2kannada.Content.para8}
                     </Para>
                     <Table2/>
+                    <Para>
+                        {ctx.chapter2kannada.Content.t2f2}
+                    </Para>
+                    <Para>
+                        {ctx.chapter2kannada.Content.t2f1}
+                    </Para>
                     <Chart11a />
 
                     <Chart12b />
