@@ -155,7 +155,7 @@ const Dsa = () => {
                             <br></br>
                             ^  ಸರಕು ಮತ್ತು ಸೇವಾ ತೆರಿಗೆ ಪರಿಹಾರದ ಬದಲಾಗಿ ಭಾರತ ಸರ್ಕಾರದಿಂದ ಪಡೆದ ಬ್ಯಾಕ್-ಟು-ಬ್ಯಾಕ್ ಸಾಲವನ್ನು (₹12,407 ಕೋಟಿ) ಸೂಚಕವನ್ನು ಲೆಕ್ಕ ಹಾಕಲು ಪರಿಗಣಿಸಲಾಗಿಲ್ಲ.
                         </h6>
-                        {["para286", "para287", "para288", "para289", "para290", "para291", "para292", "para293", "para294", "para295", "para296", "para297", "para298", "para299"].map((item, ind) =>
+                        {["para286", "para287", "para288", "para289", "para290", "para291", "para292", "para293", "para294", "para295", "para296", "para297", "para298", "para299","para300"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
@@ -163,7 +163,8 @@ const Dsa = () => {
                             ₹ In crore
                         </h3>
                         <Table37 />
-                        {["para300", "para301", "para302", "para303"].map((item, ind) =>
+                        <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
+                        {["para301", "para302", "para303","para304"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
@@ -171,7 +172,8 @@ const Dsa = () => {
                             ₹ In crore
                         </h3>
                         <Table38 />
-                        {["para304", "para305", "para306", "para307", "para308", "para309", "para310", "para311", "para312", "para313", "para314"].map((item, ind) =>
+                        <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
+                        {["para305", "para306", "para307", "para308", "para309", "para310", "para311", "para312", "para313", "para314","para315"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
@@ -179,29 +181,34 @@ const Dsa = () => {
                             ₹ In crore
                         </h3>
                         <Table39 />
-                        {["para315", "para316", "para317", "para318"].map((item, ind) =>
+                        <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
+                        {["para316", "para317", "para318"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table40 />
-                        {["para319", "para310"].map((item, ind) =>
+                        {["para319"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Chart17 />
+                        <Table40 />
+                        <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
+                        
+
+                        {["para320","para321"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                        <Chart19 />
+                        <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
                         <Para>
-                            {ctx.chapter2kannada.Content.para311}
+                            {ctx.chapter2kannada.Content.para322}
                         </Para>
                         <Chart18 />
                         <Chart19 />
-                        {["para312", "para313", "para314", "para315", "para316"].map((item, ind) =>
-                            <Para key={ind / 10}>
-                                {ctx.chapter2kannada.Content[item]}
-                            </Para>)}
-                        {["para317", "para318", "para319", "para320", "para321", "para322", "para323", "para324", "Para325", "para326"].map((item, ind) =>
+                        {["para323","para324","Para325","para325a","para325b","para326"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}

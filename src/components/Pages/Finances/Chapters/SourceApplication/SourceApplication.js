@@ -67,15 +67,21 @@ const  SourcesApplication = () => {
                     </Para>
                     <Table2/>
                     <Para>
+                        {ctx.chapter2kannada.Content.t2fa}
+                    </Para>
+                    <Para>
                         {ctx.chapter2kannada.Content.t2f2}
                     </Para>
                     <Para>
                         {ctx.chapter2kannada.Content.t2f1}
                     </Para>
+                    
                     <Chart11a />
 
                     <Chart12b />
-                 
+                    <Para>
+                        {ctx.chapter2kannada.Content.t2fa}
+                    </Para>
 
                 </div>
             </div>

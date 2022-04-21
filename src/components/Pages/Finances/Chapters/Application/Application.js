@@ -656,128 +656,229 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Subtitle>
+                        <Para>
                             {ctx.chapter2kannada.Content["para74"]}
+                        </Para>
+                        <Subtitle>
+                            {ctx.chapter2kannada.Content["para75"]}
                         </Subtitle>
-                        {["para75", "para76"].map((item, ind) =>
+                        {["para76"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Table13 />
                         <Para>
+                            {ctx.chapter2kannada.Content["t3fb"]}
+                        </Para>
+                        <Para>
                             {ctx.chapter2kannada.Content.para77}
                         </Para>
                         <Chart7 />
                         <Para>
+                            {ctx.chapter2kannada.Content["t3fb"]}
+                        </Para>
+                        <Para>
                             {ctx.chapter2kannada.Content.para78}
                         </Para>
                         <Chart8 />
-                        {["para79", "para80", "para81", "para82", "para83"].map((item, ind) =>
+                        <Para>
+                            {ctx.chapter2kannada.Content["t3fb"]}
+                        </Para>
+                        <Para>
+                            {ctx.chapter2kannada.Content["para79"]}
+                        </Para>
+                        <Subtitle>
+                            {ctx.chapter2kannada.Content["para80"]}
+                        </Subtitle>
+                        {[ "para81", "para82", "para83"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Table14 />
                         <Para>
+                            {ctx.chapter2kannada.Content["t13a"]}
+                        </Para>
+                        <Para>
                             {ctx.chapter2kannada.Content.para84}
                         </Para>
                         <Chart9 />
+                        <Para>
+                            {ctx.chapter2kannada.Content["t3fb"]}
+                        </Para>
                         {["para85", "para86", "para87",].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Table15 />
+                       
+                        <Para>
+                            {ctx.chapter2kannada.Content["t3fb"]}
+                        </Para>
                         {["para88", "para89", "para90",].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Table16 />
-
+                        <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
+                        <Para>
+                            {ctx.chapter2kannada.Content["t15b"]}
+                        </Para>
                         {["para91", "para92", "para93", "para94"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Table17 />
+                        <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
+                        {["t16a", "t16b", "t16c",].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
                         <Chart10 />
-                        {["para95", "para96", "para97", "para98", "para99", "para100",
-                            "para101", "para102", "para103", "para104", "para105", "para106",
+                        <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
+                        {["para95" ].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                            <Para>
+                            {ctx.chapter2kannada.Content["para96"]}
+                        </Para>
+                        {["para97", "para98"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                            <Para>
+                            {ctx.chapter2kannada.Content["para99"]}
+                        </Para>
+                        {["para100","para101", "para102", "para103", "para104", "para105", "para106",
                             "para107", "para108", "para109", "para110", "para111", "para112", "para113", "para114"].map((item, ind) =>
                                 <Para key={ind / 10}>
                                     {ctx.chapter2kannada.Content[item]}
                                 </Para>)}
                         <Table18 />
                         <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
+                        <Para>
                             {ctx.chapter2kannada.Content.para115}
                         </Para>
                         <Chart11 />
+                        <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
                         {["para116", "para117", "para118", "para119", "para120", "para121"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Table19 />
-
+                        <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
                         {["para122", "para123", "para124"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Table20 />
+                        <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
                         {["para125", "para126", "para127", "para128", "para129"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Chart12 />
                         <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
+                        <Para>
                             {ctx.chapter2kannada.Content.para130}
                         </Para>
                         <Table21 />
+                        <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
                         {["para131", "para132", "para133", "para134", "para135", "para136", "para137", "para138", "para139", "para140", "para141", "para142",].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Table22 />
+                        <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
                         {["para143", "para144", "para145", "para146"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Table23 />
-                        {["para147", "para148", "para149", "para150", "para151", "para152", "para153"].map((item, ind) =>
+                        <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
+                        {["para147", "para148", "para149", "para150", "para151"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        {["para154", "para155", "para156", "para157", "para158", "para159", "para160", "para161", "para162"].map((item, ind) =>
+                            <Table24 />
+                            <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
+                        {["para152","para153","para154", "para155", "para156", "para157", "para158", "para159", "para160", "para161", "para162"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table24 />
+                        
 
                         <Para>
                             {ctx.chapter2kannada.Content.para163}
                         </Para>
-                        {["para164", "para165"].map((item, ind) =>
+                        <Para>
+                            {ctx.chapter2kannada.Content.para163a}
+                        </Para>
+                        {/* {["para164", "para165"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
-                            </Para>)}
+                            </Para>)} */}
                         <Table24b />
-                        {["para166", "para167", "para168", "para169", "para170", "para171", "para172", "para173", "para174", "para175", "para176", "para177", "para178", "para179", , "para180", "", "para181", "para182", "para183", "para184", "para185", "para186", "para187", "para188", "para189", "para190", "para191", "para192", "para193", "para194"].map((item, ind) =>
+                        {["para169", "para170", "para171", "para172", "para173", "para174", "para175", "para176", "para177", "para178", "para179", , "para180", "", "para181", "para182", "para183", "para184", "para185", "para186", "para187", "para188", "para189", "para190", "para191", "para192", "para193", "para194"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table25 />
-                        <Table26 />
+                       
 
                         <Para>
                             {ctx.chapter2kannada.Content.para195}
                         </Para>
-                        {["para196", "para197", "para198", "para199", "para200", "para201"].map((item, ind) =>
+                        {["para196", "para197", "para198", "para199","para200"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table27 />
+                            <Table25 />
+                            <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
+                         <Table26 />
+                            {["para201"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)} 
+                        
 
-                        {["para202", "para203", "para204", "para205", "para206", "para207"].map((item, ind) =>
+                        {["para202", "para203", "para204", "para205", "para206"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        {["para208", "para209", "para210", "para211", "para212", "para213"].map((item, ind) =>
+                            <Table27 />
+                            <Para>
+                            {ctx.chapter2kannada.Content["t15a"]}
+                        </Para>
+                        <Para>
+                            {ctx.chapter2kannada.Content["t27a"]}
+                        </Para>
+                        {["para207","para208", "para209", "para210", "para211", "para212", "para213"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}

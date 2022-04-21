@@ -50,6 +50,10 @@ const Submission = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}
+                            {["para80a"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter4kannada.Content[item]}
+                            </Para>)}
 
                     </div>
                 </div>

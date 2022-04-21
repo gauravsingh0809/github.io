@@ -80,6 +80,8 @@ const ChildBudget = () => {
              {/* <Para>{ctx.chapter3kannada.Introduction.Para1}</Para> */}
              <Para>{ctx.chapter3kannada.Content.para31}</Para>
              <Table3/>
+             <h6>ಆಕರ: ಅನುದಾನ ವಹಿಗಳು</h6>
+        
              <Para>{ctx.chapter3kannada.Content.para32}</Para>
              <Para>{ctx.chapter3kannada.Content.para33}</Para>
 

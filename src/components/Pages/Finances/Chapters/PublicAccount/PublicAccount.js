@@ -123,20 +123,28 @@ const PublicAccount = () => {
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Table28 />
-                        <h6>  Source: Finance Accounts
+                        <h6> ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
                             <br>
                             </br>
-                            Note: +ve denotes debit balance and –ve denotes credit balances
+                            ಟಿಪ್ಪಣಿ : + ಎನ್ನುವುದು ಖರ್ಚು ಶಿಲ್ಕನ್ನು ಮತ್ತು - ಎನ್ನುವುದು ಜಮೆ ಶಿಲ್ಕನ್ನು ಸೂಚಿಸುತ್ತದೆ
                         </h6>
                         <Chart13 />
-
+                        <h6> ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
+                            <br>
+                            </br>
+                            
+                        </h6>
 
                         {["para218", "para219", "para220", "para221", "para222", "para223", "para224", "para225", "para226", "para227", "para228", "para229", "para230", "para231", "para232", "para233", "para234", "para235", "para236", "para237", "para238", "para239", "para240", "para241", "para242", "para243", "para244"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Table29 />
-
+                        <h6> ಆಕರ : 15ನೇ ಹಣಕಾಸು ಆಯೋಗ ಮತ್ತು ಎನ್‌ಟಿಎ–2020-21
+                            <br>
+                            </br>
+                            
+                        </h6>
 
                         {["para245", , "para246", "para247", "para248", "para249", "para250", "para251", "para252", "para253", "para254", "para255"].map((item, ind) =>
                             <Para key={ind / 10}>

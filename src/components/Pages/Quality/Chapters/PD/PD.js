@@ -99,15 +99,15 @@ const PD = () => {
                         </h3>
                         <Table6 />
                         <h6>ಆಕರ: ಡಿಡಿಆರ್‌ ಲೆಡ್ಜರ್</h6>
-                        {["para34", "para35", "para36", "para37", "para37a"].map((item, ind) =>
+                        {["para34", "para35", "para36", "para37"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}
-                        <h3 className="headnote">
+                        <h3 className="headnote"> 
                             ₹ In crore
                         </h3>
                         <Table7 />
-                        {["para38", "para39", "para40", "para41", "para42", "para43"].map((item, ind) =>
+                        {["para37a","para38","para39","para40","para41","para42"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}

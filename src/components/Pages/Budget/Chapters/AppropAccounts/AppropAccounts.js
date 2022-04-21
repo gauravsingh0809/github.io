@@ -87,7 +87,7 @@ const AppropAccounts = () => {
               )
             )}
             <Table5 />
-
+            <h6>ಆಧಾರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
             {["para43", "para44", "para45"].map(
               (item, ind) => (
                 <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>

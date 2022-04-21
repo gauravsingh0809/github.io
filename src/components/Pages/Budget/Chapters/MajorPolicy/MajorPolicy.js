@@ -49,6 +49,7 @@ const MajorPolicy = () => {
             )
           )}
           <Table4/>
+          <h6>ಆಧಾರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 
         </div>

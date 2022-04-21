@@ -322,24 +322,64 @@ const Resources = () => {
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances/sources-application" forward="/finances/application" />
                         <Title>{ctx.chapter2kannada.Content.para9}</Title>
+                        
                         <Para>
                             {ctx.chapter2kannada.Content.para10}
                         </Para>
-                        {["para11", "para12", "para13", "para14", "para15"].map((item, ind) =>
+                        <Subtitle>
+                            {ctx.chapter2kannada.Content.para11}
+                        </Subtitle>
+                         {["para12"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
+                        
+                        
+                        <Subtitle>
+                            {ctx.chapter2kannada.Content.para13}
+                        </Subtitle>
+                        {["para14"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)} 
+                             
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
                         <Table3 />
+                        <Para>
+                            {ctx.chapter2kannada.Content.t3fa}
+                        </Para>
                         <Chrt2 />
+                        <Para>
+                            {ctx.chapter2kannada.Content.t3fa}
+                        </Para>
                         <Chrt3 />
-                        {["para16", "para17", "para18", "para19", "para20", "para21", "para22", "para23", "para24", "para25"].map((item, ind) =>
+                        <Para>
+                            {ctx.chapter2kannada.Content.t3fb}
+                        </Para>
+                            {["para15"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)} 
+                        {["para16", "para17", "para18", "para19"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                            <Subtitle>
+                            {ctx.chapter2kannada.Content.para20}
+                        </Subtitle>
+                            {["para21", "para22", "para23", "para24"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Chrt4 />
+                        <Para>
+                            {ctx.chapter2kannada.Content.t3fb}
+                        </Para>
+                        <Para>
+                            {ctx.chapter2kannada.Content.para25}
+                        </Para>
                         {["para26", "para27", "para28", "para29"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
@@ -348,22 +388,40 @@ const Resources = () => {
                             ₹ In crore
                         </h3>
                         <Table5 />
-
+                        <Para>
+                            {ctx.chapter2kannada.Content.t3fb}
+                        </Para>
                         {["para30", "para31", "para32", "para33", "para34", "para35", "para36"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
 
-                        {["para37", "para38", "para39", "para40", "para41", "para42", "para43", "para44"].map((item, ind) =>
+                        {["para37", "para38", "para39", "para40", "para41", "para42"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
+                            <Subtitle>
+                            {ctx.chapter2kannada.Content.para43}
+                        </Subtitle>
+                        <Para>
+                            {ctx.chapter2kannada.Content.para44}
+                        </Para>
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
                         <Table7 />
-
-                        {["para45", "para46", "para47", "para48"].map((item, ind) =>
+                        <Para>
+                            {ctx.chapter2kannada.Content.t3fb}
+                        </Para>
+                        {["para45"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                            <Subtitle>
+                            {ctx.chapter2kannada.Content.para46}
+                        </Subtitle>
+                        
+                        {[ "para47"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
@@ -371,7 +429,17 @@ const Resources = () => {
                             ₹ In crore
                         </h3>
                         <Table9 />
-                        {["para49", "para50", "para51", "para52", "para53", "para54", "para55", "para56", "para57", "para58", "para59"].map((item, ind) =>
+                        <Para>
+                            {ctx.chapter2kannada.Content.t3fb}
+                        </Para>
+                        <Para>
+                            {ctx.chapter2kannada.Content.t8a}
+                        </Para>
+                        {[ "para48"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                        {["para49", "para50", "para51", "para52", "para53", "para54", "para55", "para56", "para57", "para58"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
@@ -379,8 +447,21 @@ const Resources = () => {
                             ₹ In crore
                         </h3>
                         <Table10 />
-
-                        {["para60", "para61", "para62", "para63", "para64", "para65"].map((item, ind) =>
+                        <Para>
+                            {ctx.chapter2kannada.Content.t10a}
+                        </Para>
+                        {[ "para59"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                        {["para60", "para61", "para62", "para64"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                            <Subtitle>
+                            {ctx.chapter2kannada.Content.para63}
+                        </Subtitle>
+                        {[ "para64"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
@@ -388,7 +469,21 @@ const Resources = () => {
                             ₹ In crore
                         </h3>
                         <Table11 />
-                        {["para66", "para67", "para68", "para69"].map((item, ind) =>
+                        <Para>
+                            {ctx.chapter2kannada.Content.t3fb}
+                        </Para>
+                        {[ "para65"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                        {["para66", "para67"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                            <Subtitle>
+                            {ctx.chapter2kannada.Content.para68}
+                        </Subtitle>
+                        {[ "para69"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
@@ -396,6 +491,9 @@ const Resources = () => {
                             ₹ In crore
                         </h3>
                         <Table12 />
+                        <Para>
+                            {ctx.chapter2kannada.Content.t11a}
+                        </Para>
                         {["para70", "para71",].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}

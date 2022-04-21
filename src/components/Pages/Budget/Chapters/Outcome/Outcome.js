@@ -156,12 +156,14 @@ const Outcome = () => {
               </Para>
             ))}
         <Table11 />
+        <h6>ಆಕರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
         {["para133", "para134", "para135"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))
         }
         <Table12 />
+        <h6>ಆಕರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
         {["para136", "para137"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
@@ -177,20 +179,21 @@ const Outcome = () => {
         }
         <Table14 />
         <h6>ಆಕರ: ಅನುದಾನ ವಹಿ</h6>
-        {["para142", "para143", "para144", "para145", "para146", "para147", "para148", "para149", "para150", "para151", "para152", "para153", "para154", "para155", "para156", "para157", "para158", "para159", "para160"].map(
+        {["para142a","para142b","para142", "para143", "para144", "para145", "para146", "para147", "para148", "para149", "para150", "para151", "para152", "para153", "para154", "para155", "para156", "para157"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))
         }
         <Table15 />
-        {["para161", "para162", "para163"].map(
+        <h6>ಆಕರ: ಅನುದಾನ ವಹಿ</h6>
+        {[ "para158", "para159", "para160"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))
         }
         <Table16 />
         <h6>ಆಕರ: ಅನುದಾನ ವಹಿ</h6>
-        {["para164", "para165", "para166", "para167", "para168", "para169"].map(
+        {["para161", "para162", "para163","para164", "para165", "para166", "para167", "para168", "para169"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))

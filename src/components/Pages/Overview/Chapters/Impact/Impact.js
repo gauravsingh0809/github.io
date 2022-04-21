@@ -73,7 +73,7 @@ const Impact = () => {
                             </Para>
                         )}
                         <Table7 />
-                        hellaso
+                        
                         {["f14"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}

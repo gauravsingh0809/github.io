@@ -178,6 +178,11 @@ const DebtManagement = () => {
                             {ctx.chapter2kannada.Content.para257}
                         </Para>
                         <Chart14 />
+                        <h6> ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
+                            <br>
+                            </br>
+                            
+                        </h6>
                         {["para258", "para259", "para260", "para261", "para262"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
@@ -186,14 +191,25 @@ const DebtManagement = () => {
                             ₹ In crore
                         </h3>
                         <Table30 />
-                        <h6>*The back-to-back Loan (₹ 12,407 crore) received from GoI in lieu of GST compensation has not been considered as Debt for working out the indicator.</h6>
-                        <Chart16 />
-                        {["para263", "para264", "para265", "para266"].map((item, ind) =>
+                        <h6>  ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
+                            <br>
+                            </br>
+                            *  ಸರಕು ಮತ್ತು ಸೇವಾ ತೆರಿಗೆಯ ಪರಿಹಾರದ ಬದಲಾಗಿ ಭಾರತ ಸರ್ಕಾರದಿಂದ ಪಡೆದ ಬ್ಯಾಕ್-ಟು-ಬ್ಯಾಕ್ ಸಾಲವನ್ನು (`12,407 ಕೋಟಿ) ಸೂಚಕವನ್ನು ಲೆಕ್ಕ ಹಾಕಲು ಪರಿಗಣಿಸಲಾಗಿಲ್ಲ.
+                            <br>
+                            </br>
+                        </h6>
+                        {["para263","para264","para265"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
                         <Chart15 />
-                        <h6>Note: Effective GOI loans would be ₹14,210 crore as the Department of Expenditure, GOI had decided that GST compensation of ₹12,407 crore given to the State as back-to-back loan under debt receipts (6004-101. Loans and Advances from GOI) would not be treated as debt of the State for any norms which may be prescribed by the Finance Commission, thus, impacting the total debt to ₹4,03,519 crore.</h6>
+                        <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
+                        {["para266"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                        <Chart16 />
+                        <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
                         {["para267", "para268", "para269", "para270", "para271"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
@@ -202,11 +218,14 @@ const DebtManagement = () => {
                             ₹ In crore
                         </h3>
                         <Table31 />
-                        <h6>Source: Finance Accounts</h6>
+                        <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
                         {["para272", "para273", "para274", "para275", "para276"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
+                            <Para>
+                            {ctx.chapter2kannada.Content.para277}
+                        </Para>
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
@@ -217,14 +236,19 @@ const DebtManagement = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
+                        <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
+                            <br></br> * ಈ ಅಂಕೆಗಳು ವರ್ಷದ ನಿವ್ವಳ ವಿತರಣೆಗಳು/ಹೊರಹರಿವು (ವೆಚ್ಚಗಳು)
+                        
+                        </h6>
                         <Table33 />
-                        <Para>
-                            {ctx.chapter2kannada.Content.para277}
-                        </Para>
+                        <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
+                            <br></br>
+                        </h6>
+                       
                         <Para>
                             {ctx.chapter2kannada.Content.para278}
                         </Para>
-                        {["para279", "para280", "para281"].map((item, ind) =>
+                        {["para279", "para280"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
@@ -232,7 +256,12 @@ const DebtManagement = () => {
                             ₹ In crore
                         </h3>
                         <Table34 />
-
+                        <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
+                        </h6>
+                        {["para281"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
 
                     </div>
                 </div>

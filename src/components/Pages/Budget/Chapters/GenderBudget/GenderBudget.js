@@ -57,6 +57,7 @@ const GenderBudget = () => {
           )
         )}
         <Table1 />
+        <h6>ಆಕರ: ಮಹಿಳಾ ಉದ್ದೇಶಿತ ಆಯವ್ಯಯ</h6>
         <Para>{ctx.chapter3kannada.Content.para18}</Para>
         {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 

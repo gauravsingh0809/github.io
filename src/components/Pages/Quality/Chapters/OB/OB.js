@@ -15,6 +15,7 @@ const OB = () => {
     const ctx = useContext(MyContext)
 
     return (
+        
         ctx.langPref
             ? (ctx.chapterFour
                 ? <div >
@@ -137,11 +138,13 @@ const OB = () => {
 
 
                         <Title>
-                            {ctx.chapter4kannada.Content.para44}
+                            {ctx.chapter4kannada.Content.para43}
                         </Title>
+                        <Subtitle>
+                            {ctx.chapter4kannada.Content.para44}
+                        </Subtitle>
 
-
-                        {["para45", "para46", "para47"].map((item, ind) =>
+                        {["para44a","para45","para46","para47","para48","para49"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}
@@ -150,7 +153,7 @@ const OB = () => {
                         </h3>
                         <Table8 />
                         <h6>ಆಕರ : ಡಿಡಿಆರ್‌ ಲೆಡ್ಜರುಗಳು</h6>
-                        {["para48", "para49", "para50", "para51", "para52", "para53", "para54", "para55", "para56", "para57", "para58", "para59", "para60", "para61", "para62", "para63", "para64", "para65"].map((item, ind) =>
+                        {["para50", "para51", "para52", "para53", "para54", "para55", "para56", "para57", "para58", "para59", "para60", "para61", "para62", "para63", "para64", "para65"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}
