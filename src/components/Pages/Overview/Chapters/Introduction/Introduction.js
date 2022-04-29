@@ -12,9 +12,9 @@ import Subtitle from '../../../../Subtitle/Subtitle'
 
 
 const Introduction = () => {
-
+   
     const ctx = useContext(MyContext)
-
+    console.log(ctx.chapter3kannada);
     return (
         ctx.langPref
             ? (ctx.chapterOne
