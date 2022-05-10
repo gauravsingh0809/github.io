@@ -148,7 +148,7 @@ const customStyles = {
 };
 
 
-const Table2 = () => {
+const Table2kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -158,7 +158,7 @@ const Table2 = () => {
                 <DataTable
                     title="Table 1.2: Actual financial results vis-à-vis Budget Provisions"
                     columns={columns}
-                    data={ctx.reportData.Tables.Table2}
+                    data={ctx.tables1kan.Table2}
                     defaultSortField="title"
                     sortIcon={<SortIcon />}
                     customStyles={customStyles}
@@ -172,4 +172,4 @@ const Table2 = () => {
     );
 }
 
-export default Table2;
+export default Table2kan;
