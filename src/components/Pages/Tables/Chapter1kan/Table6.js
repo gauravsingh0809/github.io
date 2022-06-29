@@ -4,103 +4,61 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Sl.No",
-        selector: "Sl No",
+        name: "ಕ್ರಮ",
+        selector: "ಕ್ರಮ",
         wrap: true,
         grow: 0.1,
     },
     {
-        name: "Fiscal variables",
-        selector: "Fiscal Variables",
+        name: "ಆರ್ಥಿಕ ಸ್ಥಿರಾಂಕಗಳು",
+        selector: "ಆರ್ಥಿಕ ಸ್ಥಿರಾಂಕಗಳು",
         wrap: true,
         grow: 2,
-        conditionalCellStyles: [
-            {
-                when: row => row["Fiscal Variables"] === 'Fiscal Deficit -/ Surplus +' 
-                || row["Fiscal Variables"] === 'Revenue Deficit -/Surplus + 5-6'
-                || row["Fiscal Variables"] === 'GSDP',
-                style: {
-                    backgroundColor: 'rgba(63, 195, 128, 0.5)',
-                    color: 'white',
-                    fontWeight: 500,
-                    '&:hover': {
-                        cursor: 'pointer',
-                    },
-                },
-            },
-        ]
+        // conditionalCellStyles: [
+        //     {
+        //         when: row => row["ಆರ್ಥಿಕ ಸ್ಥಿರಾಂಕಗಳು"] === 'Fiscal Deficit (-)/ Surplus (+)' 
+        //         || row["ಆರ್ಥಿಕ ಸ್ಥಿರಾಂಕಗಳು"] === 'Revenue Deficit (-)/Surplus (+) (5-6)'
+        //         || row["ಆರ್ಥಿಕ ಸ್ಥಿರಾಂಕಗಳು"] === 'GSDP',
+        //         style: {
+        //             backgroundColor: 'rgba(63, 195, 128, 0.5)',
+        //             color: 'white',
+        //             fontWeight: 500,
+        //             '&:hover': {
+        //                 cursor: 'pointer',
+        //             },
+        //         },
+        //     },
+        // ]
     },
     {
-        name: "Projection as per MTFP 2018-22",
-        selector: "Projection as per MTFP 2018 22",
+        name: "ಮ.ಅ.ವಿ.ಯೋ",
+        selector: "ಮ.ಅ.ವಿ.ಯೋ",
         wrap: true,
-        format: data => data["Projection as per MTFP 2018 22"].toLocaleString('en-IN')
+        format: data => data["ಮ.ಅ.ವಿ.ಯೋ"].toLocaleString('en-IN')
     },
     {
-        name: "Actuals 2019-20",
-        selector: "Actuals 2019 20",
+        name: "ವಾಸ್ತವಗಳು",
+        selector: "ವಾಸ್ತವಗಳು",
         wrap: true,
-        format: data => data["Actuals 2019 20"].toLocaleString('en-IN')
+        format: data => data["ವಾಸ್ತವಗಳು"].toLocaleString('en-IN')
     },
     {
-        name: "Variation in per cent",
-        selector: "Variation in per cent",
+        name: "ವ್ಯತ್ಯಾಸ",
+        selector: "ವ್ಯತ್ಯಾಸ",
         wrap: true,
-        format: data => data["Variation in per cent"].toLocaleString('en-IN')
+        format: data => data["ವ್ಯತ್ಯಾಸ"].toLocaleString('en-IN')
     },
 ];
 
 
-const customStyles = {
-    header: {
-        style: {
-            fontSize: '22px',
-            color: '#fff',
-            backgroundColor: '#ff6359',
-            minHeight: '56px',
-            textAlign: "center",
-        },
-    },
-    rows: {
-        style: {
-            minHeight: '50px', // override the row height
-        }
-    },
-    headCells: {
-        style: {
-            '&:not(:last-of-type)': {
-                borderRightStyle: 'solid',
-                borderRightWidth: '1px',
-                borderRightColor: "black",
-            },
-            fontSize: '14px',
-            fontWeight: '500',
-            textTransform: 'uppercase',
-            padding: '10px',
-            color: '#D72483'
-        },
-    },
-    cells: {
-        style: {
-            '&:not(:last-of-type)': {
-                borderRightStyle: 'solid',
-                borderRightWidth: '1px',
-                borderRightColor: '#aaa',
-                // width: '120px',
-                // minWidth: '40px',
-            },
-            fontSize: '12px',
-            paddingLeft: '8px',
+const customStyles = styles;
 
-        },
-    },
-};
-
-const Table6 = () => {
+const Table6kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -108,9 +66,9 @@ const Table6 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 1.6: Actuals vis-à-vis projection in MTFP for 2019-20"
+                    title="ಕೋಷ್ಟಕ 1.6: 2020-21ಕ್ಕೆ ಮಧ್ಯಂತರ ವಿತ್ತೀಯ ಯೋಜನೆಯ ಪ್ರಕ್ಷೇಪ ಮತ್ತು ವಾಸ್ತವಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Tables.Table6}
+                    data={ctx.tables1kan.Table6}
                     customStyles={customStyles}
                     striped
                     highlightOnHover
@@ -122,4 +80,4 @@ const Table6 = () => {
     );
 }
 
-export default Table6;
+export default Table6kan;

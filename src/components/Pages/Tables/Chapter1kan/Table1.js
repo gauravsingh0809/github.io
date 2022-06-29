@@ -16,66 +16,44 @@ const columns = [
   
   {
       name: "2015-16",
-      selector: "2015-16",
+      selector: "201617",
       // grow:0.05,
       wrap: true,
-      format: data => data["2015-16"].toLocaleString('en-IN')
+      format: data => data["201617"].toLocaleString('en-IN')
   },
   {
       name: "2016-17",
-      selector: "2016-17",
+      selector: "201718",
       // grow: 0.05,
       wrap: true,
-      format: data => data["2016-17"].toLocaleString('en-IN')
+      format: data => data["201718"].toLocaleString('en-IN')
   },
   {
       name: "2017-18",
-      selector: "2017-18",
+      selector: "201819",
       // grow: 0.05,
       // width:'110px',
       wrap: true,
-      format: data => data["2017-18"].toLocaleString('en-IN')
+      format: data => data["201819"].toLocaleString('en-IN')
   },
   {
       name: "2018-19",
-      selector: "2018-19",
+      selector: "201920",
       // grow: 0.05,
       // width:'110px',
       wrap: true,
-      format: data => data["2018-19"].toLocaleString('en-IN')
+      format: data => data["201920"].toLocaleString('en-IN')
   },
   {
       name: "2019-20",
-      selector: "2019-20",
+      selector: "202021",
       // grow: 0.05,
       // width:'110px',
       wrap: true,
-      format: data => data["2019-20"].toLocaleString('en-IN')
+      format: data => data["202021"].toLocaleString('en-IN')
   },   
 ];
 
-// const conditionalRowStyles = [
-//   {
-//     when: row => row["India's GDP* in crore"] < 15000000,
-//     style: (row) => ({
-//       backgroundColor: row["India's GDP* in crore"] ? 'rgba(63, 195, 128, 0.9)' : "#fff",
-//       color: 'white',
-//       '&:hover': {
-//         cursor: 'pointer',
-//       },
-//     }),
-//   },
-//   {
-//     when: row => row["State's GSDP* in crore"] >= 1600000,
-//     style: {
-//       backgroundColor: '#dcad0e',
-//       color: 'white',
-//       '&:hover': {
-//         cursor: 'not-allowed',
-//       },
-//     },
-//   },
-// ];
 
 const customStyles = {
   header: {
@@ -126,26 +104,16 @@ const Table1kan = () => {
 
   const ctx = useContext(MyContext)
 
-  // if (!tables.length) {
-  //   getFirebase()
-  //     .database()
-  //     .ref("/Tables2/Table1")
-  //     .on("value",
-  //     function(snapshot) {
-  //       const snapshotVal = snapshot.val();
-  //       setTables(Object.values(snapshotVal));
-  //     });
-  // }
+  console.log(ctx.tables1kan)
 
-  // console.log(ctx.reportData.Tables2.Table1)
-
+ 
   return (
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
           title="ಕೋಷ್ಟಕ-1.1: ರಾಷ್ಟ್ರೀಯ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನಕ್ಕೆ ಹೋಲಿಸಿದಂತೆ ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನದ ಪ್ರವೃತ್ತಿ"
           columns={columns}
-          data={ctx.reportData.Tableskan.Table1}
+          data={ctx.tables1kan.Table1}
           defaultSortField="title"
           sortIcon={<SortIcon />}
           customStyles={customStyles}

@@ -9,6 +9,7 @@ import { FaSpinner } from 'react-icons/fa'
 import Table1 from '../../../Tables/Chapter1/Table1'
 import Chart1, { Chart2, Chart3, Chart4 } from '../../../Charts/Charts'
 import Subtitle from '../../../../Subtitle/Subtitle'
+import Table1kan from '../../../Tables/Chapter1kan/Table1'
 
 const Profile = () => {
 
@@ -204,7 +205,7 @@ const Profile = () => {
                      
  
                         {/* Table 1 goes here */}
-                        <Table1 id="table1" />
+                        <Table1kan id="table1" />
                         <h6>
                             {ctx.chapter1kannada.Content.t1f1} <br></br>
                             {ctx.chapter1kannada.Content.t1f2}

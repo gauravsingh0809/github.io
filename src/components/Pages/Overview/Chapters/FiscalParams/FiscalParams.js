@@ -9,6 +9,7 @@ import { FaSpinner } from 'react-icons/fa'
 import Subtitle from "../../../../Subtitle/Subtitle"
 import { Chart5, Chart6 } from '../../../Charts/Charts'
 import Table4 from '../../../Tables/Chapter1/Table4'
+import Table4kan from '../../../Tables/Chapter1kan/Table4'
 
 
 
@@ -140,7 +141,7 @@ const FiscalParams = () => {
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        <Table4 />
+                        <Table4kan />
                         {["f10"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}

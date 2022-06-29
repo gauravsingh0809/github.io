@@ -7,6 +7,7 @@ import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 import Table2 from '../../../Tables/Chapter1/Table2'
+import Table2kan from '../../../Tables/Chapter1kan/Table2'
 
 
 
@@ -65,7 +66,7 @@ const FinanceSnapshot = () => {
                         <Para >
                             {ctx.chapter1kannada.Content["para42"]}
                         </Para>
-                        <Table2 />
+                        <Table2kan/>
                       
                         <h4 >
                             {["f4", "f5", "f6","f7"].map((item, ind) =>

@@ -4,50 +4,51 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Fiscal Parameters",
-        selector: "Fiscal Parameters",
+        name: "ಆರ್ಥಿಕ ನಿಯತಾಂಕಗಳು",
+        selector: "ಆರ್ಥಿಕ ನಿಯತಾಂಕಗಳು",
         wrap: true,
-        format: data => data["Fiscal Parameters"].toLocaleString('en-IN')
+        format: data => data["ಆರ್ಥಿಕ ನಿಯತಾಂಕಗಳು"].toLocaleString('en-IN')
     },
     {
-        name: "KFRA Target",
-        selector: "KFRA target",
+        name: "ಕರ್ನಾಟಕ ವಿತ್ತೀಯ ಸುಧಾರಣಾ ಅಧಿನಿಯಮದ ಗುರಿ",
+        selector: "ಕರ್ನಾಟಕ ವಿತ್ತೀಯ ಸುಧಾರಣಾ ಅಧಿನಿಯಮದ ಗುರಿ",
         wrap: true,
-        format: data => data["KFRA target"].toLocaleString('en-IN')
+        format: data => data["ಕರ್ನಾಟಕ ವಿತ್ತೀಯ ಸುಧಾರಣಾ ಅಧಿನಿಯಮದ ಗುರಿ"].toLocaleString('en-IN')
     },
     {
-        name: " ",
-        selector: "1",
+        name: "2016-17",
+        selector: "2016-17",
         wrap: true,
-        format: data => data["1"].toLocaleString('en-IN')
+        format: data => data["2016-17"].toLocaleString('en-IN')
     },
     {
-        name: " ",
-        selector: "2",
+        name: "2017-18",
+        selector: "22017-18",
         wrap: true,
-        format: data => data["2"].toLocaleString('en-IN')
+        format: data => data["2017-18"].toLocaleString('en-IN')
     },
     {
-        name: "Achievement",
-        selector: "Achievement",
+        name: "2018-19",
+        selector: "2018-19",
         wrap: true,
-        format: data => data["Achievement"].toLocaleString('en-IN')
+        format: data => data["2018-19"].toLocaleString('en-IN')
     },
     {
-        name: " ",
-        selector: "3",
+        name: "2019-20",
+        selector: "2019-20",
         wrap: true,
-        format: data => data["3"].toLocaleString('en-IN')
+        format: data => data["2019-20"].toLocaleString('en-IN')
     },
     {
-        name: " ",
-        selector: "4",
+        name: "2020-21",
+        selector: "2020-21",
         wrap: true,
-        format: data => data["4"].toLocaleString('en-IN')
+        format: data => data["2020-21"].toLocaleString('en-IN')
     },
 ];
 
@@ -60,58 +61,9 @@ const conditionalRowStyles = [
     }
 ]
 
-const customStyles = {
-    header: {
-        style: {
-            fontSize: '22px',
-            color: '#fff',
-            backgroundColor: '#ff6359',
-            minHeight: '56px',
-            textAlign: "center",
-        },
-    },
-    rows: {
-        style: {
-            minHeight: '50px', // override the row height
-        }
-    },
-    headCells: {
-        style: {
-            '&:not(:last-of-type)': {
-                borderRightStyle: 'solid',
-                borderRightWidth: '1px',
-                borderRightColor: "black"
-            },
-            '&:nth-child(n+3)': {
-                borderRightStyle: 'none',
-                borderRightWidth: '1px',
-                borderRightColor: "black",
-                backgroundColor:"#b89e9c"
-            },
-            fontSize: '14px',
-            fontWeight: '500',
-            textTransform: 'uppercase',
-            padding: '10px',
-            color: '#D95783'
-        },
-    },
-    cells: {
-        style: {
-            '&:not(:last-of-type)': {
-                borderRightStyle: 'solid',
-                borderRightWidth: '1px',
-                borderRightColor: '#aaa',
-                // width: '120px',
-                // minWidth: '40px',
-            },
-            fontSize: '12px',
-            paddingLeft: '8px',
+const customStyles = styles;
 
-        },
-    },
-};
-
-const Table4 = () => {
+const Table5kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -119,9 +71,9 @@ const Table4 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 1.5: Compliance with provisions of KFRA"
+                    title="ಕೋಷ್ಟಕ - 1.5: ಕರ್ನಾಟಕ ವಿತ್ತೀಯ ಸುಧಾರಣಾ ಕಾಯಿದೆಯ ಗುರಿಗಳ ಅನುಪಾಲನೆ"
                     columns={columns}
-                    data={ctx.reportData.Tables.Table5}
+                    data={ctx.tables1kan.Table5}
                     customStyles={customStyles}
                     striped
                     conditionalRowStyles={conditionalRowStyles}
@@ -134,4 +86,4 @@ const Table4 = () => {
     );
 }
 
-export default Table4;
+export default Table5kan;
