@@ -10,8 +10,8 @@ import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 import Table5 from '../../../Tables/Chapter1/Table5'
 import Table6 from '../../../Tables/Chapter1/Table6'
-
-
+import Table5kan from '../../../Tables/Chapter1kan/Table5'
+import Table6kan from '../../../Tables/Chapter1kan/Table6'
 
 const FiscalSituation = () => {
 
@@ -137,7 +137,7 @@ const FiscalSituation = () => {
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        <Table5 />
+                        <Table5kan />
                         {["f11"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
@@ -160,7 +160,7 @@ const FiscalSituation = () => {
                             </Para>
                         )}
 
-                        <Table6 />
+                        <Table6kan />
                         {["f12","f13"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}

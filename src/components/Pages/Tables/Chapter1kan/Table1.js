@@ -15,29 +15,28 @@ const columns = [
   },
   
   {
-      name: "2016-17",
+      name: "2015-16",
       selector: "201617",
       // grow:0.05,
       wrap: true,
       format: data => data["201617"].toLocaleString('en-IN')
   },
   {
-      name: "2017-18",
+      name: "2016-17",
       selector: "201718",
       // grow: 0.05,
       wrap: true,
       format: data => data["201718"].toLocaleString('en-IN')
   },
   {
-      name: "2018-19",
+      name: "2017-18",
       selector: "201819",
       // grow: 0.05,
-      // width:'110px',
       wrap: true,
       format: data => data["201819"].toLocaleString('en-IN')
   },
   {
-      name: "2019-20",
+      name: "2018-19",
       selector: "201920",
       // grow: 0.05,
       // width:'110px',
@@ -45,7 +44,7 @@ const columns = [
       format: data => data["201920"].toLocaleString('en-IN')
   },
   {
-      name: "2020-21",
+      name: "2019-20",
       selector: "202021",
       // grow: 0.05,
       // width:'110px',
@@ -54,28 +53,6 @@ const columns = [
   },   
 ];
 
-// const conditionalRowStyles = [
-//   {
-//     when: row => row["India's GDP* in crore"] < 15000000,
-//     style: (row) => ({
-//       backgroundColor: row["India's GDP* in crore"] ? 'rgba(63, 195, 128, 0.9)' : "#fff",
-//       color: 'white',
-//       '&:hover': {
-//         cursor: 'pointer',
-//       },
-//     }),
-//   },
-//   {
-//     when: row => row["State's GSDP* in crore"] >= 1600000,
-//     style: {
-//       backgroundColor: '#dcad0e',
-//       color: 'white',
-//       '&:hover': {
-//         cursor: 'not-allowed',
-//       },
-//     },
-//   },
-// ];
 
 const customStyles = {
   header: {
@@ -126,19 +103,9 @@ const Table1kan = () => {
 
   const ctx = useContext(MyContext)
 
-  // if (!tables.length) {
-  //   getFirebase()
-  //     .database()
-  //     .ref("/Tables2/Table1")
-  //     .on("value",
-  //     function(snapshot) {
-  //       const snapshotVal = snapshot.val();
-  //       setTables(Object.values(snapshotVal));
-  //     });
-  // }
+  console.log(ctx.tables1kan)
 
-  // console.log(ctx.reportData.Tables2.Table1)
-
+ 
   return (
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>

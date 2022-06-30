@@ -7,7 +7,7 @@ import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 import Table7 from '../../../Tables/Chapter1/Table7'
-
+import Table7kan from '../../../Tables/Chapter1kan/Table7'
 const Impact = () => {
 
     const ctx = useContext(MyContext)
@@ -72,7 +72,7 @@ const Impact = () => {
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        <Table7 />
+                        <Table7kan/>
                         
                         {["f14"].map((item, ind) =>
                             <Para key={ind / 10}>

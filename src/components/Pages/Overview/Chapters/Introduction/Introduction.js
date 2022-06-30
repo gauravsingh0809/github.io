@@ -8,6 +8,7 @@ import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButt
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 import Subtitle from '../../../../Subtitle/Subtitle'
+import Chart1Kan from '../../../Charts/ChartsKan/Charts'
 
 
 
@@ -52,6 +53,10 @@ const Introduction = () => {
                         <Para>
                             {ctx.chapter1kannada.Content.para3}
                         </Para>
+
+
+                        
+                        {/* <Chart1Kan/> */}
 
                     </div>
                 </div>

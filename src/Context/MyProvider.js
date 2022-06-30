@@ -31,7 +31,7 @@ export const MyProvider = (props) => {
   const report = JSON.parse(JSON.stringify(jsonData))
 
   const [themeChange, setThemeChange] = useState(true);
-  const [switchLang, setswitchLang] = useState(true);
+  const [switchLang, setswitchLang] = useState(false);   // Change the boolean value to change the language
   const [reportch, setReportCh] = useState([]);
   
 
@@ -70,6 +70,7 @@ export const MyProvider = (props) => {
       chapterFour: report.Chap4,
       chapter4kannada: report.Chap4kan,
       charts: reportch.Chartsnew,
+      chartskan:report.Chap1kan.Charts,
       charts2: reportch.Chap2Charts,
       charts3: reportch.Chap3Charts,
       charts4: reportch.Chap4Charts,
@@ -78,9 +79,9 @@ export const MyProvider = (props) => {
       tables3: report.Chap3 ? report.Chap3.Tables : "",
       tables4: report.Chap4 ? report.Chap4.Tables : "",
       tables1kan: report.Chap1kan ? report.Chap1kan.Tables : "",
-      tables2: report.Chap2 ? report.Chap2.Tables : "",
-      tables3: report.Chap3 ? report.Chap3.Tables : "",
-      tables4: report.Chap4 ? report.Chap4.Tables : "",
+      tables2kan: report.Chap2kan ? report.Chap2kan.Tables : "",
+      tables3kan: report.Chap3kan ? report.Chap3kan.Tables : "",
+      tables4kan: report.Chap4kan ? report.Chap4kan.Tables : "",
       themeChanger: themeChange,
       langPref: switchLang,
       execsummary: report.ExecSummary,

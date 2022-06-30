@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { Link } from "@material-ui/core"
 import { MyContext } from '../../../../../Context/MyProvider'
 import Para from '../../../../Para/Para'
 import Title from "../../../../Title/Title"
@@ -8,7 +7,7 @@ import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
 import Table3 from '../../../Tables/Chapter1/Table3'
-
+import Table3kan from '../../../Tables/Chapter1kan/Table3'
 
 
 const AssetsSnapshot = () => {
@@ -62,7 +61,7 @@ const AssetsSnapshot = () => {
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        <Table3 />
+                        <Table3kan />
                         <h4 className='footnote'>
                             <i>
                                 ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
