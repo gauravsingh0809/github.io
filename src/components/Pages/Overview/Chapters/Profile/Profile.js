@@ -11,7 +11,7 @@ import Table1kan from '../../../Tables/Chapter1kan/Table1'
 
 import Chart1, { Chart2, Chart3, Chart4 } from '../../../Charts/Charts'
 import Subtitle from '../../../../Subtitle/Subtitle'
-import Table1kan from '../../../Tables/Chapter1kan/Table1'
+// import Table1kan from '../../../Tables/Chapter1kan/Table1'
 
 const Profile = () => {
 
@@ -208,12 +208,7 @@ const Profile = () => {
                      
  
                         {/* Table 1 goes here */}
-<<<<<<< HEAD
-                        <Table1kan id="table1kan" />
-                        {/* kannada */}
-=======
                         <Table1kan id="table1" />
->>>>>>> 6d092be85d8b3e492c842101e94ea446ff60f99d
                         <h6>
                             {ctx.chapter1kannada.Content.t1f1} <br></br>
                             {ctx.chapter1kannada.Content.t1f2}

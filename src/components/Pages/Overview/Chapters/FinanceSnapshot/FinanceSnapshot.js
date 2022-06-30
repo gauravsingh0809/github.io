@@ -6,11 +6,7 @@ import Navbar from "../../../../Navbar/Navbar"
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Overview.css'
 import { FaSpinner } from 'react-icons/fa'
-<<<<<<< HEAD
-import Table2 from '../../../Tables/Chapter1/Table2';
-=======
 import Table2 from '../../../Tables/Chapter1/Table2'
->>>>>>> 6d092be85d8b3e492c842101e94ea446ff60f99d
 import Table2kan from '../../../Tables/Chapter1kan/Table2'
 
 
