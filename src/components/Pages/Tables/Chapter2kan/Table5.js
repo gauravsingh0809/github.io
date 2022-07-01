@@ -4,89 +4,48 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
-    {
-        name: "State Goods and Service Tax",
-        selector: "State Goods and Service Tax",
-        // grow: ,
-        wrap: true,
-        // width:'35px',
-    },
-    
-    {
-        name: "2018 19",
-        selector: "2018 19",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["2018 19"].toLocaleString('en-IN')
-    },
-    {
-        name: "2019 20",
-        selector: "2019 20",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN')
-    },
-    {
-        name: "Increase/ Decrease",
-        selector: "Increase or Decrease",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        format: data => data["Increase or Decrease"].toLocaleString('en-IN')
-    },
-    
+  {
+    name: "ರಾಜ್ಯ ಸರಕು ಮತ್ತು ಸೇವಾ ತೆರಿಗೆ",
+    selector: "ರಾಜ್ಯ ಸರಕು ಮತ್ತು ಸೇವಾ ತೆರಿಗೆ",
+    // grow: ,
+    wrap: true,
+    // width:'35px',
+},
+
+{
+    name: "2019-20",
+    selector: "2019-20",
+    // grow:0.05,
+    sortable:true,
+    wrap: true,
+    format: data => data["2019-20"].toLocaleString('en-IN')
+},
+{
+    name: "2020-21",
+    selector: "2020-21",
+    // grow: 0.05,
+    // width:'110px',
+    wrap: true,
+    format: data => data["2020-21"].toLocaleString('en-IN')
+},
+{
+    name: "ಏರಿಕೆ/ಇಳಿಕೆ",
+    selector: "ಏರಿಕೆ/ಇಳಿಕೆ",
+    // grow: 0.05,
+    // width:'110px',
+    wrap: true,
+    format: data => data["ಏರಿಕೆ/ಇಳಿಕೆ"].toLocaleString('en-IN')
+},
+
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table5 = () => {
+const Table5kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -94,9 +53,9 @@ const Table5 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.5: SGST receipts of Government of Karnataka"
+                    title="ಕೋಷ್ಟಕ-2.5: ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ಸರಕು ಮತ್ತು ಸೇವಾ ತೆರಿಗೆ ಸ್ವೀಕೃತಿಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table5}
+                    data={ctx.tables2kan.Table5}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -109,4 +68,4 @@ const Table5 = () => {
     );
 }
 
-export default Table5;
+export default Table5kan;

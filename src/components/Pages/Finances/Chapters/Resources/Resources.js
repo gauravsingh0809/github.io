@@ -21,7 +21,14 @@ import Subtitle from '../../../../Subtitle/Subtitle'
 
 import ImageComponent from 'material-ui-image'
 import { getFirebase } from '../../../../../firebase/firebase'
+import Table3kan from '../../../Tables/Chapter2kan/Table3'
+import Table5kan from '../../../Tables/Chapter2kan/Table5'
 
+import Table7kan from '../../../Tables/Chapter2kan/Table7'
+import Table9kan from '../../../Tables/Chapter2kan/Table9'
+import Table10kan from '../../../Tables/Chapter2kan/Table10'
+import Table11kan from '../../../Tables/Chapter2kan/Table11'
+import Table12kan from '../../../Tables/Chapter2kan/Table12'
 const Resources = () => {
 
     const ctx = useContext(MyContext)
@@ -346,7 +353,7 @@ const Resources = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table3 />
+                        <Table3kan />
                         <Para>
                             {ctx.chapter2kannada.Content.t3fa}
                         </Para>
@@ -387,7 +394,7 @@ const Resources = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table5 />
+                        <Table5kan />
                         <Para>
                             {ctx.chapter2kannada.Content.t3fb}
                         </Para>
@@ -409,7 +416,8 @@ const Resources = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table7 />
+                        
+                        <Table7kan/>
                         <Para>
                             {ctx.chapter2kannada.Content.t3fb}
                         </Para>
@@ -428,7 +436,8 @@ const Resources = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table9 />
+
+                        <Table9kan/>
                         <Para>
                             {ctx.chapter2kannada.Content.t3fb}
                         </Para>
@@ -446,7 +455,7 @@ const Resources = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table10 />
+                        <Table10kan/>
                         <Para>
                             {ctx.chapter2kannada.Content.t10a}
                         </Para>
@@ -468,7 +477,7 @@ const Resources = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table11 />
+                        <Table11kan/>
                         <Para>
                             {ctx.chapter2kannada.Content.t3fb}
                         </Para>
@@ -490,7 +499,7 @@ const Resources = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table12 />
+                        <Table12kan/>
                         <Para>
                             {ctx.chapter2kannada.Content.t11a}
                         </Para>
