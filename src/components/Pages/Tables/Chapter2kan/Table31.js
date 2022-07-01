@@ -8,46 +8,46 @@ import { MyContext } from "../../../../Context/MyProvider";
 
 const columns = [
     {
-        name: "Company/ Corporation/ Board",
-        selector: "CompanyCorporationBoard",
+        name: "ಕಂಪನಿ/ನಿಗಮ/ಮಂಡಳಿ",
+        selector: "ಕಂಪನಿ ನಿಗಮ ಮಂಡಳಿ",
         // grow: ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "Outstanding off budget borrowing",
-        selector: "Outstanding off budget borrowing",
+        name: "ಬಾಕಿ ಇರುವ ಆಯವ್ಯಯೇತರ ಸಾಲಗಳು",
+        selector: "ಬಾಕಿ ಇರುವ ಆಯವ್ಯಯೇತರ ಸಾಲಗಳು",
         // grow:0.05,
         wrap: true,
-        format: data => data["Outstanding off budget borrowing"].toLocaleString('en-IN')
+        format: data => data["ಬಾಕಿ ಇರುವ ಆಯವ್ಯಯೇತರ ಸಾಲಗಳು"].toLocaleString('en-IN')
     },
     {
-        name: "Borrowings during 2019 20",
-        selector: "Borrowings during 2019 20",
+        name: "೨೦೨೦-೨೧ರ ಅವಧಿಯಲ್ಲಿ ಸಾಲಗಳು",
+        selector: "೨೦೨೦ ೨೧ರ ಅವಧಿಯಲ್ಲಿ ಸಾಲಗಳು",
         // grow:0.05,
         wrap: true,
-        format: data => data["Borrowings during 2019 20"].toLocaleString('en-IN')
+        format: data => data["೨೦೨೦ ೨೧ರ ಅವಧಿಯಲ್ಲಿ ಸಾಲಗಳು"].toLocaleString('en-IN')
     },
     {
-        name: "Repayment during 2019 20",
-        selector: "Repayment during 2019 20",
+        name: "೨೦೨೦-೨೧ರಲ್ಲಿ ಮರುಪಾವತಿಗಳು",
+        selector: "೨೦೨೦ ೨೧ರಲ್ಲಿ ಮರುಪಾವತಿಗಳು",
         // grow:0.05,
         wrap: true,
-        format: data => data["Repayment during 2019 20"].toLocaleString('en-IN')
+        format: data => data["೨೦೨೦ ೨೧ರಲ್ಲಿ ಮರುಪಾವತಿಗಳು"].toLocaleString('en-IN')
     },
     {
-        name: "Repayment",
-        selector: "Repayment",
+        name: "",
+        selector: "1",
         // grow:0.05,
         wrap: true,
-        format: data => data["Repayment"].toLocaleString('en-IN')
+        format: data => data["1"].toLocaleString('en-IN')
     },
     {
-        name: "Closing Balance",
-        selector: "Closing Balance",
+        name: "ಅಂತಿಮ ಶಿಲ್ಕು",
+        selector: "ಅಂತಿಮ ಶಿಲ್ಕು",
         // grow:0.05,
         wrap: true,
-        format: data => data["Closing Balance"].toLocaleString('en-IN')
+        format: data => data["ಅಂತಿಮ ಶಿಲ್ಕು"].toLocaleString('en-IN')
     }
 ];
 
@@ -96,7 +96,7 @@ const customStyles = {
 
 
 
-const Table31 = () => {
+const Table31kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -104,9 +104,9 @@ const Table31 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.32: Entity-wise position of off-budget borrowings"
+                    title="ಕೋಷ್ಟಕ-2.31: ಆಯವ್ಯಯ ಹೊರಗಿನ ಸಾಲಗಳ ಘಟಕವಾರು ಸ್ಥಿತಿ"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table31}
+                    data={ctx.tables2kan.Table31}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -119,4 +119,4 @@ const Table31 = () => {
     );
 }
 
-export default Table31;
+export default Table31kan;

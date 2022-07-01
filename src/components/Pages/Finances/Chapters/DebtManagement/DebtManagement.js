@@ -7,9 +7,14 @@ import { FaSpinner } from 'react-icons/fa'
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
 import Table30 from '../../../Tables/Chapter2/Table30'
+import Table30kan from '../../../Tables/Chapter2kan/Table30'
+
 import Table31 from '../../../Tables/Chapter2/Table31'
+import Table31kan from '../../../Tables/Chapter2kan/Table31'
 import Table32 from '../../../Tables/Chapter2/Table32'
+import Table32kan from '../../../Tables/Chapter2kan/Table32'
 import Table33 from '../../../Tables/Chapter2/Table33'
+import Table33kan from '../../../Tables/Chapter2kan/Table33'
 import Table34 from '../../../Tables/Chapter2/Table34'
 import {
     Chart14, Chart15, Chart16,
@@ -190,7 +195,7 @@ const DebtManagement = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table30 />
+                        <Table30kan />
                         <h6>  ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
                             <br>
                             </br>
@@ -217,7 +222,7 @@ const DebtManagement = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table31 />
+                        <Table31kan />
                         <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
                         {["para272", "para273", "para274", "para275", "para276"].map((item, ind) =>
                             <Para key={ind / 10}>
@@ -232,7 +237,7 @@ const DebtManagement = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table32 />
+                        <Table32kan />
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
@@ -240,7 +245,7 @@ const DebtManagement = () => {
                             <br></br> * ಈ ಅಂಕೆಗಳು ವರ್ಷದ ನಿವ್ವಳ ವಿತರಣೆಗಳು/ಹೊರಹರಿವು (ವೆಚ್ಚಗಳು)
                         
                         </h6>
-                        <Table33 />
+                        <Table33kan />
                         <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
                             <br></br>
                         </h6>

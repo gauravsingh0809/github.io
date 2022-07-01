@@ -32,7 +32,7 @@ const columns = [
     },
     {
         name: "2017-18",
-        selector: "201718",
+        selector: "2017 18",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
@@ -40,7 +40,7 @@ const columns = [
     },
     {
         name: "2018-19",
-        selector: "201819",
+        selector: "2018 19",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
