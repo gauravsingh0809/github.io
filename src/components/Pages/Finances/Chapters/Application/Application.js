@@ -23,6 +23,12 @@ import Table24b from '../../../Tables/Chapter2/Table24b'
 import Table25 from '../../../Tables/Chapter2/Table25'
 import Table26 from '../../../Tables/Chapter2/Table26'
 import Table27 from '../../../Tables/Chapter2/Table27'
+import Table13kan from '../../../Tables/Chapter2kan/Table13'
+import Table14kan from '../../../Tables/Chapter2kan/Table14'
+import Table15kan from '../../../Tables/Chapter2kan/Table15'
+import Table16kan from '../../../Tables/Chapter2kan/Table16'
+import Table17kan from '../../../Tables/Chapter2kan/Table17'
+
 import {
     Chart10, Chart11, Chart12,
     Chart2 as Chrt2, Chart3 as Chrt3, Chart4 as Chrt4, Chart7, Chart8, Chart9
@@ -187,7 +193,7 @@ const Application = () => {
                                 <br></br>
                             </i>
                         </h4>
-                        <Chart10 />
+                        {/* <Chart10 /> */}
                         <h4>
                             <i>
                                 Source: Finance Accounts
@@ -666,7 +672,7 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table13 />
+                        <Table13kan />
                         <Para>
                             {ctx.chapter2kannada.Content["t3fb"]}
                         </Para>
@@ -694,7 +700,7 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table14 />
+                        <Table14kan />
                         <Para>
                             {ctx.chapter2kannada.Content["t13a"]}
                         </Para>
@@ -709,7 +715,7 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table15 />
+                        <Table15kan />
                        
                         <Para>
                             {ctx.chapter2kannada.Content["t3fb"]}
@@ -718,7 +724,7 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table16 />
+                        <Table16kan />
                         <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
@@ -729,7 +735,7 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table17 />
+                        <Table17kan />
                         <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
@@ -737,7 +743,7 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Chart10 />
+                        {/* <Chart10 /> */}
                         <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>

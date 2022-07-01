@@ -7,6 +7,7 @@ import { FaSpinner } from 'react-icons/fa'
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
 import Table2 from '../../../Tables/Chapter2/Table2'
+import Table2kan from '../../../Tables/Chapter2kan/Table2'
 import {
      Chart11a,Chart12b
     
@@ -65,7 +66,7 @@ const  SourcesApplication = () => {
                     <Para>
                         {ctx.chapter2kannada.Content.para8}
                     </Para>
-                    <Table2/>
+                    <Table2kan/>
                     <Para>
                         {ctx.chapter2kannada.Content.t2fa}
                     </Para>

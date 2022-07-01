@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { getFirebase } from "./../firebase/firebase"
 // import { collection, getDocs } from "firebase/firestore";
 import jsonData from '../reportJson.json';

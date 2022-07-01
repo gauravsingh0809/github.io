@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
@@ -15,85 +16,45 @@ const columns = [
         // width:'35px',
     },
     {
-        name: "XIV FC assessment",
-        selector: "XIV FC assessment",
+        name: "15ನೇ ಹಣಕಾಸು ಆಯೋಗದ ನಿರ್ಧರಣೆ",
+        selector: "15ನೇ ಹಣಕಾಸು ಆಯೋಗದ ನಿರ್ಧರಣೆ",
         // grow:0.05,
         wrap: true,
-        format: data => data["XIV FC assessment"].toLocaleString('en-IN')
+        format: data => data["15ನೇ ಹಣಕಾಸು ಆಯೋಗದ ನಿರ್ಧರಣೆ"].toLocaleString('en-IN')
     },
     {
-        name: "Budget Estimates",
-        selector: "Budget Estimates",
+        name: "ಆಯವ್ಯಯ ಅಂದಾಜು",
+        selector: "ಆಯವ್ಯಯ ಅಂದಾಜು",
         // grow:0.05,
         wrap: true,
-        format: data => data["Budget Estimates"].toLocaleString('en-IN')
+        format: data => data["ಆಯವ್ಯಯ ಅಂದಾಜು"].toLocaleString('en-IN')
     },
     {
-        name: "Actual",
-        selector: "Actual",
+        name: "ವಾಸ್ತವ",
+        selector: "ವಾಸ್ತವ",
         wrap: true,
-        format: data => data["Actual"].toLocaleString('en-IN')
+        format: data => data["ವಾಸ್ತವ"].toLocaleString('en-IN')
     },
     {
-        name: "Percentage variation of actual over",
-        selector: "Percentage variation of actual over",
+        name: "ವಾಸ್ತವದ ಮೇಲಿನ ವ್ಯತ್ಯಾಸ ಶೇಕಡಾವಾರು",
+        selector: "ವಾಸ್ತವದ ಮೇಲಿನ ವ್ಯತ್ಯಾಸ ಶೇಕಡಾವಾರು",
         wrap: true,
-        format: data => data["Percentage variation of actual over"].toLocaleString('en-IN')
+        // format: data => data["ವಾಸ್ತವದ ಮೇಲಿನ ವ್ಯತ್ಯಾಸ ಶೇಕಡಾವಾರು"].toLocaleString('en-IN')
     },
     {
-        name: "",
-        selector: "1",
+        name: "ವಾಸ್ತವದ ಮೇಲಿನ ವ್ಯತ್ಯಾಸ ಶೇಕಡಾವಾರು",
+        selector: "__1",
         wrap: true,
-        format: data => data["1"].toLocaleString('en-IN')
+        format: data => data["__1"].toLocaleString('en-IN')
     }
 ];
 
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
+const customStyles = styles;
 
 
 
-const Table12  = () => {
+const Table12kan  = () => {
 
     const ctx = useContext(MyContext)
 
@@ -101,9 +62,9 @@ const Table12  = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.12: Tax and non-tax receipts vis-à-vis projections during 2019-20"
+                    title="Table 2.11: Tax and non-tax receipts vis-à-vis projections during 2020-21"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table12  }
+                    data={ctx.tables2kan.Table11  }
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -116,4 +77,4 @@ const Table12  = () => {
     );
 }
 
-export default Table12;
+export default Table12kan;
