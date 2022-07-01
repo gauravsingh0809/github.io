@@ -7,6 +7,8 @@ import { FaSpinner } from 'react-icons/fa'
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
 import Table28 from '../../../Tables/Chapter2/Table28'
+import Table28kan from '../../../Tables/Chapter2kan/Table28'
+
 import Table29 from '../../../Tables/Chapter2/Table29'
 import {
 
@@ -54,7 +56,7 @@ const PublicAccount = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Chart13 />
+                        {/* <Chart13 /> */}
                         <h4 className='footnote'>
                             <i>
                                 Source: Finance Accounts
@@ -122,13 +124,13 @@ const PublicAccount = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table28 />
+                        <Table28kan />
                         <h6> ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
                             <br>
                             </br>
                             ಟಿಪ್ಪಣಿ : + ಎನ್ನುವುದು ಖರ್ಚು ಶಿಲ್ಕನ್ನು ಮತ್ತು - ಎನ್ನುವುದು ಜಮೆ ಶಿಲ್ಕನ್ನು ಸೂಚಿಸುತ್ತದೆ
                         </h6>
-                        <Chart13 />
+                        {/* <Chart13 /> */}
                         <h6> ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
                             <br>
                             </br>
