@@ -16,6 +16,7 @@ import Table32kan from '../../../Tables/Chapter2kan/Table32'
 import Table33 from '../../../Tables/Chapter2/Table33'
 import Table33kan from '../../../Tables/Chapter2kan/Table33'
 import Table34 from '../../../Tables/Chapter2/Table34'
+import Table34kan from '../../../Tables/Chapter2kan/Table34'
 import {
     Chart14, Chart15, Chart16,
 } from '../../../Charts/Chap2Charts'
@@ -260,7 +261,7 @@ const DebtManagement = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table34 />
+                        <Table34kan />
                         <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
                         </h6>
                         {["para281"].map((item, ind) =>

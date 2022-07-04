@@ -4,29 +4,30 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Year of Maturity",
-        selector: "Year of Maturity",
+        name: "ಅವಧಿ ಮುಕ್ತಾಯ ವರ್ಷ",
+        selector: "ಅವಧಿ ಮುಕ್ತಾಯ ವರ್ಷ",
         grow:2 ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "Maturity Profile",
-        selector: "Maturity Profile",
+        name: "ಅವಧಿ",
+        selector: "ಅವಧಿ",
         // grow:0.05,
         wrap: true,
-        format: data => data["Maturity Profile"].toLocaleString('en-IN')
+        format: data => data["ಅವಧಿ"].toLocaleString('en-IN')
     },
     {
-        name: "Amount",
-        selector: "Amount",
+        name: "ಮೊತ್ತ",
+        selector: "ಮೊತ್ತ",
         // grow:0.05,
         wrap: true,
-        format: data => data["Amount"].toLocaleString('en-IN')
+        format: data => data["ಮೊತ್ತ"].toLocaleString('en-IN')
     },
     {
         name: "",
@@ -37,66 +38,23 @@ const columns = [
     },
     {
         name: "",
-        selector: "2",
+        selector: "__1",
         // grow:0.05,
         wrap: true,
-        format: data => data["2"].toLocaleString('en-IN')
+        format: data => data["__1"].toLocaleString('en-IN')
     },
     {
-        name: "Per cent of total Public Debt",
-        selector: "Per cent of total Public Debt",
+        name: "ಒಟ್ಟು ಸಾರ್ವಜನಿಕ ಋಣದ ಶೇಕಡ",
+        selector: "ಒಟ್ಟು ಸಾರ್ವಜನಿಕ ಋಣದ ಶೇಕಡ",
         // grow:0.05,
         wrap: true,
-        format: data => data["Per cent of total Public Debt"].toLocaleString('en-IN')
+        format: data => data["ಒಟ್ಟು ಸಾರ್ವಜನಿಕ ಋಣದ ಶೇಕಡ"].toLocaleString('en-IN')
     }
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table34 = () => {
+const Table34kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -104,9 +62,9 @@ const Table34 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.35: Maturity profile of Public Debt"
+                    title="ಕೋಷ್ಟಕ-2.34: ಸಾರ್ವಜನಿಕ ಋಣದ ಅವಧಿ ಪೂರ್ಣತೆಯ ಚಿತ್ರಣ"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table34}
+                    data={ctx.tables2kan.Table34}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -119,4 +77,4 @@ const Table34 = () => {
     );
 }
 
-export default Table34;
+export default Table34kan;
