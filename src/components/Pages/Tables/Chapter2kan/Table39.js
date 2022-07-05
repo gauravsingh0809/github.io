@@ -4,79 +4,53 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Accounts",
-        selector: "Accounts",
-        grow: 2.5,
+        name: "ವರ್ಷ",
+        selector: "ವರ್ಷ",
+        // grow: ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "Opening balance on 1 April 2019",
-        selector: "Opening balance on 1 April 2019",
+        name: "ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು",
+        selector: "ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು",
         // grow:0.05,
         wrap: true,
-        format: data => data["Opening balance on 1 April 2019"].toLocaleString('en-IN')
+        format: data => data["ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು"].toLocaleString('en-IN')
     },
     {
-        name: "Closing balance on 31-03-2020",
-        selector: "Closing balance on 31032020",
+        name: "ಅಂತಿಮ ಶಿಲ್ಕು",
+        selector: "ಅಂತಿಮ ಶಿಲ್ಕು",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Closing balance on 31032020"].toLocaleString('en-IN')
-    }
+        format: data => data["ಅಂತಿಮ ಶಿಲ್ಕು"].toLocaleString('en-IN')
+    },
+    {
+        name: "ಹೆಚ್ಚಳ (+)/ ಇಳಿಕೆ(-)",
+        selector: "ಹೆಚ್ಚಳ (+)/ ಇಳಿಕೆ(-)",
+        // grow: 0.05,
+        // width:'110px',
+        wrap: true,
+        format: data => data["ಹೆಚ್ಚಳ (+)/ ಇಳಿಕೆ(-)"].toLocaleString('en-IN')
+    },
+    {
+        name: "ಗಳಿಸಿದ ಬಡ್ಡಿ",
+        selector: "ಗಳಿಸಿದ ಬಡ್ಡಿ",
+        // grow: 0.05,
+        // width:'110px',
+        wrap: true,
+        format: data => data["ಗಳಿಸಿದ ಬಡ್ಡಿ"].toLocaleString('en-IN')
+    },
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table39 = () => {
+const Table39kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -84,9 +58,9 @@ const Table39 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.40: Cash Balances and their investment(in crores)"
+                    title="ಕೋಷ್ಟಕ-2.39: ನಗದು ಶಿಲ್ಕಿನ ಹೂಡಿಕೆ ಲೆಕ್ಕ (ಪ್ರಧಾನ ಲೆಕ್ಕ ಶೀರ್ಷಿಕೆ-8673)"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table39}
+                    data={ctx.tables2kan.Table39}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -99,4 +73,4 @@ const Table39 = () => {
     );
 }
 
-export default Table39;
+export default Table39kan;

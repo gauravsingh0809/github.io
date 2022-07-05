@@ -4,85 +4,37 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Name of the entity",
-        selector: "Name of the entity",
-        grow:4 ,
+        name: "",
+        selector: "1",
+        grow: 2.5,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "As furnished by entity",
-        selector: "As furnished by entity",
+        name: "1 ಏಪ್ರಿಲ್‌ 2020ರಲ್ಲಿ ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು",
+        selector: "1 ಏಪ್ರಿಲ್‌ 2020ರಲ್ಲಿ ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು",
         // grow:0.05,
         wrap: true,
-        format: data => data["As furnished by entity"].toLocaleString('en-IN')
+        format: data => data["1 ಏಪ್ರಿಲ್‌ 2020ರಲ್ಲಿ ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು"].toLocaleString('en-IN')
     },
     {
-        name: "As per FDALM section",
-        selector: "As per FDALM section",
-        // grow:0.05,
+        name: "೩೧ ಮಾರ್ಚ್‌ 2021ರಲ್ಲಿ ಅಂತಿಮ ಶಿಲ್ಕು",
+        selector: "೩೧ ಮಾರ್ಚ್‌ 2021ರಲ್ಲಿ ಅಂತಿಮ ಶಿಲ್ಕು",
+        // grow: 0.05,
+        // width:'110px',
         wrap: true,
-        format: data => data["As per FDALM section"].toLocaleString('en-IN')
-    },
-    {
-        name: "Difference",
-        selector: "Difference",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Difference"].toLocaleString('en-IN')
+        format: data => data["೩೧ ಮಾರ್ಚ್‌ 2021ರಲ್ಲಿ ಅಂತಿಮ ಶಿಲ್ಕು"].toLocaleString('en-IN')
     }
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table38 = () => {
+const Table38kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -90,9 +42,9 @@ const Table38 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.39: Variation in Guarantee Commission dues"
+                    title="ಕೋಷ್ಟಕ-2.38: ನಗದು ಶಿಲ್ಕುಗಳು ಮತ್ತು ಅವುಗಳ ಹೂಡಿಕೆ"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table38}
+                    data={ctx.tables2kan.Table38}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -105,4 +57,4 @@ const Table38 = () => {
     );
 }
 
-export default Table38;
+export default Table38kan;
