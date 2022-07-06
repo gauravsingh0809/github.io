@@ -28,7 +28,17 @@ import Table14kan from '../../../Tables/Chapter2kan/Table14'
 import Table15kan from '../../../Tables/Chapter2kan/Table15'
 import Table16kan from '../../../Tables/Chapter2kan/Table16'
 import Table17kan from '../../../Tables/Chapter2kan/Table17'
+import Table18kan from '../../../Tables/Chapter2kan/Table18'
+import Table18akan from '../../../Tables/Chapter2kan/Table18a'
+import Table19kan from '../../../Tables/Chapter2kan/Table19'
 
+import Table22kan from '../../../Tables/Chapter2kan/Table22'
+import Table23kan from '../../../Tables/Chapter2kan/Table23'
+import Table24kan from '../../../Tables/Chapter2kan/Table24'
+import Table25kan from '../../../Tables/Chapter2kan/Table25'
+import Table26kan from '../../../Tables/Chapter2kan/Table26'
+import Table27kan from '../../../Tables/Chapter2kan/Table27'
+import Table28kan from '../../../Tables/Chapter2kan/Table28'
 import {
     Chart10, Chart11, Chart12,
     Chart2 as Chrt2, Chart3 as Chrt3, Chart4 as Chrt4, Chart7, Chart8, Chart9
@@ -36,6 +46,7 @@ import {
 
 import ImageComponent from 'material-ui-image'
 import { getFirebase } from '../../../../../firebase/firebase'
+import Table20kan from '../../../Tables/Chapter2kan/Table20'
 
 
 const Application = () => {
@@ -193,7 +204,7 @@ const Application = () => {
                                 <br></br>
                             </i>
                         </h4>
-                        {/* <Chart10 /> */}
+                        <Chart10 />
                         <h4>
                             <i>
                                 Source: Finance Accounts
@@ -743,7 +754,7 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        {/* <Chart10 /> */}
+                        <Chart10 />
                         <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
@@ -766,7 +777,7 @@ const Application = () => {
                                 <Para key={ind / 10}>
                                     {ctx.chapter2kannada.Content[item]}
                                 </Para>)}
-                        <Table18 />
+                        <Table18kan />
                         <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
@@ -777,11 +788,17 @@ const Application = () => {
                         <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
-                        {["para116", "para117", "para118", "para119", "para120", "para121"].map((item, ind) =>
+                        {["para116", "para117", "para118"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table19 />
+                            
+                            {[ "para119", "para120", "para121"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter2kannada.Content[item]}
+                            </Para>)}
+                            <Table18akan />
+                        
                         <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
@@ -789,7 +806,9 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table20 />
+                            <Table19kan />
+                            
+                        
                         <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
@@ -804,15 +823,17 @@ const Application = () => {
                         <Para>
                             {ctx.chapter2kannada.Content.para130}
                         </Para>
-                        <Table21 />
+                        <Table20kan />
+                        
                         <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
                         {["para131", "para132", "para133", "para134", "para135", "para136", "para137", "para138", "para139", "para140", "para141", "para142",].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
-                            </Para>)}
-                        <Table22 />
+                            </Para>)}\
+                            
+                        <Table22kan />
                         <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
@@ -820,7 +841,7 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table23 />
+                        <Table23kan />
                         <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
@@ -828,7 +849,7 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                            <Table24 />
+                            <Table24kan />
                             <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
@@ -848,7 +869,7 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)} */}
-                        <Table24b />
+                        <Table25kan />
                         {["para169", "para170", "para171", "para172", "para173", "para174", "para175", "para176", "para177", "para178", "para179", , "para180", "", "para181", "para182", "para183", "para184", "para185", "para186", "para187", "para188", "para189", "para190", "para191", "para192", "para193", "para194"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
@@ -862,11 +883,11 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                            <Table25 />
+                            <Table26kan />
                             <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>
-                         <Table26 />
+                         <Table27kan />
                             {["para201"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
@@ -877,7 +898,7 @@ const Application = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                            <Table27 />
+                            <Table28kan/>
                             <Para>
                             {ctx.chapter2kannada.Content["t15a"]}
                         </Para>

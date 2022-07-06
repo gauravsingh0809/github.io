@@ -9,8 +9,8 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "",
-        selector: "4",
+        name: "ಸಂಸ್ಥೆಯ ಹೆಸರು",
+        selector: "ಸಂಸ್ಥೆಯ ಹೆಸರು",
         // grow: ,
         wrap: true,
         // width:'35px',
@@ -48,18 +48,18 @@ const columns = [
         format: data => data["2019 20"].toLocaleString('en-IN')
     },
     {
-      name: "2020-21",
-      selector: "2020 21",
-      // grow:0.05,
-      wrap: true,
-      format: data => data["2020 21"].toLocaleString('en-IN')
-  }
+        name: "2020-21",
+        selector: "2020 21",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["2020 21"].toLocaleString('en-IN')
+    }
 ];
 
 
 const customStyles = styles;
 
-const Table24kan = () => {
+const Table18akan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -67,9 +67,9 @@ const Table24kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.23: ಕಳೆದ ಐದು ವರ್ಷಗಳಲ್ಲಿ ವಿತರಿಸಲಾದ ಮತ್ತು ವಸೂಲಿಯಾದ ಸಾಲಗಳ ಪ್ರಮಾಣ"
+                    title="ಕೋಷ್ಟಕ-2.18: ಸ್ಥಳೀಯ ಸಂಸ್ಥೆಗಳಿಗೆ ಹಣಕಾಸಿನ ನೆರವು"
                     columns={columns}
-                    data={ctx.tables2kan.Table23}
+                    data={ctx.tables2kan.Table18}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -82,4 +82,4 @@ const Table24kan = () => {
     );
 }
 
-export default Table24kan;
+export default Table18akan;

@@ -4,99 +4,53 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "",
-        selector: "ratio",
+        name:"ಕಾಮಗಾರಿಗಳ ವಿವರ",
+        selector:"ಕಾಮಗಾರಿಗಳ ವಿವರ",
         // grow: ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "AE/GSDP",
-        selector: "AEGSDP",
+        name:"ಅಪೂರ್ಣ ಯೋಜನೆಗಳ ಸಂಖ್ಯೆ",
+        selector:"ಅಪೂರ್ಣ ಯೋಜನೆಗಳ ಸಂಖ್ಯೆ",
         // grow:0.05,
         wrap: true,
-        format: data => data["AEGSDP"].toLocaleString('en-IN')
+        
     },
     {
-        name: "CE/AE",
-        selector: "CEAE",
-        // grow:0.05,
+        name:"ಅಂದಾಜು ವೆಚ್ಚ",
+        selector:"ಅಂದಾಜು ವೆಚ್ಚ",
         wrap: true,
-        format: data => data["CEAE"].toLocaleString('en-IN')
+       
     },
     {
-        name: "DE/AE",
-        selector: "DEAE",
-        // grow:0.05,
+        name:"ವೆಚ್ಚ",
+        selector:"ವೆಚ್ಚ",
+        // grow: 0.05,
+        // width:'110px',
         wrap: true,
-        format: data => data["DEAE"].toLocaleString('en-IN')
-    },
-    {
-        name: "Education/AE",
-        selector: "EducationAE",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["EducationAE"].toLocaleString('en-IN')
-    },
-    {
-        name: "Health/AE",
-        selector: "HealthAE",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["HealthAE"].toLocaleString('en-IN')
+        
     }
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
+const conditionalRowStyles = [
+  {
+    when: row => row["Works under"] === 'Total',
+    style: {
+      backgroundColor:  'rgba(153, 165, 128, 0.9)',
+    }
+  }
+]
 
 
+const customStyles = styles;
 
-const Table27 = () => {
+const Table27kan    = () => {
 
     const ctx = useContext(MyContext)
 
@@ -104,12 +58,12 @@ const Table27 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.28: Fiscal priority of the States in 2019-20"
+                    title="ಕೋಷ್ಟಕ-2.26: 31 ಮಾರ್ಚ್ 2021ರಲ್ಲಿದ್ದಂತೆ ಒಂದು ಕೋಟಿಗಿಂತ ಹೆಚ್ಚಿನ ಅಪೂರ್ಣ ಯೋಜನೆಗಳ ಇಲಾಖಾವಾರು ವಿವರ (` ಕೋಟಿಗಳಲ್ಲಿ)"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table27}
+                    data={ctx.tables2kan.Table26}
                     customStyles={customStyles}
                     striped
-                    // conditionalRowStyles={conditionalRowStyles}
+                    conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
                     // pagination
@@ -119,4 +73,4 @@ const Table27 = () => {
     );
 }
 
-export default Table27;
+export default Table27kan;

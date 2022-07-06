@@ -152,11 +152,12 @@ export const Chart2 = () => {
   const char = useContext(MyContext)
   const classes = useStyles();
   const chart = char.charts
-  console.log(" Chartasdas",chart)
+  console.log(" Entire chart data of chapter 1",chart)
 
   let chartTwo = chart
     ? chart.Chart2.filter((item, index) => index < (Object.keys(item).length - 1))
       .map((item, ind) => {
+        console.log("item inside",chart.Chart2.map((item) => item.Column1))
         let data = {
           x: chart.Chart2.map((item) => item.Column1),
           y: chart.Chart2.map((item) => Object.values(item)[ind]),
@@ -171,6 +172,8 @@ export const Chart2 = () => {
         return data
       }
       ) : "no data"
+
+      console.log(chartTwo)
 
   return (
     char.themeChanger

@@ -9,72 +9,44 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "ವಲಯ",
-        selector: "ವಲಯ",
-        // grow: ,
+        name: "",
+        selector: "1",
         wrap: true,
-        // width:'35px',
     },
     {
-        name: "ಉಪವಲಯ",
-        selector: "ಉಪವಲಯ",
-        // grow: ,
+        name: "ಒವೆ/ರಾಒಆಉ",
+        selector: "ಒವೆ/ರಾಒಆಉ",
         wrap: true,
-        // width:'35px',
+       
     },
     {
-        name: "2016-17",
-        selector: "2016 17",
-        // grow: 0.05,
-        // width:'110px',
+        name: "ಬವೆ/ಒವೆ",
+        selector: "ಬವೆ/ಒವೆ",
         wrap: true,
-        format: data => data["2016 17"].toLocaleString('en-IN')
+        
     },
     {
-        name: "2017-18",
-        selector: "201718",
-        // grow: 0.05,
-        // width:'110px',
+        name: "ಅವೆ/ಒವೆ",
+        selector: "ಅವೆ/ಒವೆ",
         wrap: true,
-        format: data => data["2017 18"].toLocaleString('en-IN')
     },
     {
-        name: "2018-19",
-        selector: "201819",
-        // grow: 0.05,
-        // width:'110px',
+        name: "ಶಿಕ್ಷಣ/ಒವೆ",
+        selector: "ಶಿಕ್ಷಣ/ಒವೆ",
         wrap: true,
-        format: data => data["2018 19"].toLocaleString('en-IN')
+        
     },
     {
-        name: "2019-20",
-        selector: "2019 20",
-        // grow: 0.05,
-        // width:'110px',
+        name: "ಆರೋಗ್ಯ/ಒವೆ",
+        selector: "ಆರೋಗ್ಯ/ಒವೆ",
         wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN')
-    },
-    {
-        name: "2020-21",
-        selector: "2020 21",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["2020 21"].toLocaleString('en-IN')
+        
     }
 ];
 
-const conditionalRowStyles = [
-    {
-      when: row => row["Sector"] === 'Total',
-      style: {
-        backgroundColor:  'rgba(153, 165, 128, 0.9)',
-      }
-    }
-  ]
-
 const customStyles = styles;
 
-const Table28kan = () => {
+const Table27kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -82,19 +54,17 @@ const Table28kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.28: ವರ್ಷದ ಮಾರ್ಚ್ 31ರಂತೆ ಸಾರ್ವಜನಿಕ ಲೆಕ್ಕದಲ್ಲಿ ಆಂಗವಾರು ನಿವ್ವಳ ಬಾಕಿಗಳು"
+                    title="ಕೋಷ್ಟಕ-2.27: 2020-21ರಲ್ಲಿ ರಾಜ್ಯಗಳ ಹಣಕಾಸಿನ ಆದ್ಯತೆ"
                     columns={columns}
-                    data={ctx.tables2kan.Table28}
+                    data={ctx.tables2kan.Table27}
                     customStyles={customStyles}
                     striped
-                    conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
-                    // pagination
                 />
             </Card>
         </div>
     );
 }
 
-export default Table28kan;
+export default Table27kan;

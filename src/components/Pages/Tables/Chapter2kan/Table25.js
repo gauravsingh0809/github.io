@@ -4,87 +4,62 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "To the end of the Year",
-        selector: "To the end of the Year",
+        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
         // grow: ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "No of incomplete projects",
-        selector: "No of incomplete projects",
+        name: "ಇವುಗಳ ಸಂಬಂಧವಾಗಿ ಬಾಕಿ ಇರುವವು",
+        selector: "ಇವುಗಳ ಸಂಬಂಧವಾಗಿ ಬಾಕಿ ಇರುವವು",
         // grow:0.05,
         wrap: true,
-        format: data => data["No of incomplete projects"].toLocaleString('en-IN')
+        format: data => data["ಇವುಗಳ ಸಂಬಂಧವಾಗಿ ಬಾಕಿ ಇರುವವು"].toLocaleString('en-IN')
     },
     {
-        name: "Estimated cost",
-        selector: "Estimated cost",
+        name: "ಮೊತ್ತ",
+        selector: "ಮೊತ್ತ",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Estimated cost"].toLocaleString('en-IN')
+        format: data => data["ಮೊತ್ತ"].toLocaleString('en-IN')
     },
     {
-        name: "Expenditure",
-        selector: "Expenditure",
+        name: "ಮೊತ್",
+        selector: "4",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Expenditure"].toLocaleString('en-IN')
-    }
+        format: data => data["4"].toLocaleString('en-IN')
+    },
+    {
+      name: "ವ್ಯತ್ಯಾಸ",
+      selector: "ವ್ಯತ್ಯಾಸ",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+      format: data => data["ವ್ಯತ್ಯಾಸ"].toLocaleString('en-IN')
+  }
 ];
 
+const conditionalRowStyles = [
+  {
+    when: row => row["To the end of the Year"] === 'Total',
+    style: {
+      backgroundColor:  'rgba(153, 165, 128, 0.9)',
+    }
+  }
+]
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
+const customStyles = styles;
 
-
-
-const Table25    = () => {
+const Table25kan    = () => {
 
     const ctx = useContext(MyContext)
 
@@ -92,15 +67,12 @@ const Table25    = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.26: Age profile of incomplete projects 
-                    which are more than one crore as on
-                    31 March 2020
-                    (` in crore)"
+                    title="ಕೋಷ್ಟಕ-2.24: ಹಣಕಾಸು ಲೆಕ್ಕಗಳ ಪ್ರಕಾರ ಇರುವ ಇಕ್ವಿಟಿ, ಸಾಲಗಳು ಮತ್ತು ಖಾತರಿಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table25}
+                    data={ctx.tables2kan.Table24}
                     customStyles={customStyles}
                     striped
-                    // conditionalRowStyles={conditionalRowStyles}
+                    conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
                     // pagination
@@ -110,4 +82,4 @@ const Table25    = () => {
     );
 }
 
-export default Table25  ;
+export default Table25kan ;
