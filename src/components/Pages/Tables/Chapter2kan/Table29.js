@@ -4,78 +4,36 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Major Head of Account 2245  Relief on Account of Natural Calamities",
-        selector: "Major Head of Account 2245  Relief on Account of Natural Calamities",
+        name: "",
+        selector: "1",
         // grow: ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "Minor Head of Account",
-        selector: "Minor Head of Account",
+        name: "ಕಿರು ಲೆಕ್ಕಶೀರ್ಷಿಕೆ",
+        selector: "ಕಿರು ಲೆಕ್ಕಶೀರ್ಷಿಕೆ",
         // grow:0.05,
         wrap: true,
-        format: data => data["Minor Head of Account"].toLocaleString('en-IN')
+        format: data => data["ಕಿರು ಲೆಕ್ಕಶೀರ್ಷಿಕೆ"].toLocaleString('en-IN')
     },
     {
-        name: "Expenditure during 2019 20",
-        selector: "Expenditure during 2019 20",
+        name: "202021ರಲ್ಲಿ ವೆಚ್ಚ",
+        selector: "202021ರಲ್ಲಿ ವೆಚ್ಚ",
         // grow:0.05,
         wrap: true,
-        format: data => data["Expenditure during 2019 20"].toLocaleString('en-IN')
+        format: data => data["202021ರಲ್ಲಿ ವೆಚ್ಚ"].toLocaleString('en-IN')
     }
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table29 = () => {
+const Table29kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -83,9 +41,9 @@ const Table29 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.30: Details of expenditure charged to Relief on Account of Natural Calamities"
+                    title="ಕೋಷ್ಟಕ-2.29: ರಾಜ್ಯ ವಿಪತ್ತು ಪರಿಹಾರ ನಿಧಿ/ರಾಜ್ಯ ವಿಪತ್ತು ಉಪಶಮನ ನಿಧಿಗಳಡಿಯ ವಿವರಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table29}
+                    data={ctx.tables2kan.Table29}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -98,4 +56,4 @@ const Table29 = () => {
     );
 }
 
-export default Table29;
+export default Table29kan;

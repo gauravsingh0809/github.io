@@ -10,6 +10,7 @@ import Table28 from '../../../Tables/Chapter2/Table28'
 import Table28kan from '../../../Tables/Chapter2kan/Table28'
 
 import Table29 from '../../../Tables/Chapter2/Table29'
+import Table29kan from '../../../Tables/Chapter2kan/Table29'
 import {
 
     Chart13
@@ -141,7 +142,7 @@ const PublicAccount = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table29 />
+                        <Table29kan />
                         <h6> ಆಕರ : 15ನೇ ಹಣಕಾಸು ಆಯೋಗ ಮತ್ತು ಎನ್‌ಟಿಎ–2020-21
                             <br>
                             </br>

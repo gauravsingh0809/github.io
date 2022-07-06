@@ -7,9 +7,14 @@ import { FaSpinner } from 'react-icons/fa'
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
 import Table35 from '../../../Tables/Chapter2/Table35'
+import Table35kan from '../../../Tables/Chapter2kan/Table35'
+import Table36kan from '../../../Tables/Chapter2kan/Table36'
 import Table37 from '../../../Tables/Chapter2/Table37'
+import Table37kan from '../../../Tables/Chapter2kan/Table37'
 import Table38 from '../../../Tables/Chapter2/Table38'
+import Table38kan from '../../../Tables/Chapter2kan/Table38'
 import Table39 from '../../../Tables/Chapter2/Table39'
+import Table39kan from '../../../Tables/Chapter2kan/Table39'
 import Table40 from '../../../Tables/Chapter2/Table40'
 import {
     Chart17,
@@ -148,7 +153,7 @@ const Dsa = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table35 />
+                        <Table35kan />
                         <h6>* ಬಾಕಿಯಿರುವ ಸಾರ್ವಜನಿಕ ಋಣವು 6003-ಆಂತರಿಕ ಋಣ ಮತ್ತು 6004-ಭಾರತ ಸರ್ಕಾರದಿಂದ ಸಾಲಗಳು ಮತ್ತು ಮುಂಗಡಗಳ ಅಡಿಯಲ್ಲಿ ಉಳಿದಿರುವ ಮೊತ್ತವಾಗಿದೆ.
                             <br></br>
                             #	 ರಾಜ್ಯ ಸರ್ಕಾರಕ್ಕೆ ಲಭ್ಯವಿರುವ ನಿವ್ವಳ ಸಾಲವನ್ನು, ಸಾರ್ವಜನಿಕ ಸಾಲ ಮರುಪಾವತಿ ಮತ್ತು ಸಾರ್ವಜನಿಕ ಸಾಲದ ಮೇಲಿನ ಬಡ್ಡಿ ಪಾವತಿಗಳ ಮೇಲಿನ ಸಾರ್ವಜನಿಕ ಸಾಲ ಸ್ವೀಕೃತಿಗಳ ಹೆಚ್ಚುವರಿ ಎಂದು ಲೆಕ್ಕಹಾಕಲಾಗುತ್ತದೆ ಮತ್ತು ಸರಕು ಮತ್ತು ಸೇವಾ ತೆರಿಗೆ ಪರಿಹಾರವಾಗಿ ಭಾರತ ಸರ್ಕಾರದಿಂದ ಪಡೆದ ಬ್ಯಾಕ್-ಟು-ಬ್ಯಾಕ್ ಸಾಲಗಳನ್ನು ಒಳಗೊಂಡಿರುವುದಿಲ್ಲ.
@@ -162,7 +167,7 @@ const Dsa = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table37 />
+                        <Table36kan />
                         <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
                         {["para301", "para302", "para303","para304"].map((item, ind) =>
                             <Para key={ind / 10}>
@@ -171,7 +176,7 @@ const Dsa = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table38 />
+                        <Table37kan />
                         <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
                         {["para305", "para306", "para307", "para308", "para309", "para310", "para311", "para312", "para313", "para314","para315"].map((item, ind) =>
                             <Para key={ind / 10}>
@@ -180,7 +185,7 @@ const Dsa = () => {
                         <h3 className='headnote'>
                             ₹ In crore
                         </h3>
-                        <Table39 />
+                        <Table38kan />
                         <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
                         {["para316", "para317", "para318"].map((item, ind) =>
                             <Para key={ind / 10}>
@@ -193,7 +198,7 @@ const Dsa = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter2kannada.Content[item]}
                             </Para>)}
-                        <Table40 />
+                        <Table39kan />
                         <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
                         
 
