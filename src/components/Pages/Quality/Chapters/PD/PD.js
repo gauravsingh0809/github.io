@@ -9,6 +9,7 @@ import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButt
 import Table5 from "../../../Tables/Chapter4/Table5";
 import Table5kan from "../../../Tables/Chapter4kan/Table5";
 import Table6 from "../../../Tables/Chapter4/Table6";
+import Table6kan from "../../../Tables/Chapter4kan/Table6";
 import Table7 from "../../../Tables/Chapter4/Table7";
 
 const PD = () => {
@@ -98,7 +99,7 @@ const PD = () => {
                         <h3 className="headnote">
                             ₹ In crore
                         </h3>
-                        <Table6 />
+                        <Table6kan />
                         <h6>ಆಕರ: ಡಿಡಿಆರ್‌ ಲೆಡ್ಜರ್</h6>
                         {["para34", "para35", "para36", "para37"].map((item, ind) =>
                             <Para key={ind / 10}>

@@ -4,75 +4,33 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "SlNo",
-        selector: "SlNo",
+        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
         wrap: true,
         grow:0.1
     },
     {
-        name: "Administrator",
-        selector: "Administrator",
+        name: "ಅನುದಾನದ ಮಾದರಿ",
+        selector: "ಅನುದಾನದ ಮಾದರಿ",
         wrap: true,
     },
     {
-        name: "Amount",
-        selector: "Amount",
+        name: "ಬಳಕೆಯಾಗದ ಮೊತ್ತ",
+        selector: "ಬಳಕೆಯಾಗದ ಮೊತ್ತ",
         wrap: true,
         grow:0.2,
-        format: data => data["Amount"].toLocaleString('en-IN')
+        format: data => data["ಬಳಕೆಯಾಗದ ಮೊತ್ತ"].toLocaleString('en-IN')
     }
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table6 = () => {
+const Table6kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -80,9 +38,9 @@ const Table6 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.6: Closing balances in PD Accounts"
+                    title="ಕೋಷ್ಟಕ-4.6: ವೈಯಕ್ತಿಕ ಠೇವಣಿ ಖಾತೆಗಳಲ್ಲಿನ ಅಂತಿಮ ಶಿಲ್ಕು"
                     columns={columns}
-                    data={ctx.reportData.Chap4Tables.Table6}
+                    data={ctx.tables4kan.Table6}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -95,4 +53,4 @@ const Table6 = () => {
     );
 }
 
-export default Table6;
+export default Table6kan;

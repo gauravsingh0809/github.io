@@ -10,6 +10,8 @@ import Table7 from "../../../Tables/Chapter3/Table7";
 import Table8 from "../../../Tables/Chapter3/Table8";
 import Table9 from "../../../Tables/Chapter3/Table9";
 import Table10 from "../../../Tables/Chapter3/Table10";
+import Table7kan from '../../../Tables/Chapter3kan/Table7'
+import Table8kan from '../../../Tables/Chapter3kan/Table8'
 import Table11 from "../../../Tables/Chapter3/Table11";
 import { Chart3 as Chart3Chap3 } from '../../../Charts/Chap3Charts'
 
@@ -57,7 +59,7 @@ const Audit = () => {
                   {ctx.chapterThree.Profile[item]}
                 </Para>
               ))}
-          <Table7 />
+          <Table7kan />
           <h4 className="footnote">
             <i>
               Source: Appropriation Accounts
@@ -71,7 +73,7 @@ const Audit = () => {
           <h3 className="headnote">
             ₹ In crore
           </h3>
-          <Table8 />
+          <Table8kan />
           <h4>
             <i>
               Source: Grant Register
@@ -170,14 +172,14 @@ const Audit = () => {
                 {ctx.chapter3kannada.Content[item]}
               </Para>
             ))}
-        <Table7 />
+        <Table7kan />
         <h6>ಆಧಾರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
         {["para61","para62", "para63", "para64", "para65","para65a","para66"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))
         }
-        <Table8 />
+        <Table8kan />
         <h6>ಆಕರ: ಅನುದಾನ ವಹಿ</h6>
         {["para67","para68", "para69", "para70", "para71", "para72", "para73", "para74"].map(
           (item, ind) => (

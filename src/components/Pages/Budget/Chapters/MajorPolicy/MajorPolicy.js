@@ -7,6 +7,7 @@ import { FaSpinner } from "react-icons/fa";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton";
 import "./../../Budget.css";
 import Table4 from "../../../Tables/Chapter3/Table4";
+import Table4kan from '../../../Tables/Chapter3kan/Table4'
 const MajorPolicy = () => {
   const ctx = useContext(MyContext);
   console.log(ctx.chapter3kannada)
@@ -48,7 +49,7 @@ const MajorPolicy = () => {
               <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
             )
           )}
-          <Table4/>
+          <Table4kan/>
           <h6>ಆಧಾರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 

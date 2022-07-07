@@ -8,33 +8,33 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "Year",
-        selector: "Year",
+        name: "ವರ್ಷ",
+        selector: "ವರ್ಷ",
         wrap: true,
     },
     {
-        name: "Opening Balance",
-        selector: "Opening Balance",
+        name: "ಆರಂಭಿಕ ಶಿಲ್ಕು",
+        selector: "ಆರಂಭಿಕ ಶಿಲ್ಕು",
         wrap: true,
-        format: data => data["Opening Balance"].toLocaleString('en-IN')
+        format: data => data["ಆರಂಭಿಕ ಶಿಲ್ಕು"].toLocaleString('en-IN')
     },
     {
-        name: "Receipts/Deposits",
-        selector: "ReceiptsDeposits",
+        name: "ಸ್ವೀಕೃತಿಗಳು/ಠೇವಣಿಗಳು",
+        selector: "ಸ್ವೀಕೃತಿಗಳು ಠೇವಣಿಗಳು",
         wrap: true,
-        format: data => data["ReceiptsDeposits"].toLocaleString('en-IN')
+        format: data => data["ಸ್ವೀಕೃತಿಗಳು ಠೇವಣಿಗಳು"].toLocaleString('en-IN')
     },
     {
-        name: "Withdrawals",
-        selector: "Withdrawals",
+        name: "ಹಿಂಪಡೆತಗಳು",
+        selector: "ಹಿಂಪಡೆತಗಳು",
         wrap: true,
-        format: data => data["Withdrawals"].toLocaleString('en-IN')
+        format: data => data["ಹಿಂಪಡೆತಗಳು"].toLocaleString('en-IN')
     },
     {
-        name: "Closing balance",
-        selector: "Closing balance",
+        name: "ಆಂತಿಮ ಶಿಲ್ಕು",
+        selector: "ಆಂತಿಮ ಶಿಲ್ಕು",
         wrap: true,
-        format: data => data["Closing balance"].toLocaleString('en-IN')
+        format: data => data["ಆಂತಿಮ ಶಿಲ್ಕು"].toLocaleString('en-IN')
     }
 ];
 
@@ -50,7 +50,7 @@ const Table5kan = () => {
                 <DataTable
                     title="ಕೋಷ್ಟಕ 4.5: ವೈಯಕ್ತಿಕ  ಠೇವಣಿ ಖಾತೆಗಳಲ್ಲಿ ಇರಿಸಲಾದ ನಿಧಿಗಳು"
                     columns={columns}
-                    // data={ctx.tables5kan.Table5}
+                    data={ctx.tables4kan.Table5}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

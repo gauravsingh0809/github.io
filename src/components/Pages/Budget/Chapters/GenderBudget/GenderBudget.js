@@ -7,7 +7,7 @@ import { FaSpinner } from "react-icons/fa";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton";
 import "./../../Budget.css";
 import Table1 from "../../../Tables/Chapter3/Table1";
-
+import Table1kan from '../../../Tables/Chapter3kan/Table1'
 const GenderBudget = () => {
   const ctx = useContext(MyContext);
   console.log("ctx", ctx);
@@ -56,7 +56,7 @@ const GenderBudget = () => {
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           )
         )}
-        <Table1 />
+        <Table1kan />
         <h6>ಆಕರ: ಮಹಿಳಾ ಉದ್ದೇಶಿತ ಆಯವ್ಯಯ</h6>
         <Para>{ctx.chapter3kannada.Content.para18}</Para>
         {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
