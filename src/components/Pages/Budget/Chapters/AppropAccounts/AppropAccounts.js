@@ -8,6 +8,8 @@ import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton
 import "./../../Budget.css";
 import Table5 from "../../../Tables/Chapter3/Table5";
 import Table6 from "../../../Tables/Chapter3/Table6";
+import Table5kan from '../../../Tables/Chapter3kan/Table5'
+import Table6kan from '../../../Tables/Chapter3kan/Table6'
 const AppropAccounts = () => {
   const ctx = useContext(MyContext);
   console.log(ctx.chapter3kannada);
@@ -86,14 +88,14 @@ const AppropAccounts = () => {
                 <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
               )
             )}
-            <Table5 />
+            <Table5kan />
             <h6>ಆಧಾರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
             {["para43", "para44", "para45"].map(
               (item, ind) => (
                 <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
               )
             )}
-            <Table6 />
+            <Table6kan />
             <h6>ಆಧಾರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
             {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 

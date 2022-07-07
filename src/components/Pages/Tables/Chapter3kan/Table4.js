@@ -9,20 +9,20 @@ import { MyContext } from "../../../../Context/MyProvider";
 const columns = [
 
   {
-    name: "Year",
-    selector: "Year",
+    name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+    selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
     grow:0.05,
     wrap: true,
-    // format: data => data["Year"].toLocaleString('en-IN')
+    // format: data => data["್ರಮ ಸಂಖ್ಯೆ"].toLocaleString('en-IN')
   },
   {
-    name: "Sector-wise allocation (Percentage in brackets)",
-    selector: "Sector-wise allocation (Percentage in brackets)",
+    name: "ಆಯವ್ಯಯ ಭರವಸೆ",
+    selector: "ಆಯವ್ಯಯ ಭರವಸೆ",
     wrap: true,
   },
   {
-    name: " ",
-    selector: "1",
+    name: "ತೆಗೆದುಕೊಂಡ ಕ್ರಮ",
+    selector: "ತೆಗೆದುಕೊಂಡ ಕ್ರಮ",
     // grow: ,
     wrap: true,
     // width:'35px',
@@ -74,7 +74,7 @@ const customStyles = {
 
 
 
-const Table4 = () => {
+const Table4kan = () => {
 
   const ctx = useContext(MyContext)
 
@@ -82,9 +82,9 @@ const Table4 = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="Table 3.4: Allocation between Social and Economic Services under Category A"
+          title="ಕೋಷ್ಟಕ 3.4: ಇನ್ನೂ ಕ್ರಮ ತೆಗೆದುಕೊಳ್ಳಬೇಕಾದ ಪ್ರಮುಖ ಉಪಕ್ರಮಗಳು"
           columns={columns}
-          data={ctx.reportData.Chap3Tables.Table4}
+          data={ctx.tables3kan.Table4}
           customStyles={customStyles}
           striped
           // conditionalRowStyles={conditionalRowStyles}
@@ -97,4 +97,4 @@ const Table4 = () => {
   );
 }
 
-export default Table4;
+export default Table4kan;

@@ -4,113 +4,102 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
-  {
-    name: "Year",
-    selector: "Year",
-    // grow:0.05,
-    wrap: true,
-    // format: data => data["Year"].toLocaleString('en-IN')
-  },
-  {
-    name: "No of schemes",
-    selector: "No of schemes",
-    // grow: 0.05,
-    // width:'110px',
-    wrap: true,
-    format: data => data["No of schemes"].toLocaleString('en-IN')
-  },
-  {
-    name: " ",
-    selector: "1",
-    // grow: ,
-    wrap: true,
-    // width:'35px',
-  },
-  {
-    name: "Allocation",
-    selector: "Allocation",
-    // grow: 0.05,
-    // width:'110px',
-    wrap: true,
-    format: data => data["Allocation"].toLocaleString('en-IN')
-  }, {
-    name: " ",
-    selector: "2",
-    // grow: ,
-    wrap: true,
-    // width:'35px',
-  }
+    {
+        name: "ವೆಚ್ಚದ ಸ್ವರೂಪ",
+        selector: "ವೆಚ್ಚದ ಸ್ವರೂಪ",
+        grow: 2,
+        wrap: true
+    },
+    {
+        name: "ವೆಚ್ಚದ ಸ್ವರೂಪ",
+        selector: "1",
+        wrap: true,
+    },
+    {
+        name: "ಮೂಲ ಅನುದಾನ/ ವಿನಿಯೋಗ",
+        selector: "ಮೂಲ ಅನುದಾನ/ ವಿನಿಯೋಗ",
+        // grow:0.05,
+        wrap: true,
+        
+    },
+    {
+        name: "ಪೂರಕ ಅನುದಾನ/ ವಿನಿಯೋಗ",
+        selector: "ಪೂರಕ ಅನುದಾನ/ ವಿನಿಯೋಗ",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["ಪೂರಕ ಅನುದಾನ/ ವಿನಿಯೋಗ"].toLocaleString('en-IN')
+    },
+    {
+        name: "ಒಟ್ಟು",
+        selector: "ಒಟ್ಟು",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["ಒಟ್ಟು"].toLocaleString('en-IN')
+    },
+    {
+        name: "ವಾಸ್ತವ ವೆಚ್ಚ",
+        selector: "ವಾಸ್ತವ ವೆಚ್ಚ",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["ವಾಸ್ತವ ವೆಚ್ಚ"].toLocaleString('en-IN')
+    },
+    {
+        name: "ಬಳಕೆ ಮಾಡದ ಅವಕಾಶ (-) / ಅವಕಾಶಕ್ಕಿಂತ ಅಧಿಕ (+)",
+        selector: "ಬಳಕೆ ಮಾಡದ ಅವಕಾಶ (-) / ಅವಕಾಶಕ್ಕಿಂತ ಅಧಿಕ (+)",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["ಬಳಕೆ ಮಾಡದ ಅವಕಾಶ (-) / ಅವಕಾಶಕ್ಕಿಂತ ಅಧಿಕ (+)"].toLocaleString('en-IN')
+    },
+    {
+        name: "ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತತ",
+        selector: "ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತತ",
+        // grow:0.05,
+        wrap: true,
+        
+    },
+    {
+        name: "31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತ",
+        selector: "31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತ",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತ"].toLocaleString('en-IN')
+    },
+    {
+        name: "31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಉಳಿತಾಯದ ಶೇಕಡವಾರು",
+        selector: "31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಉಳಿತಾಯದ ಶೇಕಡವಾರು",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಉಳಿತಾಯದ ಶೇಕಡವಾರು"].toLocaleString('en-IN')
+    }
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-  header: {
-    style: {
-      fontSize: '22px',
-      color: '#fff',
-      backgroundColor: '#ff6359',
-      minHeight: '56px',
-      textAlign: "center",
-    },
-  },
-  rows: {
-    style: {
-      minHeight: '50px', // override the row height
-    }
-  },
-  headCells: {
-    style: {
-      '&:not(:last-of-type)': {
-        borderRightStyle: 'solid',
-        borderRightWidth: '1px',
-        borderRightColor: "black",
-      },
-      fontSize: '12px',
-      fontWeight: '500',
-      textTransform: 'uppercase',
-      padding: '10px'
-    },
-  },
-  cells: {
-    style: {
-      '&:not(:last-of-type)': {
-        borderRightStyle: 'solid',
-        borderRightWidth: '1px',
-        borderRightColor: '#aaa',
-      },
-      fontSize: '14px',
-      paddingLeft: '8px',
-      // backgroundColor: 'rgba(255,255,255,0)',
-    },
-  },
-};
+const Table5kan = () => {
 
+    const ctx = useContext(MyContext)
 
-
-const Table5 = () => {
-
-  const ctx = useContext(MyContext)
-
-  return (
-    <div className="App" style={{ margin: "40px 0 40px 0" }} >
-      <Card>
-        <DataTable
-          title="Table 3.5: Details of schemes and allocation of Grant No.23 under Category B"
-          columns={columns}
-          data={ctx.reportData.Chap3Tables.Table5}
-          customStyles={customStyles}
-          striped
-          // conditionalRowStyles={conditionalRowStyles}
-          highlightOnHover
-          pointerOnHover
-        // pagination
-        />
-      </Card>
-    </div>
-  );
+    return (
+        <div className="App" style={{ margin: "40px 0 40px 0" }} >
+            <Card>
+                <DataTable
+                    title="ಕೋಷ್ಟಕ 3.5: ಮೂಲ/ಪೂರಕ ಅವಕಾಶಗಳಿಗೆ ಪ್ರತಿಯಾಗಿ ವಾಸ್ತವಿಕ ವೆಚ್ಚದ ಸಾರಾಂಶ"
+                    columns={columns}
+                    data={ctx.tables3kan.Table5}
+                    customStyles={customStyles}
+                    striped
+                    // conditionalRowStyles={conditionalRowStyles}
+                    highlightOnHover
+                    pointerOnHover
+                    // pagination
+                />
+            </Card>
+        </div>
+    );
 }
 
-export default Table5;
+export default Table5kan;

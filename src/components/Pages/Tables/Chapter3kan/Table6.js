@@ -8,26 +8,40 @@ import { MyContext } from "../../../../Context/MyProvider";
 
 const columns = [
     {
-        name: "Sl No",
-        selector: "Sl No",
+        name: "ವರ್ಷ",
+        selector: "ವರ್ಷ",
         // grow: ,
         wrap: true,
-        width:'60px',
+        width:'90px',
     },
     {
-        name: "Budgetary Assurance",
-        selector: "Budgetary Assurance",
+        name: "ವಿತರಣೆಗಳು",
+        selector: "ವಿತರಣೆಗಳು",
         // grow: ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "Action taken",
-        selector: "Action taken",
+        name: "ವಿತರಣೆಗಳು",
+        selector: "1",
         // grow:0.05,
         wrap: true,
         // format: data => data["Action taken"].toLocaleString('en-IN')
-    }
+    },
+    {
+      name: "ವಿತಉಳಿತಾಯಗಳು (ಉಳಿತಾಯದ ಶೇಕಡಾವಾರು)",
+      selector: "ಉಳಿತಾಯಗಳು (ಉಳಿತಾಯದ ಶೇಕಡಾವಾರು)",
+      // grow:0.05,
+      wrap: true,
+      // format: data => data["Action taken"].toLocaleString('en-IN')
+  },
+  {
+    name: "ವಿತಉಳಿತಾಯಗಳು (ಉಳಿತಾಯದ ಶೇಕಡಾವಾರು)",
+    selector: "2",
+    // grow:0.05,
+    wrap: true,
+    // format: data => data["Action taken"].toLocaleString('en-IN')
+}
 ];
 
 
@@ -75,7 +89,7 @@ const customStyles = {
 
 
 
-const Table6 = () => {
+const Table6kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -83,9 +97,9 @@ const Table6 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.6: Important initiatives where action was yet to be taken"
+                    title="ಕೋಷ್ಟಕ 3.6: 2016-17ರಿಂದ 2020-21ರ ಅವಧಿಯ ಪುರಸ್ಕೃತ ಮತ್ತು ಪ್ರಭೃತ ವಿತರಣೆಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table6}
+                    data={ctx.tables3kan.Table6}   
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -98,4 +112,4 @@ const Table6 = () => {
     );
 }
 
-export default Table6;
+export default Table6kan;

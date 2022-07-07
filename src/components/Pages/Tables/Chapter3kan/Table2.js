@@ -9,35 +9,28 @@ import { MyContext } from "../../../../Context/MyProvider";
 const columns = [
     
     {
-        name: "Name of the Scheme",
-        selector: "Name of the Scheme",
+        name: "<ಗುರುತಿಸುವಿಕೆ",
+        selector: "ಗುರುತಿಸುವಿಕೆ",
         // grow:0.05,
         wrap: true,
-        // format: data => data["Name of the Scheme"].toLocaleString('en-IN')
+        // format: data => data["ಗುರುತಿಸುವಿಕೆ"].toLocaleString('en-IN')
     },
     {
-        name: "Allocation",
-        selector: "Allocation",
+        name: "ವರ್ಗೀಕರಣ",
+        selector: "ವರ್ಗೀಕರಣ",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Allocation"].toLocaleString('en-IN')
+        format: data => data["ವರ್ಗೀಕರಣ"].toLocaleString('en-IN')
     },
     {
-      name: " ",
-      selector: "1",
+      name: "ಮಾನದಂಡ",
+      selector: "ಮಾನದಂಡ",
       // grow: ,
       wrap: true,
       // width:'35px',
   },
-    {
-        name: "Decrease in percentage",
-        selector: "Decrease in percentage",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        format: data => data["Decrease in percentage"].toLocaleString('en-IN')
-    }
+  
 ];
 
 
@@ -66,7 +59,8 @@ const customStyles = {
         fontSize: '12px',
         fontWeight: '500',
         textTransform: 'uppercase',
-        padding: '10px'
+        padding: '10px',
+        backgroundColor: "r#f0dca5"
       },
     },
     cells: {
@@ -85,7 +79,7 @@ const customStyles = {
 
 
 
-const Table2 = () => {
+const Table2kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -93,9 +87,9 @@ const Table2 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.2: Decrease in allocation for women specific schemes"
+                    title="ಕೋಷ್ಟಕ-3.2: ಮಕ್ಕಳ ಕೇಂದ್ರಿತ ಕಾರ್ಯಕ್ರಮ/ಯೋಜನೆಗಳ ಗುರುತಿಸುವಿಕೆ ಮತ್ತು ವರ್ಗೀಕರಣದ ಮಾನದಂಡ"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table2}
+                    data={ctx.tables3kan.Table2}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -108,4 +102,4 @@ const Table2 = () => {
     );
 }
 
-export default Table2;
+export default Table2kan;

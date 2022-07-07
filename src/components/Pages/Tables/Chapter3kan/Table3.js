@@ -4,103 +4,43 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Grants",
-        selector: "Grants",
-        // grow: ,
-        wrap: true,
-        // width:'35px',
+        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        wrap: true
     },
     {
-        name: "2015-16",
-        selector: "2015-16",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["2015-16"].toLocaleString('en-IN')
+        name: "ವರ್ಗೀಕರಣ",
+        selector: "ವರ್ಗೀಕರಣ",
+        wrap: true
     },
     {
-        name: "2016-17",
-        selector: "2016-17",
-        // grow: 0.05,
-        // width:'110px',
+        name: "2020-21ರಲ್ಲಿ ಹಂಚಿಕೆ",
+        selector: "2020-21ರಲ್ಲಿ ಹಂಚಿಕೆ",
         wrap: true,
-        format: data => data["2016-17"].toLocaleString('en-IN')
+        format: data => data["2020-21ರಲ್ಲಿ ಹಂಚಿಕೆ"].toLocaleString('en-IN')
     },
     {
-        name: "2017-18",
-        selector: "2017-18",
-        // grow: 0.05,
-        // width:'110px',
+        name: "ವೆಚ್ಚ",
+        selector: "ವೆಚ್ಚ",
         wrap: true,
-        format: data => data["2017-18"].toLocaleString('en-IN')
+        format: data => data["ವೆಚ್ಚ"].toLocaleString('en-IN')
     },
     {
-        name: "2018-19",
-        selector: "2018-19",
-        // grow: 0.05,
-        // width:'110px',
+        name: "ಉಳಿತಾಯ (ಶೇಕಡ)",
+        selector: "ಉಳಿತಾಯ (ಶೇಕಡ)",
         wrap: true,
-        format: data => data["2018-19"].toLocaleString('en-IN')
-    },
-    {
-        name: "2019-20",
-        selector: "2019-20",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        format: data => data["2019-20"].toLocaleString('en-IN')
+        format: data => data["ಉಳಿತಾಯ (ಶೇಕಡ)"].toLocaleString('en-IN')
     }
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table3 = () => {
+const Table3kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -108,19 +48,19 @@ const Table3 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.3: Year wise allocation in six grants under Category A"
+                    title="ಕೋಷ್ಟಕ 3.3: ಮಕ್ಕಳ ಕೇಂದ್ರಿತ ಕಾರ್ಯಕ್ರಮ/ಯೋಜನೆಗಳ ಅಡಿಯಲ್ಲಿ ಹಂಚಿಕೆಯ ವಿವರಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table3}
+                    data={ctx.tables3kan.Table3}    
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
-                    // pagination
+                // pagination
                 />
             </Card>
         </div>
     );
 }
 
-export default Table3;
+export default Table3kan;

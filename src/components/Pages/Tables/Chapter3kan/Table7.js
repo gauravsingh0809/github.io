@@ -8,75 +8,34 @@ import { MyContext } from "../../../../Context/MyProvider";
 
 const columns = [
     {
-        name: "Sl No",
-        selector: "1",
+        name: "ವರ್ಷ",
+        selector: "ವರ್ಷ",
         grow: 2,
         wrap: true,
         // width:'60px',
     },
     {
-        name: "Nature of Expenditure",
-        selector: "2",
+        name: "ಒಟ್ಟು ಅನುದಾನಗಳಲ್ಲಿ ಒಳಗೊಂಡಿರುವುದು",
+        selector: "ಒಟ್ಟು ಅನುದಾನಗಳಲ್ಲಿ ಒಳಗೊಂಡಿರುವುದು",
         // grow: ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "Original grant Appropriation",
-        selector: "Original grant Appropriation",
+        name: "ಪ್ರಕರಣಗಳ ಸಂಖ್ಯೆ",
+        selector: "ಪ್ರಕರಣಗಳ ಸಂಖ್ಯೆ",
         // grow:0.05,
         wrap: true,
-        format: data => data["Original grant Appropriation"].toLocaleString('en-IN')
+        format: data => data["ಪ್ರಕರಣಗಳ ಸಂಖ್ಯೆ"].toLocaleString('en-IN')
     },
     {
-        name: "Supplementary grant Appropriation",
-        selector: "Supplementary grant Appropriation",
+        name: "ಮೊತ್ತ",
+        selector: "ಮೊತ್ತ",
         // grow:0.05,
         wrap: true,
-        format: data => data["Supplementary grant Appropriation"].toLocaleString('en-IN')
-    },
-    {
-        name: "Total",
-        selector: "Total",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Total"].toLocaleString('en-IN')
-    },
-    {
-        name: "Actual expenditure",
-        selector: "Actual expenditure",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Actual expenditure"].toLocaleString('en-IN')
-    },
-    {
-        name: "Unspent  Provision (-) / Excess over provision (+)",
-        selector: "Unspent  Provision Excess over provision",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Unspent  Provision Excess over provision"].toLocaleString('en-IN')
-    },
-    {
-        name: "Amount surrendered",
-        selector: "Amount surrendered",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Amount surrendered"].toLocaleString('en-IN')
-    },
-    {
-        name: "Amount surrendered on 31 March",
-        selector: "Amount surrendered on 31 March",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Amount surrendered on 31 March"].toLocaleString('en-IN')
-    },
-    {
-        name: "Per cent of savings surrendered on 31 March",
-        selector: "Per cent of savings surrendered on 31 March",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Per cent of savings surrendered on 31 March"].toLocaleString('en-IN')
+        format: data => data["ಮೊತ್ತ"].toLocaleString('en-IN')
     }
+    
 ];
 
 
@@ -124,7 +83,7 @@ const customStyles = {
 
 
 
-const Table7 = () => {
+const Table7kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -132,9 +91,9 @@ const Table7 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.7: Summarised position of actual expenditure vis-à-vis original/supplementary provision"
+                    title="ಕೋಷ್ಟಕ-3.7: ೨೦೧೮-೧೯ರಿಂದ ೨೦೨೦-೨೧ರ ಅವಧಿಯಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಾಹಕ ಆದೇಶಗಳ ಮೂಲಕ ಬಿಡುಗಡೆಯಾದ ಹೆಚ್ಚುವರಿ ಮೊತ್ತಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table7}
+                    data={ctx.tables3kan.Table7}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -147,4 +106,4 @@ const Table7 = () => {
     );
 }
 
-export default Table7;
+export default Table7kan;
