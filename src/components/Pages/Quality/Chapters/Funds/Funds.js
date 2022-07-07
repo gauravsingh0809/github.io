@@ -7,6 +7,7 @@ import Para from "./../../../../Para/Para"
 import Title from "./../../../../Title/Title";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
 import Table1 from '../../../Tables/Chapter4/Table1'
+import Table1kan from '../../../Tables/Chapter4kan/Table1'
 
 
 const Funds = () => {
@@ -85,7 +86,7 @@ const Funds = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}
-                        <Table1 />
+                        <Table1kan />
                         <Para>
                             {ctx.chapter4kannada.Content.para14}
                         </Para>

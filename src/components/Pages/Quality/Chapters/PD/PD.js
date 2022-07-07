@@ -7,6 +7,7 @@ import Para from "./../../../../Para/Para"
 import Title from "./../../../../Title/Title";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
 import Table5 from "../../../Tables/Chapter4/Table5";
+import Table5kan from "../../../Tables/Chapter4kan/Table5";
 import Table6 from "../../../Tables/Chapter4/Table6";
 import Table7 from "../../../Tables/Chapter4/Table7";
 
@@ -87,7 +88,7 @@ const PD = () => {
                         <h3 className="headnote">
                             ₹ In crore
                         </h3>
-                        <Table5 />
+                        <Table5kan />
                         <h6>ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h6>
 
                         {["para32", "para33"].map((item, ind) =>

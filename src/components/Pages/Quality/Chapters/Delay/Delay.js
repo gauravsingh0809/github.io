@@ -7,7 +7,9 @@ import Para from "./../../../../Para/Para"
 import Title from "./../../../../Title/Title";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
 import Table2 from "../../../Tables/Chapter4/Table2"
+import Table2kan from "../../../Tables/Chapter4kan/Table2"
 import Table3 from "../../../Tables/Chapter4/Table3"
+import Table3kan from "../../../Tables/Chapter4kan/Table3"
 
 import ImageComponent from 'material-ui-image'
 import { getFirebase } from '../../../../../firebase/firebase'
@@ -88,9 +90,9 @@ const Delay = () => {
                         <Para>
                             {ctx.chapter4kannada.Content.para18}
                         </Para>
-                        <Table2 />
+                        <Table2kan />
                         <h6>ಆಕರ - ಮಹಾಲೇಖಪಾಲರ (ಲೆ ಮತ್ತು ಹ) ಕಚೇರಿ</h6>
-                        <Table3 />
+                        <Table3kan />
                         <h6>ಆಕರ - ಮಹಾಲೇಖಪಾಲರ (ಲೆ ಮತ್ತು ಹ) ಕಚೇರಿ</h6>
                         <Para>
                             {ctx.chapter4kannada.Content.para19}

@@ -7,6 +7,7 @@ import Para from "./../../../../Para/Para"
 import Title from "./../../../../Title/Title";
 import FloatingActionButtons from "./../../../../FloatingActionButtons/FloatButton"
 import Table4 from "../../../Tables/Chapter4/Table4";
+import Table4kan from "../../../Tables/Chapter4kan/Table4";
 import ImageComponent from 'material-ui-image'
 import { getFirebase } from '../../../../../firebase/firebase'
 
@@ -75,7 +76,7 @@ const Abstract = () => {
                         <h3 className="headnote">
                             ₹ In crore
                         </h3>
-                        <Table4 />
+                        <Table4kan />
                         <h6>ಆಕರ-ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
                             <br></br>
                             * ಮಾರ್ಚ್‌ ೨೦೨೧ರ ಬಿಲ್ಲುಗಳನ್ನು ಹೊರತುಪಡಿಸಿ </h6>

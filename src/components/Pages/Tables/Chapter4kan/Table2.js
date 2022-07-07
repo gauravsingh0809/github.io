@@ -4,19 +4,20 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Year",
-        selector: "Year",
+        name: "ವರ್ಷ",
+        selector: "ವರ್ಷ",
         wrap: true,
     },
     {
-        name: "Opening Balance",
-        selector: "Opening Balance",
+        name: "ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು",
+        selector: "ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು",
         wrap: true,
-        format: data => data["Opening Balance"].toLocaleString('en-IN')
+        format: data => data["ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು"].toLocaleString('en-IN')
     },
     {
         name: "",
@@ -25,89 +26,46 @@ const columns = [
         format: data => data["1"].toLocaleString('en-IN')
     },
     {
-        name: "Addition",
-        selector: "Addition",
+        name: "ಸೇರ್ಪಡೆ",
+        selector: "ಸೇರ್ಪಡೆ",
         wrap: true,
-        format: data => data["Addition"].toLocaleString('en-IN')
+        format: data => data["ಸೇರ್ಪಡೆ"].toLocaleString('en-IN')
     },
     {
         name: "",
-        selector: "2",
+        selector: "__1",
         wrap: true,
-        format: data => data["2"].toLocaleString('en-IN')
+        format: data => data["__1"].toLocaleString('en-IN')
     },
     {
-        name: "Clearance",
-        selector: "Clearance",
+        name: "ತೀರುವಳಿ",
+        selector: "ತೀರುವಳಿ",
         wrap: true,
-        format: data => data["Clearance"].toLocaleString('en-IN')
-    },
-    {
-        name: "",
-        selector: "3",
-        wrap: true,
-        format: data => data["3"].toLocaleString('en-IN')
-    },
-    {
-        name: "Due for Submission",
-        selector: "Due for Submission",
-        wrap: true,
-        format: data => data["Due for Submission"].toLocaleString('en-IN')
+        format: data => data["ತೀರುವಳಿ"].toLocaleString('en-IN')
     },
     {
         name: "",
-        selector: "4",
+        selector: "__2",
         wrap: true,
-        format: data => data["4"].toLocaleString('en-IN')
+        format: data => data["__2"].toLocaleString('en-IN')
+    },
+    {
+        name: "ಸಲ್ಲಿಕೆಗೆ ಬಾಕಿ",
+        selector: "ಸಲ್ಲಿಕೆಗೆ ಬಾಕಿ",
+        wrap: true,
+        format: data => data["ಸಲ್ಲಿಕೆಗೆ ಬಾಕಿ"].toLocaleString('en-IN')
+    },
+    {
+        name: "",
+        selector: "__4",
+        wrap: true,
+        format: data => data["__4"].toLocaleString('en-IN')
     }
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table2 = () => {
+const Table2kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -115,19 +73,17 @@ const Table2 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.2: Pendency of Utilisation Certificate during 2019-20"
+                    title="ಕೋಷ್ಟಕ-4.2: 2020-21ಕ್ಕೆ ಬಾಕಿ ಇರುವ ಬಳಕೆ ಪ್ರಮಾಣಪತ್ರಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap4Tables.Table2}
+                    data={ctx.tables4kan.Table2}
                     customStyles={customStyles}
                     striped
-                    // conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
-                    // pagination
                 />
             </Card>
         </div>
     );
 }
 
-export default Table2;
+export default Table2kan;

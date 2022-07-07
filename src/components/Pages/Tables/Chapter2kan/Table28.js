@@ -15,44 +15,32 @@ const columns = [
     },
     {
         name: "ಒವೆ/ರಾಒಆಉ",
-        selector: "ಒವೆ/ರಾಒಆಉ",
+        selector: "ಒವೆ ರಾಒಆಉ",
         wrap: true,
        
     },
     {
         name: "ಬವೆ/ಒವೆ",
-        selector: "ಬವೆ/ಒವೆ",
+        selector: "ಬವೆ ಒವೆ",
         wrap: true,
         
     },
     {
-<<<<<<< HEAD
         name: "ಅವೆ/ಒವೆ",
-        selector: "ಅವೆ/ಒವೆ",
-=======
-        name: "2017-18",
-        selector: "2017 18",
-        // grow: 0.05,
-        // width:'110px',
->>>>>>> 1d583a8195c1e7ab2bdffd99da93d2b8b3228eb4
+        selector: "ಅವೆ ಒವೆ",
         wrap: true,
     },
     {
-<<<<<<< HEAD
-        name: "ಶಿಕ್ಷಣ/ಒವೆ",
-        selector: "ಶಿಕ್ಷಣ/ಒವೆ",
-=======
         name: "2018-19",
         selector: "2018 19",
         // grow: 0.05,
         // width:'110px',
->>>>>>> 1d583a8195c1e7ab2bdffd99da93d2b8b3228eb4
         wrap: true,
         
     },
     {
         name: "ಆರೋಗ್ಯ/ಒವೆ",
-        selector: "ಆರೋಗ್ಯ/ಒವೆ",
+        selector: "ಆರೋಗ್ಯ ಒವೆ",
         wrap: true,
         
     }
