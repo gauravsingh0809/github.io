@@ -8,6 +8,7 @@ import Title from "../../../../Title/Title";
 import Subtitle from "../../../../Subtitle/Subtitle";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import Table11 from "../../../Tables/Chapter4/Table11";
+import Table11kan from "../../../Tables/Chapter4kan/Table11";
 
 const Compliance = () => {
     const ctx = useContext(MyContext)
@@ -54,7 +55,7 @@ const Compliance = () => {
                         <Para key={ind / 10}>
                             {ctx.chapter4kannada.Content[item]}
                         </Para> )}
-                        <Table11/>
+                        <Table11kan/>
                         {["para78"].map((item, ind) =>
                         <Para key={ind / 10}>
                             {ctx.chapter4kannada.Content[item]}

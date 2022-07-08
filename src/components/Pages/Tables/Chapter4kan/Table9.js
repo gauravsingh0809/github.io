@@ -4,108 +4,45 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Year",
-        selector: "Year",
+        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
         wrap: true,
+        grow:0.2
     },
     {
-        name: "Total No of Controlling officers",
-        selector: "Total No of Controlling officers",
+        name: "ಲೆಕ್ಕ ಶೀರ್ಷಿಕೆ",
+        selector: "ಲೆಕ್ಕ ಶೀರ್ಷಿಕೆ",
         wrap: true,
-        format: data => data["Total No of Controlling officers"].toLocaleString('en-IN')
+        grow:0.4
     },
     {
-        name: "Fully reconciled",
-        selector: "Fully reconciled",
+        name: "ವಿವರ",
+        selector: "ವಿವರ",
         wrap: true,
-        format: data => data["Fully reconciled"].toLocaleString('en-IN')
+        grow:0.6
     },
     {
-        name: "Partially Reconciled",
-        selector: "Partially Reconciled",
+        name: "ಮೊತ್ತ",
+        selector: "ಮೊತ್ತ",
         wrap: true,
-        format: data => data["Partially Reconciled"].toLocaleString('en-IN')
+        grow:0.4,
+        format: data => data["ಮೊತ್ತ"].toLocaleString('en-IN')
     },
     {
-        name: "Not reconciled at all",
-        selector: "Not reconciled at all",
-        wrap: true,
-        format: data => data["Not reconciled at all"].toLocaleString('en-IN')
-    },
-    {
-        name: "CCOs not transacted during the month",
-        selector: "CCOs not transacted during the month",
-        wrap: true,
-    },
-    {
-        name: "Total Amount",
-        selector: "Total Amount",
-        wrap: true,
-        format: data => data["Total Amount"].toLocaleString('en-IN')
-    },
-    {
-        name: "Reconciled Amount",
-        selector: "Reconciled Amount",
-        wrap: true,
-        format: data => data["Reconciled Amount"].toLocaleString('en-IN')
-    },
-    {
-        name: "Percentage",
-        selector: "Percentage",
+        name: "ಕಾರಣ",
+        selector: "ಕಾರಣ",
         wrap: true,
     }
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table9 = () => {
+const Table9kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -113,12 +50,11 @@ const Table9 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.9: Status of Reconciliation of Receipts and Expenditure figures"
+                    title="ಕೋಷ್ಟಕ 4.9: ಋಣ ಠೇವಣಿ ಇರಸಾಲು ಶೀರ್ಷಿಕೆಗಳ ಅಡಿಯಲ್ಲಿ ವ್ಯತಿರಿಕ್ತ ಶಿಲ್ಕುಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap4Tables.Table9}
+                    data={ctx.tables4kan.Table9}
                     customStyles={customStyles}
                     striped
-                    // conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
                     // pagination
@@ -128,4 +64,4 @@ const Table9 = () => {
     );
 }
 
-export default Table9;
+export default Table9kan;
