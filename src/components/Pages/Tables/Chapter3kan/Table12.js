@@ -8,15 +8,50 @@ import { MyContext } from "../../../../Context/MyProvider";
 
 const columns = [
   {
-    name: " ",
-    selector: "1",
+    name: "ವರ್ಷ",
+    selector: "ವರ್ಷ",
     grow: 0.2,
     // wrap: true,
     // width:'60px',
   },
   {
-    name: " ",
+    name: "ರಾಜಸ್ವ",
+    selector: "ರಾಜಸ್ವ",
+    // grow:0.5 ,
+    wrap: true,
+    // width:'35px',
+  },
+  {
+    name: "ರಾಜಸ್ವ",
+    selector: "1",
+    // grow:0.5 ,
+    wrap: true,
+    // width:'35px',
+  },
+  {
+    name: "ರಾಜಸ್ವ",
     selector: "2",
+    // grow:0.5 ,
+    wrap: true,
+    // width:'35px',
+  },
+  {
+    name: "ಬಂಡವಾಳ",
+    selector: "ಬಂಡವಾಳ",
+    // grow:0.5 ,
+    wrap: true,
+    // width:'35px',
+  },
+  {
+    name: "ಬಂಡವಾಳ",
+    selector: "3",
+    // grow:0.5 ,
+    wrap: true,
+    // width:'35px',
+  },
+  {
+    name: "ಬಂಡವಾಳ",
+    selector: "4",
     // grow:0.5 ,
     wrap: true,
     // width:'35px',
@@ -68,7 +103,7 @@ const customStyles = {
 
 
 
-const Table12 = () => {
+const Table12kan = () => {
 
   const ctx = useContext(MyContext)
 
@@ -76,9 +111,9 @@ const Table12 = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="Table 3.12: Norms for selection for comments in Appropriation Accounts"
+          title="ಕೋಷ್ಟಕ 3.12: ನಿರೀಕ್ಷಿತ ಉಳಿತಾಯಗಳು ಅಧ್ಯರ್ಪಣೆ ಆಗದಿರುವುದು/ಭಾಗಶಃ ಆಗಿರುವುದು."
           columns={columns}
-          data={ctx.reportData.Chap3Tables.Table12}
+          data={ctx.tables3kan.Table12}
           customStyles={customStyles}
           striped
           // conditionalRowStyles={conditionalRowStyles}
@@ -92,4 +127,4 @@ const Table12 = () => {
   );
 }
 
-export default Table12;
+export default Table12kan;

@@ -8,40 +8,47 @@ import { MyContext } from "../../../../Context/MyProvider";
 
 const columns = [
     {
-        name: "Sl No",
-        selector: "Sl No",
+        name: "ವರ್ಷ",
+        selector: "ವರ್ಷ",
         grow:0.2 ,
         wrap: true,
         // width:'60px',
     },
     {
-        name: "Head of Account",
-        selector: "Head of Account",
+        name: "ವಿಭಾಗ",
+        selector: "ವಿಭಾಗ",
         grow:2 ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "Savings",
-        selector: "Savings",
+        name: "ಆಯವ್ಯಯ ಅವಕಾಶ",
+        selector: "ಆಯವ್ಯಯ ಅವಕಾಶ",
         // grow:0.2 ,
         wrap: true,
         // width:'60px',
     },
     {
-        name: " ",
-        selector: "1",
+        name: "ಒಟ್ಟು",
+        selector: "ಒಟ್ಟು",
         // grow:0.2 ,
         wrap: true,
         // width:'60px',
     },
     {
-        name: " ",
-        selector: "2",
+        name: "ವೆಚ್ಚ",
+        selector: "ವೆಚ್ಚ",
         // grow:0.5 ,
         wrap: true,
         // width:'35px',
-    }
+    },
+    {
+      name: "ಬಳಕೆ ಮಾಡದ ಅವಕಾಶ ಮತ್ತು ಶೇಕಡಾವಾರು",
+      selector: "ಬಳಕೆ ಮಾಡದ ಅವಕಾಶ ಮತ್ತು ಶೇಕಡಾವಾರು",
+      // grow:0.5 ,
+      wrap: true,
+      // width:'35px',
+  }
 ];
 
 
@@ -89,7 +96,7 @@ const customStyles = {
 
 
 
-const Table15 = () => {
+const Table15kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -97,9 +104,9 @@ const Table15 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.15: Persistent Savings"
+                    title="ಕೋಷ್ಟಕ 3.15 ಆಯವ್ಯಯ ಮತ್ತು ವೆಚ್ಚ"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table15}
+                    data={ctx.tables3kan.Table15 }
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -113,4 +120,4 @@ const Table15 = () => {
     );
 }
 
-export default Table15;
+export default Table15kan;

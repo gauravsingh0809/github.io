@@ -8,26 +8,61 @@ import { MyContext } from "../../../../Context/MyProvider";
 
 const columns = [
     {
-        name: "Installment No",
-        selector: "Installment No",
+        name: "ಲೆಕ್ಕಶೀರ್ಷಿಕೆ/ವಿವರಣೆ",
+        selector: "ಲೆಕ್ಕಶೀರ್ಷಿಕೆ/ವಿವರಣೆ",
         grow:0.2 ,
         // wrap: true,
         // width:'60px',
     },
     {
-        name: "GO No and Date",
-        selector: "GO No and Date",
+        name: "ಮೊದಲನೇ ತ್ರೈಮಾಸಿಕ",
+        selector: "ಮೊದಲನೇ ತ್ರೈಮಾಸಿಕ",
         // grow:0.5 ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "Amount",
-        selector: "Amount",
+        name: "ಎರಡನೇ ತ್ರೈಮಾಸಿಕ",
+        selector: "ಎರಡನೇ ತ್ರೈಮಾಸಿಕ",
         grow:0.2,
         wrap: true,
-        // format: data => data["Amount"].toLocaleString('en-IN')
-    }
+        // format: data => data["ಎರಡನೇ ತ್ರೈಮಾಸಿಕ"].toLocaleString('en-IN')
+    },
+    {
+      name: "ಮೂರನೇ  ತ್ರೈಮಾಸಿಕ",
+      selector: "ಮೂರನೇ  ತ್ರೈಮಾಸಿಕ",
+      grow:0.2,
+      wrap: true,
+      // format: data => data["ಮೂರನೇ  ತ್ರೈಮಾಸಿಕ"].toLocaleString('en-IN')
+  },
+  {
+    name: "ಅಂತಿಮ ತ್ರೈಮಾಸಿಕ",
+    selector: "ಅಂತಿಮ ತ್ರೈಮಾಸಿಕ",
+    grow:0.2,
+    wrap: true,
+    // format: data => data["ಅಂತಿಮ ತ್ರೈಮಾಸಿಕ"].toLocaleString('en-IN')
+},
+{
+  name: "ಒಟ್ಟು ವೆಚ್ಚ",
+  selector: "ಒಟ್ಟು ವೆಚ್ಚ",
+  grow:0.2,
+  wrap: true,
+  // format: data => data["ಒಟ್ಟು ವೆಚ್ಚ"].toLocaleString('en-IN')
+},
+{
+  name: "ಮಾರ್ಚ್‌ನಲ್ಲಿ ವೆಚ್ಚ",
+  selector: "ಮಾರ್ಚ್‌ನಲ್ಲಿ ವೆಚ್ಚ",
+  grow:0.2,
+  wrap: true,
+  // format: data => data["ಮಾರ್ಚ್‌ನಲ್ಲಿ ವೆಚ್ಚ"].toLocaleString('en-IN')
+},
+{
+  name: "ಒಟ್ಟು ವೆಚ್ಚಕ್ಕೆ ಮಾರ್ಚ್‌ ವೆಚ್ಚದ ಶೇಕಡಾವಾರು",
+  selector: "ಒಟ್ಟು ವೆಚ್ಚಕ್ಕೆ ಮಾರ್ಚ್‌ ವೆಚ್ಚದ ಶೇಕಡಾವಾರು",
+  grow:0.2,
+  wrap: true,
+  // format: data => data["ಒಟ್ಟು ವೆಚ್ಚಕ್ಕೆ ಮಾರ್ಚ್‌ ವೆಚ್ಚದ ಶೇಕಡಾವಾರು"].toLocaleString('en-IN')
+}
 ];
 
 
@@ -83,9 +118,9 @@ const Table10 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.10: Amount released to BMTC"
+                    title="ಕೋಷ್ಟಕ 3.10: ೨೦೨೧ರ ಮಾರ್ಚ್‌ನಲ್ಲಿ ವೆಚ್ಚದ ಪ್ರಮಾಣ"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table10}
+                    data={ctx.tables3kan.Table10}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

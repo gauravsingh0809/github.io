@@ -8,33 +8,40 @@ import { MyContext } from "../../../../Context/MyProvider";
 
 const columns = [
     {
-        name: "Head of Account",
-        selector: "Head of Account",
-        grow:2 ,
+        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        selector:"ಕ್ರಮ ಸಂಖ್ಯೆ",
+        grow:0.05 ,
         wrap: true,
         // width:'60px',
     },
     {
-        name: "Total Expenditure",
-        selector: "Total Expenditure",
+        name: "ಲೆಕ್ಕಶೀರ್ಷಿಕೆ",
+        selector: "ಲೆಕ್ಕಶೀರ್ಷಿಕೆ",
         // grow:2 ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "Expenditure during the last Quarter and its percentage",
-        selector: "Expenditure during the last Quarter and its percentage",
+        name: "2018-19",
+        selector: "2018 19",
         // grow:0.2 ,
         wrap: true,
         // width:'60px',
     },
     {
-        name: "Expenditure during the month of March and its percentage",
-        selector: "Expenditure during the month of March and its percentage",
+        name: "2019-20",
+        selector: "2019 20",
         // grow:0.2 ,
         wrap: true,
         // width:'60px',
-    }
+    },
+    {
+      name: "2020-21",
+      selector: "2020 21",
+      // grow:0.2 ,
+      wrap: true,
+      // width:'60px',
+  }
 ];
 
 
@@ -82,7 +89,7 @@ const customStyles = {
 
 
 
-const Table16 = () => {
+const Table16kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -90,9 +97,9 @@ const Table16 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.16: Rush of Expenditure"
+                    title="ಕೋಷ್ಟಕ 3.16: ಸತತ ಉಳಿತಾಯಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table16}
+                    data={ctx.tables3kan.Table16}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -106,4 +113,4 @@ const Table16 = () => {
     );
 }
 
-export default Table16;
+export default Table16kan;

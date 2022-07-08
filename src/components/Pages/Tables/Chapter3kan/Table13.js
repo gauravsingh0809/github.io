@@ -8,61 +8,41 @@ import { MyContext } from "../../../../Context/MyProvider";
 
 const columns = [
     {
-        name: "Major Head/Description",
-        selector: "Major HeadDescription",
-        grow:2 ,
+        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        grow:0.05,
         wrap: true,
         // width:'60px',
     },
     {
-        name: "1st Qtr",
-        selector: "1st Qtr",
+        name: "ಲೆಕ್ಕಶೀರ್ಷಿಕೆ",
+        selector: "ಲೆಕ್ಕಶೀರ್ಷಿಕೆ",
         // grow:0.5 ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "2nd Qtr",
-        selector: "2nd Qtr",
+        name: "2018-19",
+        selector: "2018 19",
         // grow:0.2 ,
         wrap: true,
         // width:'60px',
     },
     {
-        name: "3rd Qtr",
-        selector: "3rd  Qtr",
+        name: "2019-20",
+        selector: "2019 20",
         // grow:0.5 ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "4th Qtr",
-        selector: "4th Qtr",
+        name: "2020-21",
+        selector: "2020 21",
         // grow:0.2 ,
         wrap: true,
         // width:'60px',
-    },
-    {
-        name: "Total Expenditure",
-        selector: "Total Expenditure",
-        // grow:0.5 ,
-        wrap: true,
-        // width:'35px',
-    },
-    {
-        name: "Expenditure in March",
-        selector: "Expenditure in March",
-        // grow:0.2 ,
-        wrap: true,
-        // width:'60px',
-    },
-    {
-        name: "Expenditure in March as a percentage of TE",
-        selector: "Expenditure in March as a percentage of TE",
-        // grow:0.5 ,
-        wrap: true,
-        // width:'35px',
     }
+    
 ];
 
 
@@ -110,7 +90,7 @@ const customStyles = {
 
 
 
-const Table13 = () => {
+const Table13kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -118,9 +98,9 @@ const Table13 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.13: Quantum of Expenditure in March"
+                    title="ಕೋಷ್ಟಕ 3.13: ಸತತ ಉಳಿತಾಯಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap3Tables.Table13}
+                    data={ctx.tables3kan.Table13}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -134,4 +114,4 @@ const Table13 = () => {
     );
 }
 
-export default Table13;
+export default Table13kan;

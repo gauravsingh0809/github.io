@@ -13,6 +13,15 @@ import Table14 from "../../../Tables/Chapter3/Table14";
 import Table15 from "../../../Tables/Chapter3/Table15";
 import Table16 from "../../../Tables/Chapter3/Table16";
 import Table17 from "../../../Tables/Chapter3/Table17";
+import Table11kan from '../../../Tables/Chapter3kan/Table11'
+import Table12kan from '../../../Tables/Chapter3kan/Table12'
+import Table13kan from '../../../Tables/Chapter3kan/Table13'
+import Table14kan from '../../../Tables/Chapter3kan/Table14'
+import Table15kan from '../../../Tables/Chapter3kan/Table15'
+import Table16kan from '../../../Tables/Chapter3kan/Table16'
+import Table17kan from '../../../Tables/Chapter3kan/Table17'
+
+
 const Outcome = () => {
   const ctx = useContext(MyContext);
   console.log(ctx.chapter3kannada);
@@ -155,14 +164,14 @@ const Outcome = () => {
                 {ctx.chapter3kannada.Content[item]}
               </Para>
             ))}
-        <Table11 />
+        <Table11kan />
         <h6>ಆಕರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
         {["para133", "para134", "para135"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))
         }
-        <Table12 />
+        <Table12kan />
         <h6>ಆಕರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
         {["para136", "para137"].map(
           (item, ind) => (
@@ -170,35 +179,35 @@ const Outcome = () => {
           ))
         }
 
-        <Table13 />
+        <Table13kan />
         <h6>ಆಕರ: ಅನುದಾನ ವಹಿ</h6>
         {["para138", "para139", "para140", "para141"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))
         }
-        <Table14 />
+        <Table14kan  />
         <h6>ಆಕರ: ಅನುದಾನ ವಹಿ</h6>
         {["para142a","para142b","para142", "para143", "para144", "para145", "para146", "para147", "para148", "para149", "para150", "para151", "para152", "para153", "para154", "para155", "para156", "para157"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))
         }
-        <Table15 />
+        <Table15kan />
         <h6>ಆಕರ: ಅನುದಾನ ವಹಿ</h6>
         {[ "para158", "para159", "para160"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))
         }
-        <Table16 />
+        <Table16kan />
         <h6>ಆಕರ: ಅನುದಾನ ವಹಿ</h6>
         {["para161", "para162", "para163","para164", "para165", "para166", "para167", "para168", "para169"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))
         }
-        <Table17 />
+        <Table17kan />
         <h6>ಆಕರ: ಅನುದಾನ ವಹಿ</h6>
 
       </div>

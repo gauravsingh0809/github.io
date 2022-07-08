@@ -12,6 +12,8 @@ import Table9 from "../../../Tables/Chapter3/Table9";
 import Table10 from "../../../Tables/Chapter3/Table10";
 import Table7kan from '../../../Tables/Chapter3kan/Table7'
 import Table8kan from '../../../Tables/Chapter3kan/Table8'
+import Table9kan from '../../../Tables/Chapter3kan/Table9'
+import Table10kan from '../../../Tables/Chapter3kan/Table10'
 import Table11 from "../../../Tables/Chapter3/Table11";
 import { Chart3 as Chart3Chap3 } from '../../../Charts/Chap3Charts'
 
@@ -196,7 +198,7 @@ const Audit = () => {
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))
         }
-        <Table9 />
+        <Table9kan />
         <h6>ಆಕರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
         {["para108","para109","para110","para111","para112","para113","para114","para115","para116","para117","para118","para119"].map(
           (item, ind) => (
@@ -210,7 +212,7 @@ const Audit = () => {
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           ))
         }
-        <Table10 />
+        <Table10kan />
         <h6>ಆಕರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
         {["para122", "para123"].map(
           (item, ind) => (
