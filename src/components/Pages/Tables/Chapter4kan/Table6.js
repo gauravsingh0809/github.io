@@ -15,16 +15,16 @@ const columns = [
         grow:0.1
     },
     {
-        name: "ಅನುದಾನದ ಮಾದರಿ",
-        selector: "ಅನುದಾನದ ಮಾದರಿ",
+        name: "ಆಡಳಿತಾಧಿಕಾರಿ",
+        selector: "ಆಡಳಿತಾಧಿಕಾರಿ",
         wrap: true,
     },
     {
-        name: "ಬಳಕೆಯಾಗದ ಮೊತ್ತ",
-        selector: "ಬಳಕೆಯಾಗದ ಮೊತ್ತ",
+        name: "ಮೊತ್ತ",
+        selector: "ಮೊತ್ತ",
         wrap: true,
         grow:0.2,
-        format: data => data["ಬಳಕೆಯಾಗದ ಮೊತ್ತ"].toLocaleString('en-IN')
+        format: data => data["ಮೊತ್ತ"].toLocaleString('en-IN')
     }
 ];
 

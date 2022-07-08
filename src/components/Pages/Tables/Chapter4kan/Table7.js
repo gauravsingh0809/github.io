@@ -4,92 +4,33 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Minor Head",
-        selector: "Minor Head",
+        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        wrap: true,
+        grow:0.1
+    },
+    {
+        name: "ಅನುದಾನದ ಮಾದರಿ",
+        selector: "ಅನುದಾನದ ಮಾದರಿ",
         wrap: true,
     },
     {
-        name: "2017-18",
-        selector: "2017-18",
+        name: "ಬಳಕೆಯಾಗದ ಮೊತ್ತ",
+        selector: "ಬಳಕೆಯಾಗದ ಮೊತ್ತ",
         wrap: true,
-    },
-    {
-        name: "",
-        selector: "1",
-        wrap: true,
-    },
-    {
-        name: "2018-19",
-        selector: "2018-19",
-        wrap: true,
-    },
-    {
-        name: "",
-        selector: "2",
-        wrap: true,
-    },
-    {
-        name: "2019-20",
-        selector: "2019-20",
-        wrap: true,
-    },
-    {
-        name: "",
-        selector: "3",
-        wrap: true,
+        grow:0.2,
+        //format: data => data["ಬಳಕೆಯಾಗದ ಮೊತ್ತ"].toLocaleString('en-IN')
     }
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table7 = () => {
+const Table7kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -97,9 +38,9 @@ const Table7 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.7: Balances under Suspense and Remittance Head"
+                    title="ಕೋಷ್ಟಕ-4.7: ವೈಯಕ್ತಿಕ ಠೇವಣಿ ಖಾತೆಗಳಲ್ಲಿನ ಅಂತಿಮ ಶಿಲ್ಕು"
                     columns={columns}
-                    data={ctx.reportData.Chap4Tables.Table7}
+                    data={ctx.tables4kan.Table7}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -112,4 +53,4 @@ const Table7 = () => {
     );
 }
 
-export default Table7;
+export default Table7kan;

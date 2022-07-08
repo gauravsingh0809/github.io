@@ -4,99 +4,50 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "SlNo",
-        selector: "Sl No",
+        name: "ಕಿರು ಲೆಕ್ಕಶೀರ್ಷಿಕೆ",
+        selector: "ಕಿರು ಲೆಕ್ಕಶೀರ್ಷಿಕೆ",
         wrap: true,
-        grow:0.2
     },
     {
-        name: "Head of account",
-        selector: "Head of account",
+        name: "2018-19",
+        selector: "2018 19",
         wrap: true,
-        grow:0.4
     },
     {
-        name: "Description",
-        selector: "Description",
+        name: "2018-19",
+        selector: "1",
         wrap: true,
-        grow:0.6
     },
     {
-        name: "Amount",
-        selector: "Amount",
+        name: "2019-20",
+        selector: "2019 20",
         wrap: true,
-        grow:0.4,
-        format: data => data["Amount"].toLocaleString('en-IN')
     },
     {
-        name: "Reason",
-        selector: "Reason",
+        name: "2019-20",
+        selector: "__1",
+        wrap: true,
+    },
+    {
+        name: "2020-21",
+        selector: "2020 21",
+        wrap: true,
+    },
+    {
+        name: "2020-21",
+        selector: "__2",
         wrap: true,
     }
 ];
 
+const customStyles = styles;
 
-const conditionalRowStyles = [
-  {
-    when: row => row["Sl No"] === 'Public Debt' || row["Sl No"] === 'Loans and Advances',
-    style: (row) => ({
-      backgroundColor: row["Sl No"] ? 'rgba(63, 195, 128, 0.9)' : "#fff",
-      color: 'white',
-      '&:hover': {
-        cursor: 'pointer',
-      },
-    }),
-  }
-];
-
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-const Table8 = () => {
+const Table8kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -104,19 +55,19 @@ const Table8 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.8: Adverse balance under DDR Heads"
+                    title="ಕೋಷ್ಟಕ 4.8: ಅಮಾನತ್ತು ಶೀರ್ಷಿಕೆಗಳಡಿಯ ಶಿಲ್ಕುಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap4Tables.Table8}
+                    data={ctx.tables4kan.Table8}
                     customStyles={customStyles}
                     striped
-                    conditionalRowStyles={conditionalRowStyles}
+                    // conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
-                    // pagination
+                    pagination
                 />
             </Card>
         </div>
     );
 }
 
-export default Table8;
+export default Table8kan;

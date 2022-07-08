@@ -7,6 +7,7 @@ import Para from "../../../../Para/Para"
 import Title from "../../../../Title/Title";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import Table12 from '../../../Tables/Chapter4/Table12'
+import Table12kan from '../../../Tables/Chapter4kan/Table12'
 
 
 const Misapp = () => {
@@ -61,7 +62,7 @@ const Misapp = () => {
                             <h3 className="headnote">
                             ₹ In Lakhs
                         </h3>
-                        <Table12 />
+                        <Table12kan />
                         <h6>ಆಕರ: ಮಹಾಲೇಖಪಾಲರು (ಆಡಿಟ್ I) ಮತ್ತು ಮಹಾಲೇಖಪಾಲರು (ಆಡಿಟ್ II) ಕಚೇರಿ</h6>
                     </div>
                 </div>

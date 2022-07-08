@@ -7,6 +7,7 @@ import Para from "../../../../Para/Para"
 import Title from "../../../../Title/Title";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import Table10 from "../../../Tables/Chapter4/Table10";
+import Table10kan from "../../../Tables/Chapter4kan/Table10";
 
 import ImageComponent from 'material-ui-image'
 import { getFirebase } from '../../../../../firebase/firebase'
@@ -79,7 +80,7 @@ const NonReconciliation = () => {
                         <h3 className="headnote">
                             ₹ In crore
                         </h3>
-                        <Table10 />
+                        <Table10kan />
                         <h4>ಆಕರ-ಎಮ್‌ಸಿಎ ಮೇಲಿನ ವರದಿ ಮತ್ತು ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h4>
                         <Para>
                             {ctx.chapter4kannada.Content.para69}

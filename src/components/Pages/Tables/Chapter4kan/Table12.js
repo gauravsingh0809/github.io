@@ -4,17 +4,18 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Name of Department",
-        selector: "Name of Department",
+        name: "ಇಲಾಖೆಯ ಹೆಸರು",
+        selector: "ಇಲಾಖೆಯ ಹೆಸರು",
         wrap: true,
     },
     {
-        name: "Cases of misappropriation losses thefts of Government material",
-        selector: "Cases of misappropriation losses thefts of Government material",
+        name: "ಸರ್ಕಾರದ ಸವತ್ತುಗಳ ದುರ್ಬಳಕೆ, ನಷ್ಟ, ಕಳ್ಳತನ ಇತ್ಯಾದಿ",
+        selector: "ಸರ್ಕಾರದ ಸವತ್ತುಗಳ ದುರ್ಬಳಕೆ, ನಷ್ಟ, ಕಳ್ಳತನ ಇತ್ಯಾದಿ",
         wrap: true,
     },
     {
@@ -24,87 +25,44 @@ const columns = [
         grow:0.1
     },
     {
-        name: "Reasons for the delay in final disposal of pending cases of misappropriation  losses  thefts etc",
-        selector: "Reasons for the delay in final disposal of pending cases of misappropriation  losses  thefts etc",
+        name: "ಬಾಕಿ ಇರುವ ದುರ್ಬಳಕೆ, ನಷ್ಟ, ಕಳ್ಳತನ ಇತ್ಯಾದಿಗಳ ಅಂತಿಮ ವಿಲೇವಾರಿಯಲ್ಲಿನ ವಿಳಂಬಕ್ಕೆ ಕಾರಣಗಳು",
+        selector: "ಬಾಕಿ ಇರುವ ದುರ್ಬಳಕೆ, ನಷ್ಟ, ಕಳ್ಳತನ ಇತ್ಯಾದಿಗಳ ಅಂತಿಮ ವಿಲೇವಾರಿಯಲ್ಲಿನ ವಿಳಂಬಕ್ಕೆ ಕಾರಣಗಳು",
         wrap: true,
     },
     {
         name: " ",
-        selector: "2",
+        selector: "__1",
         wrap: true,
         grow:0.1
     }, 
     {
         name: " ",
-        selector: "3",
+        selector: "__2",
         wrap: true,
         grow:0.1
     },
     {
         name: " ",
-        selector: "4",
+        selector: "__3",
         wrap: true,
         grow:0.1
     },
     {
         name: " ",
-        selector: "5",
+        selector: "__4",
         wrap: true,
     },
     {
         name: " ",
-        selector: "6",
+        selector: "__5",
         wrap: true,
         grow:0.1
     },
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table12 = () => {
+const Table12kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -112,9 +70,9 @@ const Table12 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.12: Pending cases of misappropriation, losses and thefts etc."
+                    title="ಕೋಷ್ಟಕ 4.12: ದುರುಪಯೋಗ, ನಷ್ಟ ಮತ್ತು ಕಳ್ಳತನ ಇತ್ಯಾದಿಗಳ ಬಾಕಿ ಉಳಿದಿರುವ ಪ್ರಕರಣಗಳು"
                     columns={columns}
-                    data={ctx.reportData.Chap4Tables.Table12}
+                    data={ctx.tables4kan.Table12}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -127,4 +85,4 @@ const Table12 = () => {
     );
 }
 
-export default Table12;
+export default Table12kan;

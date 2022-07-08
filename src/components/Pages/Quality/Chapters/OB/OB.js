@@ -8,7 +8,9 @@ import Title from "../../../../Title/Title";
 import Subtitle from "../../../../Subtitle/Subtitle";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import Table8 from '../../../Tables/Chapter4/Table8'
+import Table8kan from '../../../Tables/Chapter4kan/Table8'
 import Table9 from "../../../Tables/Chapter4/Table9";
+import Table9kan from "../../../Tables/Chapter4kan/Table9";
 
 const OB = () => {
 
@@ -151,7 +153,7 @@ const OB = () => {
                         <h3 className="headnote">
                             ₹ In crore
                         </h3>
-                        <Table8 />
+                        <Table8kan />
                         <h6>ಆಕರ : ಡಿಡಿಆರ್‌ ಲೆಡ್ಜರುಗಳು</h6>
                         {["para50", "para51", "para52", "para53", "para54", "para55", "para56", "para57", "para58", "para59", "para60", "para61", "para62", "para63", "para64", "para65"].map((item, ind) =>
                             <Para key={ind / 10}>
@@ -160,7 +162,7 @@ const OB = () => {
                         <h3 className="headnote">
                             ₹ In crore
                         </h3>
-                        <Table9 />
+                        <Table9kan />
                         <h6>ಆಕರ -  ಮಹಾಲೇಖಪಾಲರ (ಲೆ ಮತ್ತು ಹ) ಕಚೇರಿ</h6>
 
                     </div>

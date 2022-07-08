@@ -4,84 +4,66 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
+import { styles } from "../helpers";
 
 
 const columns = [
     {
-        name: "Sl No",
-        selector: "Sl No",
-        wrap: true,
-        grow:0.2
-    },
-    {
-        name: "Accounting Standards",
-        selector: "Accounting Standards",
+        name: "ವರ್ಷ",
+        selector: "ವರ್ಷ",
         wrap: true,
     },
     {
-        name: "Essence of IGAS",
-        selector: "Essence of IGAS",
+        name: "ನಿಯಂತ್ರಣ ಅಧಿಕಾರಿಗಳ ಸಂಖ್ಯೆ",
+        selector: "ನಿಯಂತ್ರಣ ಅಧಿಕಾರಿಗಳ ಸಂಖ್ಯೆ",
+        wrap: true,
+        format: data => data["ನಿಯಂತ್ರಣ ಅಧಿಕಾರಿಗಳ ಸಂಖ್ಯೆ"].toLocaleString('en-IN')
+    },
+    {
+        name: "ಪೂರ್ಣವಾಗಿ ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆ ಮಾಡಿರುವುದು",
+        selector: "ಪೂರ್ಣವಾಗಿ ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆ ಮಾಡಿರುವುದು",
+        wrap: true,
+        format: data => data["ಪೂರ್ಣವಾಗಿ ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆ ಮಾಡಿರುವುದು"].toLocaleString('en-IN')
+    },
+    {
+        name: "ಭಾಗಶಃ ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆ ಮಾಡಿರುವುದು",
+        selector: "ಭಾಗಶಃ ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆ ಮಾಡಿರುವುದು",
+        wrap: true,
+        format: data => data["ಭಾಗಶಃ ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆ ಮಾಡಿರುವುದು"].toLocaleString('en-IN')
+    },
+    {
+        name: "ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆ ಮಾಡದೇ ಇರುವುದು",
+        selector: "ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆ ಮಾಡದೇ ಇರುವುದು",
+        wrap: true,
+        format: data => data["ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆ ಮಾಡದೇ ಇರುವುದು"].toLocaleString('en-IN')
+    },
+    {
+        name: "ವಹಿವಾಡು ನಡೆಸದ ನಿಯಂತ್ರಣ ಅಧಿಕಾರಿಗಳು",
+        selector: "ವಹಿವಾಡು ನಡೆಸದ ನಿಯಂತ್ರಣ ಅಧಿಕಾರಿಗಳು",
         wrap: true,
     },
     {
-        name: "Status",
-        selector: "Status",
+        name: "ಒಟ್ಟು ಮೊತ್ತ",
+        selector: "ಒಟ್ಟು ಮೊತ್ತ",
         wrap: true,
-        grow:0.2
+        format: data => data["ಒಟ್ಟು ಮೊತ್ತ"].toLocaleString('en-IN')
     },
     {
-        name: "Impact of deficiency",
-        selector: "Impact of deficiency",
+        name: "ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆಯಾದ ಮೊತ್ತ",
+        selector: "ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆಯಾದ ಮೊತ್ತ",
+        wrap: true,
+        format: data => data["ಲೆಕ್ಕ ಹೊಂದಾಣಿಕೆಯಾದ ಮೊತ್ತ"].toLocaleString('en-IN')
+    },
+    {
+        name: "ಶತಾಂಶ",
+        selector: "ಶತಾಂಶ",
         wrap: true,
     }
 ];
 
+const customStyles = styles;
 
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
-
-
-
-const Table10 = () => {
+const Table10kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -89,9 +71,9 @@ const Table10 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.10: Compliance to Accounting Standards."
+                    title="ಕೋಷ್ಟಕ 4.10: ಸ್ವೀಕೃತಿಗಳು ಮತ್ತು ವೆಚ್ಚದ ಅಂಕಿಗಳ ಸಮನ್ವಯದ ಸ್ಥಿತಿ"
                     columns={columns}
-                    data={ctx.reportData.Chap4Tables.Table10}
+                    data={ctx.tables4kan.Table10}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}
@@ -104,4 +86,4 @@ const Table10 = () => {
     );
 }
 
-export default Table10;
+export default Table10kan;

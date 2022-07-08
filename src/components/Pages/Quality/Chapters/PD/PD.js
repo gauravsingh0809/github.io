@@ -11,6 +11,7 @@ import Table5kan from "../../../Tables/Chapter4kan/Table5";
 import Table6 from "../../../Tables/Chapter4/Table6";
 import Table6kan from "../../../Tables/Chapter4kan/Table6";
 import Table7 from "../../../Tables/Chapter4/Table7";
+import Table7kan from "../../../Tables/Chapter4kan/Table7";
 
 const PD = () => {
 
@@ -108,7 +109,7 @@ const PD = () => {
                         <h3 className="headnote"> 
                             ₹ In crore
                         </h3>
-                        <Table7 />
+                        <Table7kan />
                         {["para37a","para38","para39","para40","para41","para42"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
