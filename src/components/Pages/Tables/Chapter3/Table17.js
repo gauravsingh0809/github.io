@@ -10,51 +10,51 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "Sl No",
-        selector: "Sl No",
+        name: "Year",
+        selector: "Year",
         wrap: true,
         grow:0.05
     },
     {
-        name: "HOA and Nomenclature",
-        selector: "HOA and Nomenclature",
+        name: "Revenue",
+        selector: "Revenue",
         wrap: true,
-        grow:2
+        grow:1
     },
     {
-        name: "Total Expenditure",
-        selector: "Total Expenditure",
+        name: "Revenue",
+        selector: "FIELD3",
         wrap: true,
         sortable:true,
-        format: data => data["Total Expenditure"].toLocaleString('en-IN')
+        
     },
     {
-        name: "Expenditure during last quarter",
-        selector: "Expenditure during last quarter",
+        name: "Revenue",
+        selector: "FIELD4",
         wrap: true,
         sortable:true,
-        format: data => data["Expenditure during last quarter"].toLocaleString('en-IN')
+       
     },
     {
-        name: " ",
-        selector: "1",
+        name: "Capital",
+        selector: "Capital",
         wrap: true,
         sortable:true,
-        format: data => data["1"].toLocaleString('en-IN')
+        
     },
     {
-        name: "Expenditure during March",
-        selector: "Expenditure during March",
+        name: "Capital",
+        selector: "FIELD6",
         wrap: true,
         sortable:true,
-        format: data => data["Expenditure during March"].toLocaleString('en-IN')
+        
     },
     {
-        name: " ",
-        selector: "2",
+        name: "Capital",
+        selector: "FIELD7",
         wrap: true,
         sortable:true,
-        format: data => data["2"].toLocaleString('en-IN')
+       
     }
 ];
 
@@ -69,7 +69,7 @@ const Table17 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.17: Rush of Expenditure"
+                    title="Table 3.12 : Anticipated savings not surrendered/partially surrendered"
                     columns={columns}
                     data={ctx.tables3.Table17}
                     customStyles={customStyles}

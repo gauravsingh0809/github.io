@@ -9,46 +9,60 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "ಅವಧಿ ಮುಕ್ತಾಯ ವರ್ಷ",
-        selector: "ಅವಧಿ ಮುಕ್ತಾಯ ವರ್ಷ",
+        name: "ವರ್ಷ",
+        selector: "ವರ್ಷ",
         grow:2 ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "ಅವಧಿ",
-        selector: "ಅವಧಿ",
+        name: "ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನ",
+        selector: "ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನ",
         // grow:0.05,
         wrap: true,
-        format: data => data["ಅವಧಿ"].toLocaleString('en-IN')
+        
     },
     {
-        name: "ಮೊತ್ತ",
-        selector: "ಮೊತ್ತ",
+        name: "ಆಯವ್ಯಯದ ಹೊರಗಿನ ಸಾಲಗಳು",
+        selector: "ಆಯವ್ಯಯದ ಹೊರಗಿನ ಸಾಲಗಳು",
         // grow:0.05,
         wrap: true,
-        format: data => data["ಮೊತ್ತ"].toLocaleString('en-IN')
+       
     },
     {
-        name: "",
-        selector: "1",
+        name: "ವಿತ್ತೀಯ ಕೊರತೆ",
+        selector: "ವಿತ್ತೀಯ ಕೊರತೆ",
         // grow:0.05,
         wrap: true,
-        format: data => data["1"].toLocaleString('en-IN')
+        
     },
     {
-        name: "",
-        selector: "__1",
+        name: "ವಿತ್ತೀಯ ಕೊರತೆ + ಆಯವ್ಯಯ ಹೊರಗಿನ ಸಾಲಗಳು",
+        selector: "ವಿತ್ತೀಯ ಕೊರತೆ + ಆಯವ್ಯಯ ಹೊರಗಿನ ಸಾಲಗಳು",
         // grow:0.05,
         wrap: true,
-        format: data => data["__1"].toLocaleString('en-IN')
+        
     },
     {
-        name: "ಒಟ್ಟು ಸಾರ್ವಜನಿಕ ಋಣದ ಶೇಕಡ",
-        selector: "ಒಟ್ಟು ಸಾರ್ವಜನಿಕ ಋಣದ ಶೇಕಡ",
+        name: "ವಿತ್ತೀಯ ಕೊರತೆ/ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನ",
+        selector: "ವಿತ್ತೀಯ ಕೊರತೆ/ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನ",
         // grow:0.05,
         wrap: true,
-        format: data => data["ಒಟ್ಟು ಸಾರ್ವಜನಿಕ ಋಣದ ಶೇಕಡ"].toLocaleString('en-IN')
+        
+    },
+    {
+        name: "(ವಿತ್ತೀಯ ಕೊರತೆ+ಆಯವ್ಯಯ ಹೊರಗಿನ ಸಾಲಗಳು)/ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನ",
+        selector: "(ವಿತ್ತೀಯ ಕೊರತೆ+ಆಯವ್ಯಯ ಹೊರಗಿನ ಸಾಲಗಳು)/ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನ",
+        // grow:0.05,
+        wrap: true,
+        
+    },
+    {
+        name: "ಬಾಕಿಸಾಲ/ ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನ",
+        selector: "ಬಾಕಿಸಾಲ/ ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನ",
+        // grow:0.05,
+        wrap: true,
+        
     }
 ];
 
@@ -62,7 +76,7 @@ const Table34kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.34: ಸಾರ್ವಜನಿಕ ಋಣದ ಅವಧಿ ಪೂರ್ಣತೆಯ ಚಿತ್ರಣ"
+                    title="ಕೋಷ್ಟಕ-೨.೩೩(ಎ): ವಿತ್ತೀಯ ಸೂಚಕಗಳ ಮೇಲೆ ಆಯವ್ಯಯದ ಹೊರಗಿನ ಸಾಲಗಳ ಪ್ರಭಾವ"
                     columns={columns}
                     data={ctx.tables2kan.Table34}
                     customStyles={customStyles}

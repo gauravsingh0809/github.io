@@ -8,7 +8,8 @@ import Title from "../../../../Title/Title";
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import Table10 from "../../../Tables/Chapter4/Table10";
 import Table10kan from "../../../Tables/Chapter4kan/Table10";
-
+import c43 from '../../../../../Images/c43.png'
+import k43 from '../../../../../Images/k43.png'
 import ImageComponent from 'material-ui-image'
 import { getFirebase } from '../../../../../firebase/firebase'
 
@@ -40,7 +41,12 @@ const NonReconciliation = () => {
                         <Para>
                             {ctx.chapterFour.Third.Para25}
                         </Para>
-                        <ImageComponent src={url} alt="chart43" aspectRatio={1 / 0.35} />
+                        <h3 className="headnote">
+                            ₹ In crore
+                        </h3>
+                       <ImageComponent flex="4" aspectRatio = "4" resizeMode = 'contain' src={c43} color ="#ffffff00" />
+<h4>Source- Finance Accounts</h4>
+<h4> * Excludes loans and advances </h4>
                         <Para>
                             {ctx.chapterFour.Third.Para25a}
                         </Para>
@@ -54,9 +60,9 @@ const NonReconciliation = () => {
                             {ctx.chapterFour.Third.Para26}
                         </Para>
 
-                        <Para>
+                        {/* <Para>
                             {ctx.chapterFour.Third.Para27}
-                        </Para>
+                        </Para> */}
                     </div>
                 </div>
                 : <div>
@@ -74,20 +80,23 @@ const NonReconciliation = () => {
                         <Para>
                             {ctx.chapter4kannada.Content.para67}
                         </Para>
+                        <h3 className="headnote">
+                        (` ಕೋಟಿಗಳಲ್ಲಿ )
+          </h3>
+                        <ImageComponent src={k43}  aspectRatio={1 / 0.5} />
+                       <h4> ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು <br></br>		*ಸಾಲಗಳು ಮತ್ತು ಮುಂಗಡಗಳನ್ನು ಹೊರತುಪಡಿಸಿ </h4>
                         <Para>
                             {ctx.chapter4kannada.Content.para68}
                         </Para>
                         <h3 className="headnote">
-                            ₹ In crore
+                        (` ಕೋಟಿಗಳಲ್ಲಿ)
                         </h3>
                         <Table10kan />
                         <h4>ಆಕರ-ಎಮ್‌ಸಿಎ ಮೇಲಿನ ವರದಿ ಮತ್ತು ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h4>
                         <Para>
                             {ctx.chapter4kannada.Content.para69}
                         </Para>
-                        <Para>
-                            {ctx.chapter4kannada.Content.para70}
-                        </Para>
+                      
                     </div>
                 </div>
                 : <div>

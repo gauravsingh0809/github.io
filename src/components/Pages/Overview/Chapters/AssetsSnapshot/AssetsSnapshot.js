@@ -28,12 +28,15 @@ const AssetsSnapshot = () => {
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
+                          <h3 className='headnote'>
+                        ₹ in crore
+                       </h3>
                         <Table3 />
                         <h4 className='footnote'>
                             <i>
                                 {ctx.tables1.T3F1}
                                 <br></br>
-                                * Effective Loans and Advances for GoI would be ₹ 14,210 crore as the Department of Expenditure, GoI had decided that GST compensation of ₹ 12,407 crore given to the state as back-to- back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
+                                * Effective Loans and Advances for GoI would be `14,869 crore as the Department of Expenditure, GoI had decided that GST compensation of `12,407 and `18,109 crore given to the state as back-to-back loan during 2020-21 and 2021-22 respectively under Debt Receipt would not be treated as debt of the State for any norms which may be prescribed by the Finance Commission.
                             </i>
                         </h4>
                         {["Para45"].map((item, ind) =>
@@ -66,10 +69,8 @@ const AssetsSnapshot = () => {
                             <i>
                                 ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು
                                 <br></br>
-                                * ಋಣ ಸ್ವೀಕೃತಿಗಳಡಿಯಲ್ಲಿ ರಾಜ್ಯಕ್ಕೆ ಬ್ಯಾಕ್-ಟು-ಬ್ಯಾಕ್ ಸಾಲವಾಗಿ ನೀಡಲಾದ ₹12,407 ಕೋಟಿ ಸರಕು ಮತ್ತು
-                                 ಸೇವಾ ತೆರಿಗೆ ಪರಿಹಾರವನ್ನು, ಹಣಕಾಸು ಆಯೋಗವು ಸೂಚಿಸಬಹುದಾದ ಯಾವುದೇ ಮಾನದಂಡಗಳಿಗೆ ರಾಜ್ಯದ
-                                  ಸಾಲವೆಂದು ಪರಿಗಣಿಸಲಾಗುವುದಿಲ್ಲ ಎಂದು ಭಾರತ ಸರ್ಕಾರದ ವೆಚ್ಚದ ಇಲಾಖೆಯು ನಿರ್ಧರಿಸಿರುವುದರಿಂದ ಭಾರತ 
-                                  ಸರ್ಕಾರದಿಂದ ನಿವ್ವಳ ಸಾಲಗಳು ಮತ್ತು ಮುಂಗಡಗಳು ₹1೪,೨೧೦ ಕೋಟಿಯಾ ಗುತ್ತದೆ
+                                * ಭಾರತ ಸರ್ಕಾರಕ್ಕೆ ಪರಿಣಾಮಕಾರಿ ಸಾಲಗಳು ಮತ್ತು ಮುಂಗಡಗಳು `೧೪,೮೬೯ ಕೋಟಗಳಷ್ಟಾಗುತ್ತದೆ ಏಕೆಂದರೆ, ಭಾರತ ಸರ್ಕಾರದ ವೆಚ್ಚ ಇಲಾಖೆಯು ರಾಜ್ಯಕ್ಕೆ ಬ್ಯಾಕ್‌-ಟು-ಬ್ಯಾಕ್‌ ಸಾಲವಾಗಿ ಋಣ ಸ್ವೀಕೃತಿ ಅಡಿಯಲ್ಲಿ ನೀಡಿದ ಸರಕು ಮತ್ತು ಸೇವಾ ತೆರಿಗೆ ಪರಿಹಾರ ಧನವಾದ ೨೦೨೦-೨೧ರಲ್ಲಿ `೧೨,೪೦೭ ಕೋಟಿ ಮತ್ತು ೨೦೨೧-೨೨ರಲ್ಲಿ `೧೮,೧೦೯ ಕೋಟಿಗಳನ್ನು ಹಣಕಾಸು ಅಯೋಗದಿಂದ ನಿಗದಿಪಡಿಸುವ ಯಾವುದೇ ಮಾನದಂಡದಡಿಯಲ್ಲಿ ರಾಜ್ಯದ ಸಾಲ ಎಂದು ಪರಿಗಣಿಸುವುದಿಲ್ಲ ಎಂದು ನಿರ್ದರಿಸಿತು. 
+                                  
                             </i>
                         </h4>
                         {["para48"].map((item, ind) =>

@@ -24,7 +24,7 @@ const Follow = () => {
                         <Title>
                         {ctx.chapterFour.Fourth.Para23}
                         </Title>
-                        {["Para24","Para25"].map((item, ind) =>
+                        {["Para24"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.Fourth[item]}
                             </Para> )}
@@ -44,7 +44,7 @@ const Follow = () => {
                     <Title>
                     {ctx.chapter4kannada.Content.para95}
                     </Title>
-                    {["para96","para97"].map((item, ind) =>
+                    {["para97"].map((item, ind) =>
                         <Para key={ind / 10}>
                             {ctx.chapter4kannada.Content[item]}
                         </Para> )}

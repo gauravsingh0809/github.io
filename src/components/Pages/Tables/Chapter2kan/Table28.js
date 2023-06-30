@@ -15,32 +15,31 @@ const columns = [
     },
     {
         name: "ಒವೆ/ರಾಒಆಉ",
-        selector: "ಒವೆ ರಾಒಆಉ",
+        selector: "ಒವೆ/ರಾಒಆಉ",
         wrap: true,
        
     },
     {
-        name: "ಬವೆ/ಒವೆ",
-        selector: "ಬವೆ ಒವೆ",
+        name: "ಬಂವೆ/ಒವೆ",
+        selector: "ಬಂವೆ/ಒವೆ",
+        wrap: true,
+    },
+    
+    {
+        name: "ಅವೆ/ಒವೆ",
+        selector: "ಅವೆ/ಒವೆ",
         wrap: true,
         
     },
     {
-        name: "ಅವೆ/ಒವೆ",
-        selector: "ಅವೆ ಒವೆ",
-        wrap: true,
-    },
-    {
-        name: "2018-19",
-        selector: "2018 19",
-        // grow: 0.05,
-        // width:'110px',
+        name: "ಶಿಕ್ಷಣ/ಒವೆ",
+        selector: "ಶಿಕ್ಷಣ/ಒವೆ",
         wrap: true,
         
     },
     {
         name: "ಆರೋಗ್ಯ/ಒವೆ",
-        selector: "ಆರೋಗ್ಯ ಒವೆ",
+        selector: "ಆರೋಗ್ಯ/ಒವೆ",
         wrap: true,
         
     }
@@ -48,7 +47,7 @@ const columns = [
 
 const customStyles = styles;
 
-const Table27kan = () => {
+const Table28kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -56,9 +55,9 @@ const Table27kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.27: 2020-21ರಲ್ಲಿ ರಾಜ್ಯಗಳ ಹಣಕಾಸಿನ ಆದ್ಯತೆ"
+                    title="ಕೋಷ್ಟಕ-2.2೮: 202೧-2೨ರಲ್ಲಿ ರಾಜ್ಯಗಳ ಹಣಕಾಸಿನ ಆದ್ಯತೆ"
                     columns={columns}
-                    data={ctx.tables2kan.Table27}
+                    data={ctx.tables2kan.Table28}
                     customStyles={customStyles}
                     striped
                     highlightOnHover
@@ -69,4 +68,4 @@ const Table27kan = () => {
     );
 }
 
-export default Table27kan;
+export default Table28kan;

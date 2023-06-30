@@ -11,7 +11,7 @@ import Table1 from '../../../Tables/Chapter4/Table1'
 
 const QualConclusion = () => {
 
-    const ctx = useContext(MyContext)
+    const ctx = useContext (MyContext)
 
     return (
         ctx.langPref
@@ -24,7 +24,7 @@ const QualConclusion = () => {
                         <Title>
                             {ctx.chapterFour.Fourth.Para26}
                         </Title>
-                        {["Para27", "Para28", "Para29", "Para30"].map((item, ind) =>
+                        {["Para27", "Para28", "Para29", "Para30","Para30a"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.Fourth[item]}
                             </Para>)}
@@ -42,7 +42,7 @@ const QualConclusion = () => {
                         <Title>
                             {ctx.chapter4kannada.Content.para98}
                         </Title>
-                        {["para99", "para100", "para101", "para102"].map((item, ind) =>
+                        {["para99", "para100", "para101", "para102","para102a"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}

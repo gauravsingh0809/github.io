@@ -25,76 +25,13 @@ const useStyles = makeStyles({
 
 const colorScheme = ["ef476f", "ffd166", "06d6a0", "118ab2", "073b4c"]
 
-// const Chart1 = () => {
-//   const char = useContext(MyContext)
-//   const classes = useStyles();
-//   const chart = char.charts
-//   // console.log("chart",chart.Chart1.map((item, index) => Object.keys(item)).filter(i => i !== "Year"))
-//   // console.log(chart.Chart1.filter((item, index) => Object.keys(item)[0] !== "Year"))
-//   // let k = chart.Chart1.map(item => Object.keys(item)[0]).filter(i => i !== "Year")
-//   // console.log(chart.Chart1.map(item => Object.keys(item)).filter(i => i !== "Year"))
-//   // console.log([].concat(...chart.Chart1.map(Object.keys)))
-//   let k = Array.from(new Set([].concat(...chart.Chart1.map(Object.keys)))).sort()
-//   // console.log("k_final",k)
-
-
-//   let chartmap = chart
-//     ? chart.Chart1.filter((item, index) => index < (Object.keys(item).length))
-//       .map((item, ind) => {
-//         // console.log("item",item)
-        
-//         let data = {
-//           x: chart.Chart1.map((item, index) => item.Year),
-//           // y: chart.Chart1.map((item) => item[k[ind]]),
-//           y: chart.Chart1.map((item, index) => Object.values(item)[ind]),
-//           type: 'scatter',
-//           name: Object.keys(item)[ind],
-          
-//           line: {
-//             shape: 'spline',
-//             smoothing: 0.1,
-//             width: 3
-//           },
-//         }
-//         return data
-//       }
-//       ) : "no data"
-
-//   return (
-//     char.themeChanger
-//       ?
-//       <Card className={classes.cardColored}>
-//         <CustomLineChart data={chartmap}
-//           title="Chart 1.1: Growth of India’s GDP and State’s GSDP"
-//           xaxisTitle="Year"
-//           yaxisTitle="In Percent"
-//           rangeStart="-12"
-//           rangeEnd="20"
-//           step="2"
-//         /></Card>
-//       : <Card className={classes.cardMargin}>
-//         <CustomLineChart data={chartmap}
-//           title="Chart 1.1: Growth of India’s GDP and State’s GSDP"
-//           xaxisTitle="Year"
-//           yaxisTitle="In Percent"
-//           rangeStart="-12"
-//           rangeEnd="20"
-//           step="2"
-//         />
-//       </Card>
-//   );
-// }
-// 
-// export default Chart1;
-
 const Chart1Kan = () => {
-  const char = useContext(MyContext)   // Context is what gives myu data
+  const char = useContext(MyContext)
   const classes = useStyles();
-  //console.log("Wanted to see inside",char.chartskan)
-  const chart = char.charts
+  const chart = char.chartskan
 
   let chartmap = chart
-    ? chart.Chart1.filter((item, index) => index < (Object.keys(item).length - 1))
+    ? chart.Chart1.filter((item, index) => index < (Object.keys(item).length - 1) )
       .map((item, ind) => {
         let data = {
           x: chart.Chart1.map((item, index) => item.Year),
@@ -146,7 +83,6 @@ const Chart1Kan = () => {
 }
 
 export default Chart1Kan;
-
 
 export const Chart2 = () => {
 

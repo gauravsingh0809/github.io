@@ -58,10 +58,10 @@ const Table26    = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.26: Department wise profile of 
+                    title="Table 2.27: Department wise profile of 
                     incomplete projects which are more than one 
-                    crore as on 31 March 2020
-                    (` in crore)"
+                    crore as on 31 March 2022
+                    "
                     columns={columns}
                     data={ctx.tables2.Table27 ? ctx.tables2.Table27.t27 : ""}
                     customStyles={customStyles}

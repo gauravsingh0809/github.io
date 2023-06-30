@@ -14,33 +14,33 @@ const columns = [
         wrap: true,
     },
     {
-        name: "2018-19",
-        selector: "2018 19",
-        wrap: true,
-    },
-    {
-        name: "",
-        selector: "1",
+        name: "2019-20",
+        selector: "2019-20",
         wrap: true,
     },
     {
         name: "2019-20",
-        selector: "2019 20",
-        wrap: true,
-    },
-    {
-        name: "",
-        selector: "2",
+        selector: "3",
         wrap: true,
     },
     {
         name: "2020-21",
-        selector: "2020 21",
+        selector: "2020-21",
         wrap: true,
     },
     {
-        name: "",
-        selector: "3",
+        name: "2020-21",
+        selector: "__1",
+        wrap: true,
+    },
+    {
+        name: "2021-22",
+        selector: "2021-22",
+        wrap: true,
+    },
+    {
+        name: "2021-22",
+        selector: "__2",
         wrap: true,
     }
 ];
@@ -50,6 +50,7 @@ const customStyles = styles;
 const Table8 = () => {
 
     const ctx = useContext(MyContext)
+
 
     return (
         <div className="App" style={{ margin: "40px 0 40px 0" }} >

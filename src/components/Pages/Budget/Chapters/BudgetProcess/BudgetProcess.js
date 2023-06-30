@@ -9,8 +9,8 @@ import "./../../Budget.css";
 
 import ImageComponent from 'material-ui-image'
 import { getFirebase } from '../../../../../firebase/firebase'
-
-
+import c31 from '../../../../../Images/c31.png'
+import k31 from '../../../../../Images/k31.png'
 
 const BudgetProcess = () => {
   const ctx = useContext(MyContext);
@@ -39,7 +39,16 @@ const BudgetProcess = () => {
             )
           )}
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
-             <ImageComponent src={url} alt="chart32" aspectRatio={1/0.35} />
+
+             <Title>
+             Chart 3.1 Summary of Budget and Expenditure of Karnataka for 2021-22                  
+                        </Title>
+                        <h3 className="headnote">
+            ₹ In crore
+          </h3>
+                        <ImageComponent flex="2" aspectRatio = "2" resizeMode = 'contain' src={c31} color ="#ffffff00" />
+                       
+             
 
         </div>
       </div>
@@ -61,6 +70,13 @@ const BudgetProcess = () => {
               <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
             )
           )}
+                            <Title >
+                            ನಕ್ಷೆ-೩.೧: ೨೦೨1-22ರ ಕರ್ನಾಟಕದ ಆಯವ್ಯಯ ಮತ್ತು ವೆಚ್ಚದ ಸಾರಾಂಶ
+                        </Title>
+                        <h3 className="headnote">
+                        (` ಕೋಟಿಗಳಲ್ಲಿ )
+          </h3>
+     <ImageComponent src={k31}  aspectRatio={1 / 0.5} />
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 
         </div>

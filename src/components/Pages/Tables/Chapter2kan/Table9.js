@@ -8,50 +8,85 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "ಶೀರ್ಷಿಕೆ",
-        selector: "ಶೀರ್ಷಿಕೆ",
+        name: "ವರ್ಷ",
+        selector: "ವರ್ಷ",
         // grow: ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "2016 17",
-        selector: "2016 17",
+        name: "ಅನುದಾನದ ಸ್ವರೂಪ",
+        selector: "1",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2016 17"].toLocaleString('en-IN')
+        format: data => data["1"].toLocaleString('en-IN')
     },
     {
-        name: "2017 18",
-        selector: "2017 18",
+        name: "",
+        selector: "_1",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2017 18"].toLocaleString('en-IN')
+        format: data => data["_1"].toLocaleString('en-IN')
     },
     {
-        name: "2018 19",
-        selector: "2018 19",
+        name: "ಗ್ರಾಮೀಣ ಸ್ಥಳೀಯ ಸಂಸ್ಥೆಗಳು",
+        selector: "2",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2018 19"].toLocaleString('en-IN')
+        format: data => data["2"].toLocaleString('en-IN')
     },
     {
-        name: "2019 20",
-        selector: "2019 20",
+        name: "",
+        selector: "_2",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN')
+        format: data => data["_2"].toLocaleString('en-IN')
     },
     {
-        name: "2020 21",
-        selector: "2020 21",
+        name: "",
+        selector: "_3",
         // grow:0.05,
         wrap: true,
-        format: data => data["2020 21"].toLocaleString('en-IN')
+        format: data => data["_3"].toLocaleString('en-IN')
+    },
+    {
+        name: "ನಗರ ಸ್ಥಳೀಯ ಸಂಸ್ಥೆಗಳು",
+        selector: "3",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["3"].toLocaleString('en-IN')
+    },
+    {
+        name: "",
+        selector: "_4",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["_4"].toLocaleString('en-IN')
+    },
+    {
+        name: "",
+        selector: "_5",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["_5"].toLocaleString('en-IN')
+    },
+    {
+        name: "ರಾಜ್ಯ ವಿಪತ್ತು ಅಪಾಯ ನಿರ್ವಹಣಾ ನಿಧಿ",
+        selector: "4",
+        // grow:0.05,
+        wrap: true,
+        format: data => data["4"].toLocaleString('en-IN')
+    },
+    {
+        name: "",
+        selector: "_6",
+        // grow:0.05,
+        wrap: true,
+        //format: data => data["_6"].toLocaleString('en-IN')
     }
 ];
 
@@ -74,9 +109,9 @@ const Table9kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.8: ಭಾರತ ಸರ್ಕಾರದಿಂದ ಸಹಾಯಾನುದಾನ"
+                    title="ಕೋಷ್ಟಕ-2.೧೦: 202೧-2೨ರಲ್ಲಿ ಶಿಫಾರಸು ಮಾಡಿದ ಅನುದಾನ ಮತ್ತು ವಾಸ್ತವ ಬಿಡುಗಡೆ   (` ಕೋಟಿಗಳಲ್ಲಿ) "
                     columns={columns}
-                    data={ctx.tables2kan.Table8}
+                    data={ctx.tables2kan.Table9}
                     customStyles={customStyles}
                     striped
                     conditionalRowStyles={conditionalRowStyles}

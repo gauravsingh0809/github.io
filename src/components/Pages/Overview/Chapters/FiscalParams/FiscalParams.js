@@ -10,8 +10,11 @@ import Subtitle from "../../../../Subtitle/Subtitle"
 import { Chart5, Chart6 } from '../../../Charts/Charts'
 import Table4 from '../../../Tables/Chapter1/Table4'
 import Table4kan from '../../../Tables/Chapter1kan/Table4'
-
-
+import kc6 from '../../../../../Images/kc6.png'
+import kc7 from '../../../../../Images/kc7.png'
+import c6 from '../../../../../Images/c6.png'
+import c7 from '../../../../../Images/c7.png'
+import ImageComponent from 'material-ui-image'
 
 const FiscalParams = () => {
 
@@ -41,20 +44,34 @@ const FiscalParams = () => {
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
-                        <Chart5 />
-                        <Chart6 />
+                        <Title>
+                        Chart 1.6: Trends in deficit parameters                    
+                        </Title>
+                        <ImageComponent flex="2" aspectRatio = "2" resizeMode = 'contain' src={c6} color ="#ffffff00" />
+                        <h4>
+                        Source: Finance Accounts  
+                        </h4>
+                        <Title>
+                        Chart 1.7: Trends in Surplus/Deficit relative to GSDP                    
+                        </Title>
+                        <ImageComponent flex="2" aspectRatio = "2" resizeMode = 'contain' src={c7} color ="#ffffff00" />
+                        <h4>
+                        Source: Directorate of Economics and Statistics, GoK, and Finance Accounts 
+                        </h4>
+                        {/* <Chart5 />
+                        <Chart6 /> */}
 
                         <Para>
-                            {ctx.chapterOne.Profile.Para51.substring(0, 91)}
+                            {ctx.chapterOne.Profile.Para51}
 
-                            <span className="tooltip">
+                            {/* <span className="tooltip">
                                 {ctx.chapterOne.Profile.Para51.substring(91, 99)}
                                 <span className="tooltiptext">
                                     Growth rate of Revenue Receipts and Revenue Expenditure for 2020-21 is (-) 10.67 per cent and 1.03 per cent respectively. The difference between these two is (-) 9.64 per cent.
                                 </span>
-                                <sup>4</sup>
+                                <sup></sup>
                             </span>
-                            {ctx.chapterOne.Profile.Para51.substring(99,)}
+                            {ctx.chapterOne.Profile.Para51.substring(99,)} */}
 
                         </Para>
 
@@ -76,11 +93,11 @@ const FiscalParams = () => {
                             <i>
                                 {ctx.tables1.T4F1}
                                 <br></br>
-                                * Effective Loans and Advances for GoI would be ₹ 14,210 crore as the Department of Expenditure, GoI had decided that GST compensation of ₹ 12,407 crore given to the state as back-to-back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
+                                * Effective Loans and Advances for GoI would be `14,869 crore as the Department of Expenditure, GoI had decided that GST compensation of `12,407 crore and `18,109 crore  given to the State as back-to-back loan during 2020-21 and 2021-22 respectively under Debt Receipt would not be treated as debt of the State for any norms which may be prescribed by the Finance Commission.
                             </i>
                         </h4>
 
-                        {["Para53a","Para54"].map((item, ind) =>
+                        {["Para53a","Para54","Para54a"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
@@ -114,13 +131,23 @@ const FiscalParams = () => {
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        <Chart5 />
+ <Title >
+ ನಕ್ಷೆ-1.6: ಕೊರತೆಯ ಪ್ರಮಿತಿಗಳಲ್ಲಿನ ಪ್ರವೃತ್ತಿಗಳು
+                        </Title>
+     <ImageComponent src={kc6}  aspectRatio={1 / 0.5} />
+     <h4> ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h4>
+                        {/* <Chart5 /> */}
                         {["f8a"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        <Chart6 />
+                        <Title >
+                        ನಕ್ಷೆ-1.7: ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನಕ್ಕೆ ಸಂವಾದಿಯಾಗಿ ಹೆಚ್ಚಳ/ಕೊರತೆಯ ಪ್ರವೃತ್ತಿಗಳು
+                        </Title>
+     <ImageComponent src={kc7}  aspectRatio={1 / 0.5} />
+     <h4> ಆಕರ: ಹಣಕಾಸು ಲೆಕ್ಕಗಳು</h4>
+                        {/* <Chart6 /> */}
                         {["f8b"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
@@ -142,13 +169,13 @@ const FiscalParams = () => {
                             </Para>
                         )}
                         <Table4kan />
-                        {["f10"].map((item, ind) =>
+                        {["f10","f10a"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
                       
-                        {["para56a","para57"].map((item, ind) =>
+                        {["para57"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>

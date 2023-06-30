@@ -20,7 +20,7 @@ const AppropAccounts = () => {
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget/policy" forward="/budget/audit" />
+          <FloatingActionButtons back="/budget/child-budget" forward="/budget/audit" />
 
           <Title>{ctx.chapterThree.Profile.Para33}</Title>
 
@@ -30,7 +30,7 @@ const AppropAccounts = () => {
               {ctx.chapterThree.Profile.Para34.substring(867, 875)}
               <span className="tooltiptext">
                 Finance Accounts provides broad perspective of finances of GoK during the financial year which is dealt in the Chapter 1 and 2 of this Report.              </span>
-              <sup>30</sup>
+              <sup>22</sup>
             </span>
 
             {ctx.chapterThree.Profile.Para34.substring(875,)}
@@ -64,6 +64,11 @@ const AppropAccounts = () => {
               Source: Appropriation Accounts
             </i>
           </h4>
+          {["Para39a"].map(
+            (item, ind) => (
+              <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
+            )
+          )}
           {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 
         </div>
@@ -80,7 +85,7 @@ const AppropAccounts = () => {
         <div>
           <Navbar />
           <div className="contentwrapper" id="home">
-            <FloatingActionButtons back="/budget/policy" forward="/budget/audit" />
+            <FloatingActionButtons back="/budget/child-budget" forward="/budget/audit" />
 
             <Title>{ctx.chapter3kannada.Content.para39}</Title>
             {["para40", "para41", "para42"].map(
@@ -88,17 +93,24 @@ const AppropAccounts = () => {
                 <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
               )
             )}
+            <h3 className="headnote">
+            (` ಕೋಟಿಗಳಲ್ಲಿ)
+          </h3>
             <Table5kan />
-            <h6>ಆಧಾರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
+            <h4>ಆಧಾರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h4>
             {["para43", "para44", "para45"].map(
               (item, ind) => (
                 <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
               )
             )}
             <Table6kan />
-            <h6>ಆಧಾರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h6>
+            <h4>ಆಧಾರ: ಧನವಿನಿಯೋಗ ಲೆಕ್ಕಗಳು</h4>
             {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
-
+            {["para45a"].map(
+              (item, ind) => (
+                <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
+              )
+            )}
           </div>
         </div>
       )

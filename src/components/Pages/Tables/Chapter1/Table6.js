@@ -15,7 +15,7 @@ const columns = [
         grow: 0.1,
     },
     {
-        name: "Fiscal variables",
+        name: "Fiscal Variables",
         selector: "Fiscal Variables",
         wrap: true,
         grow: 2,
@@ -36,22 +36,21 @@ const columns = [
         ]
     },
     {
-        name: "Projection as per MTFP 2019-23",
-        selector: "Projection as per MTFP 2019-23",
-        wrap: true,
-        format: data => data["Projection as per MTFP 2019-23"].toLocaleString('en-IN')
+        name: "Projection as per MTFP",
+        selector: "Projection as per MTFP",
+        wrap: true
+        
     },
     {
-        name: "Actuals 2020-21",
-        selector: "Actuals 2020 21",
-        wrap: true,
-        format: data => data["Actuals 2020 21"].toLocaleString('en-IN')
-    },
+        name: "Actuals",
+        selector: "Actuals",
+        wrap: true
+    },  
     {
-        name: "Variation in per cent",
-        selector: "Variation in per cent",
-        wrap: true,
-        format: data => data["Variation in per cent"].toLocaleString('en-IN')
+        name: "Variation",
+        selector: "Variation",
+        wrap: true
+        
     },
 ];
 
@@ -66,7 +65,7 @@ const Table6 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 1.6: Actuals vis-à-vis projection in MTFP for 2020-21"
+                    title="Table 1.6: Actuals vis-à-vis projection in MTFP for 2021-22"
                     columns={columns}
                     data={ctx.tables1.Table6}
                     customStyles={customStyles}

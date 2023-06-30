@@ -38,9 +38,12 @@ const FinanceSnapshot = () => {
                                 <br></br>
                                 {ctx.tables1.T2F2}
                                 <br></br>
+                                <br></br>
+                                {ctx.tables1.T2F3}
+                                <br></br>
                                 {ctx.tables1.T2F4.substring(0, 97)}
                                 <br></br>
-                                ^^ Effective Public Debt Receipts would be ` 72,121 crore as the Department of Expenditure, GoI had decided that GST compensation of ` 12,407 crore given to the state as back-to-back loan under Debt Receipts would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
+                                ^^ Effective Public Debt Receipts for the year 2020-21 and 2021-22 would be ` 72,121 crore and `62,532 crore respectively, as the Department of Expenditure, GoI had decided that GST compensation of `12,407 crore in 2020-21 and `18,109 crore in 2021-22 given to the State as back-to-back loan under Debt Receipts would not be treated as debt of the State for any norms which may be prescribed by the Finance Commission.
                             </i>
                         </h4>
 
@@ -69,13 +72,13 @@ const FinanceSnapshot = () => {
                         <Table2kan/>
                       
                         <h4 >
-                            {["f4", "f5", "f6","f7"].map((item, ind) =>
+                            {["f4", "f5", "f6","f7","f7a"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}</h4>
 
-                        {["para43", "para44", "para45"].map((item, ind) =>
+                        {["para43", "para44"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>

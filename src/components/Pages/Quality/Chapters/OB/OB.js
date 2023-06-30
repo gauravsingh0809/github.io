@@ -97,7 +97,7 @@ const OB = () => {
                         <Para>
                             {ctx.chapterFour.Third["Para18"]}
                         </Para>
-                        <Para>
+                        {/* <Para>
                             {ctx.chapterFour.Third["Para19"]}
                         </Para>
                         <Para>
@@ -109,7 +109,7 @@ const OB = () => {
                             <li>
                                 {ctx.chapterFour.Third["Para21"]}
                             </li>
-                        </Para>
+                        </Para> */}
                         <Subtitle>
                             {ctx.chapterFour.Third["Para22"]}
                         </Subtitle>
@@ -146,24 +146,29 @@ const OB = () => {
                             {ctx.chapter4kannada.Content.para44}
                         </Subtitle>
 
-                        {["para44a","para45","para46","para47","para48","para49"].map((item, ind) =>
+                        {["para44a","para45"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}
+                     
                         <h3 className="headnote">
-                            ₹ In crore
+                        (` ಕೋಟಿಗಳಲ್ಲಿ)
                         </h3>
                         <Table8kan />
-                        <h6>ಆಕರ : ಡಿಡಿಆರ್‌ ಲೆಡ್ಜರುಗಳು</h6>
-                        {["para50", "para51", "para52", "para53", "para54", "para55", "para56", "para57", "para58", "para59", "para60", "para61", "para62", "para63", "para64", "para65"].map((item, ind) =>
+                        <h4>ಆಕರ: ಋಣ, ಠೇವಣಿ ಇರಸಾಲುಗಳ ಲೆಡ್ಜರ್‌</h4>
+                        {["para46","para47","para48","para49"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapter4kannada.Content[item]}
+                            </Para>)}
+                        {["para50", "para51", "para52", "para53", "para54", "para55", "para56", "para57", "para58", "para59", "para60", "para61", "para62"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}
                         <h3 className="headnote">
-                            ₹ In crore
+                        (` ಕೋಟಿಗಳಲ್ಲಿ)
                         </h3>
                         <Table9kan />
-                        <h6>ಆಕರ -  ಮಹಾಲೇಖಪಾಲರ (ಲೆ ಮತ್ತು ಹ) ಕಚೇರಿ</h6>
+                        <h4>ಆಕರ -  ಮಹಾಲೇಖಪಾಲರ (ಲೆ ಮತ್ತು ಹ) ಕಚೇರಿ</h4>
 
                     </div>
                 </div>

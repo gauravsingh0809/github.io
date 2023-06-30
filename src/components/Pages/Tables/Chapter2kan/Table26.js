@@ -41,7 +41,7 @@ const columns = [
 
 const conditionalRowStyles = [
   {
-    when: row => row["To the end of the Year"] === 'Total',
+    when: row => row["ವರ್ಷದ ಕೊನೆಗೆ"] === 'ಒಟ್ಟು',
     style: {
       backgroundColor:  'rgba(153, 165, 128, 0.9)',
     }
@@ -58,9 +58,10 @@ const Table26kan    = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.25: 31 ಮಾರ್ಚ್ 2021ರಲ್ಲಿದ್ದಂತೆ ಒಂದು ಕೋಟಿಗಿಂತ ಹೆಚ್ಚಿನ ಅಪೂರ್ಣ ಯೋಜನೆಗಳ ವರ್ಷಾವಾರು ವಿವರ  (` ಕೋಟಿಗಳಲ್ಲಿ)"
+                    title="ಕೋಷ್ಟಕ-2.26: 31 ಮಾರ್ಚ್ 202೨ರಲ್ಲಿದ್ದಂತೆ ಒಂದು ಕೋಟಿಗಿಂತ ಹೆಚ್ಚಿನ ಅಪೂರ್ಣ ಯೋಜನೆಗಳ ವರ್ಷಾವಾರು ವಿವರ
+                    (₹ಕೋಟಿಗಳಲ್ಲಿ)"
                     columns={columns}
-                    data={ctx.tables2kan.Table25}
+                    data={ctx.tables2kan.Table26}
                     customStyles={customStyles}
                     striped
                     conditionalRowStyles={conditionalRowStyles}

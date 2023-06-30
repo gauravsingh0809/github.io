@@ -25,7 +25,7 @@ const DCU = () => {
                         <Title>
                             {ctx.chapterFour.Fourth.Para8}
                         </Title>
-                        {["Para9", "Para10", "Para11", "Para12"].map((item, ind) =>
+                        {["Para9", "Para10", "Para11"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.Fourth[item]}
                             </Para>)}

@@ -198,43 +198,43 @@ export const SidebarData = [
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
+      // {
+      //   title: '3.5 Major policy pronouncements in the budget and their actual funding for ensuring implementation',
+      //   path: '/budget/policy',
+      //   id: 2,
+      //   icon: <FaIcons.FaAngleRight />,
+      //   cName: 'sub-nav'
+      // },
       {
-        title: '3.5 Major policy pronouncements in the budget and their actual funding for ensuring implementation',
-        path: '/budget/policy',
-        id: 2,
-        icon: <FaIcons.FaAngleRight />,
-        cName: 'sub-nav'
-      },
-      {
-        title: '3.6 Appropriation Accounts',
+        title: '3.5 Appropriation Accounts',
         path: '/budget/appropaccounts',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '3.7 Audit of Appropriation',
+        title: '3.6 Audit of Appropriation',
         path: '/budget/audit',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '3.8 Outcome of review of selected Grants',
+        title: '3.7 Outcome of review of selected Grants',
         path: '/budget/outcome',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '3.9 Conclusion',
+        title: '3.8 Conclusion',
         path: '/budget/conclusion',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '3.10 Recommendations',
+        title: '3.9 Recommendations',
         path: '/budget/recommendations',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
@@ -385,6 +385,132 @@ export const SidebarData = [
     ]
   },
   {
+    title: 'Chapter 5  - State Public Sector Enterprises',
+    path: '/State',
+    id: 1,
+    iconClosed: <FaIcons.FaPlusSquare size="12px"/>,
+    iconOpened: <FaIcons.FaRegMinusSquare size="12px" />,
+    subNav: [
+    
+      {
+        title: '5.1 Definition of Government Companies',
+        path: '/State/Definition',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+     
+      {
+        title: '5.2 Mandate of Audit',
+        path: '/State/Mandate',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.3 SPSEs and their contribution to the GSDP of the State',
+        path: '/State/Spse',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.4 Investment in SPSEs and Budgetary support',
+        path: '/State/Investment',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+ 
+      {
+        title: '5.5 Returns from SPSEs',
+        path: '/State/Returns',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.6 Debt Servicing',
+        path: '/State/Debt',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.7 Performance of listed SPSEs vis-a-vis private companies',
+        path: '/State/Performance',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+
+      {
+        title: '5.8 SPSEs incurring losses',
+        path: '/State/Loss',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.9 Audit of SPSEs',
+        path: '/State/Auditt',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      
+      {
+        title: '5.10  Appointment of statutory auditors of SPSEs by C&AG',
+        path: '/State/Appointment',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.11 Submission of accounts by SPSEs',
+        path: '/State/Submissions',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: "5.12 C&AG's oversight - Audit of accounts and supplementary audit ",
+        path: '/State/Cag',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.13  Result of C&AG’s oversight role',
+        path: '/State/Result',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.14 Management letters',
+        path: '/State/Management',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.15 Conclusion',
+        path: '/State/Conclusions',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.16 Recommendations',
+        path: '/State/Recommend',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      }
+    ]
+  },
+  {
     title: 'Appendices',
     path: '#',
     iconClosed: <FaIcons.FaPlusSquare size="12px"/>,
@@ -414,6 +540,13 @@ export const SidebarData = [
       {
         title: 'Appendix 4',
         path: '/appendices/appendix-4',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: 'Appendix 5',
+        path: '/appendices/appendix-5',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'

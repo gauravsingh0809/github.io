@@ -48,7 +48,7 @@ const Table5 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.5: Funds kept in PD Accounts"
+                    title="Table 4.6: Funds kept in PD Accounts"
                     columns={columns}
                     data={ctx.tables4.Table5 ? ctx.tables4.Table5.t5 : ""}
                     customStyles={customStyles}

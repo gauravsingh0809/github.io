@@ -19,20 +19,20 @@ const columns = [
         wrap: true,
     },
     {
-        name: "2019-20",
-        selector: "2019 20",
-        wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN')
-    },
-    {
         name: "2020-21",
         selector: "2020 21",
         wrap: true,
         format: data => data["2020 21"].toLocaleString('en-IN')
     },
     {
+        name: "2021-22",
+        selector: "2021 22",
+        wrap: true,
+        format: data => data["2021 22"].toLocaleString('en-IN')
+    },
+    {
         name: "Increase/Decrease",
-        selector: "Increase or Decrease",
+        selector: "Increase/ Decrease",
         wrap: true,
     },
   ];
@@ -49,7 +49,7 @@ const Table2 = () => {
             <Card>
                 <DataTable
                     title="Table 2.2: Details of Sources and Application of funds during 
-                    2019-20 and 2020-21"
+                    2020-21 and 2021-22"
                     columns={columns}
                     data={ctx.tables2.Table2}
                     customStyles={customStyles}

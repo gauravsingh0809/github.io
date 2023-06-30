@@ -97,7 +97,7 @@ const Table6kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ 3.6: 2016-17ರಿಂದ 2020-21ರ ಅವಧಿಯ ಪುರಸ್ಕೃತ ಮತ್ತು ಪ್ರಭೃತ ವಿತರಣೆಗಳು"
+                    title="ಕೋಷ್ಟಕ-೩.4: 2017-೧೮ರಿಂದ ೨೦೨೧-೨೨ರ ಅವಧಿಯಲ್ಲಿ ಪುರಸ್ಕೃತ ಮತ್ತು ಪ್ರಭೃತ ವಿತರಣೆಗಳು"
                     columns={columns}
                     data={ctx.tables3kan.Table6}   
                     customStyles={customStyles}

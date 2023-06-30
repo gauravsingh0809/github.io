@@ -9,11 +9,12 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "ಕ್ರಮ ಸಂಖ್ಯ",
+        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
         selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
         wrap: true,
         width: '70px',
     },
+    
     {
         name: "ವಹಿವಾಟಿನ ಸ್ವರೂಪ",
         selector: "ವಹಿವಾಟಿನ ಸ್ವರೂಪ",
@@ -21,34 +22,34 @@ const columns = [
         grow: 2,
     },
     {
-        name: "ರಾಜಸ್ವ ಹೆಚ್ಚಳ",
-        selector: "ರಾಜಸ್ವ ಹೆಚ್ಚಳ-",
+        name: "ರಾಜಸ್ವ ಕೊರತೆ",
+        selector: "ರಾಜಸ್ವ ಕೊರತೆ",
         wrap: true,
-        format: data => data["ರಾಜಸ್ವ ಹೆಚ್ಚಳ-"].toLocaleString('en-IN')
+        
     },
     {
         name: "ರಾಜಸ್ವ ಹೆಚ್ಚಳ",
-        selector: "ರಾಜಸ್ವ ಹೆಚ್ಚಳ",
+        selector: "2",
         wrap: true,
-        format: data => data["ರಾಜಸ್ವ ಹೆಚ್ಚಳ"].toLocaleString('en-IN')
-    },
-    {
-        name: "ವಿತ್ತೀಯ ಕೊರತೆ-",
-        selector: "ವಿತ್ತೀಯ ಕೊರತೆ-",
-        wrap: true,
-        format: data => data["ವಿತ್ತೀಯ ಕೊರತೆ-"].toLocaleString('en-IN')
+       
     },
     {
         name: "ವಿತ್ತೀಯ ಕೊರತೆ",
         selector: "ವಿತ್ತೀಯ ಕೊರತೆ",
         wrap: true,
-        format: data => data["ವಿತ್ತೀಯ ಕೊರತೆ"].toLocaleString('en-IN')
+       
+    },
+    {
+        name: "ವಿತ್ತೀಯ ಕೊರತೆ",
+        selector: "__1",
+        wrap: true,
+        
     },
 ];
 
 const conditionalRowStyles = [
     {
-        when: row => row["Sl No"] === 'Total',
+        when: row => row["ಕ್ರಮ ಸಂಖ್ಯೆ"] === 'ಒಟ್ಟು',
         style: {
             backgroundColor: 'rgba(53, 165, 128, 0.5)',
         },
@@ -71,7 +72,7 @@ const Table7kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ 1.7: 2020-21ರಲ್ಲಿ ಕೆಲವು ಪ್ರಮುಖ ವಹಿವಾಟುಗಳ ಪರಿಣಾಮ"
+                    title="ಕೋಷ್ಟಕ-1.7: ೨೦೨೧-೨೨ರ ಅವಧಿಯಲ್ಲಿ ಕೆಲವು ಪ್ರಮುಖ ವಹಿವಾಟುಗಳ ಪರಿಣಾಮ"
                     columns={columns}
                     data={ctx.tables1kan.Table7}
                     customStyles={customStyles}

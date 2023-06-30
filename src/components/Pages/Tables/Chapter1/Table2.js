@@ -10,13 +10,13 @@ import { styles } from "../helpers";
 const columns = [
     {
         name: "Sl No",
-        selector: "Sl No",
+        selector: "1",
         // sortable: true,
         grow: 0.3,
         cell: column =>
         (<div data-tag="allowColumnEvents">
             <div style={{ fontWeight: "bold", color: "#467880" }}>
-                {column["Sl No"]}
+                {column["1"]}
             </div>
         </div>),
         conditionalCellStyles: [
@@ -56,34 +56,49 @@ const columns = [
             },
         ]
     },
+    // {
+    //     name: "Sl. No.",
+    //     selector: "1",
+    //     // sortable: true,
+    //     right: true,
+       
+    // },
+    // {
+    //     name: "Components",
+    //     selector: "Components",
+    //     // sortable: true,
+    //     right: true,
+        
+    // },
     {
-        name: "Actuals for the year 2019-20",
-        selector: "Actuals for the year 2019-20",
+        name: "2020-21",
+        selector: "20",
         // sortable: true,
         right: true,
-        format: data => data["Actuals for the year 2019-20"].toLocaleString('en-IN'),
+       
     },
     {
-        name: "Budgetary provisions for the year 2020-21",
-        selector: "Budgetary provisions for the year 2020-21",
+        name:"2021-22",
+        selector:"3",
         // sortable: true,
         right: true,
-        format: data => data["Budgetary provisions for the year 2020-21"].toLocaleString('en-IN'),
+        // format: data => data["Percentage of Actual to Budgetary Provision"].toLocaleString('en-IN'),
     },
     {
-        name: "Actuals for the year 2020-21",
-        selector: "Actuals for the year 2020-21",
+        name:"2021-22",
+        selector:"4",
         // sortable: true,
         right: true,
-        format: data => data["Actuals for the year 2020-21"].toLocaleString('en-IN'),
+        // format: data => data["Percentage of Actual to Budgetary Provision"].toLocaleString('en-IN'),
     },
     {
-        name: "Percentage of Actual to Budgetary Provision",
-        selector: "Percentage of Actual to Budgetary Provision",
+        name:"Variation of Actual to Budgetary Provision",
+        selector:"Variation of Actual to Budgetary Provision",
         // sortable: true,
         right: true,
         // format: data => data["Percentage of Actual to Budgetary Provision"].toLocaleString('en-IN'),
     }
+    
 ];
 
 const conditionalRowStyles = [

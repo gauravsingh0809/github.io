@@ -4,89 +4,110 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
-
+import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
-        selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        name: "ಲೆಕ್ಕ ಶೀರ್ಷಿಕೆ /ವಿವರಣೆೆ",
+        selector: "ಲೆಕ್ಕ ಶೀರ್ಷಿಕೆ /ವಿವರಣೆ",
         grow:0.5 ,
-        // wrap: true,
-        width:'60px',
+         wrap: true,
+        width:'250px',
     },
     {
-        name: "ಅನುದಾನ",
-        selector: "ಅನುದಾನ",
+        name: "ಮೊದಲನೇ ತ್ರೈಮಾಸಿಕ",
+        selector: "ಮೊದಲನೇ ತ್ರೈಮಾಸಿಕ",
         grow:0.1 ,
         wrap: true,
         // width:'35px',
     },
     {
-      name: "ಅವಕಾಶ",
-      selector: "ಅವಕಾಶ",
+      name: "ಎರಡನೇ ತ್ರೈಮಾಸಿಕ",
+      selector: "ಎರಡನೇ ತ್ರೈಮಾಸಿಕ",
       grow:0.3,
       wrap: true,
-      format: data => data["ಅವಕಾಶ"].toLocaleString('en-IN')
+     
   },
     {
-        name: "ವೆಚ್ಚ",
-        selector: "ವೆಚ್ಚ",
+        name: "ಮೂರನೇ ತ್ರೈಮಾಸಿಕ",
+        selector: "ಮೂರನೇ ತ್ರೈಮಾಸಿಕ",
         grow:0.3,
         wrap: true,
         // format: data => data["Head of account"].toLocaleString('en-IN')
     },
     {
-        name: "ಅಧಿಕ",
-        selector: "ಅಧಿಕ",
+        name: "ನಾಲ್ಕನೇ ತ್ರೈಮಾಸಿಕ",
+        selector: "ನಾಲ್ಕನೇ",
         grow:0.3,
         wrap: true,
-        format: data => data["ಅಧಿಕ"].toLocaleString('en-IN')
-    }
+        
+    },
+    {
+      name: "ಒಟ್ಟು ವೆಚ್ಚ",
+      selector: "ಒಟ್ಟು ವೆಚ್ಚ",
+      grow:0.3,
+      wrap: true,
+      // format: data => data["Head of account"].toLocaleString('en-IN')
+  },
+  {
+    name: "ಮಾರ್ಚ್‌ನಲ್ಲಿ ವೆಚ್ಚ",
+    selector: "ಮಾರ್ಚ್‌ನಲ್ಲಿ ವೆಚ್ಚ",
+    grow:0.3,
+    wrap: true,
+    // format: data => data["Head of account"].toLocaleString('en-IN')
+},
+{
+  name: "ಒಟ್ಟು ವೆಚ್ಚಕ್ಕೆ ಮಾರ್ಚ್‌ ವೆಚ್ಚದ ಶೇಕಡಾವಾರು",
+  selector: "ಒಟ್ಟು ವೆಚ್ಚಕ್ಕೆ ಮಾರ್ಚ್‌ ವೆಚ್ಚದ ಶೇಕಡಾವಾರು",
+  grow:0.3,
+  wrap: true,
+  // format: data => data["Head of account"].toLocaleString('en-IN')
+}
 
 ];
 
-
-const customStyles = {
-    header: {
-      style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
-      },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
+const customStyles = styles;
+// const customStyles = {
+//     header: {
+//       style: {
+//         fontSize: '22px',
+//         color: '#fff',
+//         backgroundColor: '#ff6359',
+//         minHeight: '56px',
+//         textAlign: "center",
+//       },
+//     },
+//     rows: {
+//       style: {
+//         minHeight: '50px', // override the row height
+//       }
+//     },
+//     headCells: {
+//       style: {
+//         '&:not(:last-of-type)': {
+//           borderRightStyle: 'solid',
+//           borderRightWidth: '1px',
+//           borderRightColor: "black",
+//         },
+//         fontSize: '12px',
+//         fontWeight: '500',
+//         textTransform: 'uppercase',
+//         padding: '10px'
+//       },
+//     },
+//     cells: {
+//       style: {
+//         '&:not(:last-of-type)': {
+//           borderRightStyle: 'solid',
+//           borderRightWidth: '1px',
+//           borderRightColor: '#aaa',
+//         },
+//         fontSize: '14px',
+//         paddingLeft: '8px',
+//         // backgroundColor: 'rgba(255,255,255,0)',
+//       },
+//     },
+//   };
 
 
 
@@ -98,7 +119,7 @@ const Table9kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ 3.9: 2020-21ರಲ್ಲಿ ಸಕ್ರಮೀಕರಣದ ಅಗತ್ಯವಿರುವ ಅವಕಾಶಕ್ಕಿಂತಲೂ ಹೆಚ್ಚಾದ ವೆಚ್ಚ"
+                    title="ಕೋಷ್ಟಕ-೩.೬: ೨೦೨೨ರ ಮಾರ್ಚ್‌ನಲ್ಲಿ ವೆಚ್ಚದ ಪ್ರಮಾಣ"
                     columns={columns}
                     data={ctx.tables3kan.Table9}
                     customStyles={customStyles}

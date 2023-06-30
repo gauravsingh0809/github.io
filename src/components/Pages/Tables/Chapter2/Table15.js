@@ -10,15 +10,9 @@ import { styles } from "../helpers";
 const columns = [
   {
     name: "Major Heads of Account",
-    selector: "Major Heads of Account",
+    selector: "Major",
     grow: 3,
     wrap: true,
-  },
-  {
-    name: "2019 20",
-    selector: "2019 20",
-    wrap: true,
-    format: data => data["2019 20"].toLocaleString('en-IN')
   },
   {
     name: "2020 21",
@@ -27,16 +21,22 @@ const columns = [
     format: data => data["2020 21"].toLocaleString('en-IN')
   },
   {
-    name: "Increase or Decrease(In crore)",
-    selector: "Increase or Decrease(In crore)",
+    name: "2021 22",
+    selector: "2021 22",
     wrap: true,
-    format: data => data["Increase or Decrease(In crore)"].toLocaleString('en-IN')
+    format: data => data["2021 22"].toLocaleString('en-IN')
   },
   {
-    name: "Increase or Decrease(In per cent)",
-    selector: "Increase or Decrease(In per cent)",
+    name: "Increase or Decrease(In crore)",
+    selector: "1",
     wrap: true,
-    format: data => data["Increase or Decrease(In per cent)"].toLocaleString('en-IN')
+    format: data => data["1"].toLocaleString('en-IN')
+  },
+  {
+    name: "per cent",
+    selector: "2",
+    wrap: true,
+    format: data => data["2"].toLocaleString('en-IN')
   }
 
 ];
@@ -53,7 +53,7 @@ const Table15 = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="Table 2.14: Variation in Revenue expenditure during 2020-21 compared to 2019-20"
+          title="Table 2.15: Variation in Revenue expenditure during 2021-22 compared to 2020-21"
           columns={columns}
           data={ctx.tables2.Table15}
           customStyles={customStyles}

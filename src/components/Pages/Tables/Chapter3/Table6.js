@@ -54,7 +54,7 @@ const Table6 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.6: Voted and Charged disbursement for the period form 2016-17 to 2020-21"
+                    title="Table 3.4: Voted and Charged disbursement for the period from 2017-18 to 2021-22"
                     columns={columns}
                     data={ctx.tables3.Table6}
                     customStyles={customStyles}

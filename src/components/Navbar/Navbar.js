@@ -50,7 +50,7 @@ const Navbar = () => {
             <Link to="/">About</Link>
           </li>
           <li>
-            <a href='https://cedar.gov.in/sfrdashboard/' target="_blank" rel="noreferrer">
+            <a href='http://127.0.0.1:5000' target="_blank" rel="noreferrer">
               Dashboard
             </a>
           </li>

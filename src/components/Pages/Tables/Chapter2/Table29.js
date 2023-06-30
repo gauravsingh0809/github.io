@@ -23,11 +23,11 @@ const columns = [
         format: data => data["Minor Head of Account"].toLocaleString('en-IN')
     },
     {
-        name: "Expenditure during 2020 21",
-        selector: "Expenditure during 2020 21",
+        name: "Expenditure during 2021 22",
+        selector: "Expenditure during 2021 22",
         // grow:0.05,
         wrap: true,
-        format: data => data["Expenditure during 2020 21"].toLocaleString('en-IN')
+        format: data => data["Expenditure during 2021 22"].toLocaleString('en-IN')
     }
 ];
 
@@ -41,7 +41,7 @@ const Table29 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.29: Details of expenditure/receipts under SDRF/SDMF"
+                    title="Table 2.30: Details of expenditure/receipts under SDRF/SDMF"
                     columns={columns}
                     data={ctx.tables2.Table30 ? ctx.tables2.Table30.t30 : ""}
                     customStyles={customStyles}

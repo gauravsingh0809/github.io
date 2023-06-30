@@ -27,22 +27,28 @@ const columns = [
         format: data => data["Budget Provision"].toLocaleString('en-IN')
     },
     {
+        name: "Budget Provision",
+        selector: "FIELD4",
+        wrap: true,
+        
+    },
+    {
         name: "Total",
         selector: "Total",
         wrap: true,
-        format: data => data["Total"].toLocaleString('en-IN')
+        
     },
     {
         name: "Expenditure",
         selector: "Expenditure",
         wrap: true,
-        format: data => data["Expenditure"].toLocaleString('en-IN')
+        
     },
     {
         name: "Unutilized provision and its percentage",
-        selector: "Unutilized provision and its percentage",
+        selector: "Unutilised provision and its percentage",
         wrap: true,
-        format: data => data["Unutilized provision and its percentage"].toLocaleString('en-IN')
+       
     }
 ];
 
@@ -57,7 +63,7 @@ const Table11 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.11 : Budget and Expenditure"
+                    title="Table 3.7 : Budget and Expenditure"
                     columns={columns}
                     data={ctx.tables3.Table11}
                     customStyles={customStyles}

@@ -20,7 +20,7 @@ const Recommendations = () => {
           <FloatingActionButtons back="/budget/conclusion" forward="/quality" />
 
           <Title>{ctx.chapterThree.Profile.Para175}</Title>
-          {["Para176", "Para177", "Para178", "Para179"].map(
+          {["Para176", "Para177", "Para178"].map(
             (item, ind) => (
               <Para key={ind / 10}>
                 <i>
@@ -46,7 +46,7 @@ const Recommendations = () => {
         <FloatingActionButtons back="/budget/conclusion" forward="/quality" />
 
         <Title>{ctx.chapter3kannada.Content.para176}</Title>
-        {["para177", "para178", "para179", "para180"].map(
+        {["para177", "para178", "para179"].map(
           (item, ind) => (
             <Para key={ind / 10}>
               {ctx.chapter3kannada.Content[item]}

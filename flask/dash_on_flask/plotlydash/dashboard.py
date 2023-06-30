@@ -84,7 +84,7 @@ def init_dashboard(server):
                                     path=['Root', "Type", "Year",
                                           "Sub Type", "Minor Head"],
                                     values="Values",
-                                    title="Snapshot of Karnataka finances between 2017-18 and 2020-21",
+                                    title="Snapshot of Karnataka finances between 2017-18 and 2021-22",
                                     height=800,
 
                                     # template="seaborn",
@@ -114,7 +114,7 @@ def init_dashboard(server):
                 ]
             ),
             # First Sunburst Graphs
-            html.Div([
+            html.Div([ 
                 html.Div(
                     [
                         dcc.Graph(
@@ -126,7 +126,7 @@ def init_dashboard(server):
                                 summary2,
                                 path=['Type', 'Section', 'Name'],
                                 values='Values',
-                                title="Summary of Fiscal Transactions 2020-21",
+                                title="Summary of Fiscal Transactions 2021-22",
                                 height=600,
                                 width=600,
                                 color="Section",
@@ -150,7 +150,7 @@ def init_dashboard(server):
                                 summary,
                                 path=['Type', 'Section', 'Name'],
                                 values='Values',
-                                title="Summary of Fiscal Transactions 2019-20",
+                                title="Summary of Fiscal Transactions 2020-21",
                                 height=600,
                                 width=600,
 

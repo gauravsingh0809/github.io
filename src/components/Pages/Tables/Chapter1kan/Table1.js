@@ -10,46 +10,47 @@ import { MyContext } from "../../../../Context/MyProvider";
 const columns = [
   {
       name: "ವರ್ಷ",
-      selector: "ವರ್ಷ",
+      selector: "1",
       wrap: true,
   },
   
   {
-      name: "2015-16",
-      selector: "201617",
+      name: "2017-18",
+      selector: "2017-18",
       // grow:0.05,
       wrap: true,
-      format: data => data["201617"].toLocaleString('en-IN')
-  },
-  {
-      name: "2016-17",
-      selector: "201718",
-      // grow: 0.05,
-      wrap: true,
-      format: data => data["201718"].toLocaleString('en-IN')
-  },
-  {
-      name: "2017-18",
-      selector: "201819",
-      // grow: 0.05,
-      wrap: true,
-      format: data => data["201819"].toLocaleString('en-IN')
+      
   },
   {
       name: "2018-19",
-      selector: "201920",
+      selector: "2018-19",
       // grow: 0.05,
-      // width:'110px',
       wrap: true,
-      format: data => data["201920"].toLocaleString('en-IN')
+     
+
   },
   {
       name: "2019-20",
-      selector: "202021",
+      selector: "2019-20",
+      // grow: 0.05,
+      wrap: true,
+      
+  },
+  {
+      name: "2020-21",
+      selector: "2020-21",
       // grow: 0.05,
       // width:'110px',
       wrap: true,
-      format: data => data["202021"].toLocaleString('en-IN')
+     
+  },
+  {
+      name: "2021-22",
+      selector: "2021-22",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+      
   },   
 ];
 
@@ -110,7 +111,7 @@ const Table1kan = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="ಕೋಷ್ಟಕ-1.1: ರಾಷ್ಟ್ರೀಯ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನಕ್ಕೆ ಹೋಲಿಸಿದಂತೆ ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನದ ಪ್ರವೃತ್ತಿ"
+          title="ಕೋಷ್ಟಕ-1.1: ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನಕ್ಕೆ ಹೋಲಿಸಿದಂತೆ ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನದ ಪ್ರವೃತ್ತಿಗಳು"
           columns={columns}
           data={ctx.tables1kan.Table1}
           defaultSortField="title"

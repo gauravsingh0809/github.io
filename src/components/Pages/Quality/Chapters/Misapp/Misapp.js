@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+ import React, { useContext } from "react"
 import Navbar from "../../../../Navbar/Navbar"
 import './../../Quality.css'
 import { FaSpinner } from "react-icons/fa"
@@ -35,7 +35,7 @@ const Misapp = () => {
                         </h3>
 
                         <Table12 />
-                        <h6>Source: Office of the Pr.AG(Audit I) and AG(Audit II)</h6>
+                        <h3>Source: Office of the Pr.AG(Audit I) and AG(Audit II)</h3>
 
 
 
@@ -60,10 +60,10 @@ const Misapp = () => {
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}
                             <h3 className="headnote">
-                            ₹ In Lakhs
+                            (` ಲಕ್ಷಗಳಲ್ಲಿ)
                         </h3>
                         <Table12kan />
-                        <h6>ಆಕರ: ಮಹಾಲೇಖಪಾಲರು (ಆಡಿಟ್ I) ಮತ್ತು ಮಹಾಲೇಖಪಾಲರು (ಆಡಿಟ್ II) ಕಚೇರಿ</h6>
+                        <h4>  ಆಕರ: ಪ್ರಧಾನ ಮಹಾಲೇಖಾಪಾಲರ (ಲೆಕ್ಕಪರಿಶೋದನೆ-೧) ಮತ್ತು (ಲೆಕ್ಕ ಪರಿಶೋಧನೆ–II) ಕಚೇರಿಗಳು</h4>
                     </div>
                 </div>
                 : <div>

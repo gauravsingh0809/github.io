@@ -15,23 +15,23 @@ const columns = [
   },
   {
     name: "Outstanding off budget borrowing",
-    selector: "Outstanding off budget borrowing",
+    selector: "Outstandingborrowing",
     wrap: true,
-    format: data => data["Outstanding off budget borrowing"].toLocaleString('en-IN')
+    format: data => data["Outstandingborrowing"].toLocaleString('en-IN')
   },
   {
-    name: "Borrowings during 2020 21",
-    selector: "Borrowings during 2020 21",
+    name: "Borrowings during 2021 22",
+    selector: "Borrowings2020 21",
     // grow:0.05,
     wrap: true,
-    format: data => data["Borrowings during 2020 21"].toLocaleString('en-IN')
+    format: data => data["Borrowings2020 21"].toLocaleString('en-IN')
   },
   {
-    name: "Repayment during 2020 21",
-    selector: "Repayment during 2020 21",
+    name: "Repayment during 2021 22",
+    selector: "Repayment2021 22",
     // grow:0.05,
     wrap: true,
-    format: data => data["Repayment during 2020 21"].toLocaleString('en-IN')
+    format: data => data["Repayment2021 22"].toLocaleString('en-IN')
   },
   {
     name: "",
@@ -51,6 +51,15 @@ const columns = [
 
 const customStyles = styles;
 
+const conditionalRowStyles = [
+  {
+    when: row => row["CompanyCorporationBoard"] === 'Total',
+    style: {
+      backgroundColor: 'rgba(15, 38, 112, 0.4)',
+    }
+  }
+]
+
 const Table31 = () => {
 
   const ctx = useContext(MyContext)
@@ -59,12 +68,12 @@ const Table31 = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="Table 2.31: Entity-wise position of off-budget borrowings"
+          title="Table 2.33: Entity-wise position of off-budget borrowings"
           columns={columns}
           data={ctx.tables2.Table32.t32}
           customStyles={customStyles}
           striped
-          // conditionalRowStyles={conditionalRowStyles}
+          conditionalRowStyles={conditionalRowStyles}
           highlightOnHover
           pointerOnHover
         // pagination

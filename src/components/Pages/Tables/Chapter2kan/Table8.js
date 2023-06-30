@@ -2,91 +2,73 @@ import React, { useContext } from "react";
 import DataTable from "react-data-table-component";
 import Card from "@material-ui/core/Card";
 import "./Tables.css";
-
+import { styles } from "../helpers";
 import { MyContext } from "../../../../Context/MyProvider";
 
 
-const columns = [
-    {
-        name: "Year",
-        selector: "Year",
-        // grow: ,
-        wrap: true,
-        // width:'35px',
-    },
-    
-    {
-        name: "To be transferred as per XIV FC recommendations",
-        selector: "To be transferred as per XIV FC recommendations",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["To be transferred as per XIV FC recommendations"].toLocaleString('en-IN')
-    },
-    {
-        name: "Actual tax devolution",
-        selector: "Actual tax devolution",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        format: data => data["Actual tax devolution"].toLocaleString('en-IN')
-    },
-    {
-        name: "Difference",
-        selector: "Difference",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        format: data => data["Difference"].toLocaleString('en-IN')
-    },
-    
+const columns =  [
+  {
+      name:"ಶೀರ್ಷಿಕೆ",
+      selector:"ಶೀರ್ಷಿಕೆ",
+      // grow: ,
+      wrap: true
+  },
+  {
+      name:"2017-18",
+      selector:"2017 18",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+      format: data => data["2017 18"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+  },
+  {
+      name: "2018-19",
+      selector:"2018 19",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+      format: data => data["2018 19"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+  },
+  {
+      name:"2019-20",
+      selector:"2019 20",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+      format: data => data["2019 20"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+  },
+  {
+      name:"2020-21",
+      selector:"2020 21",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+      format: data => data["2020 21"].toLocaleString('en-IN')
+  },
+  {
+      name:"2021-22",
+      selector:"2021 22",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+      format: data => data["2021 22"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+  }
 ];
 
 
-const customStyles = {
-    header: {
+const conditionalRowStyles = [
+  {
+      when: row => row["ಶೀರ್ಷಿಕೆ"] === 'ಒಟ್ಟು',
       style: {
-        fontSize: '22px',
-        color: '#fff',
-        backgroundColor: '#ff6359',
-        minHeight: '56px',
-        textAlign: "center",
+          backgroundColor: 'rgba(153, 165, 128, 0.9)',
       },
-    },
-    rows: {
-      style: {
-        minHeight: '50px', // override the row height
-      }
-    },
-    headCells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: "black",
-        },
-        fontSize: '12px',
-        fontWeight: '500',
-        textTransform: 'uppercase',
-        padding: '10px'
-      },
-    },
-    cells: {
-      style: {
-        '&:not(:last-of-type)': {
-          borderRightStyle: 'solid',
-          borderRightWidth: '1px',
-          borderRightColor: '#aaa',
-        },
-        fontSize: '14px',
-        paddingLeft: '8px',
-        // backgroundColor: 'rgba(255,255,255,0)',
-      },
-    },
-  };
+  }
+]
+
+const customStyles = styles;
 
 
-
-const Table8 = () => {
+const Table8kan = () => {
 
     const ctx = useContext(MyContext)
 
@@ -94,12 +76,12 @@ const Table8 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.8: State’s share in Union taxes and duties: Actual devolution vis-à-vis XIV FC recommendations"
+                    title="ಕೋಷ್ಟಕ-2.೯: ಭಾರತ ಸರ್ಕಾರದಿಂದ ಸಹಾಯಾನುದಾನ (` ಕೋಟಿಗಳಲ್ಲಿ)"
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table8}
+                    data={ctx.tables2kan.Table8}
                     customStyles={customStyles}
                     striped
-                    // conditionalRowStyles={conditionalRowStyles}
+                    conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
                     // pagination
@@ -109,4 +91,4 @@ const Table8 = () => {
     );
 }
 
-export default Table8;
+export default Table8kan;

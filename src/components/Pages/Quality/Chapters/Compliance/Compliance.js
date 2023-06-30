@@ -32,9 +32,9 @@ const Compliance = () => {
                             </Para> )}
                             <Table11/>
 
-                        <Para>
+                        {/* <Para>
                         {ctx.chapterFour.Fourth.Para4}
-                        </Para>
+                        </Para> */}
                     </div>
                 </div>
                 : <div>
@@ -49,17 +49,17 @@ const Compliance = () => {
                   
                     
                     <Title>
-                    {ctx.chapter4kannada.Content.para75}
+                    {ctx.chapter4kannada.Content.para74}
                     </Title>
+                    <Subtitle>
+                    {ctx.chapter4kannada.Content.para75}   
+                    </Subtitle>
                     {["para76","para77"].map((item, ind) =>
                         <Para key={ind / 10}>
                             {ctx.chapter4kannada.Content[item]}
                         </Para> )}
                         <Table11kan/>
-                        {["para78"].map((item, ind) =>
-                        <Para key={ind / 10}>
-                            {ctx.chapter4kannada.Content[item]}
-                        </Para> )}
+                     
                 </div>
             </div>
             : <div>

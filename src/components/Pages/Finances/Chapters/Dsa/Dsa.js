@@ -6,6 +6,10 @@ import Navbar from "../../../../Navbar/Navbar"
 import { FaSpinner } from 'react-icons/fa'
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
+import c218 from '../../../../../Images/c218.png'
+import c219 from '../../../../../Images/c219.png'
+import c220 from '../../../../../Images/c220.png'
+import ImageComponent from 'material-ui-image'
 import Table35 from '../../../Tables/Chapter2/Table35'
 import Table35kan from '../../../Tables/Chapter2kan/Table35'
 import Table36kan from '../../../Tables/Chapter2kan/Table36'
@@ -48,14 +52,32 @@ const Dsa = () => {
                             <br></br>
                             #Net debt available to the State Government is calculated as excess of Public Debt receipts over Public Debt repayment and interest payments on Public Debt and does not include back-to-back loans received from GoI as GST compensation.
                             <br></br>
-                            ^The back-to-back Loan (₹ 12,407 crore) received from GoI in lieu of GST compensation has not been considered as Debt for working out the indicator.
-                        </h6>
-                        {["para83", "para84", "para85", "para86", "para87",
-                            "para88", "para89", "para90", "para91", "para92",
-                            "para93", "para94"].map((item, ind) =>
+                            ^The back-to-back Loan (₹ 30,516 crore) received from GoI in lieu of GST compensation has not been considered as Debt for working out the indicator.
+                            <br></br>
+                            ** Includes `30,516 crore of back to back loans received in lieu of GST compensation during 2020-21 and 2021-22.
+                            <br></br>
+                            Quantum Spread is Interest Spread as percentage of debt stock.  Interest Spread is the difference of rate of growth of GSDP and Average interest rate on Outstanding public debt. If the Quantum Spread together with primary deficit is zero, debt-GSDP ratio would be constant, or debt would stabilize eventually. If it is negative, debt-GSDP would be rising and in case if it is positive, debt-GSDP would eventually tally.
+                            </h6>
+                        {["para83", "para84"].map((item, ind) =>
                                 <Para key={ind / 10}>
                                     {ctx.chapterTwo.Second[item]}
                                 </Para>)}
+                        {["para85", "para86"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    <li>
+                                    {ctx.chapterTwo.Second[item]}
+                                    </li>
+                                </Para>)}   
+                                <Para>    
+                                    {ctx.chapterTwo.Second.para87}
+                                </Para>    
+                        {["para88", "para89", "para90", "para91", "para92", "para93"].map((item, ind) =>
+                                <Para key={ind / 10}>
+                                    <li>
+                                    {ctx.chapterTwo.Second[item]}
+                                    </li>
+                                </Para>)}    
+
                         <Subtitle>
                             {ctx.chapterTwo.Second["para95"]}
                         </Subtitle>
@@ -81,30 +103,32 @@ const Dsa = () => {
                         </h3>
                         <Table38 />
                         <Para>
-                            <li>
                                 {ctx.chapterTwo.Second.para101.substring(0,)}
                                 <span className="tooltip">
                                     <span className="tooltiptext">
-                                    Irrigation (₹16,061 crore), Co-operation (₹1,175 crore), Finance (₹1,251 crore), Power (₹10,855 crore), Housing (₹2,439 crore), Transport (₹426 crore) and other sectors (₹198 crore)
+                                    Irrigation (`14,495 crore), Co-operation (`1,208 crore), Finance (`1,026 crore), Power (`12,970 crore), Housing (`2,003 crore), Transport (`608 crore) and other sectors (`785 crore)
                                         </span>
                                     <sup>29</sup>
                                 </span>
 
-                            </li>
-                        </Para>
+                       </Para>
 
-                        {["para101", "para102", "para103",
-                        "para104", "para105", "para106"].map((item, ind) =>
+                        {["para102", "para103"].map((item, ind) =>
                                 <Para key={ind / 10}>
                                     {ctx.chapterTwo.Second[item]}
                                 </Para>)}
                                 <Subtitle>
                                 {ctx.chapterTwo.Second["para107"]}
                                 </Subtitle>
+                            <Para>
+                                   {ctx.chapterTwo.Second["para108"]}
+                            </Para>
                         
-                        {[  "para108", "para109", "para110", "para111"].map((item, ind) =>
+                        {["para109", "para110", "para111"].map((item, ind) =>
                                 <Para key={ind / 10}>
+                                  <li>  
                                     {ctx.chapterTwo.Second[item]}
+                                  </li>
                                 </Para>)}
                         <h3 className='headnote'>
                             ₹ In crore
@@ -122,13 +146,17 @@ const Dsa = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.Second[item]}
                             </Para>)}
-                        <Chart17 />
-                        <Para>
-                            {ctx.chapterTwo.Second.para118}
-                        </Para>
-                        <Chart18 />
-                        <Chart19 />
-                        {["para119", "para120", "para121", "para122", "para123"].map((item, ind) =>
+                        {/* <Chart17 /> */}
+                        <ImageComponent  src={c218} alt="chart23" aspectRatio={1 / 0.5} />
+                        {["para118", "para119"].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.chapterTwo.Second[item]}
+                            </Para>)}
+                        {/* <Chart18 />
+                        <Chart19 /> */}
+                        <ImageComponent  src={c219} alt="chart23" aspectRatio={1 / 0.6} />
+                        <ImageComponent  src={c220} alt="chart23" aspectRatio={1 / 0.7} />
+                        {["para120", "para121"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterTwo.Second[item]}
                             </Para>)}

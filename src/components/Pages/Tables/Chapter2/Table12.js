@@ -62,7 +62,7 @@ const Table12  = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.11: Tax and non-tax receipts vis-à-vis projections during 2020-21"
+                    title="Table 2.12: Tax and non-tax receipts vis-à-vis projections during 2021-22"
                     columns={columns}
                     data={ctx.tables2.Table12  }
                     customStyles={customStyles}

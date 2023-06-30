@@ -16,13 +16,6 @@ const columns = [
         // width:'35px',
     },
     {
-        name: "Maturity Profile",
-        selector: "Maturity Profile",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Maturity Profile"].toLocaleString('en-IN')
-    },
-    {
         name: "Amount",
         selector: "Amount",
         // grow:0.05,
@@ -42,17 +35,19 @@ const columns = [
         // grow:0.05,
         wrap: true,
         format: data => data["2"].toLocaleString('en-IN')
-    },
-    {
-        name: "Per cent of total Public Debt",
-        selector: "Per cent of total Public Debt",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["Per cent of total Public Debt"].toLocaleString('en-IN')
     }
 ];
 
 const customStyles = styles;
+
+const conditionalRowStyles = [
+    {
+      when: row => row["Year of Maturity"] === 'Total',
+      style: {
+        backgroundColor: 'rgba(15, 38, 112, 0.4)',
+      }
+    }
+  ]
 
 const Table34 = () => {
 
@@ -62,12 +57,12 @@ const Table34 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.34: Maturity profile of Public Debt"
+                    title="Table 2.36: Maturity profile of Public Debt"
                     columns={columns}
                     data={ctx.tables2.Table35 ? ctx.tables2.Table35.t35 : ""}
                     customStyles={customStyles}
                     striped
-                    // conditionalRowStyles={conditionalRowStyles}
+                    conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
                     // pagination

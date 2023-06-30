@@ -10,7 +10,7 @@ import { styles } from "../helpers";
 const columns = [
     {
         name: "ಕ್ರಮ",
-        selector: "ಕ್ರಮ",
+        selector: "ಕಕ್ರಮ",
         // sortable: true,
         grow: 0.3,
         cell: column =>
@@ -57,29 +57,29 @@ const columns = [
         ]
     },
     {
-        name: "2019-೨೦",
-        selector: "2019-೨೦",
+        name: "20೨೦-೨೧",
+        selector: "20೨೦-೨೧",
         // sortable: true,
         right: true,
-        format: data => data["2019-೨೦"].toLocaleString('en-IN'),
+        
     },
     {
-        name: "2020-೨೧",
-        selector: "2020-೨೧",
+        name: "202೧-೨೨",
+        selector: "202೧-೨೨",
         // sortable: true,
         right: true,
-        format: data => data["2020-೨೧"].toLocaleString('en-IN'),
+       
     },
     {
-        name: "2020-೨೧__1",
-        selector: "2020-೨೧__1",
+        name: "202೧-೨೨__1",
+        selector: "202೧-೨೨__1",
         // sortable: true,
         right: true,
-        format: data => data["2020-೨೧__1"].toLocaleString('en-IN'),
+       
     },
     {
-        name: "ವಾಸ್ತವಕ್ಕೆ ಆಯವ್ಯಯ ಅವಕಾಶದ ಶೇಕಡಾವಾರು",
-        selector: "ವಾಸ್ತವಕ್ಕೆ ಆಯವ್ಯಯ ಅವಕಾಶದ ಶೇಕಡಾವಾರು",
+        name: "ವಾಸ್ತವಕ್ಕೆ ಆಯವ್ಯಯ ಅವಕಾಶದ ವ್ಯತ್ಯಾಸ ",
+        selector: "ವಾಸ್ತವಕ್ಕೆ ಆಯವ್ಯಯ ಅವಕಾಶದ ವ್ಯತ್ಯಾಸ (ಶೇಕಡಾವಾರು)",
         // sortable: true,
         right: true,
         // format: data => data["ವಾಸ್ತವಕ್ಕೆ ಆಯವ್ಯಯ ಅವಕಾಶದ ಶೇಕಡಾವಾರು"].toLocaleString('en-IN'),

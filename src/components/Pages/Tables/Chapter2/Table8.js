@@ -9,29 +9,41 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "Year",
-        selector: "Year",
+        name: "Head",
+        selector: "Head",
         wrap: true,
     },
     
     {
-        name: "To be transferred as per XIV FC recommendations",
-        selector: "To be transferred as per XIV FC recommendations",
+        name: "2017-18",
+        selector: "2017 18",
         wrap: true,
-        format: data => data["To be transferred as per XIV FC recommendations"].toLocaleString('en-IN')
+        format: data => data["2017 18"].toLocaleString('en-IN')
     },
     {
-        name: "Actual tax devolution",
-        selector: "Actual tax devolution",
+        name: "2018-19",
+        selector: "2018 19",
         wrap: true,
-        format: data => data["Actual tax devolution"].toLocaleString('en-IN')
+        format: data => data["2018 19"].toLocaleString('en-IN')
     },
     {
-        name: "Difference",
-        selector: "Difference",
+        name: "2019-20",
+        selector: "2019 20",
         wrap: true,
-        format: data => data["Difference"].toLocaleString('en-IN')
+        format: data => data["2019 20"].toLocaleString('en-IN')
     },
+    {
+        name: "2020-21",
+        selector: "2020 21",
+        wrap: true,
+        format: data => data["2020 21"].toLocaleString('en-IN')
+    },
+    {
+        name: "2021-22",
+        selector: "2021 22",
+        wrap: true,
+        format: data => data["2021 22"].toLocaleString('en-IN')
+    }
     
 ];
 
@@ -48,7 +60,7 @@ const Table8 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.8: State’s share in Union taxes and duties: Actual devolution vis-à-vis XIV FC recommendations"
+                    title="Table 2.9: Grants-in-aid from GoI"
                     columns={columns}
                     data={ctx.tables2.Table8}
                     customStyles={customStyles}

@@ -20,15 +20,15 @@ const columns = [
         selector: "1 ಏಪ್ರಿಲ್‌ 2020ರಲ್ಲಿ ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು",
         // grow:0.05,
         wrap: true,
-        format: data => data["1 ಏಪ್ರಿಲ್‌ 2020ರಲ್ಲಿ ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು"].toLocaleString('en-IN')
+        
     },
     {
-        name: "೩೧ ಮಾರ್ಚ್‌ 2021ರಲ್ಲಿ ಅಂತಿಮ ಶಿಲ್ಕು",
-        selector: "೩೧ ಮಾರ್ಚ್‌ 2021ರಲ್ಲಿ ಅಂತಿಮ ಶಿಲ್ಕು",
+        name: "31 ಮಾರ್ಚ್‌ 2021ರಲ್ಲಿ ಅಂತಿಮ ಶಿಲ್ಕು",
+        selector: "31 ಮಾರ್ಚ್‌ 2021ರಲ್ಲಿ ಅಂತಿಮ ಶಿಲ್ಕು",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["೩೧ ಮಾರ್ಚ್‌ 2021ರಲ್ಲಿ ಅಂತಿಮ ಶಿಲ್ಕು"].toLocaleString('en-IN')
+       
     }
 ];
 

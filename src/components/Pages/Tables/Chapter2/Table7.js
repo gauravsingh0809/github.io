@@ -15,20 +15,12 @@ const columns = [
         wrap: true
     },
     {
-        name: "2016 17",
-        selector: "2016 17",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        format: data => data["2016 17"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
-    },
-    {
         name: "2017 18",
         selector: "2017 18",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2017 18"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+        //format: data => data["2017 18"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
     },
     {
         name: "2018 19",
@@ -36,7 +28,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2018 19"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+        //format: data => data["2018 19"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
     },
     {
         name: "2019 20",
@@ -44,7 +36,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+        //format: data => data["2019 20"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
     },
     {
         name: "2020 21",
@@ -52,8 +44,16 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2020 21"].toLocaleString('en-IN')
+        //format: data => data["2020 21"].toLocaleString('en-IN')
     },
+    {
+        name: "2021 22",
+        selector: "2021 22",
+        // grow: 0.05,
+        // width:'110px',
+        wrap: true,
+        //format: data => data["2021 22"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+    }
 ];
 
 const conditionalRowStyles = [
@@ -75,7 +75,7 @@ const Table7 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.7: Trends in Central Tax transfers"
+                    title="Table 2.8: Trends in Central Tax transfers"
                     columns={columns}
                     data={ctx.tables2.Table7}
                     customStyles={customStyles}

@@ -10,52 +10,46 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "Sl No",
-        selector: "Sl No",
-        wrap: true,
-        grow:0.05
-    },
-    {
-        name: "HoA and Nomenclature",
-        selector: "HoA and Nomenclature",
+        name: "Head of Account",
+        selector: "Head of Account",
         wrap: true,
         grow:2
     },
     {
-        name: "Total Expenditure",
-        selector: "Total Expenditure",
+        name: "Budget Estimate",
+        selector: "Budget",
         wrap: true,
-        sortable:true,
-        format: data => data["Total Expenditure"].toLocaleString('en-IN')
+        grow:0.05
     },
     {
-        name: "Expenditure during last quarter",
-        selector: "Expenditure during last quarter",
+        name: "Revised Estimate",
+        selector: "Revised Estimate",
         wrap: true,
         sortable:true,
-        format: data => data["Expenditure during last quarter"].toLocaleString('en-IN')
+        
     },
     {
-        name: " ",
-        selector: "1",
+        name: "Expenditure",
+        selector: "Expenditure",
         wrap: true,
         sortable:true,
-        format: data => data["1"].toLocaleString('en-IN')
+       
     },
     {
-        name: "Expenditure during March",
-        selector: "Expenditure during March",
+        name: "Savings *",
+        selector: "Savings",
         wrap: true,
         sortable:true,
-        format: data => data["Expenditure during March"].toLocaleString('en-IN')
+        
     },
     {
-        name: " ",
-        selector: "2",
+        name: "Deposited in the account (Shown as Expenditure)",
+        selector: "Deposited in the account (Shown as Expenditure)",
         wrap: true,
         sortable:true,
-        format: data => data["2"].toLocaleString('en-IN')
+        
     }
+    
 ];
 
 
@@ -69,7 +63,7 @@ const Table14 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.14: Rush of Expenditure"
+                    title="Table 3.10: Details of Grants, Expenditure and transfers to Bank Account"
                     columns={columns}
                     data={ctx.tables3.Table14}
                     customStyles={customStyles}

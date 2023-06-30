@@ -55,18 +55,18 @@ const PD = () => {
                                 Source: DDR Ledger
                             </i>
                         </h4>
-                        {["Para19", "Para20", "Para21", "Para22"].map((item, ind) =>
+                        {["Para19", "Para20", "Para21"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.second[item]}
                             </Para>)}
-                        <h3 className="headnote">
+                        {/* <h3 className="headnote">
                             ₹ In crore
                         </h3>
                         <Table7 />
                         {["Para23", "Para24", "Para25", "Para26", "Para27", "Para28"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.second[item]}
-                            </Para>)}
+                            </Para>)} */}
 
                     </div>
                 </div>
@@ -98,22 +98,22 @@ const PD = () => {
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}
                         <h3 className="headnote">
-                            ₹ In crore
+                        (` ಕೋಟಿಗಳಲ್ಲಿ)
                         </h3>
                         <Table6kan />
-                        <h6>ಆಕರ: ಡಿಡಿಆರ್‌ ಲೆಡ್ಜರ್</h6>
-                        {["para34", "para35", "para36", "para37"].map((item, ind) =>
+                        <h4> ಆಕರ–ಋಣ, ಠೇವಣಿ ಇರಸಾಲು ಲೆಡ್ಜರ್‌ಗಳು </h4>
+                        {["para34", "para35", "para36"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}
                         <h3 className="headnote"> 
                             ₹ In crore
                         </h3>
-                        <Table7kan />
-                        {["para37a","para38","para39","para40","para41","para42"].map((item, ind) =>
+                        {/* <Table7kan /> */}
+                        {/* {["para37a","para38","para39","para40","para41","para42"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
-                            </Para>)}
+                            </Para>)} */}
 
                     </div>
                 </div>

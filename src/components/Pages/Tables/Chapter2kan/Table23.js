@@ -9,36 +9,36 @@ import { styles } from "../helpers";
 
 const columns = [
   {
-    name: "ಕಂಪನಿ/ಕಾರ್ಪೋರೇಶನ್",
-    selector: "ಕಂಪನಿ/ಕಾರ್ಪೋರೇಶನ್",
+    name: "ಕಂಪನಿ/ನಿಗಮಗಳು",
+    selector: "ಕಂಪನಿ/ನಿಗಮಗಳು",
     grow:3 ,
     wrap: true,
     // width:'35px',
   },
   {
-    name: "2017-18ರ ಅಂತ್ಯದಲ್ಲಿದ್ದಂತೆ ಸಂಚಿತ ನಷ್ಟ",
-    selector: "2017-18ರ ಅಂತ್ಯದಲ್ಲಿದ್ದಂತೆ ಸಂಚಿತ ನಷ್ಟ",
+    name: "1",
+    selector: "1",
     // grow:0.05,
     wrap: true,
     
   },
   {
-    name: "2018-19ರ ಅಂತ್ಯದಲ್ಲಿದ್ದಂತೆ ಸಂಚಿತ ನಷ್ಟ",
-    selector: "2018-19ರ ಅಂತ್ಯದಲ್ಲಿದ್ದಂತೆ ಸಂಚಿತ ನಷ್ಟ",
+    name: "2",
+    selector: "2",
     // grow:0.05,
     wrap: true,
     
   },
   {
-    name: "2019-20ರ ಅಂತ್ಯದಲ್ಲಿದ್ದಂತೆ ಸಂಚಿತ ನಷ್ಟ",
-    selector: "2019-20ರ ಅಂತ್ಯದಲ್ಲಿದ್ದಂತೆ ಸಂಚಿತ ನಷ್ಟ",
+    name: "3",
+    selector: "3",
     // grow:0.05,
     wrap: true,
     
   },
   {
-    name: "2020-21ರವರೆಗೆ ಮಾಡಿದ ಹೂಡಿಕೆಗಳು",
-    selector: "2020-21ರವರೆಗೆ ಮಾಡಿದ ಹೂಡಿಕೆಗಳು",
+    name: "4",
+    selector: "4",
     // grow:0.05,
     wrap: true,
     
@@ -64,7 +64,7 @@ const Table23kan = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="ಕೋಷ್ಟಕ-2.22: ನಷ್ಟದಲ್ಲಿರುವ ಕಂಪನಿಗಳಲ್ಲಿ ಮಾಡಿರುವ ಹೂಡಿಕೆಗಳು"
+          title="ಕೋಷ್ಟಕ-2.2೩: ನಷ್ಟದಲ್ಲಿರುವ ಕಂಪನಿಗಳಲ್ಲಿ ಮಾಡಿರುವ ಹೂಡಿಕೆಗಳು"
           columns={columns}
           data={ctx.tables2kan.Table22}
           customStyles={customStyles}

@@ -17,14 +17,6 @@ const columns = [
     },
     
     {
-        name: "2019-20",
-        selector: "2019 20",
-        // grow:0.05,
-        sortable:true,
-        wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN')
-    },
-    {
         name: "2020-21",
         selector: "2020 21",
         // grow: 0.05,
@@ -33,12 +25,20 @@ const columns = [
         format: data => data["2020 21"].toLocaleString('en-IN')
     },
     {
+        name: "2021-22",
+        selector: "2021 22",
+        // grow:0.05,
+        sortable:true,
+        wrap: true,
+        format: data => data["2021 22"].toLocaleString('en-IN')
+    },
+    {
         name: "Increase/ Decrease",
-        selector: "Increase or Decrease",
+        selector: "Increase/ Decrease",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["Increase or Decrease"].toLocaleString('en-IN')
+        format: data => data["Increase/ Decrease"].toLocaleString('en-IN')
     },
     
 ];

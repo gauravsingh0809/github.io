@@ -42,7 +42,7 @@ const Table7 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.7: Additional amounts released through executive orders during 2018-19 to 2020-21"
+                    title="Table 3.5:  Additional amounts released through executive orders during 2019-20 to 2021-22"
                     columns={columns}
                     data={ctx.tables3.Table7}
                     customStyles={customStyles}

@@ -29,37 +29,40 @@ const columns = [
             },
         ]
     },
-     {
-        name: "2016-17",
-        selector: "2016-17",
-        wrap: true,        
-        format: data => data["2016-17"].toLocaleString('en-IN')
-    },
+  
      {
         name: "2017-18",
         selector: "2017-18",
         wrap: true,
-        format: data => data["2017-18"].toLocaleString('en-IN')
+        
     },
      {
         name: "2018-19",
         selector: "2018-19",
         wrap: true,
-        format: data => data["2018-19"].toLocaleString('en-IN')
+        
     },
     {
         name: "2019-20",
         selector: "2019-20",
         wrap: true,
-        format: data => data["2019-20"].toLocaleString('en-IN')
+       
     },
     {
         name: "2020-21",
         selector: "2020-21",
         wrap: true,
-        format: data => data["2020-21"].toLocaleString('en-IN')
+       
         
     },
+    {
+        name: "2021-22",
+        selector: "2021-22",
+        wrap: true,
+       
+        
+    },
+
 ];
 
 const conditionalRowStyles = [
@@ -84,7 +87,7 @@ const Table4kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ -1.4: ಹಣಕಾಸಿನ ಹೊಣೆಗಾರಿಕೆಗಳಲ್ಲಿನ ಪ್ರವೃತ್ತಿಗಳು ಮತ್ತು ರಾಒಆಂಉಕ್ಕೆ ಅದರ ಅನುಪಾತ"
+                    title="ಕೋಷ್ಟಕ- ೧.೪:  ವಿತ್ತೀಯ ಹೊಣೆಗಾರಿಕೆಗಳಲ್ಲಿ ಪ್ರವೃತ್ತಿಗಳು ಮತ್ತು ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನಕ್ಕೆ ಅದರ ಅನುಪಾತ"
                     columns={columns}
                     data={ctx.tables1kan.Table4}
                     customStyles={customStyles}

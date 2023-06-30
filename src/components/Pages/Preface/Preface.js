@@ -23,7 +23,7 @@ const Preface = () => {
                             {ctx.preface.title}
                         </Title>
                         <ol>
-                            {['para1', 'para2', 'para3', 'para4', 'para5', 'para6'].map((item, ind) =>
+                            {['para1', 'para2', 'para3', 'para4',"para4a",'para5', 'para6'].map((item, ind) =>
                                 <li key={ind / 10} className="list">
                                     <Para>
                                         {ctx.preface[item]}
@@ -31,10 +31,10 @@ const Preface = () => {
                                 </li>
                             )}
                         </ol>
-                        <Title>{ctx.execsummary.para1}</Title>
+                        {/* <Title>{ctx.execsummary.para1}</Title>
                         <Para>
                             {ctx.execsummary['para2']}
-                        </Para>
+                        </Para> */}
                     </div>
                 </div> : <div>
                     <Navbar />
@@ -48,7 +48,7 @@ const Preface = () => {
                         
                         <Title >{ctx.prefacekan.title}</Title>
                         <ol>
-                            {['para1', 'para2', 'para3', 'para4', 'para5', 'para6',"para7"].map((item, ind) =>
+                            {['para1', 'para2', 'para3', 'para4','para4a','para5', 'para6',"para7"].map((item, ind) =>
                                 <li key={ind / 10} className="list">
                                     <Para >
                                         {ctx.prefacekan[item]}
@@ -56,10 +56,10 @@ const Preface = () => {
                                 </li>
                             )}
                         </ol>
-                        <Title>{ctx.execsummarykan.para2}</Title>
+                        {/* <Title>{ctx.execsummarykan.para2}</Title>
                         <Para>
                             {ctx.execsummarykan['para3']}
-                        </Para>
+                        </Para> */}
                     </div>
                 </div>
                 : <div>

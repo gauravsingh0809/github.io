@@ -15,28 +15,28 @@ const columns = [
     grow: 2
   },
   {
-    name: " ",
-    selector: "1",
-    wrap: true,
-    format: data => data["1"].toLocaleString('en-IN')
-  },
-  {
     name: "Interest earned",
     selector: "Interest earned",
     wrap: true,
-    format: data => data["Interest earned"].toLocaleString('en-IN')
+   
   },
   {
-    name: " ",
-    selector: "2",
-    wrap: true,
-    format: data => data["2"].toLocaleString('en-IN')
-  },
-  {
-    name: " ",
+    name: "Interest earned",
     selector: "3",
     wrap: true,
-    format: data => data["3"].toLocaleString('en-IN')
+    
+  },
+  {
+    name: "Interest earned",
+    selector: "__1",
+    wrap: true,
+    
+  },
+  {
+    name: "Total",
+    selector: "__2",
+    wrap: true,
+    
   },
   {
     name: "Treatment of the interest amount",

@@ -28,11 +28,11 @@ const columns = [
     format: data => data["1"].toLocaleString('en-IN')
   },
   {
-    name: "PRIs",
-    selector: "PRIs",
+    name: "RLB",
+    selector: "RLB",
     wrap: true,
     width:"80px",
-    format: data => data["PRIs"].toLocaleString('en-IN')
+    format: data => data["RLB"].toLocaleString('en-IN')
   },
   {
     name: "",
@@ -106,7 +106,7 @@ const Table10 = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="Table 2.9: Recommended and actual release of grants during 2020-21"
+          title="Table 2.10: Recommended and actual release of grants during 2020-21"
           columns={columns}
           data={ctx.tables2.Table10}
           customStyles={customStyles}

@@ -190,8 +190,8 @@ export const SidebarDataKan = [
         cName: 'sub-nav'
       },
       {
-        title: '3.4 ಆಯವ್ಯಯ ಪ್ರಮುಖ ಕಾರ್ಯನೀತಿ ಘೋಷಣೆಗಳು ಮತ್ತು ಅವುಗಳ ಅನುಷ್ಠಾನವನ್ನು ಖಾತ್ರಿಪಡಿಸಲು ಒದಗಿಸಿದ ವಾಸ್ತವ ವೆಚ್ಚಗಳು',
-        path: '/budget/policy',
+        title: '3.4 ಮಕ್ಕಳ ಆಯವ್ಯಯ',
+        path: '/budget/child-budget',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
@@ -369,6 +369,132 @@ export const SidebarDataKan = [
       {
         title: '4.16 ಶಿಫಾರಸುಗಳು',
         path: '/quality/recommendations',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      }
+    ]
+  },
+  {
+    title: 'Chapter 5  - State Public Sector Enterprises',
+    path: '/State',
+    id: 1,
+    iconClosed: <FaIcons.FaPlusSquare size="12px"/>,
+    iconOpened: <FaIcons.FaRegMinusSquare size="12px" />,
+    subNav: [
+    
+      {
+        title: '5.1 Definition of Government Companies',
+        path: '/State/Definition',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+     
+      {
+        title: '5.2 Mandate of Audit',
+        path: '/State/Mandate',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.3 SPSEs and their contribution to the GSDP of the State',
+        path: '/State/Spse',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.4 Investment in SPSEs and Budgetary support',
+        path: '/State/Investment',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+ 
+      {
+        title: '5.5 Returns from SPSEs',
+        path: '/State/Returns',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.6 Debt Servicing',
+        path: '/State/Debt',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.7 Performance of listed SPSEs vis-a-vis private companies',
+        path: '/State/Performance',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+
+      {
+        title: '5.8 SPSEs incurring losses',
+        path: '/State/Loss',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.9 Audit of SPSEs',
+        path: '/State/Auditt',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      
+      {
+        title: '5.10  Appointment of statutory auditors of SPSEs by C&AG',
+        path: '/State/Appointment',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.11 Submission of accounts by SPSEs',
+        path: '/State/Submissions',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: "5.12 C&AG's oversight - Audit of accounts and supplementary audit ",
+        path: '/State/Cag',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.13  Result of C&AG’s oversight role',
+        path: '/State/Result',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.14 Management letters',
+        path: '/State/Management',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.15 Conclusion',
+        path: '/State/Conclusions',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: '5.16 Recommendations',
+        path: '/State/Recommend',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'

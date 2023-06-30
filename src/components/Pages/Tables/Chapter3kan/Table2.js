@@ -4,34 +4,85 @@ import Card from "@material-ui/core/Card";
 import "./Tables.css";
 
 import { MyContext } from "../../../../Context/MyProvider";
-
+import { styles } from "../helpers";
 
 const columns = [
     
     {
-        name: "<ಗುರುತಿಸುವಿಕೆ",
-        selector: "ಗುರುತಿಸುವಿಕೆ",
+        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
         // grow:0.05,
         wrap: true,
         // format: data => data["ಗುರುತಿಸುವಿಕೆ"].toLocaleString('en-IN')
     },
     {
-        name: "ವರ್ಗೀಕರಣ",
-        selector: "ವರ್ಗೀಕರಣ",
+        name: "ವರ್ಗ",
+        selector: "ವರ್ಗ",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["ವರ್ಗೀಕರಣ"].toLocaleString('en-IN')
+        
     },
     {
-      name: "ಮಾನದಂಡ",
-      selector: "ಮಾನದಂಡ",
+      name: "ಹಂಚಿಕೆ",
+      selector: "ಹಂಚಿಕೆ",
       // grow: ,
       wrap: true,
       // width:'35px',
   },
+  {
+    name: "ಹಂಚಿಕೆ",
+    selector: "3",
+    // grow: ,
+    wrap: true,
+    // width:'35px',
+},
   
+{
+  name: "ವೆಚ್ಚ",
+  selector: "ವೆಚ್ಚ",
+  // grow: ,
+  wrap: true,
+  // width:'35px',
+},
+{
+  name: "ವೆಚ್ಚ",
+  selector: "__1",
+  // grow: ,
+  wrap: true,
+  // width:'35px',
+},
+{
+  name: "ಒಟ್ಟು ಆಯವ್ಯಯ ಹಂಚಿಕೆಗೆ ಹಂಚಿಕೆಯ ಶೇಕಡಾವಾರು",
+  selector: "ಒಟ್ಟು ಆಯವ್ಯಯ ಹಂಚಿಕೆಗೆ ಹಂಚಿಕೆಯ ಶೇಕಡಾವಾರು",
+  // grow: ,
+  wrap: true,
+  // width:'35px',
+},
+{
+  name: "ಒಟ್ಟು ಆಯವ್ಯಯ ಹಂಚಿಕೆಗೆ ಹಂಚಿಕೆಯ ಶೇಕಡಾವಾರು",
+  selector: "__2",
+  // grow: ,
+  wrap: true,
+  // width:'35px',
+},
+
+
 ];
+const conditionalRowStyles = [
+  {
+      when: row => row["ಕ್ರಮ ಸಂಖ್ಯೆ"] === 'ಒಟ್ಟು',
+      style: {
+          backgroundColor: 'rgba(53, 165, 128, 0.5)',
+      },
+  },
+  {
+      when: row => row["Revenue Surplus"] === 'Over statement',
+      style: {
+          backgroundColor: 'rgba(153, 165, 128, 0.9)',
+      },
+  }
+]
 
 
 const customStyles = {
@@ -87,7 +138,7 @@ const Table2kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-3.2: ಮಕ್ಕಳ ಕೇಂದ್ರಿತ ಕಾರ್ಯಕ್ರಮ/ಯೋಜನೆಗಳ ಗುರುತಿಸುವಿಕೆ ಮತ್ತು ವರ್ಗೀಕರಣದ ಮಾನದಂಡ"
+                    title="ಕೋಷ್ಟಕ-೩.೨: ಮಕ್ಕಳ ಕೇಂದ್ರೀಕೃತ ಕಾರ್ಯಕ್ರಮ/ಯೋಜನೆಯಗಳಡಿಯಲ್ಲಿ ಹಂಚಿಕೆಗಳ ವಿವರಗಳು"
                     columns={columns}
                     data={ctx.tables3kan.Table2}
                     customStyles={customStyles}

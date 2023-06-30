@@ -9,36 +9,28 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "State Goods and Service Tax",
-        selector: "State Goods and Service Tax",
+        name: "Year",
+        selector: "Year",
         // grow: ,
         wrap: true,
         // width:'35px',
     },
     
     {
-        name: "2018 19",
-        selector: "2018 19",
+        name: "Details",
+        selector: "Details",
         // grow:0.05,
         wrap: true,
-        format: data => data["2018 19"].toLocaleString('en-IN')
+        format: data => data["Details"].toLocaleString('en-IN')
     },
     {
-        name: "2019 20",
-        selector: "2019 20",
+        name: "Quantity in metric tonnes",
+        selector: "Quantity in metric tonnes",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN')
-    },
-    {
-        name: "Increase/ Decrease",
-        selector: "Increase or Decrease",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        format: data => data["Increase or Decrease"].toLocaleString('en-IN')
-    },
+        format: data => data["Quantity in metric tonnes"].toLocaleString('en-IN')
+    }
     
 ];
 
@@ -53,9 +45,9 @@ const Table6 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.6: Components of State’s non-tax revenue"
+                    title="Table 2.7 Details of extraction outside the lease area and dispatch of minerals without permit as per DCB register."
                     columns={columns}
-                    data={ctx.reportData.Chap2Tables.Table6}
+                    data={ctx.tables2.Table6}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

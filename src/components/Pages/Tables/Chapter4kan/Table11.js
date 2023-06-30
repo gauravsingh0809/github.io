@@ -15,13 +15,13 @@ const columns = [
         grow:0.2
     },
     {
-        name: "ಲೆಕ್ಕಪತ್ರ ಮಾನದಂಡ",
-        selector: "ಲೆಕ್ಕಪತ್ರ ಮಾನದಂಡ",
+        name: "ಲೆಕ್ಕಪತ್ರ ಮಾನದಂಡಗಳು",
+        selector: "ಲೆಕ್ಕಪತ್ರ ಮಾನದಂಡಗಳು",
         wrap: true,
     },
     {
-        name: "ಐಜಿಎಎಸ್‌ನ ಸಾರ",
-        selector: "ಐಜಿಎಎಸ್‌ನ ಸಾರ",
+        name: "ಭಾರತ ಸರ್ಕಾರದ ಲೆಕ್ಕಪತ್ರ ಮಾನದಂಡದ ಸಾರ",
+        selector: "ಭಾರತ ಸರ್ಕಾರದ ಲೆಕ್ಕಪತ್ರ ಮಾನದಂಡದ ಸಾರ",
         wrap: true,
     },
     {
@@ -47,7 +47,7 @@ const Table11kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ 4.11: ಲೆಕ್ಕಪತ್ರ ನಿರ್ವಹಣಾ ಮಾನದಂಡಗಳ ಅನುಸರಣೆ"
+                    title="ಕೋಷ್ಟಕ ೪.೧೧: ಲೆಕ್ಕಪತ್ರ ನಿರ್ವಹಣಾ ಮಾನದಂಡಗಳ ಅನುಸರಣೆ "
                     columns={columns}
                     data={ctx.tables4kan.Table11}
                     customStyles={customStyles}

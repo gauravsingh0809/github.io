@@ -32,15 +32,15 @@ const Funds = () => {
                             {ctx.chapterFour.first.title}
                         </Para>
                         <Para>
-                            <li>
+                         
                                 {ctx.chapterFour.first.para1}
-                            </li>
+                           
                         </Para>
-                        {["para2", "Para3", "Para4", "Para5"].map((item, ind) =>
+                        {["para2", "Para3"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.first[item]}
                             </Para>)}
-                        <Para>
+                        {/* <Para>
                             <li>
                                 {ctx.chapterFour.first.Para6}
                             </li>
@@ -48,7 +48,7 @@ const Funds = () => {
                         {["Para7", "Para8", "Para9"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.first[item]}
-                            </Para>)}
+                            </Para>)} */}
 
                         <h3 className="headnote">
                             ₹ In lakhs
@@ -56,7 +56,7 @@ const Funds = () => {
                         <Table1 />
 
                         <Para>
-                            {ctx.chapterFour.first.Para9a}
+                            {ctx.chapterFour.first.Para4}
                         </Para>
                         <Para>
                             {ctx.chapterFour.first.Para9b}
@@ -86,13 +86,14 @@ const Funds = () => {
                             <Para key={ind / 10}>
                                 {ctx.chapter4kannada.Content[item]}
                             </Para>)}
-                        <Table1kan />
+                            <h3 className="headnote">
+                            (` ಲಕ್ಷಗಳಲ್ಲಿ)
+                        </h3>
+                       <Table1kan />
                         <Para>
                             {ctx.chapter4kannada.Content.para14}
                         </Para>
-                        <Para>
-                            {ctx.chapter4kannada.Content.para15}
-                        </Para>
+                   
 
 
                     </div>

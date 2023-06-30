@@ -20,7 +20,7 @@ const ChildBudget = () => {
       <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-        <FloatingActionButtons back="/budget/gender-budget" forward="/budget/policy" />
+        <FloatingActionButtons back="/budget/gender-budget" forward="/budget/appropaccounts" />
 
           <Title>{ctx.chapterThree.Profile.Para13}</Title>
           <Subtitle>{ctx.chapterThree.Profile.Para14}</Subtitle>
@@ -29,21 +29,22 @@ const ChildBudget = () => {
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )
           )}
-          <Subtitle>{ctx.chapterThree.Profile.Para17}</Subtitle>
-          {["Para18", "Para19", "Para20", "Para21", "Para22", "Para23", "Para24"].map(
+          {/* <Subtitle>{ctx.chapterThree.Profile.Para17}</Subtitle> */}
+          {/* {["Para18", "Para19", "Para20", "Para21", "Para22", "Para23", "Para24"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )
-          )}  
-          <Table2/> 
+          )}   */}
+          {/* <Table2/> 
           <h4>
             i) Budgetary allocation and expenditure for Child Centric Non-programme/Scheme comprise institutional set ups, establishments, infrastructure facilities and administrative support that benefit children.
           <br></br>
           (ii) Beneficiaries of 100% Child Centric Programme include pregnant or expectant mothers and lactating mothers.
-          </h4>
+          </h4> */}
              {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
-             <Para>{ctx.chapterThree.Profile.Para25}</Para>
+             
              <Table3/>
+             <Para>{ctx.chapterThree.Profile.Para25}</Para>
              <Para>{ctx.chapterThree.Profile.Para26}</Para>
              <Para>{ctx.chapterThree.Profile.Para27}</Para>
 
@@ -59,34 +60,29 @@ const ChildBudget = () => {
     <div>
         <Navbar />
         <div className="contentwrapper" id="home">
-          <FloatingActionButtons back="/budget/gender-budget" forward="/budget/policy" />
+          <FloatingActionButtons back="/budget/gender-budget" forward="/budget/appropaccounts" />
 
           <Title>{ctx.chapter3kannada.Content.para19}</Title>
-          <Subtitle>{ctx.chapter3kannada.Content.para20}</Subtitle>
+         
           {["para21", "para22"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
             )
           )}
-          <Subtitle>{ctx.chapter3kannada.Content.para23}</Subtitle>
-          {["para24", "para25", "para26", "para27", "para28", "para29", "para30"].map(
-            (item, ind) => (
-              <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
-            )
-          )}    
+          
+          
           <Table2kan/>  
-          <h6>ಟಿಪ್ಪಣಿ: (i)ಮಕ್ಕಳ ಕೇಂದ್ರಿತವಲ್ಲದ ಕಾರ್ಯಕ್ರಮ/ಯೋಜನೆಗೆ ಆಯವ್ಯಯ ಹಂಚಿಕೆ ಮತ್ತು ವೆಚ್ಚವು ಮಕ್ಕಳಿಗೆ ಪ್ರಯೋಜನವಾಗುವ ಸಾಂಸ್ಥಿಕ ಸ್ಥಾಪನೆಗಳು, ಆಡಳಿತ ಭಾಗಗಳು, ಮೂಲಸೌಕರ್ಯ ಸೌಲಭ್ಯಗಳು ಮತ್ತು ಆಡಳಿತಾತ್ಮಕ ಬೆಂಬಲವನ್ನು ಒಳಗೊಂಡ ಯೋಜನೆಗಳು.
-          <br></br>
-          (ii) ಶೇಕಡ ೧೦೦ರಷ್ಟು ಕೇಂದ್ರಿತ ಕಾರ್ಯಕ್ರಮದ ಫಲಾನುಭವಿಗಳಲ್ಲಿ ಗರ್ಭಿಣಿ ಅಥವಾ ನಿರೀಕ್ಷಿತ ತಾಯಂದಿರು ಮತ್ತು ಹಾಲುಣಿಸುವ ತಾಯಂದಿರು ಸೇರಿದ್ದಾರೆ.
-          </h6>
+          <h4>
+          ಆಕರ: ಅನುದಾನ ವಹಿ
+          </h4>
              {/* <Para>{ctx.chapter3kannada.Introduction.Para1}</Para> */}
-             <Para>{ctx.chapter3kannada.Content.para31}</Para>
+             {/* <Para>{ctx.chapter3kannada.Content.para31}</Para>
              <Table3kan/>
-             <h6>ಆಕರ: ಅನುದಾನ ವಹಿಗಳು</h6>
+             <h6>ಆಕರ: ಅನುದಾನ ವಹಿಗಳು</h6> */}
         
              <Para>{ctx.chapter3kannada.Content.para32}</Para>
              <Para>{ctx.chapter3kannada.Content.para33}</Para>
-
+             <Para>{ctx.chapter3kannada.Content.para33a}</Para>
         </div>
       </div>
     ) : (

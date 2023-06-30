@@ -73,7 +73,7 @@ const Table2 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 4.2: Pendency of Utilisation Certificate during 2020-21"
+                    title="Table 4.2: Pendency of Utilisation Certificate during 2021-22"
                     columns={columns}
                     data={ctx.tables4.Table2}
                     customStyles={customStyles}

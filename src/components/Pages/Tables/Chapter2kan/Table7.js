@@ -15,14 +15,6 @@ const columns = [
         wrap: true
     },
     {
-        name:"2016-17",
-        selector:"2016 17",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        format: data => data["2016 17"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
-    },
-    {
         name:"2017-18",
         selector:"2017 18",
         // grow: 0.05,
@@ -54,11 +46,19 @@ const columns = [
         wrap: true,
         format: data => data["2020 21"].toLocaleString('en-IN')
     },
+    {
+        name:"2021-22",
+        selector:"2021 22",
+        // grow: 0.05,
+        // width:'110px',
+        wrap: true,
+        format: data => data["2021 22"].toLocaleString('en-IN',{ style: 'currency', currency: 'INR' })
+    }
 ];
 
 const conditionalRowStyles = [
   {
-      when: row => row["Head"] === 'Total',
+      when: row => row["ಶೀರ್ಷಿಕೆ"] === 'ಒಟ್ಟು',
       style: {
           backgroundColor: 'rgba(153, 165, 128, 0.9)',
       },
@@ -75,7 +75,7 @@ const Table7kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.7: ಕೇಂದ್ರ ತೆರಿಗೆ ವರ್ಗಾವಣೆಯ ಪ್ರವೃತ್ತಿಗಳು"
+                    title="ಕೋಷ್ಟಕ-2.೮: ಕೇಂದ್ರ ತೆರಿಗೆ ವರ್ಗಾವಣೆಯ ಪ್ರವೃತ್ತಿಗಳು  (` ಕೋಟಿಗಳಲ್ಲಿ)"
                     columns={columns}
                     data={ctx.tables2kan.Table7}
                     customStyles={customStyles}

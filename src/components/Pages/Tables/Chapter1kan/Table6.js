@@ -9,14 +9,14 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "ಕ್ರಮ",
-        selector: "ಕ್ರಮ",
+        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
         wrap: true,
         grow: 0.1,
     },
     {
-        name: "ಆರ್ಥಿಕ ಸ್ಥಿರಾಂಕಗಳು",
-        selector: "ಆರ್ಥಿಕ ಸ್ಥಿರಾಂಕಗಳು",
+        name: "ಆರ್ಥಿಕ ಸ್ಥಿರಾಂಶಗಳು",
+        selector: "ಆರ್ಥಿಕ ಸ್ಥಿರಾಂಶಗಳು",
         wrap: true,
         grow: 2,
         // conditionalCellStyles: [
@@ -36,22 +36,22 @@ const columns = [
         // ]
     },
     {
-        name: "ಮ.ಅ.ವಿ.ಯೋ",
-        selector: "ಮ.ಅ.ವಿ.ಯೋ",
+        name: "2019-23ರ ಮಧ್ಯಂತರ ವಿತ್ತೀಯ ಅವಧಿಯ ಯೋಜನೆಯ ಪ್ರಕಾರ ಪ್ರಕ್ಷೇಪಣೆಗಳು",
+        selector: "2019-23ರ ಮಧ್ಯಂತರ ವಿತ್ತೀಯ ಅವಧಿಯ ಯೋಜನೆಯ ಪ್ರಕಾರ ಪ್ರಕ್ಷೇಪಣೆಗಳು",
         wrap: true,
-        format: data => data["ಮ.ಅ.ವಿ.ಯೋ"].toLocaleString('en-IN')
+   
     },
     {
-        name: "ವಾಸ್ತವಗಳು",
+        name: "ವಾಸ್ತವಗಳು (2021-22)",
         selector: "ವಾಸ್ತವಗಳು",
         wrap: true,
-        format: data => data["ವಾಸ್ತವಗಳು"].toLocaleString('en-IN')
+       
     },
     {
-        name: "ವ್ಯತ್ಯಾಸ",
+        name: "ವ್ಯತ್ಯಾಸ (ಶೇಕಡಾವಾರು)",
         selector: "ವ್ಯತ್ಯಾಸ",
         wrap: true,
-        format: data => data["ವ್ಯತ್ಯಾಸ"].toLocaleString('en-IN')
+       
     },
 ];
 
@@ -66,7 +66,7 @@ const Table6kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ 1.6: 2020-21ಕ್ಕೆ ಮಧ್ಯಂತರ ವಿತ್ತೀಯ ಯೋಜನೆಯ ಪ್ರಕ್ಷೇಪ ಮತ್ತು ವಾಸ್ತವಗಳು"
+                    title="ಕೋಷ್ಟಕ-1.6: 202೧-2೨ಕ್ಕೆ ಮಧ್ಯಮಾವಧಿ ವಿತ್ತೀಯ ಅವಧಿಯ ಯೋಜನೆಯ ಪ್ರಕ್ಷೇಪಣೆಗಳಿಗೆ ಪ್ರತಿಯಾಗಿ ವಾಸ್ತವಗಳು"
                     columns={columns}
                     data={ctx.tables1kan.Table6}
                     customStyles={customStyles}

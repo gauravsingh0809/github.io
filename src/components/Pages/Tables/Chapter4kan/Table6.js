@@ -38,7 +38,7 @@ const Table6kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-4.6: ವೈಯಕ್ತಿಕ ಠೇವಣಿ ಖಾತೆಗಳಲ್ಲಿನ ಅಂತಿಮ ಶಿಲ್ಕು"
+                    title="ಕೋಷ್ಟಕ-೪.೭: ವೈಯಕ್ತಿಕ ಠೇವಣಿ ಖಾತೆಗಳಲ್ಲಿನ ಅಂತಿಮ ಶುಲ್ಕು "
                     columns={columns}
                     data={ctx.tables4kan.Table6}
                     customStyles={customStyles}

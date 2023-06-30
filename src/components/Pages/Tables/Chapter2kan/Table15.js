@@ -15,16 +15,16 @@ const columns = [
     wrap: true,
   },
   {
-    name: "2019 20",
-    selector: "2019 20",
+    name: "20೨೦ 2೧",
+    selector: "20೨೦ 2೧",
     wrap: true,
-    format: data => data["2019 20"].toLocaleString('en-IN')
+    format: data => data["20೨೦ 2೧"].toLocaleString('en-IN')
   },
   {
-    name: "2020 21",
-    selector: "2020 21",
+    name: "202೧ 2೨",
+    selector: "202೧ 2೨",
     wrap: true,
-    format: data => data["2020 21"].toLocaleString('en-IN')
+    format: data => data["202೧ 2೨"].toLocaleString('en-IN')
   },
   {
     name: "ಏರಿಕೆ (+)/ ಇಳಿಕೆ (-)",
@@ -32,6 +32,12 @@ const columns = [
     wrap: true,
     format: data => data["ಏರಿಕೆ (+)/ ಇಳಿಕೆ (-)"].toLocaleString('en-IN')
   },
+  {
+    name: "ಶೇಕಡಾವಾರು",
+    selector: "ಶೇಕಡಾವಾರು",
+    wrap: true,
+    format: data => data["ಶೇಕಡಾವಾರು"].toLocaleString('en-IN')
+  }
  
 
 ];
@@ -48,7 +54,7 @@ const Table15kan = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="ಕೋಷ್ಟಕ-2.14: 2019-20ಕ್ಕೆ ಹೋಲಿಸಿದರೆ 2020-21ರಲ್ಲಿ ರಾಜಸ್ವ ವೆಚ್ಚದಲ್ಲಿನ ವ್ಯತ್ಯಾಸ"
+          title="ಕೋಷ್ಟಕ-2.1೫: 20೨೦-2೧ಕ್ಕೆ ಹೋಲಿಸಿದರೆ 202೧-2೨ರಲ್ಲಿ ರಾಜಸ್ವ ವೆಚ್ಚದಲ್ಲಿನ ವ್ಯತ್ಯಾಸ"
           columns={columns}
           data={ctx.tables2kan.Table14}
           customStyles={customStyles}

@@ -27,6 +27,13 @@ const Overview = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/preface/" forward="/overview/introduction" />
+                       
+                        <Title>{ctx.execsummary.para1}</Title>
+                        {['para2'].map((item, ind) =>
+                            <Para key={ind / 10}>
+                                {ctx.execsummary[item]}
+                            </Para>
+                        )}
                         <Title>{ctx.execsummary.para3}</Title>
                         {['para4'].map((item, ind) =>
                             <Para key={ind / 10}>
@@ -51,6 +58,7 @@ const Overview = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/preface/" forward="/overview/introduction" />
+                        
                         <Title>{ctx.execsummarykan.para4}</Title>
                         {['para5'].map((item, ind) =>
                             <Para key={ind / 10}>

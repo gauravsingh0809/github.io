@@ -9,7 +9,8 @@ import { FaSpinner } from 'react-icons/fa'
 import ContentSlider from '../../../../ContentSlider/ContentSlider'
 import ImageComponent from 'material-ui-image'
 import { getFirebase } from '../../../../../firebase/firebase'
-
+import c5 from '../../../../../Images/c5.png'
+import kc5 from '../../../../../Images/kc5.png'
 
 
 const Structure = () => {
@@ -36,6 +37,8 @@ const Structure = () => {
                         <Title id="anchor">
                             {ctx.chapterOne.Profile.Para26}
                         </Title>
+                       
+                       
                         <Para>
                             {ctx.chapterOne.Profile.Para27}
                         </Para>
@@ -84,8 +87,10 @@ const Structure = () => {
                         <Para>
                             {ctx.chapterOne.Profile["Para35"]}
                         </Para>
-
-                        <ImageComponent src={url} alt="chart5" aspectRatio={1 / 0.8} />
+                        <Title>
+                        Chart 1.5: Pictorial depiction of the structure of Government Accounts
+                        </Title>
+                        <ImageComponent flex="2" aspectRatio = "2" resizeMode = 'contain' src={c5} color ="#ffffff00" />
                     </div>
                 </div>
                 : <div>
@@ -149,7 +154,11 @@ const Structure = () => {
                         <Para>
                             {ctx.chapter1kannada.Content["para37"]}
                         </Para>
-                        <ImageComponent src={url} alt="chart5" aspectRatio={1 / 0.8} />
+                        <Title>
+                        ನಕ್ಷೆ-1.5: ಸರ್ಕಾರಿ ಲೆಕ್ಕಗಳ ರಚನೆಯ ಚಿತ್ರಾತ್ಮಕ ರೂಪ
+                        </Title>
+                      
+                        <ImageComponent src={kc5}  aspectRatio={1 / 0.5} />
                     </div>
                 </div>
                 : <div>

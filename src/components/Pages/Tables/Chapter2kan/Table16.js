@@ -50,7 +50,7 @@ const Table16kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.15: ಉದ್ದೇಶ ಶೀರ್ಷಿಕೆವಾರು ಆಯವ್ಯಯ ಅನುಮೋದನೆಗೆ ಪ್ರತಿಯಾಗಿ ವೆಚ್ಚ"
+                    title="ಕೋಷ್ಟಕ-2.1೬: ಉದ್ದೇಶ ಶೀರ್ಷಿಕೆವಾರು ಆಯವ್ಯಯ ಅನುಮೋದನೆಗೆ ಪ್ರತಿಯಾಗಿ ವೆಚ್ಚ"
                     columns={columns}
                     data={ctx.tables2kan.Table15}
                     customStyles={customStyles}

@@ -21,9 +21,9 @@ const MajorChanges = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances/introduction" forward="/finances/sources-application" />
-                        <Title>{ctx.chapterTwo.Profile.Para1}</Title>
+                        <Title>{ctx.chapterTwo.Para1}</Title>
                         <Para>
-                            {ctx.chapterTwo.Profile.Para2}
+                            {ctx.chapterTwo.Para2}
                         </Para>
                         <Table1/>
 
@@ -31,7 +31,7 @@ const MajorChanges = () => {
           
 
                         <Para>
-                            {ctx.chapterTwo.Profile.Para3}
+                            {ctx.chapterTwo.Para3}
                         </Para>
 
                     </div>
@@ -45,9 +45,9 @@ const MajorChanges = () => {
                 <Navbar />
                 <div className="contentwrapper" id="home">
                 <FloatingActionButtons back="/finances/introduction" forward="/finances/sources-application" />
-                    <Title>{ctx.chapter2kannada.Content.para4}</Title>
+                    <Title>{ctx.chapter2kannada.Content.para3}</Title>
                     <Para>
-                        {ctx.chapter2kannada.Content.para5}
+                        {ctx.chapter2kannada.Content.para4}
                     </Para>
                     <Table1kan/>
 

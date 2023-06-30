@@ -16,14 +16,6 @@ const columns = [
         // width:'35px',
     },
     {
-        name: "2016 17",
-        selector: "2016 17",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        format: data => data["2016 17"].toLocaleString('en-IN')
-    },
-    {
         name: "2017 18",
         selector: "2017 18",
         // grow: 0.05,
@@ -53,7 +45,15 @@ const columns = [
       // grow:0.05,
       wrap: true,
       format: data => data["2020 21"].toLocaleString('en-IN')
-  }
+  },
+  {
+    name: "2021 22",
+    selector: "2021 22",
+    // grow: 0.05,
+    // width:'110px',
+    wrap: true,
+    format: data => data["2021 22"].toLocaleString('en-IN')
+}
 ];
 
 
@@ -67,7 +67,7 @@ const Table24 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.23: Quantum of loans disbursed and recovered during the last five years"
+                    title="Table 2.24: Quantum of loans disbursed and recovered during the last five years"
                     columns={columns}
                     data={ctx.tables2.Table24}
                     customStyles={customStyles}

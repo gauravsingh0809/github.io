@@ -9,43 +9,59 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "ಕ್ರಮ ಸಂಖ್ಯೆ",
-        selector: "ಕ್ರಮ ಸಂಖ್ಯೆ",
+        name: "ವರ್ಷ",
+        selector: "ವರ್ಷ",
         // grow: ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "ಇವುಗಳ ಸಂಬಂಧವಾಗಿ ಬಾಕಿ ಇರುವವು",
-        selector: "ಇವುಗಳ ಸಂಬಂಧವಾಗಿ ಬಾಕಿ ಇರುವವು",
+        name: "ಒಟ್ಟು ಸಾಲಗಳ ಸಂಖ್ಯೆ",
+        selector: "ಒಟ್ಟು ಸಾಲಗಳ ಸಂಖ್ಯೆ",
         // grow:0.05,
         wrap: true,
-        format: data => data["ಇವುಗಳ ಸಂಬಂಧವಾಗಿ ಬಾಕಿ ಇರುವವು"].toLocaleString('en-IN')
+        format: data => data["ಒಟ್ಟು ಸಾಲಗಳ ಸಂಖ್ಯೆ"].toLocaleString('en-IN')
     },
     {
-        name: "ಮೊತ್ತ",
-        selector: "ಮೊತ್ತ",
+        name: "ಒಟ್ಟು ಮೊತ್ತ",
+        selector: "ಒಟ್ಟು ಮೊತ್ತ",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["ಮೊತ್ತ"].toLocaleString('en-IN')
+        format: data => data["ಒಟ್ಟು ಮೊತ್ತ"].toLocaleString('en-IN')
     },
     {
-        name: "ಮೊತ್",
-        selector: "4",
+        name: "ವರ್ಷದ ಕೊನೆಯಲ್ಲಿ ಬಾಕಿ ಇದ್ದ ಷರತ್ತುಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು",
+        selector: "ವರ್ಷದ ಕೊನೆಯಲ್ಲಿ ಬಾಕಿ ಇದ್ದ ಷರತ್ತುಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["4"].toLocaleString('en-IN')
+        format: data => data["ವರ್ಷದ ಕೊನೆಯಲ್ಲಿ ಬಾಕಿ ಇದ್ದ ಷರತ್ತುಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು"].toLocaleString('en-IN')
     },
     {
-      name: "ವ್ಯತ್ಯಾಸ",
-      selector: "ವ್ಯತ್ಯಾಸ",
+      name: "ವರ್ಷದ ಕೊನೆಯಲ್ಲಿ ಬಾಕಿ ಇದ್ದ ಷರತ್ತುಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು",
+      selector: "1",
       // grow: 0.05,
       // width:'110px',
       wrap: true,
-      format: data => data["ವ್ಯತ್ಯಾಸ"].toLocaleString('en-IN')
-  }
+      format: data => data["1"].toLocaleString('en-IN')
+  },
+  {
+    name: "ಮಾರ್ಚ್‌೨೦೨೨ರಲ್ಲಿ ಬಾಕಿ ಇದ್ದ ಷರತ್ತುಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು",
+    selector: "ಮಾರ್ಚ್‌೨೦೨೨ರಲ್ಲಿ ಬಾಕಿ ಇದ್ದ ಷರತ್ತುಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು",
+    // grow: 0.05,
+    // width:'110px',
+    wrap: true,
+    format: data => data["ಮಾರ್ಚ್‌೨೦೨೨ರಲ್ಲಿ ಬಾಕಿ ಇದ್ದ ಷರತ್ತುಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು"].toLocaleString('en-IN')
+},
+{
+  name: "ಮಾರ್ಚ್‌೨೦೨೨ರಲ್ಲಿ ಬಾಕಿ ಇದ್ದ ಷರತ್ತುಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು",
+  selector: "2",
+  // grow: 0.05,
+  // width:'110px',
+  wrap: true,
+  format: data => data["2"].toLocaleString('en-IN')
+}
 ];
 
 const conditionalRowStyles = [
@@ -67,9 +83,9 @@ const Table25kan    = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.24: ಹಣಕಾಸು ಲೆಕ್ಕಗಳ ಪ್ರಕಾರ ಇರುವ ಇಕ್ವಿಟಿ, ಸಾಲಗಳು ಮತ್ತು ಖಾತರಿಗಳು"
+                    title="ಕೋಷ್ಟಕ-೨.೨೫: ೨೦೧೯-೨೦ರಿಂದ ೨೦೨೧-೨೨ರವರೆಗೂ ರಾಜ್ಯ ಸರ್ಕಾರವು ನೀಡಿದ ಸಾಲಗಳ ವಿವರಗಳು"
                     columns={columns}
-                    data={ctx.tables2kan.Table24}
+                    data={ctx.tables2kan.Table25}
                     customStyles={customStyles}
                     striped
                     conditionalRowStyles={conditionalRowStyles}

@@ -77,7 +77,7 @@ const Table10 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.10: Quantum of Expenditure in March 2021"
+                    title="Table 3.6: Quantum of Expenditure in March 2022"
                     columns={columns}
                     data={ctx.tables3.Table10}
                     customStyles={customStyles}

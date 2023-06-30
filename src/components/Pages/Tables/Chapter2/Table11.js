@@ -10,19 +10,10 @@ import { styles } from "../helpers";
 const columns = [
     {
         name: "Sources of State's Receipts",
-        selector: "Sources of State's Receipts",
+        selector: "Sources",
         // grow: ,
         wrap: true,
         // width:'35px',
-    },
-    {
-        name: "2016-17",
-        selector: "2016 17",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        sortable:true,
-        format: data => data["2016 17"].toLocaleString('en-IN')
     },
     {
         name: "2017-18",
@@ -54,7 +45,16 @@ const columns = [
       // grow:0.05,
       wrap: true,
       format: data => data["2020 21"].toLocaleString('en-IN')
-  }
+  },
+  {
+    name: "2021-22",
+    selector: "2021 22",
+    // grow: 0.05,
+    // width:'110px',
+    wrap: true,
+    sortable:true,
+    format: data => data["2021 22"].toLocaleString('en-IN')
+}
 ];
 
 
@@ -68,7 +68,7 @@ const Table11 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.10: Trends in growth and composition of capital receipts"
+                    title="Table 2.11: Trends in growth and composition of capital receipts"
                     columns={columns}
                     data={ctx.tables2.Table11}
                     customStyles={customStyles}

@@ -58,9 +58,10 @@ const Table27kan    = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.26: 31 ಮಾರ್ಚ್ 2021ರಲ್ಲಿದ್ದಂತೆ ಒಂದು ಕೋಟಿಗಿಂತ ಹೆಚ್ಚಿನ ಅಪೂರ್ಣ ಯೋಜನೆಗಳ ಇಲಾಖಾವಾರು ವಿವರ (` ಕೋಟಿಗಳಲ್ಲಿ)"
+                    title="ಕೋಷ್ಟಕ-2.27: 31 ಮಾರ್ಚ್ 202೨ರಲ್ಲಿದ್ದಂತೆ ಒಂದು ಕೋಟಿಗಿಂತ ಹೆಚ್ಚಿನ ಅಪೂರ್ಣ ಯೋಜನೆಗಳ ಇಲಾಖಾವಾರು ವಿವರ
+                    (₹ಕೋಟಿಗಳಲ್ಲಿ)"
                     columns={columns}
-                    data={ctx.tables2kan.Table26}
+                    data={ctx.tables2kan.Table27}
                     customStyles={customStyles}
                     striped
                     conditionalRowStyles={conditionalRowStyles}

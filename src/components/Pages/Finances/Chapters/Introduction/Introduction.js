@@ -37,11 +37,11 @@ const FinIntroduction = () => {
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances" forward="/finances/major-sources" />
                         <Title>{ctx.chapter2kannada.Content.para1}</Title>
-                        <Subtitle>
+                        {/* <Subtitle>
                             {ctx.chapter2kannada.Content.para2}
-                            </Subtitle>
+                            </Subtitle> */}
                         <Para>
-                            {ctx.chapter2kannada.Content.para3}
+                            {ctx.chapter2kannada.Content.para2}
                         </Para>
 
                     </div>

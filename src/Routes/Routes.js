@@ -31,7 +31,7 @@ import BudIntroduction from '../components/Pages/Budget/Chapters/BudIntroduction
 import BudgetProcess from '../components/Pages/Budget/Chapters/BudgetProcess/BudgetProcess';
 import GenderBudget from '../components/Pages/Budget/Chapters/GenderBudget/GenderBudget';
 import ChildBudget from '../components/Pages/Budget/Chapters/ChildBudget/ChildBudget';
-import MajorPolicy from '../components/Pages/Budget/Chapters/MajorPolicy/MajorPolicy';
+// import MajorPolicy from '../components/Pages/Budget/Chapters/MajorPolicy/MajorPolicy';
 import AppropAccounts from '../components/Pages/Budget/Chapters/AppropAccounts/AppropAccounts';
 import Audit from '../components/Pages/Budget/Chapters/Audit/Audit';
 import Outcome from '../components/Pages/Budget/Chapters/Outcome/Outcome';
@@ -56,11 +56,33 @@ import Follow from '../components/Pages/Quality/Chapters/Follow/Follow';
 import QualConclusion from '../components/Pages/Quality/Chapters/QualConclusion/QualConclusion';
 import QualRecommendations from '../components/Pages/Quality/Chapters/QualRecommendations/QualRecommendations';
 
+
+import State from '../components/Pages/State/State';
+import Definition from '../components/Pages/State/Chapters/Definition/Definition';
+import Mandate from '../components/Pages/State/Chapters/Mandate/Mandate';
+
+
+import Spse from '../components/Pages/State/Chapters/Spse/Spse';
+import Investment from '../components/Pages/State/Chapters/Investment/Investment';
+import Returns from '../components/Pages/State/Chapters/Returns/Returns';import Debt from '../components/Pages/State/Chapters/Debt/Debt';
+import Performance from '../components/Pages/State/Chapters/Performance/Performance';import Loss from '../components/Pages/State/Chapters/Loss/Loss';
+import Auditt from '../components/Pages/State/Chapters/Auditt/Auditt';
+import Appointment from '../components/Pages/State/Chapters/Appointment/Appointment';
+import Submissions from '../components/Pages/State/Chapters/Submissions/Submissions';
+import Cag from '../components/Pages/State/Chapters/Cag/Cag';
+import Result from '../components/Pages/State/Chapters/Result/Result';
+import Management from '../components/Pages/State/Chapters/Management/Management';
+import Conclusions from '../components/Pages/State/Chapters/Conclusions/Conclusions';
+import Recommend from '../components/Pages/State/Chapters/Recommend/Recommend';
+
+
+
 import Preface from '../components/Pages/Preface/Preface';
 import Appendix1 from '../components/Pages/Appendices/Appendix1';
 import Appendix2 from '../components/Pages/Appendices/Appendix2';
 import Appendix3 from '../components/Pages/Appendices/Appendix3';
 import Appendix4 from '../components/Pages/Appendices/Appendix4';
+import Appendix5 from '../components/Pages/Appendices/Appendix5';
 import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
 import Error from '../components/404/404';
 
@@ -110,7 +132,7 @@ const Routes = () => {
                             <Route path='/Budget/budget-process' exact component={BudgetProcess} />
                             <Route path='/Budget/gender-budget' exact component={GenderBudget} />
                             <Route path='/Budget/child-budget' exact component={ChildBudget} />
-                            <Route path='/Budget/policy' exact component={MajorPolicy} />
+                            {/* <Route path='/Budget/policy' exact component={MajorPolicy} /> */}
                             <Route path='/Budget/appropaccounts' exact component={AppropAccounts} />
                             <Route path='/Budget/audit' exact component={Audit} />
                             <Route path='/Budget/outcome' exact component={Outcome} />
@@ -135,11 +157,33 @@ const Routes = () => {
                             <Route path='/Quality/conclusion' exact component={QualConclusion} />
                             <Route path='/Quality/recommendations' exact component={QualRecommendations} />
 
+                            <Route path='/State' exact component={State} />
+                            <Route path='/State/Definition' exact component={Definition} />
+                           <Route path='/State/Mandate' exact component={Mandate} />
+                           <Route path='/State/Spse' exact component={Spse} /> 
+                           <Route path='/State/Investment' exact component={Investment} />
+                           <Route path='/State/Returns' exact component={Returns} />
+                           <Route path='/State/Debt' exact component={Debt} />
+                           <Route path='/State/Performance' exact component={Performance} />
+                           <Route path='/State/Loss' exact component={Loss} />
+                           <Route path='/State/Auditt' exact component={Auditt} />
+                           <Route path='/State/Appointment' exact component={Appointment} />
+                           <Route path='/State/Submissions' exact component={Submissions} />
+                           <Route path='/State/Cag' exact component={Cag} />
+                           <Route path='/State/Result' exact component={Result} />
+                           <Route path='/State/Management' exact component={Management} />
+                           <Route path='/State/Conclusions' exact component={Conclusions} />
+                           <Route path='/State/Recommend' exact component={Recommend} />
+
+
+
+
+
                             <Route path='/appendices/appendix-1' exact component={Appendix1} />
                             <Route path='/appendices/appendix-2' exact component={Appendix2} />
                             <Route path='/appendices/appendix-3' exact component={Appendix3} />
                             <Route path='/appendices/appendix-4' exact component={Appendix4} />
-
+                            <Route path='/appendices/appendix-5' exact component={Appendix5} />
                         </ErrorBoundary>
                         <Route component={Error} />
                     </Switch>

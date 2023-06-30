@@ -15,16 +15,16 @@ const columns = [
       wrap: true,
   },
   {
-      name: "2019 20",
-      selector: "2019 20",
-      wrap: true,
-      format: data => data["2019 20"].toLocaleString('en-IN')
-  },
-  {
       name: "2020 21",
       selector: "2020 21",
       wrap: true,
       format: data => data["2020 21"].toLocaleString('en-IN')
+  },
+  {
+    name: "2021 22",
+    selector: "2021 22",
+    wrap: true,
+    format: data => data["2021 22"].toLocaleString('en-IN')
   },
   {
       name: "Increase Decrease (In crore )",
@@ -50,7 +50,7 @@ const Table21 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 2.20: Capital Expenditure during 2020-21 compared to 2019-20"
+                    title="Table 2.21: Capital Expenditure during 2021-22 compared to 2020-21"
                     columns={columns}
                     data={ctx.tables2.Table21}
                     customStyles={customStyles}

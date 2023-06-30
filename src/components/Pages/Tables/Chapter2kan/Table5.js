@@ -15,15 +15,6 @@ const columns = [
     wrap: true,
     // width:'35px',
 },
-
-{
-    name: "2019-20",
-    selector: "2019-20",
-    // grow:0.05,
-    sortable:true,
-    wrap: true,
-    format: data => data["2019-20"].toLocaleString('en-IN')
-},
 {
     name: "2020-21",
     selector: "2020-21",
@@ -31,6 +22,15 @@ const columns = [
     // width:'110px',
     wrap: true,
     format: data => data["2020-21"].toLocaleString('en-IN')
+},
+
+{
+    name: "2021-22",
+    selector: "2021-22",
+    // grow:0.05,
+    sortable:true,
+    wrap: true,
+    format: data => data["2021-22"].toLocaleString('en-IN')
 },
 {
     name: "ಏರಿಕೆ/ಇಳಿಕೆ",

@@ -9,7 +9,7 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "ಸಂವಿಧಾನ",
+        name: "Nature of expenditure",
         selector: "1",
         grow: 2,
         wrap: true
@@ -87,7 +87,7 @@ const Table5 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.5: Summarised position of actual expenditure vis-à-vis original/supplementary provision"
+                    title="Table 3.3: Summarised position of actual expenditure vis-à-vis original/supplementary provision"
                     columns={columns}
                     data={ctx.tables3.Table5}
                     customStyles={customStyles}

@@ -34,26 +34,27 @@ const columns = [
         ]
     },
     {
-        name: "Liabilities 2019-20",
-        selector: "Liabilities 2019-20",
-        grow:0.2,
-        wrap: true,
-        format: data => data["Liabilities 2019-20"].toLocaleString('en-IN')
-    },
-    {
         name: "Liabilities 2020-21",
         selector: "Liabilities 2020-21",
         grow: 0.2,
         wrap: true,
-        format: data => data["Liabilities 2020-21"].toLocaleString('en-IN')
+        
     },
     {
-        name: "Percent Increase",
+        name: "Liabilities 2021-22",
+        selector: "Liabilities 2021-22",
+        grow:0.2,
+        wrap: true,
+       
+    },
+    
+    {
+        name: "Percent increase/decrease",
         selector: "Per cent increase",
         // grow: 0.05,
         width:'150px',
         wrap: true,
-        format: data => data["Per cent increase"].toLocaleString('en-IN')
+        
     },
     {
         name: " ",
@@ -81,25 +82,26 @@ const columns = [
         ]
     },
     {
-        name: "Assets 2019-20",
-        selector: "Assets 2019-20",
-        grow: 0.2,
-        wrap: true,
-        format: data => data["Assets 2019-20"].toLocaleString('en-IN')
-    },
-    {
         name: "Assets 2020-21",
         selector: "Assets 2020-21",
         grow: 0.2,
         wrap: true,
-        format: data => data["Assets 2020-21"].toLocaleString('en-IN')
+        
     },
     {
-        name: "Percent Increase",
+        name: "Assets 2021-22",
+        selector: "Assets 2021-22",
+        grow: 0.2,
+        wrap: true,
+        
+    },
+  
+    {
+        name: "Percent increase/decrease",
         selector: "Per cent increase__1",
         grow:0.05,
         wrap: true,
-        format: data => data["Per cent increase__1"].toLocaleString('en-IN')
+       
     },
 ];
 

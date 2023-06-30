@@ -7,82 +7,52 @@ import { MyContext } from "../../../../Context/MyProvider";
 import { styles } from "../helpers";
 
 
-const columns = [
+const columns =  [
   {
-    name: "ವರ್ಷ",
-    selector: "ವರ್ಷ",
-    wrap: true,
-    width:"80px"
+      name:"ರಾಜ್ಯದ ಆದಾಯದ ಮೂಲಗಳು",
+      selector:"ರಾಜ್ಯದ ಆದಾಯದ ಮೂಲಗಳು",
+      // grow: ,
+      wrap: true
   },
   {
-    name: "ಅನುದಾನದ ಸ್ವರೂಪ",
-    selector: "ಅನುದಾನದ ಸ್ವರೂಪ",
-    wrap: true,
-    format: data => data["ಅನುದಾನದ ಸ್ವರೂಪ"].toLocaleString('en-IN')
+      name:"2017-18",
+      selector:"2017 18",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+      format: data => data["2017 18"].toLocaleString('en-IN')
   },
   {
-    name: "ಪಂಚಾಯತ್‌ರಾಜ್‌ ಸಂಸ್ಥೆಗಳು",
-    selector: "ಪಂಚಾಯತ್‌ರಾಜ್‌ ಸಂಸ್ಥೆಗಳು",
-    wrap: true,
-    width:"120px",
-    format: data => data["ಪಂಚಾಯತ್‌ರಾಜ್‌ ಸಂಸ್ಥೆಗಳು"].toLocaleString('en-IN')
+      name: "2018-19",
+      selector:"2018 19",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+      format: data => data["2018 19"].toLocaleString('en-IN')
   },
   {
-    name: "ಪಂಚಾಯತ್‌ರಾಜ್‌ ಸಂಸ್ಥೆಗಳು",
-    selector: "__6",
-    wrap: true,
-    width:"80px",
-    format: data => data["__6"]
+      name:"2019-20",
+      selector:"2019 20",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+      format: data => data["2019 20"].toLocaleString('en-IN')
   },
   {
-    name: "ಪಂಚಾಯತ್‌ರಾಜ್‌ ಸಂಸ್ಥೆಗಳು",
-    selector: "__1",
-    wrap: true,
-    width:"80px",
-    format: data => data["__1"].toLocaleString('en-IN')
+      name:"2020-21",
+      selector:"2020 21",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+      format: data => data["2020 21"].toLocaleString('en-IN')
   },
   {
-    name: "ನಗರ ಸ್ಥಳೀಯ ಸಂಸ್ಥೆಗಳು",
-    selector: "ನಗರ ಸ್ಥಳೀಯ ಸಂಸ್ಥೆಗಳು",
-    wrap: true,
-    width:"90px",
-    format: data => data["ನಗರ ಸ್ಥಳೀಯ ಸಂಸ್ಥೆಗಳು"].toLocaleString('en-IN')
-  },
-  {
-    name: "ನಗರ ಸ್ಥಳೀಯ ಸಂಸ್ಥೆಗಳು",
-    selector: "__2",
-    wrap: true,
-    width:"120px",
-    format: data => data["__2"].toLocaleString('en-IN')
-  },
-  {
-    name: "ನಗರ ಸ್ಥಳೀಯ ಸಂಸ್ಥೆಗಳು",
-    selector: "__3",
-    wrap: true,
-    width:"80px",
-    format: data => data["__3"].toLocaleString('en-IN')
-  },
-  {
-    name: "ಎಸ್‌ಡಿಆರ್‌ಎಮ್‌ಎಫ್‌",
-    selector: "ಎಸ್‌ಡಿಆರ್‌ಎಮ್‌ಎಫ್‌",
-    wrap: true,
-    width:"90px",
-    format: data => data["ಎಸ್‌ಡಿಆರ್‌ಎಮ್‌ಎಫ್‌"].toLocaleString('en-IN')
-  },
- 
-  {
-    name: "ಎಸ್‌ಡಿಆರ್‌ಎಮ್‌ಎಫ್",
-    selector: "__4",
-    wrap: true,
-    width:"80px",
-    format: data => data["__4"].toLocaleString('en-IN')
-  },
-  {
-    name: "ಎಸ್‌ಡಿಆರ್‌ಎಮ್‌ಎಫ್",
-    selector: "__5",
-    wrap: true,
-    // width:"80px",
-    format: data => data["__5"].toLocaleString('en-IN')
+      name:"2021-22",
+      selector:"2021 22",
+      // grow: 0.05,
+      // width:'110px',
+      wrap: true,
+       format: data => data["2021 22"].toLocaleString('en-IN',)
   }
 ];
 
@@ -107,9 +77,9 @@ const Table10kan = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="ಕೋಷ್ಟಕ-2.9: 2020-21ರಲ್ಲಿ ಶಿಫಾರಸು ಮಾಡಿದ ಅನುದಾನ ಮತ್ತು ವಾಸ್ತವ ಬಿಡುಗಡೆ"
+          title="ಕೋಷ್ಟಕ-2.1೧: ಬಂಡವಾಳ ಸ್ವೀಕೃತಿಗಳ ವೃದ್ಧಿ ಮತ್ತು ಸಂಯೋಜನೆಯಲ್ಲಿನ ಪ್ರವೃತ್ತಿಗಳು  (` ಕೋಟಿಗಳಲ್ಲಿ)"
           columns={columns}
-          data={ctx.tables2kan.Table9}
+          data={ctx.tables2kan.Table10}
           customStyles={customStyles}
           striped
           // conditionalRowStyles={conditionalRowStyles}

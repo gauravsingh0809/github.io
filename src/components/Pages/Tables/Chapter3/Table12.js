@@ -16,47 +16,47 @@ const columns = [
         wrap: true,
     },
     {
-        name: " ",
-        selector: "1",
-        wrap: true,
-        sortable:true,
-        format: data => data["1"].toLocaleString('en-IN')
-
-    },
-    {
         name: "Revenue",
         selector: "Revenue",
         wrap: true,
         sortable:true,
-        format: data => data["Revenue"].toLocaleString('en-IN')
+        
+
     },
     {
-        name: " ",
-        selector: "2",
+        name: "Revenue",
+        selector: "FIELD3",
         wrap: true,
         sortable:true,
-        format: data => data["2"].toLocaleString('en-IN')
+        
     },
     {
-        name: " ",
-        selector: "3",
+        name: "Revenue",
+        selector: "FIELD4",
         wrap: true,
         sortable:true,
-        format: data => data["3"].toLocaleString('en-IN')
+       
     },
     {
-        name: "Capital",
+        name: "Capital ",
         selector: "Capital",
         wrap: true,
         sortable:true,
-        format: data => data["Capital"].toLocaleString('en-IN')
+        
     },
     {
-        name: " ",
-        selector: "4",
+        name: "Capital",
+        selector: "FIELD6",
         wrap: true,
         sortable:true,
-        format: data => data["4"].toLocaleString('en-IN')
+        
+    },
+    {
+        name: "Capital",
+        selector: "FIELD7",
+        wrap: true,
+        sortable:true,
+      
     }
 ];
 
@@ -71,7 +71,7 @@ const Table12 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.12 : Anticipated savings not surrendered/partially surrendered"
+                    title="Table 3.8: Anticipated savings not surrendered/partially surrendered"
                     columns={columns}
                     data={ctx.tables3.Table12}
                     customStyles={customStyles}

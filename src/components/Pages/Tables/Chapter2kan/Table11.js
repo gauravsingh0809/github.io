@@ -10,51 +10,52 @@ import { styles } from "../helpers";
 const columns = [
     {
         name: "ರಾಜ್ಯದ ಆದಾಯದ ಮೂಲಗಳು",
-        selector: "ರಾಜ್ಯದ ಆದಾಯದ ಮೂಲಗಳು",
+        selector: "1",
         // grow: ,
         wrap: true,
         // width:'35px',
     },
     {
-        name:"2016-17",
-        selector:"2016 17",
+        name:"೧೫ನೇ ಹಣಕಾಸು ಆಯೋಗದ ನಿರ್ಧರಣೆ",
+        selector:"೧೫ನೇ ಹಣಕಾಸು ಆಯೋಗದ ನಿರ್ಧರಣೆ",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
         sortable:true,
-        format: data => data["2016 17"].toLocaleString('en-IN')
+        format: data => data["೧೫ನೇ ಹಣಕಾಸು ಆಯೋಗದ ನಿರ್ಧರಣೆ"].toLocaleString('en-IN')
     },
     {
-        name: "2017-18",
-        selector: "2017 18",
+        name: "ಆಯವ್ಯಯ ಅಂದಾಜು",
+        selector: "ಆಯವ್ಯಯ ಅಂದಾಜು",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2017 18"].toLocaleString('en-IN')
+        format: data => data["ಆಯವ್ಯಯ ಅಂದಾಜು"].toLocaleString('en-IN')
     },
     {
-        name: "2018-19",
-        selector: "2018 19",
+        name: "ವಾಸ್ತವ",
+        selector: "ವಾಸ್ತವ",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2018 19"].toLocaleString('en-IN')
+        format: data => data["ವಾಸ್ತವ"].toLocaleString('en-IN')
     },
     {
-        name: "2019-20",
-        selector: "2019 20",
+        name: "ವಾಸ್ತವದ ಮೇಲಿನ ವ್ಯತ್ಯಾಸ ಶೇಕಡಾವಾರು",
+        selector: "ವಾಸ್ತವದ ಮೇಲಿನ ವ್ಯತ್ಯಾಸ ಶೇಕಡಾವಾರು",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN')
+        format: data => data["ವಾಸ್ತವದ ಮೇಲಿನ ವ್ಯತ್ಯಾಸ ಶೇಕಡಾವಾರು"].toLocaleString('en-IN')
     },
     {
-      name: "2020-21",
-      selector: "2020 21",
-      // grow:0.05,
-      wrap: true,
-      format: data => data["2020 21"].toLocaleString('en-IN')
-  }
+        name: "",
+        selector: "2",
+        // grow: 0.05,
+        // width:'110px',
+        wrap: true,
+        format: data => data["2"].toLocaleString('en-IN')
+    }
 ];
 
 
@@ -68,9 +69,9 @@ const Table11kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.10: ಬಂಡವಾಳ ಸ್ವೀಕೃತಿಗಳ ವೃದ್ಧಿ ಮತ್ತು ಸಂಯೋಜನೆಯಲ್ಲಿನ ಪ್ರವೃತ್ತಿಗಳು"
+                    title="ಕೋಷ್ಟಕ-2.1೨: 202೧-2೨ರಲ್ಲಿ ಪ್ರಕ್ಷೇಪಗಳಿಗೆ ಮುಖಾಮುಖಿಯಾಗಿ ತೆರಿಗೆ ಮತ್ತು ತೆರಿಗೆಯೇತರ ಸ್ವೀಕೃತಿಗಳು"
                     columns={columns}
-                    data={ctx.tables2kan.Table10}
+                    data={ctx.tables2kan.Table11}
                     customStyles={customStyles}
                     striped
                     // conditionalRowStyles={conditionalRowStyles}

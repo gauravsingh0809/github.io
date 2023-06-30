@@ -9,54 +9,47 @@ import { styles } from "../helpers";
 
 const columns = [
     {
-        name: "ಖಾತರಿಗಳು",
-                selector: "ಖಾತರಿಗಳು",
+        name: "ಅವಧಿ ಮುಕ್ತಾಯ ವರ್ಷ",
+        selector: "ಅವಧಿ ಮುಕ್ತಾಯ ವರ್ಷ",
         // grow: ,
         wrap: true,
         // width:'35px',
     },
     {
-        name: "2016 17",
-        selector: "2016 17",
+        name: "",
+        selector: "ಮೊತ್ತ",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2016 17"].toLocaleString('en-IN')
+        
     },
     {
-        name: "2017 18",
-        selector: "2017 18",
+        name: "ಮೊತ್ತ",
+        selector: "1",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2017 18"].toLocaleString('en-IN')
+       
     },
     {
-        name: "2018 19",
-        selector: "2018 19",
+        name: "",
+        selector: "2",
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["2018 19"].toLocaleString('en-IN')
-    },
-    {
-        name: "2019 20",
-        selector: "2019 20",
-        // grow: 0.05,
-        // width:'110px',
-        wrap: true,
-        format: data => data["2019 20"].toLocaleString('en-IN')
-    },
-    {
-        name: "2020 21",
-        selector: "2020 21",
-        // grow:0.05,
-        wrap: true,
-        format: data => data["2020 21"].toLocaleString('en-IN')
+        
     }
 ];
 
 const customStyles = styles;
+const conditionalRowStyles = [
+    {
+      when: row => row["ಅವಧಿ ಮುಕ್ತಾಯ ವರ್ಷ"] === 'ಒಟ್ಟು',
+      style: {
+        backgroundColor:  'rgba(153, 165, 128, 0.9)',
+      }
+    }
+  ]
 
 const Table37kan = () => {
 
@@ -66,12 +59,12 @@ const Table37kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ-2.37: ರಾಜ್ಯ ಸರ್ಕಾರವು ನೀಡಿದ ಖಾತರಿಗಳು"
+                    title="ಕೋಷ್ಟಕ-2.3೬: ಸಾರ್ವಜನಿಕ ಋಣದ ಅವಧಿ ಪೂರ್ಣತೆಯ ಚಿತ್ರಣ"
                     columns={columns}
                     data={ctx.tables2kan.Table37}
                     customStyles={customStyles}
                     striped
-                    // conditionalRowStyles={conditionalRowStyles}
+                    conditionalRowStyles={conditionalRowStyles}
                     highlightOnHover
                     pointerOnHover
                     // pagination

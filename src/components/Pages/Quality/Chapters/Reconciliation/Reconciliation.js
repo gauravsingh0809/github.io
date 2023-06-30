@@ -51,9 +51,7 @@ const Reconciliation = () => {
                         <Para>
                             {ctx.chapter4kannada.Content.para73}
                         </Para>
-                        <Para>
-                            {ctx.chapter4kannada.Content.para74}
-                        </Para>
+                       
                     </div>
                 </div>
                 : <div>

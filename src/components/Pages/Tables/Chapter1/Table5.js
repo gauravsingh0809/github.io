@@ -22,16 +22,11 @@ const columns = [
     },
     {
         name: "Achievement",
-        selector: "1",
-        wrap: true,
-        format: data => data["1"].toLocaleString('en-IN')
-    },
-    {
-        name: "Achievement",
         selector: "2",
         wrap: true,
         format: data => data["2"].toLocaleString('en-IN')
     },
+  
     {
         name: "Achievement",
         selector: "Achievement",
@@ -49,6 +44,12 @@ const columns = [
         selector: "4",
         wrap: true,
         format: data => data["4"].toLocaleString('en-IN')
+    },
+    {
+        name: "Achievement",
+        selector: "1",
+        wrap: true,
+        format: data => data["1"].toLocaleString('en-IN')
     },
 ];
 

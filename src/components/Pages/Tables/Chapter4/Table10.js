@@ -38,7 +38,7 @@ const columns = [
         format: data => data["Not reconciled at all"].toLocaleString('en-IN')
     },
     {
-        name: "CCOs not transacted during the month",
+        name: "Controlling officers not transacted during the month",
         selector: "CCOs not transacted during the month",
         wrap: true,
     },

@@ -19,12 +19,12 @@ const QualRecommendations = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality/conclusion" forward="/appendices/appendix-1" />
+                        <FloatingActionButtons back="/quality/conclusion" forward="/State" />
 
                         <Title>
                             {ctx.chapterFour.Fourth.Para31}
                         </Title>
-                        {["Para32", "Para33", "Para34", "Para35", "Para36"].map((item, ind) =>
+                        {["Para32", "Para33", "Para34", "Para35"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 <li>
                                     <i>
@@ -49,7 +49,7 @@ const QualRecommendations = () => {
                         <Title>
                             {ctx.chapter4kannada.Content.para103}
                         </Title>
-                        {["para104", "para105", "para106", "para107", "para108"].map((item, ind) =>
+                        {["para104", "para105", "para106", "para107"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 <i>
                                     {ctx.chapter4kannada.Content[item]}

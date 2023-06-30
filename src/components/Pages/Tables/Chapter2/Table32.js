@@ -8,8 +8,8 @@ import { styles } from "../helpers";
 
 const columns = [
   {
-    name: "Sl No",
-    selector: "Sl No",
+    name: "Sl. No.",
+    selector: "Sl",
     grow: 0.1,
     wrap: true,
     // width:'35px',
@@ -20,14 +20,6 @@ const columns = [
     grow: 2,
     wrap: true,
     // width:'35px',
-  },
-  {
-    name: "2016 17",
-    selector: "2016 17",
-    // grow: 0.05,
-    // width:'110px',
-    wrap: true,
-    format: data => data["2016 17"].toLocaleString('en-IN')
   },
   {
     name: "2017 18",
@@ -59,13 +51,20 @@ const columns = [
     // grow:0.05,
     wrap: true,
     format: data => data["2020 21"].toLocaleString('en-IN')
+  },
+  {
+    name: "2021 22",
+    selector: "2021 22",
+    // grow: 0.05,
+    // width:'110px',
+    wrap: true,
+    //format: data => data["2021 22"].toLocaleString('en-IN')
   }
 ];
 
 const conditionalRowStyles = [
   {
-    when: row => row["Sl No"] === 'Composition of Fiscal Deficit' ||
-    row["Sl No"] === 'Financing pattern of Fiscal Deficit*',
+    when: row => row["Sl"] === 'Financing pattern of Fiscal Deficit*',
     style: {
       backgroundColor:  'rgba(153, 165, 128, 0.9)',
     }
@@ -82,7 +81,7 @@ const Table32 = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="Table 2.32: Components of fiscal deficit and its financing pattern"
+          title="Table 2.34: Components of fiscal deficit and its financing pattern"
           columns={columns}
           data={ctx.tables2.Table33 ? ctx.tables2.Table33.t33 : ""}
           customStyles={customStyles}

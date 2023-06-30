@@ -6,6 +6,8 @@ import Navbar from "../../../../Navbar/Navbar"
 import { FaSpinner } from 'react-icons/fa'
 import FloatingActionButtons from "../../../../FloatingActionButtons/FloatButton"
 import './../../Finances.css'
+import c212 from '../../../../../Images/c212.png'
+import ImageComponent from 'material-ui-image'
 import Table2 from '../../../Tables/Chapter2/Table2'
 import Table2kan from '../../../Tables/Chapter2kan/Table2'
 import {
@@ -24,9 +26,9 @@ const  SourcesApplication = () => {
                     <Navbar />
                     <div className="contentwrapper" id="home">
                         <FloatingActionButtons back="/finances/major-sources" forward="/finances/resources" />
-                        <Title>{ctx.chapterTwo.Profile.Para4}</Title>
+                        <Title>{ctx.chapterTwo.Para4}</Title>
                         <Para>
-                            {ctx.chapterTwo.Profile.Para5}
+                            {ctx.chapterTwo.Para5}
                         </Para>
                         
                         <Table2/>
@@ -34,10 +36,10 @@ const  SourcesApplication = () => {
                             <i>
                                 Source: Finance Accounts
                                 <br></br>
-                            * Effective Public Debt Receipts (Net) would be ₹61,105 crore as the Department of Expenditure, GoI had decided that GST compensation of ₹12,407 crore given to the sate as back-to-back loan under Debt Receipts would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission.
+                                * Effective Public Debt Receipts (Net) would be ₹`61,105 crore in 2020-21 and ₹`48,560 crore in 2021-22 as the Department of Expenditure, GoI had decided that GST compensation of ₹12,407 crore in 2020-21 and ₹18,109 crore in 2021-22 given to the State as back-to-back loan under Debt Receipts would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission
                             </i>
                         </h4>
-                        <Chart11a />
+                        {/* <Chart11a />
                         <h4 className='footnote'>
                             <i>
                                 Source: Finance Accounts
@@ -49,8 +51,9 @@ const  SourcesApplication = () => {
                             <i>
                                 Source: Finance Accounts
                             </i>
-                        </h4>
-                   
+                        </h4> */}
+                        <ImageComponent flex="4" aspectRatio = "2" resizeMode = 'contain' src={c212} color ="#ffffff00" />
+                        
                     </div>
                 </div>
                 : <div>

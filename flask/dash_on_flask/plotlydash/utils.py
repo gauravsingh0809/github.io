@@ -46,7 +46,7 @@ def get_header_dashboard(app):
                     ),
                     html.Div(
                         [
-                            html.H5("STATE FINANCE AUDIT REPORT FOR THE YEAR ENDED MARCH 2021, KARNATAKA",
+                            html.H5("STATE FINANCE AUDIT REPORT FOR THE YEAR ENDED MARCH 2022, KARNATAKA",
                                     style={"fontWeight": "bold"}
                                     )
                         ],
@@ -103,7 +103,7 @@ def get_header(app):
                     ),
                     html.Div(
                         [
-                            html.H4("State Financial Report, Karnataka 2019",
+                            html.H4("State Financial Report, Karnataka 2022",
                                     style={"fontWeight": "bold"}
                                     ),
                             get_menu()

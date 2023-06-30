@@ -20,7 +20,7 @@ const columns = [
         selector: "ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು",
         // grow:0.05,
         wrap: true,
-        format: data => data["ಪ್ರಾರಂಭಿಕ ಶಿಲ್ಕು"].toLocaleString('en-IN')
+       
     },
     {
         name: "ಅಂತಿಮ ಶಿಲ್ಕು",
@@ -28,7 +28,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["ಅಂತಿಮ ಶಿಲ್ಕು"].toLocaleString('en-IN')
+        
     },
     {
         name: "ಹೆಚ್ಚಳ (+)/ ಇಳಿಕೆ(-)",
@@ -36,7 +36,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["ಹೆಚ್ಚಳ (+)/ ಇಳಿಕೆ(-)"].toLocaleString('en-IN')
+       
     },
     {
         name: "ಗಳಿಸಿದ ಬಡ್ಡಿ",
@@ -44,7 +44,7 @@ const columns = [
         // grow: 0.05,
         // width:'110px',
         wrap: true,
-        format: data => data["ಗಳಿಸಿದ ಬಡ್ಡಿ"].toLocaleString('en-IN')
+        
     },
 ];
 

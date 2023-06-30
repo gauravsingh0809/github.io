@@ -20,7 +20,7 @@ const GenderBudget = () => {
           <FloatingActionButtons back="/budget/budget-process" forward="/budget/child-budget" />
 
           <Title>{ctx.chapterThree.Profile.Para8}</Title>
-          {["Para9", "Para10", "Para11"].map(
+          {["Para8a","Para9", "Para10", "Para11"].map(
             (item, ind) => (
               <Para key={ind / 10}>{ctx.chapterThree.Profile[item]}</Para>
             )
@@ -51,13 +51,16 @@ const GenderBudget = () => {
         <FloatingActionButtons back="/budget/budget-process" forward="/budget/child-budget" />
 
         <Title>{ctx.chapter3kannada.Content.para12}</Title>
-        {["para13", "para14", "para15", "para16", "para17"].map(
+        {["para13", "para14", "para15", "para16"].map(
           (item, ind) => (
             <Para key={ind / 10}>{ctx.chapter3kannada.Content[item]}</Para>
           )
         )}
+        <h3 className="headnote">
+        (` ಕೋಟಿಗಳಲ್ಲಿ)
+          </h3> 
         <Table1kan />
-        <h6>ಆಕರ: ಮಹಿಳಾ ಉದ್ದೇಶಿತ ಆಯವ್ಯಯ</h6>
+        <h4>ಆಕರ: ಮಹಿಳಾ ಉದ್ದೇಶಿತ ಆಯವ್ಯಯ</h4>
         <Para>{ctx.chapter3kannada.Content.para18}</Para>
         {/* <Para>{ctx.chapterThree.Introduction.Para1}</Para> */}
 

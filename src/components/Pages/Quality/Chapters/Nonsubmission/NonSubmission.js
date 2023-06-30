@@ -25,7 +25,7 @@ const NonSubmission = () => {
                         <Title>
                         {ctx.chapterFour.Fourth.Para13}
                         </Title>
-                        {["Para14","Para15","Para16","Para17","Para18"].map((item, ind) =>
+                        {["Para14","Para15","Para16","Para17"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterFour.Fourth[item]}
                             </Para> )}
@@ -45,7 +45,7 @@ const NonSubmission = () => {
                     <Title>
                     {ctx.chapter4kannada.Content.para85}
                     </Title>
-                    {["para86","para87","para88","para89","para90"].map((item, ind) =>
+                    {["para86","para87","para88","para89"].map((item, ind) =>
                         <Para key={ind / 10}>
                             {ctx.chapter4kannada.Content[item]}
                         </Para> )}

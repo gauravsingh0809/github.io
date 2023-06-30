@@ -15,32 +15,32 @@ const columns = [
     grow: 2
   },
   {
-    name: "ಬಡ್ಡಿ ಗಳಿಕೆ",
-    selector: "1ಬಡ್ಡಿ ಗಳಿಕೆ",
+    name: "ಗಳಿಸಿದ ಬಡ್ಡಿ",
+    selector: "ಗಳಿಸಿದ ಬಡ್ಡಿ",
     wrap: true,
-    format: data => data["ಬಡ್ಡಿ ಗಳಿಕೆ"].toLocaleString('en-IN')
+  
   },
   {
-    name: "ಬಡ್ಡಿ ಗಳಿಕೆ",
-    selector: "1",
+    name: "ಗಳಿಸಿದ ಬಡ್ಡಿ",
+    selector: "3",
     wrap: true,
    
   },
   {
-    name: "ಬಡ್ಡಿ ಗಳಿಕೆ",
-    selector: "2",
+    name: "ಗಳಿಸಿದ ಬಡ್ಡಿ",
+    selector: "__1",
     wrap: true,
-    format: data => data["2"].toLocaleString('en-IN')
+
   },
   {
-    name: "ಬಡ್ಡಿ ಗಳಿಕೆ",
-    selector: "3",
+    name: "ಗಳಿಸಿದ ಬಡ್ಡಿ",
+    selector: "__2",
     wrap: true,
-    format: data => data["3"].toLocaleString('en-IN')
+
   },
   {
-    name: "ಬಡ್ಡಿ ಹಣದ ವ್ಯವಹೃತಿ",
-    selector: "ಬಡ್ಡಿ ಹಣದ ವ್ಯವಹೃತಿ",
+    name: "ಬಡ್ಡಿ ಹಣದ ವ್ಯವಹಾರ",
+    selector: "ಬಡ್ಡಿ ಹಣದ ವ್ಯವಹಾರ",
     grow: 3,
     wrap: true
   }
@@ -56,7 +56,7 @@ const Table1kan = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="ಕೋಷ್ಟಕ-4.1: ಸಂಸ್ಥೆಯು ಗಳಿಸಿದ ಬಡ್ಡಿ ಮತ್ತು ಅದರ ವ್ಯವಹೃತಿಯ  ವಿವರಗಳು"
+          title="ಕೋಷ್ಟಕ-೪.೧: ಗಳಿಸಿದ ಬಡ್ಡಿ ಮತ್ತು ಅದರ ವ್ಯವಹಾರದ ವಿವರಗಳು."
           columns={columns}
           data={ctx.tables4kan.Table1}
           customStyles={customStyles}

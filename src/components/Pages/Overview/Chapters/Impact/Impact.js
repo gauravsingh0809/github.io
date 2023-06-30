@@ -28,6 +28,9 @@ const Impact = () => {
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
+                         <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
                         <Table7 />
                         <h4 className='footnote'>
                             <i>
@@ -37,8 +40,7 @@ const Impact = () => {
                         <Para>
                             {ctx.chapterOne.Profile["Para68"]}
                         </Para>
-                        {["Para69", "Para70", "Para71",
-                            "Para72", "Para73"].map((item, ind) =>
+                        {["Para69", "Para70", "Para71","Para72", "Para73"].map((item, ind) =>
                                 <Para key={ind / 10}>
                                     <li>
                                         {ctx.chapterOne.Profile[item]}
@@ -89,7 +91,7 @@ const Impact = () => {
                                     </li>
                                 </Para>
                             )}
-                        {["para78", "para79"].map((item, ind) =>
+                        {["para78"].map((item, ind) =>
                                 <Para key={ind / 10}>
                                         {ctx.chapter1kannada.Content[item]}
                                 </Para>

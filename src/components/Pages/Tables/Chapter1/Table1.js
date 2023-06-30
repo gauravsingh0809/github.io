@@ -21,11 +21,7 @@ const columns = [
       </div>
     </div>)
   },
-  {
-    name: "2016-17",
-    selector: "2016-17",
-    sortable: true,
-    format: data => data["2016-17"].toLocaleString('en-IN'),
+ 
     // conditionalCellStyles: [
     //   {
     //     when: row => (row["2016-17"] === 15.54),
@@ -38,30 +34,30 @@ const columns = [
     //     },
     //   },
     // ]
-  },
+  
   {
     name: "2017-18",
     selector: "2017-18",
     sortable: true,
-    format: data => data["2017-18"].toLocaleString('en-IN')
+    
   },
   {
     name: "2018-19",
     selector: "2018-19",
     sortable: true,
-    format: data => data["2018-19"].toLocaleString('en-IN')
+    
   },
   {
     name: "2019-20",
     selector: "2019-20",
     sortable: true,
-    format: data => data["2019-20"].toLocaleString('en-IN')
+    
   },
   {
     name: "2020-21",
     selector: "2020-21",
     sortable: true,
-    format: data => data["2020-21"].toLocaleString('en-IN'),
+   
     // conditionalCellStyles: [
     //   {
     //     when: row => (row["2020-21"] === "-4.27"),
@@ -74,6 +70,12 @@ const columns = [
     //     },
     //   },
     // ]
+  },
+  {
+    name: "2021-22",
+    selector: "2021-22",
+    sortable: true,
+    
   },
 
 
@@ -149,7 +151,7 @@ const Table1 = () => {
       style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title={"1.1 " + ctx.tables1.T1H1}
+          title={" Table 1.1 " + ctx.tables1.T1H1}
           columns={columns}
           data={ctx.tables1.Table1}
           defaultSortField="title"

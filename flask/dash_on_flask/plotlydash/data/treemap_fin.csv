@@ -1,4 +1,4 @@
-Root,Type,Sub Type,Minor Head,Year,Values
+﻿Root,Type,Sub Type,Minor Head,Year,Values
 Receipts,Revenue Receipts,Tax Revenue,State Goods and Service Tax,2017-18,24182
 Receipts,Revenue Receipts,Tax Revenue,Taxes on Agricultural Income,2017-18,15
 Receipts,Revenue Receipts,Tax Revenue,"Taxes on Sales, Trade, etc.",2017-18,25093
@@ -20,7 +20,7 @@ Receipts,Revenue Receipts,Non Tax Revenue,"Education, Sports and Culture",2017-1
 Receipts,Revenue Receipts,Non Tax Revenue,Police,2017-18,253
 Receipts,Revenue Receipts,Non Tax Revenue,Roads and Bridges ,2017-18,103
 Receipts,Revenue Receipts,Non Tax Revenue,Other non-tax receipts,2017-18,992
-Receipts,Revenue Receipts,State�s share of Union taxes and duties,,2017-18,31752
+Receipts,Revenue Receipts,Stateï¿½s share of Union taxes and duties,,2017-18,31752
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Non plan grants,2017-18,0
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Grants for State Plan schemes,2017-18,0
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Grants for Central plan schemes,2017-18,0
@@ -69,7 +69,7 @@ Receipts,Revenue Receipts,Non Tax Revenue,"Education, Sports and Culture",2018-1
 Receipts,Revenue Receipts,Non Tax Revenue,Police,2018-19,241
 Receipts,Revenue Receipts,Non Tax Revenue,Roads and Bridges ,2018-19,105
 Receipts,Revenue Receipts,Non Tax Revenue,Other non-tax receipts,2018-19,1158
-Receipts,Revenue Receipts,State�s share of Union taxes and duties,,2018-19,35895
+Receipts,Revenue Receipts,Stateï¿½s share of Union taxes and duties,,2018-19,35895
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Non plan grants,2018-19,0
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Grants for State Plan schemes,2018-19,0
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Grants for Central plan schemes,2018-19,0
@@ -118,7 +118,7 @@ Receipts,Revenue Receipts,Non Tax Revenue,"Education, Sports and Culture",2019-2
 Receipts,Revenue Receipts,Non Tax Revenue,Police,2019-20,308
 Receipts,Revenue Receipts,Non Tax Revenue,Roads and Bridges ,2019-20,71
 Receipts,Revenue Receipts,Non Tax Revenue,Other non-tax receipts,2019-20,1370
-Receipts,Revenue Receipts,State�s share of Union taxes and duties,,2019-20,30919
+Receipts,Revenue Receipts,Stateï¿½s share of Union taxes and duties,,2019-20,30919
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Non plan grants,2019-20,0
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Grants for State Plan schemes,2019-20,0
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Grants for Central plan schemes,2019-20,0
@@ -167,7 +167,7 @@ Receipts,Revenue Receipts,Non Tax Revenue,"Education, Sports and Culture",2020-2
 Receipts,Revenue Receipts,Non Tax Revenue,Police,2020-21,367
 Receipts,Revenue Receipts,Non Tax Revenue,Roads and Bridges ,2020-21,50
 Receipts,Revenue Receipts,Non Tax Revenue,Other non-tax receipts,2020-21,1325
-Receipts,Revenue Receipts,State�s share of Union taxes and duties,,2020-21,21694
+Receipts,Revenue Receipts,Stateï¿½s share of Union taxes and duties,,2020-21,21694
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Non plan grants,2020-21,0
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Grants for State Plan schemes,2020-21,0
 Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Grants for Central plan schemes,2020-21,0
@@ -195,3 +195,41 @@ Expenditure/Disbursements,Repayment of Public Debt,Internal Debt (excluding Ways
 Expenditure/Disbursements,Repayment of Public Debt,Loans and Advances from Government of India,,2020-21,1405
 Expenditure/Disbursements,Contingency Fund disbursements,,,2020-21,0
 Expenditure/Disbursements,Public Account disbursements,,,2020-21,266193
+Receipts,Revenue Receipts,Non Tax Revenue,Interest receipts,2021-22,1315
+Receipts,Revenue Receipts,Non Tax Revenue,Dividend and profits,2021-22,350
+Receipts,Revenue Receipts,Non Tax Revenue,Nonferrous Mining and Metallurgical Industries,2021-22,6308
+Receipts,Revenue Receipts,Non Tax Revenue,Medical and Public Health,2021-22,522
+Receipts,Revenue Receipts,Non Tax Revenue,Other Administrative Services,2021-22,417
+Receipts,Revenue Receipts,Non Tax Revenue,Forestry and Wild Life,2021-22,282
+Receipts,Revenue Receipts,Non Tax Revenue,"Education, Sports and Culture",2021-22,287
+Receipts,Revenue Receipts,Non Tax Revenue,Police,2021-22,500
+Receipts,Revenue Receipts,Non Tax Revenue,Roads and Bridges ,2021-22,61
+Receipts,Revenue Receipts,Non Tax Revenue,Other non-tax receipts,2021-22,1735
+Receipts,Revenue Receipts,State’s share of Union taxes and duties,,2021-22,33284
+Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Non plan grants,2021-22,29962
+Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Grants for State Plan schemes,2021-22,0
+Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Grants for Central plan schemes,2021-22,0
+Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Grants for Centrally sponsored schemes,2021-22,12659
+Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Other transfers/Grants to States,2021-22,11064
+Receipts,Revenue Receipts,Grants-in-aid from Government of  India,Finance Commission Grants,2021-22,6239
+Receipts,Capital Receipts,Miscellaneous Capital Receipts,,2021-22,6
+Receipts,Capital Receipts,Recoveries of Loans and  Advances,,2021-22,127
+Receipts,Capital Receipts,Public Debt Receipts,Internal Debt (excluding Ways and Means Advances and Overdrafts),2021-22,60462
+Receipts,Capital Receipts,Public Debt Receipts,Loans and Advances from Government of India,2021-22,20179
+Receipts,Contingency Fund Receipts,,,2021-22,420
+Receipts,Public Account Receipts,,,2021-22,328313
+Expenditure/Disbursements,Revenue Expenditure,General Services(including interest payments),,2021-22,62669
+Expenditure/Disbursements,Revenue Expenditure,Social Services,,2021-22,79804
+Expenditure/Disbursements,Revenue Expenditure,Economic Services,,2021-22,60339
+Expenditure/Disbursements,Revenue Expenditure,Grants-in-aid and contributions,,2021-22,6616
+Expenditure/Disbursements,Capital Expenditure,General Services,,2021-22,940
+Expenditure/Disbursements,Capital Expenditure,Social Services,,2021-22,13228
+Expenditure/Disbursements,Capital Expenditure,Economic Services,,2021-22,33706
+Expenditure/Disbursements,Disbursements of Loans and  Advances,General Services,,2021-22,0
+Expenditure/Disbursements,Disbursements of Loans and  Advances,Social Services,,2021-22,2770
+Expenditure/Disbursements,Disbursements of Loans and  Advances,Economic Services,,2021-22,1435
+Expenditure/Disbursements,Disbursements of Loans and  Advances,Miscellaneous Loans,,2021-22,4
+Expenditure/Disbursements,Repayment of Public Debt,Internal Debt (excluding Ways and Means Advances and Overdrafts),,2021-22,12560
+Expenditure/Disbursements,Repayment of Public Debt,Loans and Advances from Government of India,,2021-22,1412
+Expenditure/Disbursements,Contingency Fund disbursements,,,2021-22,0
+Expenditure/Disbursements,Public Account disbursements,,,2021-22,313096

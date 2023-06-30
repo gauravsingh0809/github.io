@@ -31,49 +31,49 @@ const columns = [
         selector: "ಪೂರಕ ಅನುದಾನ/ ವಿನಿಯೋಗ",
         // grow:0.05,
         wrap: true,
-        format: data => data["ಪೂರಕ ಅನುದಾನ/ ವಿನಿಯೋಗ"].toLocaleString('en-IN')
+       
     },
     {
         name: "ಒಟ್ಟು",
         selector: "ಒಟ್ಟು",
         // grow:0.05,
         wrap: true,
-        format: data => data["ಒಟ್ಟು"].toLocaleString('en-IN')
+       
     },
     {
-        name: "ವಾಸ್ತವ ವೆಚ್ಚ",
-        selector: "ವಾಸ್ತವ ವೆಚ್ಚ",
+        name: "ವಾಸ್ತವಿಕ ವೆಚ್ಚ",
+        selector: "ವಾಸ್ತವಿಕ ವೆಚ್ಚ",
         // grow:0.05,
         wrap: true,
-        format: data => data["ವಾಸ್ತವ ವೆಚ್ಚ"].toLocaleString('en-IN')
+      
     },
     {
         name: "ಬಳಕೆ ಮಾಡದ ಅವಕಾಶ (-) / ಅವಕಾಶಕ್ಕಿಂತ ಅಧಿಕ (+)",
         selector: "ಬಳಕೆ ಮಾಡದ ಅವಕಾಶ (-) / ಅವಕಾಶಕ್ಕಿಂತ ಅಧಿಕ (+)",
         // grow:0.05,
         wrap: true,
-        format: data => data["ಬಳಕೆ ಮಾಡದ ಅವಕಾಶ (-) / ಅವಕಾಶಕ್ಕಿಂತ ಅಧಿಕ (+)"].toLocaleString('en-IN')
+      
     },
     {
-        name: "ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತತ",
-        selector: "ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತತ",
+        name: "ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತ",
+        selector: "ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತ",
         // grow:0.05,
         wrap: true,
         
     },
     {
-        name: "31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತ",
-        selector: "31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತ",
+        name: "೩೧ ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತ",
+        selector: "೩೧ ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತ",
         // grow:0.05,
         wrap: true,
-        format: data => data["31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಮೊತ್ತ"].toLocaleString('en-IN')
+       
     },
     {
-        name: "31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಉಳಿತಾಯದ ಶೇಕಡವಾರು",
-        selector: "31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಉಳಿತಾಯದ ಶೇಕಡವಾರು",
+        name: "ಮಾರ್ಚ್‌ ೩೧ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಉಳಿತಾಯದ ಶೇಕಡಾವಾರು",
+        selector: "ಮಾರ್ಚ್‌ ೩೧ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಉಳಿತಾಯದ ಶೇಕಡಾವಾರು",
         // grow:0.05,
         wrap: true,
-        format: data => data["31 ಮಾರ್ಚ್‌ ರಂದು ಅಧ್ಯರ್ಪಿಸಿದ ಉಳಿತಾಯದ ಶೇಕಡವಾರು"].toLocaleString('en-IN')
+        
     }
 ];
 
@@ -87,7 +87,7 @@ const Table5kan = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="ಕೋಷ್ಟಕ 3.5: ಮೂಲ/ಪೂರಕ ಅವಕಾಶಗಳಿಗೆ ಪ್ರತಿಯಾಗಿ ವಾಸ್ತವಿಕ ವೆಚ್ಚದ ಸಾರಾಂಶ"
+                    title="ಕೋಷ್ಟಕ-೩.೩: ೨೦೨೧-೨೨ರಲ್ಲಿ ಮೂಲ/ಪೂರಕ ಅವಕಾಶಗಳಿಗೆ ಪ್ರತಿಯಾಗಿ ವಾಸ್ತವಿಕ ವೆಚ್ಚದ ಸಾರಾಂಶ"
                     columns={columns}
                     data={ctx.tables3kan.Table5}
                     customStyles={customStyles}

@@ -16,7 +16,7 @@ const columns = [
         // width:'35px',
     },
     {
-        name: "Total Allocation",
+        name: "Budget Provision (Original)",
         selector: "Total Allocation",
         // grow:0.05,
         wrap: true,
@@ -74,7 +74,7 @@ const Table1 = () => {
         <div className="App" style={{ margin: "40px 0 40px 0" }} >
             <Card>
                 <DataTable
-                    title="Table 3.1 – Category-wise allocation during 2016-17 to 2020-21"
+                    title="Table 3.1 – Category-wise allocation during 2017-18 to 2021-22"
                     columns={columns}
                     data={ctx.tables3.Table1}
                     customStyles={customStyles}

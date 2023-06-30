@@ -40,6 +40,7 @@ const FiscalSituation = () => {
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
+                        
                         <Table5 />
                         <h4 className='footnote'>
                             <i>
@@ -59,13 +60,13 @@ const FiscalSituation = () => {
                                 <span className="tooltiptext">
                                     Borrowings by PSUs and SPVs are Off-budget borrowings
                                 </span>
-                                <sup>5</sup>
+                                <sup>2</sup>
                             </span>
                             {ctx.chapterOne.Profile.Para59.substring(185,)}
 
                         </Para>
 
-                        {["Para60"].map((item, ind) =>
+                        {["Para60","Para60a"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
@@ -80,16 +81,17 @@ const FiscalSituation = () => {
                                 {ctx.chapterOne.Profile[item]}
                             </Para>
                         )}
-
+     <h3 className='headnote'>
+                            ₹ In crore
+                        </h3>
                         <Table6 />
                         <h4 className='footnote'>
                             <i>
                                 {ctx.tables1.T6F1} and MTFP 2019-23
                                 <br></br>
-                                * Effective total debt would be ₹403,519 crore as the Department of Expenditure, GoI had decided that GST compensation of ₹12,407 crore given to the state as back-to-back loan under Debt Receipt would not be treated as debt of the state for any norms which may be prescribed by the Finance Commission and therefore, the effective variation would be 6.59 per cent.
+                                *Effective total debt would be `4,59,740 crore as the Department of Expenditure, GoI had decided that GST compensation of `12,407 and `18,109 crore given to the State as back-to-back loan during 2020-21 and 2021-22 respectively under Debt Receipt would not be treated as debt of the State for any norms which may be prescribed by the Finance Commission and therefore, the effective variation would be 7.65 per cent.
                                 <br></br>
-                                **The back-to-back Loan (₹12,407 crore) received from GoI in lieu of GST compensation has not been considered as Debt for working out the indicator.
-                            </i>
+                                **The back-to-back Loan (`30,516 crore) received during 2020-21 and 2021-22 from GoI in lieu of GST compensation has not been considered as Debt for working out the indicator.                            </i>
                         </h4>
                         <Para>
                             {ctx.chapterOne.Profile.Para64.substring(0, 98)}
@@ -99,7 +101,7 @@ const FiscalSituation = () => {
                                 <span className="tooltiptext">
                                     Fiscal indicators like revenue surplus/deficit, fiscal deficit, Debt-GSDP ratio and GSDP growth rate at current prices.
                                 </span>
-                                <sup>6</sup>
+                                <sup>3</sup>
                             </span>
                             {ctx.chapterOne.Profile.Para64.substring(108,)}
 
@@ -143,7 +145,7 @@ const FiscalSituation = () => {
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        {["para63", "para64", "para65"].map((item, ind) =>
+                        {["para63", "para64", "para65","para65a"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
@@ -161,12 +163,12 @@ const FiscalSituation = () => {
                         )}
 
                         <Table6kan />
-                        {["f12","f13"].map((item, ind) =>
+                        {["f12","f13","f13a"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>
                         )}
-                        {["para69", "para70"].map((item, ind) =>
+                        {["para69"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.chapter1kannada.Content[item]}
                             </Para>

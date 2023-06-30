@@ -16,51 +16,20 @@ const columns = [
     // width:'35px',
   },
   {
-    name: "",
-    selector: "__1",
+    name: "ಕಿರು ಲೆಕ್ಕಶೀರ್ಷಿಕೆ",
+    selector: "ಕಿರು ಲೆಕ್ಕಶೀರ್ಷಿಕೆ",
     // grow: ,
     wrap: true,
     // width:'35px',
   },
   {
-    name: "2016 17",
-    selector: "2016 17",
+    name: "202೧ 2೨ರಲ್ಲಿ ವೆಚ್ಚ",
+    selector: "202೧-2೨ರಲ್ಲಿ ವೆಚ್ಚ",
     // grow: 0.05,
     // width:'110px',
     wrap: true,
-    format: data => data["2016 17"].toLocaleString('en-IN')
-  },
-  {
-    name: "2017 18",
-    selector: "2017 18",
-    // grow: 0.05,
-    // width:'110px',
-    wrap: true,
-    format: data => data["2017 18"].toLocaleString('en-IN')
-  },
-  {
-    name: "2018 19",
-    selector: "2018 19",
-    // grow: 0.05,
-    // width:'110px',
-    wrap: true,
-    format: data => data["2018 19"].toLocaleString('en-IN')
-  },
-  {
-    name: "2019 20",
-    selector: "2019 20",
-    // grow: 0.05,
-    // width:'110px',
-    wrap: true,
-    format: data => data["2019 20"].toLocaleString('en-IN')
-  },
-  {
-    name: "2020 21",
-    selector: "2020 21",
-    // grow:0.05,
-    wrap: true,
-    format: data => data["2020 21"].toLocaleString('en-IN')
-}
+    
+  }
 ];
 
 const customStyles = styles;
@@ -73,7 +42,7 @@ const Table30kan = () => {
     <div className="App" style={{ margin: "40px 0 40px 0" }} >
       <Card>
         <DataTable
-          title="ಕೋಷ್ಟಕ-2.30: ಘಟಕವಾರು ಸಾಲದ ಪ್ರವೃತ್ತಿಗಳು"
+          title="ಕೋಷ್ಟಕ-2.೩೦: ರಾಜ್ಯ ವಿಪತ್ತು ಪರಿಹಾರ ನಿಧಿ/ರಾಜ್ಯ ವಿಪತ್ತು ಉಪಶಮನ ನಿಧಿಗಳಡಿಯ ವೆಚ್ಚಗಳು/ಸ್ವೀಕೃತಿಗಳ ವಿವರಗಳು"
           columns={columns}
           data={ctx.tables2kan.Table30}
           customStyles={customStyles}
