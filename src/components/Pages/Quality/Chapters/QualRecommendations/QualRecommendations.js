@@ -43,7 +43,8 @@ const QualRecommendations = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/quality" forward="delay" />
+                    <FloatingActionButtons back="/quality/conclusion" forward="/State" />
+
 
 
                         <Title>
