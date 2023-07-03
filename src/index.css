@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300&family=Roboto:wght@100;300;400;500&family=Ubuntu:wght@300;400;500&display=swap');
+
+
+:root {
+  --font-family-lato: 'Lato', sans-serif;
+  --font-family-poppins:'Poppins', sans-serif;
+  --font-family-roboto: 'Roboto', sans-serif;
+  --font-family-ubuntu:'Ubuntu', sans-serif;
+
+  --gradient-text-funky: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-text: linear-gradient(89.97deg, #152147 1.84%, #4d2713 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  --gradient-nav-bar: linear-gradient(103.22deg, #3b539450 -13.86%, #020c1d 99.55%);
+  
+  /* --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71; */
+
+}
+
+
+body {
+  margin: 0;
+  font-family: var(--font-family-ubuntu);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: var(--font-family-roboto),
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#page-wrap {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}

@@ -27,7 +27,7 @@
     "styled-components": "^5.2.3",
     "web-vitals": "^2.1.4"
   },
-  "proxy": "https://firebasestorage.googleapis.com/v0/b/digital-sfr.appspot.com/o",
+  "proxy": "",
   "homepage": "https://gauravsingh0809.github.io/github.io",
   "scripts": {
     "start": "react-scripts start",

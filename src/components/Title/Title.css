@@ -1,0 +1,32 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 60px;
+    background:#f1c40f96;
+    border-radius: 5px;
+    margin: 20px 0 20px 0;
+  }
+
+  .grid-container-green {
+    display: grid;
+    grid-template-columns: auto 60px;
+    background:#ffffff30;
+    border-radius: 5px;
+    margin: 20px 0 20px 0;
+  }
+  
+  
+  .grid-container-green .titlebar {
+    padding-left: 20px;
+  }
+
+  .grid-container-green .titlebar .title {
+    font-weight: 750;
+  }
+
+  .grid-container .titlebar .title {
+    font-weight: 750;
+  }
+
+  .grid-container .titlebar {
+    padding-left: 20px;
+  }
