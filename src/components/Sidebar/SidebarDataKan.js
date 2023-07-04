@@ -52,7 +52,7 @@ export const SidebarDataKan = [
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
-      {
+      { 
         title: '1.6 ಹಣಕಾಸು ವ್ಯವಹಾರಗಳ ಕ್ಷಿಪ್ರಚಿತ್ರ',
         path: '/overview/snapshot-finances',
         id: 2,
@@ -360,7 +360,7 @@ export const SidebarDataKan = [
         cName: 'sub-nav'
       },
       {
-        title: '4.15 ಸಮಾಪನ',
+        title: '4.15 ಸಮಾಪನ 1',
         path: '/quality/conclusion',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
@@ -376,7 +376,7 @@ export const SidebarDataKan = [
     ]
   },
   {
-    title: 'Chapter 5  - State Public Sector Enterprises',
+    title: 'ಅಧ್ಯಾಯ-5: ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳು',
     path: '/State',
     id: 1,
     iconClosed: <FaIcons.FaPlusSquare size="12px"/>,
@@ -384,7 +384,7 @@ export const SidebarDataKan = [
     subNav: [
     
       {
-        title: '5.1 Definition of Government Companies',
+        title: '5.1	ಸರ್ಕಾರಿ ಕಂಪನಿಯ ವ್ಯಾಖ್ಯಾನ',
         path: '/State/Definition',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
@@ -392,21 +392,21 @@ export const SidebarDataKan = [
       },
      
       {
-        title: '5.2 Mandate of Audit',
+        title: '5.2	ಲೆಕ್ಕಪರಿಶೋಧನಾ ಆದೇಶ',
         path: '/State/Mandate',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.3 SPSEs and their contribution to the GSDP of the State',
+        title: '5.3 	ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳು ಮತ್ತು ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನಕ್ಕೆ (ಜಿಎಸ್‌ಡಿಪಿ) ಅವುಗಳ ಕಾಣಿಕೆ',
         path: '/State/Spse',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.4 Investment in SPSEs and Budgetary support',
+        title: '5.4	ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳಲ್ಲಿ ಹೂಡಿಕೆ ಮತ್ತು ಆಯವ್ಯಯ ಬೆಂಬಲ',
         path: '/State/Investment',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
@@ -414,21 +414,21 @@ export const SidebarDataKan = [
       },
  
       {
-        title: '5.5 Returns from SPSEs',
+        title: '5.5	ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳಿಂದ ಪ್ರತಿಫಲ',
         path: '/State/Returns',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.6 Debt Servicing',
+        title: '5.6	ಋಣ ಸೇವೆಗಳು',
         path: '/State/Debt',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.7 Performance of listed SPSEs vis-a-vis private companies',
+        title: '5.7	ವಿನಿಮಯ ಕೇಂದ್ರದಲ್ಲಿ ನೋಂದಣಿಯಾದ ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳು ಹಾಗೂ ಅದಕ್ಕನುಗುಣವಾಗಿ ಖಾಸಗಿ ಕಂಪನಿಗಳ ಕಾರ್ಯ ನಿರ್ವಹಣೆ',
         path: '/State/Performance',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
@@ -436,14 +436,14 @@ export const SidebarDataKan = [
       },
 
       {
-        title: '5.8 SPSEs incurring losses',
+        title: '5.8	ನಷ್ಟ ಅನುಭವಿಸುತ್ತಿರುವ ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳು',
         path: '/State/Loss',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.9 Audit of SPSEs',
+        title: '5.9	ರಾಜ್ಯ ಸರ್ಕಾರಿ ವಲಯ ಉದ್ದಿಮೆಗಳ ಲೆಕ್ಕಪರಿಶೋಧನೆ',
         path: '/State/Auditt',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
@@ -451,49 +451,49 @@ export const SidebarDataKan = [
       },
       
       {
-        title: '5.10  Appointment of statutory auditors of SPSEs by C&AG',
+        title: '5.10 	ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳಿಗೆ ಭಾರತದ ಲೆಕ್ಕನಿಯಂತ್ರಕರು ಮತ್ತು ಮಹಾಲೆಕ್ಕಪರಿಶೋಧಕರಿಂದ ಶಾಸನಬದ್ಧ ಲೆಕ್ಕಪರಿಶೋಧಕರ ನೇಮಕ',
         path: '/State/Appointment',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.11 Submission of accounts by SPSEs',
+        title: '5.11	ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳಿಂದ ಲೆಕ್ಕಪತ್ರಗಳ ಸಲ್ಲಿಕೆ',
         path: '/State/Submissions',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: "5.12 C&AG's oversight - Audit of accounts and supplementary audit ",
+        title: "5.12 	ಭಾರತದ ಲೆಕ್ಕನಿಯಂತ್ರಕರು ಮತ್ತು ಮಹಾಲೆಕ್ಕಪರಿಶೋಧಕರ ಮೇಲುಸ್ತುವಾರಿ (ಒವರ್‌ಸೈಟ್)- ಲೆಕ್ಕಪತ್ರಗಳ ಲೆಕ್ಕಪರಿಶೋಧನೆ ಮತ್ತು ಪೂರಕ ಲೆಕ್ಕಪರಿಶೋಧನೆ ",
         path: '/State/Cag',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.13  Result of C&AG’s oversight role',
+        title: '5.13 ಭಾರತದ ಲೆಕ್ಕನಿಯಂತ್ರಕರು ಮತ್ತು ಮಹಾಲೆಕ್ಕಪರಿಶೋಧಕರ ಮೇಲುಸ್ತುವಾರಿ ಪಾತ್ರದ ಫಲಿತಾಂಶಗಳು',
         path: '/State/Result',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.14 Management letters',
+        title: '5.14	ವ್ಯವಸ್ಥಾಪನ ಪತ್ರಗಳು ',
         path: '/State/Management',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.15 Conclusion',
+        title: '5.15	ತೀರ್ಮಾನ',
         path: '/State/Conclusions',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.16 Recommendations',
+        title: '5.16	ಶಿಫಾರಸುಗಳು',
         path: '/State/Recommend',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
@@ -530,6 +530,13 @@ export const SidebarDataKan = [
       {
         title: 'ಅನುಬಂಧ 4',
         path: '/appendices/appendix-4',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
+      },
+      {
+        title: 'ಅನುಬಂಧ 5',
+        path: '/appendices/appendix-5',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
