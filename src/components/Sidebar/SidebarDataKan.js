@@ -388,6 +388,7 @@ export const SidebarDataKan = [
         path: '/State/Definition',
         id: 2,
         icon: <FaIcons.FaAngleRight />,
+        wrap:true,
         cName: 'sub-nav'
       },
      
@@ -399,16 +400,18 @@ export const SidebarDataKan = [
         cName: 'sub-nav'
       },
       {
-        title: '5.3 	ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳು ಮತ್ತು ರಾಜ್ಯದ ಒಟ್ಟು ಆಂತರಿಕ ಉತ್ಪನ್ನಕ್ಕೆ (ಜಿಎಸ್‌ಡಿಪಿ) ಅವುಗಳ ಕಾಣಿಕೆ',
+        title: '5.3 ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳು ',
         path: '/State/Spse',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.4	ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳಲ್ಲಿ ಹೂಡಿಕೆ ಮತ್ತು ಆಯವ್ಯಯ ಬೆಂಬಲ',
+        title: '5.4	ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ',
         path: '/State/Investment',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
@@ -417,6 +420,7 @@ export const SidebarDataKan = [
         title: '5.5	ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳಿಂದ ಪ್ರತಿಫಲ',
         path: '/State/Returns',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
@@ -424,13 +428,15 @@ export const SidebarDataKan = [
         title: '5.6	ಋಣ ಸೇವೆಗಳು',
         path: '/State/Debt',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.7	ವಿನಿಮಯ ಕೇಂದ್ರದಲ್ಲಿ ನೋಂದಣಿಯಾದ ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳು ಹಾಗೂ ಅದಕ್ಕನುಗುಣವಾಗಿ ಖಾಸಗಿ ಕಂಪನಿಗಳ ಕಾರ್ಯ ನಿರ್ವಹಣೆ',
+        title: '5.7	ವಿನಿಮಯ ',
         path: '/State/Performance',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
@@ -439,6 +445,7 @@ export const SidebarDataKan = [
         title: '5.8	ನಷ್ಟ ಅನುಭವಿಸುತ್ತಿರುವ ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳು',
         path: '/State/Loss',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
@@ -446,14 +453,16 @@ export const SidebarDataKan = [
         title: '5.9	ರಾಜ್ಯ ಸರ್ಕಾರಿ ವಲಯ ಉದ್ದಿಮೆಗಳ ಲೆಕ್ಕಪರಿಶೋಧನೆ',
         path: '/State/Auditt',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       
       {
-        title: '5.10 	ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳಿಗೆ ಭಾರತದ ಲೆಕ್ಕನಿಯಂತ್ರಕರು ಮತ್ತು ಮಹಾಲೆಕ್ಕಪರಿಶೋಧಕರಿಂದ ಶಾಸನಬದ್ಧ ಲೆಕ್ಕಪರಿಶೋಧಕರ ನೇಮಕ',
+        title: '5.10 ನೇಮಕಾತಿ',
         path: '/State/Appointment',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
@@ -461,20 +470,23 @@ export const SidebarDataKan = [
         title: '5.11	ರಾಜ್ಯ ಸಾರ್ವಜನಿಕ ವಲಯ ಉದ್ದಿಮೆಗಳಿಂದ ಲೆಕ್ಕಪತ್ರಗಳ ಸಲ್ಲಿಕೆ',
         path: '/State/Submissions',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: "5.12 	ಭಾರತದ ಲೆಕ್ಕನಿಯಂತ್ರಕರು ಮತ್ತು ಮಹಾಲೆಕ್ಕಪರಿಶೋಧಕರ ಮೇಲುಸ್ತುವಾರಿ (ಒವರ್‌ಸೈಟ್)- ಲೆಕ್ಕಪತ್ರಗಳ ಲೆಕ್ಕಪರಿಶೋಧನೆ ಮತ್ತು ಪೂರಕ ಲೆಕ್ಕಪರಿಶೋಧನೆ ",
+        title: "5.12 ಭಾರತದ ಲೆಕ್ಕನಿಯಂತ್ರಕರು ಮತ್ತು ಮಹಾಲೆಕ್ಕಪರಿಶೋಧಕರ ಮೇಲುಸ್ತುವಾರಿ",
         path: '/State/Cag',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
       {
-        title: '5.13 ಭಾರತದ ಲೆಕ್ಕನಿಯಂತ್ರಕರು ಮತ್ತು ಮಹಾಲೆಕ್ಕಪರಿಶೋಧಕರ ಮೇಲುಸ್ತುವಾರಿ ಪಾತ್ರದ ಫಲಿತಾಂಶಗಳು',
+        title: '5.13 ಫಲಿತಾಂಶಗಳು',
         path: '/State/Result',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
@@ -482,6 +494,7 @@ export const SidebarDataKan = [
         title: '5.14	ವ್ಯವಸ್ಥಾಪನ ಪತ್ರಗಳು ',
         path: '/State/Management',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
@@ -489,6 +502,7 @@ export const SidebarDataKan = [
         title: '5.15	ತೀರ್ಮಾನ',
         path: '/State/Conclusions',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       },
@@ -496,6 +510,7 @@ export const SidebarDataKan = [
         title: '5.16	ಶಿಫಾರಸುಗಳು',
         path: '/State/Recommend',
         id: 2,
+        wrap:true,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
       }
