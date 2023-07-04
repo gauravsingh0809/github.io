@@ -533,6 +533,13 @@ export const SidebarDataKan = [
         id: 2,
         icon: <FaIcons.FaAngleRight />,
         cName: 'sub-nav'
+      },
+        {
+        title: 'ಅನುಬಂಧ 5',
+        path: '/appendices/appendix-5',
+        id: 2,
+        icon: <FaIcons.FaAngleRight />,
+        cName: 'sub-nav'
       }
     ]
   }
