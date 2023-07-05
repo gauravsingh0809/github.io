@@ -72,12 +72,12 @@ const Overview = () => {
                             </Para>
                         )}
                         <Title >{ctx.execsummarykan.para15}</Title>
-                        <Title >{ctx.execsummarykan.para16}</Title>
-                        {['para17','para18','para19'].map((item, ind) =>
+                        <Para >{ctx.execsummarykan.para16}</Para>
+                        {/* {['para17','para18','para19'].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.execsummarykan[item]}
                             </Para>
-                        )}
+                        )} */}
                     </div>
                 </div>
                 : <div>

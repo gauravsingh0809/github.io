@@ -91,7 +91,7 @@ const Finances = () => {
                                 {ctx.execsummarykan[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execsummarykan.para15}</Title>
+                        {/* <Title >{ctx.execsummarykan.para15}</Title> */}
                         <Title >{ctx.execsummarykan.para20}</Title>
                         {['para21','para22'].map((item, ind) =>
                             <Para key={ind / 10}>

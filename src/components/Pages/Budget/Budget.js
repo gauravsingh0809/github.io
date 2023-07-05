@@ -62,10 +62,10 @@ const Budget = () => {
                                 {ctx.execsummarykan[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execsummarykan.para15}</Title>
+                       
                         <Title >{ctx.execsummarykan.para33}</Title>
                         {['para34','para35','para36','para37',
-                        'para38','para39','para40','para41'
+                        'para38','para39','para40'
                         ].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.execsummarykan[item]}

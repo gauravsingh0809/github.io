@@ -38,7 +38,19 @@ const State = () => {
                             {ctx.chapterFive.Fifth.Para0}
                         </Title>
                         <Para>
-                            {ctx.chapterFive.Fifth.Para1}
+                            {ctx.chapterFive.Fifth.Para0a}
+                        </Para>
+                        <Para>
+                            {ctx.chapterFive.Fifth.Para0b}
+                        </Para>
+                        <Para>
+                            {ctx.chapterFive.Fifth.Para0c}
+                        </Para>
+                        <Para>
+                            {ctx.chapterFive.Fifth.Para0d}
+                        </Para>
+                        <Para>
+                            {ctx.chapterFive.Fifth.Para0e}
                         </Para>
                         {/* <ImageComponent src={url} alt="chart43" aspectRatio={1 / 0.35} /> */}
                         {/* <Para>

@@ -47,21 +47,23 @@ const Quality = () => {
                 ? <div >
                     <Navbar />
                     <div className="contentwrapper" id="home">
-                        <FloatingActionButtons back="/budget/Recommendations" forward="/Quality/funds" />                        <Title>{ctx.execsummarykan.para4}</Title>
+                        <FloatingActionButtons back="/budget/Recommendations" forward="/Quality/funds" />                       
+                         <Title>{ctx.execsummarykan.para4}</Title>
+                        
                         {['para5'].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.execsummarykan[item]}
                             </Para>
                         )}
                         <Title >{ctx.execsummarykan.para12}</Title>
-                        {['para13', 'para14'].map((item, ind) =>
+                        {['para13'].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.execsummarykan[item]}
                             </Para>
                         )}
-                        <Title >{ctx.execsummarykan.para15}</Title>
+                        
                         <Title >{ctx.execsummarykan.para42}</Title>
-                        {['para43','para44','para45'].map((item, ind) =>
+                        {['para43','para44','para45',"para46"].map((item, ind) =>
                             <Para key={ind / 10}>
                                 {ctx.execsummarykan[item]}
                             </Para>
